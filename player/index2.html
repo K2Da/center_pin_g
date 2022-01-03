@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+		<meta charset="utf-8" />
+		<title>Center Pin(g): プレイヤー一覧</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css" />
+		<script src="https://kit.fontawesome.com/fb58e9e936.js" crossorigin="anonymous"></script>
+
+		<style>
+			table { table-layout: auto }
+			th { text-align: center }
+			td { text-align: center }
+		</style>
+
+		<meta property="og:title" content="プレイヤー一覧" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://k2da.github.io/center_pin_g/player/" />
+		<meta property="og:site_name" content="Center Pin(g)" />
+		<meta property="og:description" content="ポケモンユナイトの大会のプレイヤーの一覧" />
+		<meta name="twitter:card" content="summary" />
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-KQ7HCNR2RZ');
+		</script>
+
+		
+
+		
+
+		<link rel="stylesheet" href="/center_pin_g/app/assets/start-61d1577b.css">
+		<link rel="modulepreload" href="/center_pin_g/app/start-b9ede3a5.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-bc7e1096.js">
+		<link rel="modulepreload" href="/center_pin_g/app/layout.svelte-304898be.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/player/index.svelte-31747b87.js">
+
+		<script type="module">
+			import { start } from "/center_pin_g/app/start-b9ede3a5.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/center_pin_g/app/layout.svelte-304898be.js"),
+						import("/center_pin_g/app/pages/player/index.svelte-31747b87.js")
+					],
+					url: new URL("sveltekit://prerender/player"),
+					params: {}
+				}
+			});
+		</script><script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/service-worker.js');
+			}
+		</script>
+	</head>
+
+	<body style="max-width: 1280px">
+		<div id="svelte">
+
+
+<main><h1>Center Pin(g)</h1>
+  <nav><a href="https://k2da.github.io/center_pin_g/index.html">top </a> | <a href="https://k2da.github.io/center_pin_g/tournament/index.html">大会</a> | プレイヤー
+  </nav>
+
+  <h2>プレイヤー</h2>
+
+  <div><input placeholder="プレイヤー名 / チーム名" style="display: inline-block " value="">
+    <input id="tournament" type="checkbox">
+    <label for="tournament">最新参加大会</label>
+    <input id="record" type="checkbox" checked>
+    <label for="record">通算戦績</label>
+    <input id="sns" type="checkbox">
+    <label for="sns">アカウント</label></div>
+
+  <table style="table-layout: auto"><thead><tr><th></th>
+        
+        <th colspan="3">通算戦績</th>
+        
+        <th></th></tr>
+      <tr><th style="text-align: left">名前</th>
+        
+        <th>出場</th>
+          <th>勝</th>
+          <th>敗</th>
+        
+        <th>rating</th></tr></thead>
+    <tbody></tbody></table></main>
+
+</div>
+	</body>
+</html>
