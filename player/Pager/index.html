@@ -39,7 +39,7 @@
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-990db78d.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/center_pin_g/app/layout.svelte-a449990c.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/player/index.svelte-62c7ff38.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/player/Pager.svelte-74c85ab8.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/Pager-ebee8685.js">
 
 		<script type="module">
@@ -56,9 +56,9 @@
 					error: null,
 					nodes: [
 						import("/center_pin_g/app/layout.svelte-a449990c.js"),
-						import("/center_pin_g/app/pages/player/index.svelte-62c7ff38.js")
+						import("/center_pin_g/app/pages/player/Pager.svelte-74c85ab8.js")
 					],
-					url: new URL("sveltekit://prerender/player"),
+					url: new URL("sveltekit://prerender/player/Pager"),
 					params: {}
 				}
 			});
@@ -69,23 +69,7 @@
 		<div id="svelte">
 
 
-<main><h1>Center Pin(g)</h1>
-  <nav><a rel="external" href="/center_pin_g/index.html">top </a> |
-    <a rel="external" href="/center_pin_g/tournament/index.html">大会</a>
-    | プレイヤー
-  </nav>
-
-  <h2>プレイヤー</h2>
-
-  <div><input placeholder="プレイヤー名 / チーム名" style="display: inline-block ">
-    <input id="tournament" type="checkbox">
-    <label for="tournament">最新参加大会</label>
-    <input id="record" type="checkbox" checked>
-    <label for="record">通算戦績</label>
-    <input id="sns" type="checkbox">
-    <label for="sns">アカウント</label></div>
-
-  <div style="text-align: right;"><button disabled class="svelte-ghmofs"><i class="fas fa-fast-backward"></i></button>
+<div style="text-align: right;"><button disabled class="svelte-ghmofs"><i class="fas fa-fast-backward"></i></button>
      
     <button disabled class="svelte-ghmofs"><i class="fas fa-step-backward"></i></button>
 
@@ -95,32 +79,6 @@
   <button class="svelte-ghmofs"><i class="fas fa-step-forward"></i></button>
      
     <button class="svelte-ghmofs"><i class="fas fa-fast-forward"></i></button></div>
-
-  <table style="table-layout: auto"><thead><tr><th colspan="2"></th>
-        
-        <th colspan="3">通算戦績</th>
-        
-        <th></th></tr>
-      <tr><th>No.</th>
-        <th style="text-align: left">名前</th>
-        
-        <th>出場</th>
-          <th>勝</th>
-          <th>敗</th>
-        
-        <th>rating</th></tr></thead>
-    <tbody></tbody></table>
-
-  <div style="text-align: right;"><button disabled class="svelte-ghmofs"><i class="fas fa-fast-backward"></i></button>
-     
-    <button disabled class="svelte-ghmofs"><i class="fas fa-step-backward"></i></button>
-
-  1 / 0
-   
-
-  <button class="svelte-ghmofs"><i class="fas fa-step-forward"></i></button>
-     
-    <button class="svelte-ghmofs"><i class="fas fa-fast-forward"></i></button></div></main>
 
 </div>
 	</body>
