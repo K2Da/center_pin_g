@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-42bf60d7.js",
+    "file": "start-4fb0f85d.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -10,11 +10,12 @@
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/build/components/error.svelte",
-      "src/routes/player/__layout.svelte",
       "src/routes/player/index.svelte",
       "src/routes/player/Header.svelte",
+      "src/routes/player/detail/__layout.svelte",
       "src/routes/player/detail/index.svelte",
       "_Pager-1fe9d3d3.js",
+      "src/routes/player/list/__layout.svelte",
       "src/routes/player/list/index.svelte"
     ],
     "css": [
@@ -39,25 +40,16 @@
       "_vendor-0f0a849d.js"
     ]
   },
-  "src/routes/player/__layout.svelte": {
-    "file": "pages/player/__layout.svelte-65fffa99.js",
-    "src": "src/routes/player/__layout.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-0f0a849d.js",
-      "_paths-28a87002.js"
-    ]
-  },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-734e2ba8.js",
+    "file": "pages/player/index.svelte-a3e5fa6f.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-0f0a849d.js",
       "_Pager-1fe9d3d3.js",
-      "_paths-28a87002.js"
+      "_paths-28a87002.js",
+      "src/routes/player/Header.svelte"
     ]
   },
   "src/routes/player/Header.svelte": {
@@ -69,6 +61,16 @@
       "_vendor-0f0a849d.js"
     ]
   },
+  "src/routes/player/detail/__layout.svelte": {
+    "file": "pages/player/detail/__layout.svelte-db7a3fd3.js",
+    "src": "src/routes/player/detail/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0f0a849d.js",
+      "_paths-28a87002.js"
+    ]
+  },
   "src/routes/player/detail/index.svelte": {
     "file": "pages/player/detail/index.svelte-a6abf82e.js",
     "src": "src/routes/player/detail/index.svelte",
@@ -77,6 +79,16 @@
     "imports": [
       "_vendor-0f0a849d.js",
       "src/routes/player/Header.svelte"
+    ]
+  },
+  "src/routes/player/list/__layout.svelte": {
+    "file": "pages/player/list/__layout.svelte-423604a2.js",
+    "src": "src/routes/player/list/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-0f0a849d.js",
+      "_paths-28a87002.js"
     ]
   },
   "src/routes/player/list/index.svelte": {
