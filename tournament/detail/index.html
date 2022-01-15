@@ -32,7 +32,8 @@
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/singletons-12a22614.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-65f3d841.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/index.svelte-844a9124.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/tournament/detail/index.svelte-21fb8c36.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/Header.svelte-868c8319.js">
 
 		<script type="module">
 			import { start } from "/center_pin_g/app/start-c82f3262.js";
@@ -48,9 +49,9 @@
 					error: null,
 					nodes: [
 						import("/center_pin_g/app/pages/__layout.svelte-65f3d841.js"),
-						import("/center_pin_g/app/pages/index.svelte-844a9124.js")
+						import("/center_pin_g/app/pages/tournament/detail/index.svelte-21fb8c36.js")
 					],
-					url: new URL("sveltekit://prerender/"),
+					url: new URL("sveltekit://prerender/tournament/detail"),
 					params: {}
 				}
 			});
@@ -67,13 +68,7 @@
   <a href="/center_pin_g/tournament">大会</a> |
   <a href="/center_pin_g/player">プレイヤー</a></nav>
 
-<p>ポケモンユナイトの大会結果をメモしてく場所(構築中)です。各種大会の結果を集めて、名前で寄せて集計してます。</p>
-<h2>etc</h2>
-<h3>ratingについて</h3>
-<p><a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%AD%E3%83%AC%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">イロレーティング</a>で個人のratingを付けています。初期値1,500、係数は400です。</p>
-<p>各大会のチームが5-7人登録となっているため、各メンバーが、相手チームの平均レートのプレイヤーと戦ったものとしてレートを変動させています。味方のレートは考慮していません。</p>
-<p>BO3などの場合、勝敗の順序が不明なため、勝者側の敗戦試合 -&gt; 勝者側の勝利試合、の順で計算しています。</p>
-<p>スコアが0-0の場合、棄権などで試合が行われなかったものと推測し、レートを変動させていません。</p>
+
 
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
 

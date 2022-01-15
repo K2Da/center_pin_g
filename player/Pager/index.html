@@ -27,17 +27,18 @@
 		
 
 		<link rel="stylesheet" href="/center_pin_g/app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/center_pin_g/app/assets/Pager-3dfc3efc.css">
-		<link rel="modulepreload" href="/center_pin_g/app/start-c5426f03.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-550b344a.js">
+		<link rel="stylesheet" href="/center_pin_g/app/assets/pages/player/Pager.svelte-31cb25c4.css">
+		<link rel="modulepreload" href="/center_pin_g/app/start-c82f3262.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-b0574c8c.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/singletons-12a22614.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-505bf449.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/player/Pager.svelte-6515bdcf.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/Pager-1f0dd709.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-65f3d841.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/player/__layout.svelte-83833026.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/player/Pager.svelte-3b89f99f.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-71d543ca.js">
 
 		<script type="module">
-			import { start } from "/center_pin_g/app/start-c5426f03.js";
+			import { start } from "/center_pin_g/app/start-c82f3262.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/center_pin_g","assets":"/center_pin_g"},
@@ -49,8 +50,9 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/center_pin_g/app/pages/__layout.svelte-505bf449.js"),
-						import("/center_pin_g/app/pages/player/Pager.svelte-6515bdcf.js")
+						import("/center_pin_g/app/pages/__layout.svelte-65f3d841.js"),
+						import("/center_pin_g/app/pages/player/__layout.svelte-83833026.js"),
+						import("/center_pin_g/app/pages/player/Pager.svelte-3b89f99f.js")
 					],
 					url: new URL("sveltekit://prerender/player/Pager"),
 					params: {}
@@ -64,6 +66,10 @@
 
 
 <h1>Center Pin(g)</h1>
+
+<nav><a href="/center_pin_g/">top </a> |
+  <a href="/center_pin_g/tournament">大会</a> |
+  <a href="/center_pin_g/player">プレイヤー</a></nav>
 
 <div style="text-align: right;"><button disabled class="svelte-ghmofs"><i class="fas fa-fast-backward"></i></button>
      

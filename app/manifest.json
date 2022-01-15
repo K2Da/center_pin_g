@@ -1,122 +1,138 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-c5426f03.js",
+    "file": "start-c82f3262.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-550b344a.js",
+      "_vendor-b0574c8c.js",
       "_singletons-12a22614.js",
       "_paths-28a87002.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/build/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/tournament/index.svelte",
+      "src/routes/tournament/detail/index.svelte",
+      "src/routes/Header.svelte",
+      "src/routes/player/__layout.svelte",
       "src/routes/player/index.svelte",
-      "src/routes/player/Header.svelte",
-      "src/routes/player/detail/__layout.svelte",
       "src/routes/player/detail/index.svelte",
-      "_Pager-1f0dd709.js",
-      "src/routes/player/list/__layout.svelte",
-      "src/routes/player/list/index.svelte"
+      "src/routes/player/Pager.svelte"
     ],
     "css": [
       "assets/start-61d1577b.css"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-505bf449.js",
+    "file": "pages/__layout.svelte-65f3d841.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-550b344a.js"
+      "_vendor-b0574c8c.js",
+      "_paths-28a87002.js"
     ]
   },
   ".svelte-kit/build/components/error.svelte": {
-    "file": "error.svelte-3eabb0c5.js",
+    "file": "error.svelte-07d53cda.js",
     "src": ".svelte-kit/build/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-550b344a.js"
+      "_vendor-b0574c8c.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-844a9124.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b0574c8c.js"
+    ]
+  },
+  "src/routes/tournament/index.svelte": {
+    "file": "pages/tournament/index.svelte-31b84eca.js",
+    "src": "src/routes/tournament/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b0574c8c.js",
+      "src/routes/Header.svelte",
+      "_paths-28a87002.js",
+      "_index_store-71d543ca.js"
+    ]
+  },
+  "src/routes/Header.svelte": {
+    "file": "pages/Header.svelte-868c8319.js",
+    "src": "src/routes/Header.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b0574c8c.js"
+    ]
+  },
+  "src/routes/tournament/detail/index.svelte": {
+    "file": "pages/tournament/detail/index.svelte-21fb8c36.js",
+    "src": "src/routes/tournament/detail/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b0574c8c.js",
+      "_paths-28a87002.js",
+      "src/routes/Header.svelte"
+    ]
+  },
+  "src/routes/player/__layout.svelte": {
+    "file": "pages/player/__layout.svelte-83833026.js",
+    "src": "src/routes/player/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-b0574c8c.js"
     ]
   },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-9783515f.js",
+    "file": "pages/player/index.svelte-4cbd7611.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-550b344a.js",
-      "_Pager-1f0dd709.js",
+      "_vendor-b0574c8c.js",
+      "_index_store-71d543ca.js",
       "_paths-28a87002.js",
-      "src/routes/player/Header.svelte"
+      "src/routes/player/Pager.svelte",
+      "src/routes/Header.svelte"
     ]
   },
-  "src/routes/player/Header.svelte": {
-    "file": "pages/player/Header.svelte-f0205a12.js",
-    "src": "src/routes/player/Header.svelte",
+  "src/routes/player/Pager.svelte": {
+    "file": "pages/player/Pager.svelte-3b89f99f.js",
+    "src": "src/routes/player/Pager.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-550b344a.js"
-    ]
-  },
-  "src/routes/player/detail/__layout.svelte": {
-    "file": "pages/player/detail/__layout.svelte-63431d16.js",
-    "src": "src/routes/player/detail/__layout.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-550b344a.js",
-      "_paths-28a87002.js"
+      "_vendor-b0574c8c.js",
+      "_index_store-71d543ca.js"
+    ],
+    "css": [
+      "assets/pages/player/Pager.svelte-31cb25c4.css"
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-d02d2987.js",
+    "file": "pages/player/detail/index.svelte-e2caccc3.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-550b344a.js",
+      "_vendor-b0574c8c.js",
       "_paths-28a87002.js",
-      "src/routes/player/Header.svelte",
+      "src/routes/Header.svelte",
       "_singletons-12a22614.js"
     ]
   },
-  "src/routes/player/list/__layout.svelte": {
-    "file": "pages/player/list/__layout.svelte-718666a6.js",
-    "src": "src/routes/player/list/__layout.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-550b344a.js",
-      "_paths-28a87002.js"
-    ]
-  },
-  "src/routes/player/list/index.svelte": {
-    "file": "pages/player/list/index.svelte-59b8b059.js",
-    "src": "src/routes/player/list/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-550b344a.js",
-      "_Pager-1f0dd709.js",
-      "_paths-28a87002.js",
-      "src/routes/player/Header.svelte"
-    ]
-  },
-  "src/routes/player/Pager.svelte": {
-    "file": "pages/player/Pager.svelte-6515bdcf.js",
-    "src": "src/routes/player/Pager.svelte",
-    "isEntry": true,
-    "imports": [
-      "_vendor-550b344a.js",
-      "_Pager-1f0dd709.js"
-    ]
-  },
-  "_vendor-550b344a.js": {
-    "file": "chunks/vendor-550b344a.js"
+  "_vendor-b0574c8c.js": {
+    "file": "chunks/vendor-b0574c8c.js"
   },
   "_singletons-12a22614.js": {
     "file": "chunks/singletons-12a22614.js"
@@ -124,14 +140,10 @@
   "_paths-28a87002.js": {
     "file": "chunks/paths-28a87002.js"
   },
-  "_Pager-1f0dd709.js": {
-    "file": "chunks/Pager-1f0dd709.js",
-    "isDynamicEntry": true,
+  "_index_store-71d543ca.js": {
+    "file": "chunks/index_store-71d543ca.js",
     "imports": [
-      "_vendor-550b344a.js"
-    ],
-    "css": [
-      "assets/Pager-3dfc3efc.css"
+      "_vendor-b0574c8c.js"
     ]
   }
 }
