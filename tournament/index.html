@@ -27,17 +27,16 @@
 		
 
 		<link rel="stylesheet" href="/center_pin_g/app/assets/start-61d1577b.css">
-		<link rel="modulepreload" href="/center_pin_g/app/start-c82f3262.js">
+		<link rel="modulepreload" href="/center_pin_g/app/start-5e624566.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-b0574c8c.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/singletons-12a22614.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-65f3d841.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/tournament/index.svelte-31b84eca.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/tournament/index.svelte-558044c9.js">
 		<link rel="modulepreload" href="/center_pin_g/app/pages/Header.svelte-868c8319.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-71d543ca.js">
 
 		<script type="module">
-			import { start } from "/center_pin_g/app/start-c82f3262.js";
+			import { start } from "/center_pin_g/app/start-5e624566.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/center_pin_g","assets":"/center_pin_g"},
@@ -50,7 +49,7 @@
 					error: null,
 					nodes: [
 						import("/center_pin_g/app/pages/__layout.svelte-65f3d841.js"),
-						import("/center_pin_g/app/pages/tournament/index.svelte-31b84eca.js")
+						import("/center_pin_g/app/pages/tournament/index.svelte-558044c9.js")
 					],
 					url: new URL("sveltekit://prerender/tournament"),
 					params: {}
@@ -73,10 +72,11 @@
 
 <h2>大会</h2>
 
-<table style="table-layout: auto"><thead><tr><th style="text-align: left">大会名</th>
-    <th>開催日</th>
+<table style="table-layout: auto"><thead><tr><th>開催日</th>
+    <th style="text-align: left">大会名</th>
     <th>参加チーム</th>
-    <th>参加人数</th></tr></thead>
+    <th>参加人数</th>
+    <th>試合数</th></tr></thead>
   <tbody></tbody></table>
 
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>

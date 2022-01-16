@@ -1,11 +1,10 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-c82f3262.js",
+    "file": "start-5e624566.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
       "_vendor-b0574c8c.js",
-      "_singletons-12a22614.js",
       "_paths-28a87002.js"
     ],
     "dynamicImports": [
@@ -53,7 +52,7 @@
     ]
   },
   "src/routes/tournament/index.svelte": {
-    "file": "pages/tournament/index.svelte-31b84eca.js",
+    "file": "pages/tournament/index.svelte-558044c9.js",
     "src": "src/routes/tournament/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -74,7 +73,7 @@
     ]
   },
   "src/routes/tournament/detail/index.svelte": {
-    "file": "pages/tournament/detail/index.svelte-21fb8c36.js",
+    "file": "pages/tournament/detail/index.svelte-6ef0ae85.js",
     "src": "src/routes/tournament/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -94,7 +93,7 @@
     ]
   },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-4cbd7611.js",
+    "file": "pages/player/index.svelte-98d58397.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -120,22 +119,18 @@
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-e2caccc3.js",
+    "file": "pages/player/detail/index.svelte-9ce07ef3.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-b0574c8c.js",
       "_paths-28a87002.js",
-      "src/routes/Header.svelte",
-      "_singletons-12a22614.js"
+      "src/routes/Header.svelte"
     ]
   },
   "_vendor-b0574c8c.js": {
     "file": "chunks/vendor-b0574c8c.js"
-  },
-  "_singletons-12a22614.js": {
-    "file": "chunks/singletons-12a22614.js"
   },
   "_paths-28a87002.js": {
     "file": "chunks/paths-28a87002.js"
