@@ -1,1 +1,0 @@
-import{N as r,C as s}from"./vendor-b0574c8c.js";const i=200,n=s([]),f=s(!0),d=s(!1),u=s(!1),w=s(1),c=s(""),m=r([n,c],([e,t])=>e?t?e.filter(o=>[o.name,o.latest.team].filter(a=>a.toLowerCase().includes(t.toLowerCase())).length>0):e:[]);export{n as a,w as b,f as c,u as d,m as e,c as f,i as p,d as s};

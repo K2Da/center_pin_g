@@ -30,13 +30,13 @@
 		
 
 		<link rel="stylesheet" href="/center_pin_g/app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/center_pin_g/app/assets/pages/player/Pager.svelte-31cb25c4.css">
 		<link rel="modulepreload" href="/center_pin_g/app/start-8d668781.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-eda31402.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-1a42f6a0.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/player/Pager.svelte-9d794ae2.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-34f98e4e.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/player/detail/Mates.svelte-cd9b77ab.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-b5403d1f.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/util-f29b5fc7.js">
 
 		<script type="module">
 			import { start } from "/center_pin_g/app/start-8d668781.js";
@@ -52,9 +52,9 @@
 					error: null,
 					nodes: [
 						import("/center_pin_g/app/pages/__layout.svelte-1a42f6a0.js"),
-						import("/center_pin_g/app/pages/player/Pager.svelte-9d794ae2.js")
+						import("/center_pin_g/app/pages/player/detail/Mates.svelte-cd9b77ab.js")
 					],
-					url: new URL("sveltekit://prerender/player/Pager"),
+					url: new URL("sveltekit://prerender/player/detail/Mates"),
 					params: {}
 				}
 			});
@@ -71,16 +71,10 @@
   <a href="/center_pin_g/tournament">大会</a> |
   <a href="/center_pin_g/player">プレイヤー</a></nav>
 
-<div style="text-align: right;"><button disabled class="svelte-ghmofs"><i class="fas fa-fast-backward"></i></button>
-     
-    <button disabled class="svelte-ghmofs"><i class="fas fa-step-backward"></i></button>
-
-  1 / 0
-   
-
-  <button class="svelte-ghmofs"><i class="fas fa-step-forward"></i></button>
-     
-    <button class="svelte-ghmofs"><i class="fas fa-fast-forward"></i></button></div>
+<table><thead><tr><th class="tal">チームメイト</th>
+    <th>参加大会数</th>
+    <th>戦績</th></tr></thead>
+  <tbody></tbody></table>
 
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
 
