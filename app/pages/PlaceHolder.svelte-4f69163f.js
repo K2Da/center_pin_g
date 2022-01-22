@@ -1,1 +1,0 @@
-import{S as r,i as l,s as o,e as c,c as h,a as d,d as a,J as u,f,I as s}from"../chunks/vendor-eda31402.js";function m(n){let e;return{c(){e=c("div"),this.h()},l(t){e=h(t,"DIV",{style:!0}),d(e).forEach(a),this.h()},h(){u(e,"height","4096px")},m(t,i){f(t,e,i)},p:s,i:s,o:s,d(t){t&&a(e)}}}class _ extends r{constructor(e){super();l(this,e,null,m,o,{})}}export{_ as default};

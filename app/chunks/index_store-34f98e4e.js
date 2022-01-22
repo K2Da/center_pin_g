@@ -1,1 +1,0 @@
-import{N as r,C as e}from"./vendor-eda31402.js";const i=200,n=e([]),f=e(!0),d=e(!1),u=e(!1),w=e(1),c=e(""),m=r([n,c],([s,t])=>s?t?s.filter(o=>[o.name,o.latest.team].filter(a=>a.toLowerCase().includes(t.toLowerCase())).length>0):s:[]);export{n as a,f as b,u as c,m as d,i as e,c as f,w as p,d as s};

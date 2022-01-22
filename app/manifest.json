@@ -1,10 +1,10 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-ae413b79.js",
+    "file": "start-d1cb6c6f.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
+      "_vendor-a3d98bb7.js",
       "_paths-28a87002.js"
     ],
     "dynamicImports": [
@@ -29,112 +29,120 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-1a42f6a0.js",
+    "file": "pages/__layout.svelte-f0f67a85.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
+      "_vendor-a3d98bb7.js",
+      "_global_store-d1b353cb.js",
       "_paths-28a87002.js"
     ]
   },
   ".svelte-kit/build/components/error.svelte": {
-    "file": "error.svelte-ff0e0a82.js",
+    "file": "error.svelte-e3f1d098.js",
     "src": ".svelte-kit/build/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js"
+      "_vendor-a3d98bb7.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-480eeaab.js",
+    "file": "pages/index.svelte-37742d5f.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js"
-    ]
-  },
-  "src/routes/PlaceHolder.svelte": {
-    "file": "pages/PlaceHolder.svelte-4f69163f.js",
-    "src": "src/routes/PlaceHolder.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-eda31402.js"
-    ]
-  },
-  "src/routes/tournament/index.svelte": {
-    "file": "pages/tournament/index.svelte-1d4019cc.js",
-    "src": "src/routes/tournament/index.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-eda31402.js",
+      "_vendor-a3d98bb7.js",
       "src/routes/Header.svelte",
-      "_paths-28a87002.js",
-      "_index_store-34f98e4e.js",
-      "src/routes/PlaceHolder.svelte"
+      "_global_store-d1b353cb.js"
     ]
   },
   "src/routes/Header.svelte": {
-    "file": "pages/Header.svelte-798ea8cc.js",
+    "file": "pages/Header.svelte-2ec8c653.js",
     "src": "src/routes/Header.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js"
+      "_vendor-a3d98bb7.js",
+      "_global_store-d1b353cb.js"
+    ]
+  },
+  "src/routes/PlaceHolder.svelte": {
+    "file": "pages/PlaceHolder.svelte-9df74bbd.js",
+    "src": "src/routes/PlaceHolder.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-a3d98bb7.js"
+    ]
+  },
+  "src/routes/tournament/index.svelte": {
+    "file": "pages/tournament/index.svelte-6d464eb0.js",
+    "src": "src/routes/tournament/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-a3d98bb7.js",
+      "src/routes/Header.svelte",
+      "src/routes/PlaceHolder.svelte",
+      "_paths-28a87002.js",
+      "_index_store-5aedcf31.js",
+      "_global_store-d1b353cb.js"
     ]
   },
   "src/routes/tournament/detail/index.svelte": {
-    "file": "pages/tournament/detail/index.svelte-ce525508.js",
+    "file": "pages/tournament/detail/index.svelte-05af917e.js",
     "src": "src/routes/tournament/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
+      "_vendor-a3d98bb7.js",
       "_paths-28a87002.js",
       "_util-f29b5fc7.js",
       "src/routes/Header.svelte",
-      "src/routes/PlaceHolder.svelte"
+      "src/routes/PlaceHolder.svelte",
+      "_global_store-d1b353cb.js"
     ]
   },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-ace112d2.js",
+    "file": "pages/player/index.svelte-39dd359e.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
-      "_index_store-34f98e4e.js",
+      "_vendor-a3d98bb7.js",
+      "_index_store-5aedcf31.js",
       "_paths-28a87002.js",
       "src/routes/player/Pager.svelte",
       "src/routes/Header.svelte",
-      "src/routes/PlaceHolder.svelte"
+      "src/routes/PlaceHolder.svelte",
+      "_global_store-d1b353cb.js"
     ]
   },
   "src/routes/player/Pager.svelte": {
-    "file": "pages/player/Pager.svelte-9d794ae2.js",
+    "file": "pages/player/Pager.svelte-e82896d7.js",
     "src": "src/routes/player/Pager.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
-      "_index_store-34f98e4e.js"
+      "_vendor-a3d98bb7.js",
+      "_index_store-5aedcf31.js"
     ],
     "css": [
       "assets/pages/player/Pager.svelte-31cb25c4.css"
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-600b1eeb.js",
+    "file": "pages/player/detail/index.svelte-688a1ab2.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
-      "_index_store-b5403d1f.js",
+      "_vendor-a3d98bb7.js",
+      "_index_store-dc25fb6c.js",
+      "_global_store-d1b353cb.js",
       "src/routes/Header.svelte",
       "src/routes/player/detail/Profile.svelte",
       "src/routes/player/detail/Teams.svelte",
@@ -150,80 +158,86 @@
     ]
   },
   "src/routes/player/detail/Profile.svelte": {
-    "file": "pages/player/detail/Profile.svelte-16127a2c.js",
+    "file": "pages/player/detail/Profile.svelte-dfba0699.js",
     "src": "src/routes/player/detail/Profile.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
-      "_index_store-b5403d1f.js"
+      "_vendor-a3d98bb7.js",
+      "_index_store-dc25fb6c.js"
     ]
   },
   "src/routes/player/detail/Teams.svelte": {
-    "file": "pages/player/detail/Teams.svelte-cbd797e4.js",
+    "file": "pages/player/detail/Teams.svelte-1a51b67b.js",
     "src": "src/routes/player/detail/Teams.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
-      "_index_store-b5403d1f.js"
+      "_vendor-a3d98bb7.js",
+      "_index_store-dc25fb6c.js"
     ]
   },
   "src/routes/player/detail/Tournaments.svelte": {
-    "file": "pages/player/detail/Tournaments.svelte-4110a646.js",
+    "file": "pages/player/detail/Tournaments.svelte-a7c88811.js",
     "src": "src/routes/player/detail/Tournaments.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
-      "_index_store-b5403d1f.js",
+      "_vendor-a3d98bb7.js",
+      "_index_store-dc25fb6c.js",
       "_paths-28a87002.js",
       "_util-f29b5fc7.js"
     ]
   },
   "src/routes/player/detail/Mates.svelte": {
-    "file": "pages/player/detail/Mates.svelte-9313a858.js",
+    "file": "pages/player/detail/Mates.svelte-bb7b6719.js",
     "src": "src/routes/player/detail/Mates.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
-      "_index_store-b5403d1f.js",
+      "_vendor-a3d98bb7.js",
+      "_index_store-dc25fb6c.js",
       "_paths-28a87002.js",
       "_util-f29b5fc7.js"
     ]
   },
   "src/routes/player/detail/Opponents.svelte": {
-    "file": "pages/player/detail/Opponents.svelte-97e6b639.js",
+    "file": "pages/player/detail/Opponents.svelte-c8aa7469.js",
     "src": "src/routes/player/detail/Opponents.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-eda31402.js",
-      "_index_store-b5403d1f.js",
+      "_vendor-a3d98bb7.js",
+      "_index_store-dc25fb6c.js",
       "_paths-28a87002.js",
       "_util-f29b5fc7.js"
     ]
   },
-  "_vendor-eda31402.js": {
-    "file": "chunks/vendor-eda31402.js"
+  "_vendor-a3d98bb7.js": {
+    "file": "chunks/vendor-a3d98bb7.js"
   },
   "_paths-28a87002.js": {
     "file": "chunks/paths-28a87002.js"
   },
-  "_index_store-34f98e4e.js": {
-    "file": "chunks/index_store-34f98e4e.js",
+  "_global_store-d1b353cb.js": {
+    "file": "chunks/global_store-d1b353cb.js",
     "imports": [
-      "_vendor-eda31402.js"
+      "_vendor-a3d98bb7.js"
+    ]
+  },
+  "_index_store-5aedcf31.js": {
+    "file": "chunks/index_store-5aedcf31.js",
+    "imports": [
+      "_vendor-a3d98bb7.js"
     ]
   },
   "_util-f29b5fc7.js": {
     "file": "chunks/util-f29b5fc7.js"
   },
-  "_index_store-b5403d1f.js": {
-    "file": "chunks/index_store-b5403d1f.js",
+  "_index_store-dc25fb6c.js": {
+    "file": "chunks/index_store-dc25fb6c.js",
     "imports": [
-      "_vendor-eda31402.js"
+      "_vendor-a3d98bb7.js"
     ]
   }
 }
