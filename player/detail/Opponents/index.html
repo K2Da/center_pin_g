@@ -11,10 +11,49 @@
 
 		<style>
 			table { table-layout: auto }
+
 			th { text-align: center }
 			td { text-align: center }
 			.tal { text-align: left }
 			.tar { text-align: right }
+			.nw { white-space: nowrap }
+			ul { padding: 0 }
+
+			h1 { border-bottom: var(--border) 3px solid }
+			h2 { border-bottom: var(--border) 2px solid }
+			h3 { border-bottom: var(--border) 2px solid }
+
+			tbody.double { border-top: var(--border) 1px solid; }
+			tbody.double tr:nth-child(4n+1) { background-color: var(--background) }
+			tbody.double tr:nth-child(4n+2) {
+				background-color: var(--background);
+				border-bottom: var(--border) 1px solid;
+			}
+			tbody.double tr:nth-child(4n+3) { background-color: transparent }
+			tbody.double tr:nth-child(4n+4) {
+				background-color: transparent;
+				border-bottom: var(--border) 1px solid;
+			}
+
+			tbody.triple { border-top: var(--border) 1px solid; }
+			tbody.triple tr:nth-child(6n+1) { background-color: var(--background) }
+			tbody.triple tr:nth-child(6n+2) { background-color: var(--background) }
+			tbody.triple tr:nth-child(6n+3) {
+				background-color: var(--background);
+				border-bottom: var(--border) 1px solid;
+			}
+			tbody.triple tr:nth-child(6n+4) { background-color: transparent }
+			tbody.triple tr:nth-child(6n+5) { background-color: transparent }
+			tbody.triple tr:nth-child(6n+6) {
+				background-color: transparent;
+				border-bottom: var(--border) 1px solid;
+			}
+
+			dl.one_line{ display: block }
+			dl.one_line dt { font-size: smaller; color: var(--text-muted); display: inline; margin: 0 6px 0 10px }
+			dl.one_line dd { color: var(--text-bright); display: inline; margin: 0 }
+
+			span.muted { font-size: smaller; color: var(--text-muted) }
 		</style>
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ"></script>
@@ -30,17 +69,19 @@
 		
 
 		<link rel="stylesheet" href="/center_pin_g/app/assets/start-61d1577b.css">
-		<link rel="modulepreload" href="/center_pin_g/app/start-d1cb6c6f.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-a3d98bb7.js">
+		<link rel="modulepreload" href="/center_pin_g/app/start-6613745b.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-f8dde2ec.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-f0f67a85.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/global_store-d1b353cb.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/player/detail/Opponents.svelte-c8aa7469.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-dc25fb6c.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-59ec51e5.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/global_store-13807a0e.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/player/detail/Opponents.svelte-5691798d.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-879c25f9.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/T-04ba0fac.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/PlayersLine-3495e4b1.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/util-f29b5fc7.js">
 
 		<script type="module">
-			import { start } from "/center_pin_g/app/start-d1cb6c6f.js";
+			import { start } from "/center_pin_g/app/start-6613745b.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/center_pin_g","assets":"/center_pin_g"},
@@ -52,8 +93,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/center_pin_g/app/pages/__layout.svelte-f0f67a85.js"),
-						import("/center_pin_g/app/pages/player/detail/Opponents.svelte-c8aa7469.js")
+						import("/center_pin_g/app/pages/__layout.svelte-59ec51e5.js"),
+						import("/center_pin_g/app/pages/player/detail/Opponents.svelte-5691798d.js")
 					],
 					url: new URL("sveltekit://prerender/player/detail/Opponents"),
 					params: {}
@@ -62,8 +103,10 @@
 		</script>
 	</head>
 
-	<body style="max-width: 4800px; padding: 0 10px 0 20px">
+	<body style="max-width: 4800px; padding: 0 10px 0 10px">
 		<div id="svelte">
+
+
 
 
 <h1>Center Pin(g)</h1>
@@ -72,8 +115,9 @@
   <a href="/center_pin_g/tournament">大会</a> |
   <a href="/center_pin_g/player">プレイヤー</a></nav>
 
-<table><thead><tr><th class="tal">対戦通算(計2戦以上)</th>
-    <th>戦績</th></tr></thead>
+<h4>試合の多いプレイヤー(2戦以上)</h4>
+<table><thead><tr><th class="nw" style="width: 7em"></th>
+    <th></th></tr></thead>
   <tbody></tbody></table>
 
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>

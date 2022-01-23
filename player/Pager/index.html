@@ -11,10 +11,49 @@
 
 		<style>
 			table { table-layout: auto }
+
 			th { text-align: center }
 			td { text-align: center }
 			.tal { text-align: left }
 			.tar { text-align: right }
+			.nw { white-space: nowrap }
+			ul { padding: 0 }
+
+			h1 { border-bottom: var(--border) 3px solid }
+			h2 { border-bottom: var(--border) 2px solid }
+			h3 { border-bottom: var(--border) 2px solid }
+
+			tbody.double { border-top: var(--border) 1px solid; }
+			tbody.double tr:nth-child(4n+1) { background-color: var(--background) }
+			tbody.double tr:nth-child(4n+2) {
+				background-color: var(--background);
+				border-bottom: var(--border) 1px solid;
+			}
+			tbody.double tr:nth-child(4n+3) { background-color: transparent }
+			tbody.double tr:nth-child(4n+4) {
+				background-color: transparent;
+				border-bottom: var(--border) 1px solid;
+			}
+
+			tbody.triple { border-top: var(--border) 1px solid; }
+			tbody.triple tr:nth-child(6n+1) { background-color: var(--background) }
+			tbody.triple tr:nth-child(6n+2) { background-color: var(--background) }
+			tbody.triple tr:nth-child(6n+3) {
+				background-color: var(--background);
+				border-bottom: var(--border) 1px solid;
+			}
+			tbody.triple tr:nth-child(6n+4) { background-color: transparent }
+			tbody.triple tr:nth-child(6n+5) { background-color: transparent }
+			tbody.triple tr:nth-child(6n+6) {
+				background-color: transparent;
+				border-bottom: var(--border) 1px solid;
+			}
+
+			dl.one_line{ display: block }
+			dl.one_line dt { font-size: smaller; color: var(--text-muted); display: inline; margin: 0 6px 0 10px }
+			dl.one_line dd { color: var(--text-bright); display: inline; margin: 0 }
+
+			span.muted { font-size: smaller; color: var(--text-muted) }
 		</style>
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ"></script>
@@ -30,17 +69,17 @@
 		
 
 		<link rel="stylesheet" href="/center_pin_g/app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/center_pin_g/app/assets/pages/player/Pager.svelte-31cb25c4.css">
-		<link rel="modulepreload" href="/center_pin_g/app/start-d1cb6c6f.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-a3d98bb7.js">
+		<link rel="stylesheet" href="/center_pin_g/app/assets/pages/player/Pager.svelte-33e45f73.css">
+		<link rel="modulepreload" href="/center_pin_g/app/start-6613745b.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-f8dde2ec.js">
 		<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-f0f67a85.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/global_store-d1b353cb.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/player/Pager.svelte-e82896d7.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-5aedcf31.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-59ec51e5.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/global_store-13807a0e.js">
+		<link rel="modulepreload" href="/center_pin_g/app/pages/player/Pager.svelte-1642547d.js">
+		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-630c0dfd.js">
 
 		<script type="module">
-			import { start } from "/center_pin_g/app/start-d1cb6c6f.js";
+			import { start } from "/center_pin_g/app/start-6613745b.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/center_pin_g","assets":"/center_pin_g"},
@@ -52,8 +91,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/center_pin_g/app/pages/__layout.svelte-f0f67a85.js"),
-						import("/center_pin_g/app/pages/player/Pager.svelte-e82896d7.js")
+						import("/center_pin_g/app/pages/__layout.svelte-59ec51e5.js"),
+						import("/center_pin_g/app/pages/player/Pager.svelte-1642547d.js")
 					],
 					url: new URL("sveltekit://prerender/player/Pager"),
 					params: {}
@@ -62,8 +101,10 @@
 		</script>
 	</head>
 
-	<body style="max-width: 4800px; padding: 0 10px 0 20px">
+	<body style="max-width: 4800px; padding: 0 10px 0 10px">
 		<div id="svelte">
+
+
 
 
 <h1>Center Pin(g)</h1>
@@ -72,16 +113,16 @@
   <a href="/center_pin_g/tournament">大会</a> |
   <a href="/center_pin_g/player">プレイヤー</a></nav>
 
-<div style="text-align: right;"><button disabled class="svelte-ghmofs"><i class="fas fa-fast-backward"></i></button>
+<div style="text-align: center;"><button disabled class="svelte-1ie98dx"><i class="fas fa-fast-backward"></i></button>
      
-    <button disabled class="svelte-ghmofs"><i class="fas fa-step-backward"></i></button>
+    <button disabled class="svelte-1ie98dx"><i class="fas fa-step-backward"></i></button>
 
   1 / 0
    
 
-  <button class="svelte-ghmofs"><i class="fas fa-step-forward"></i></button>
+  <button class="svelte-1ie98dx"><i class="fas fa-step-forward"></i></button>
      
-    <button class="svelte-ghmofs"><i class="fas fa-fast-forward"></i></button></div>
+    <button class="svelte-1ie98dx"><i class="fas fa-fast-forward"></i></button></div>
 
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
 
