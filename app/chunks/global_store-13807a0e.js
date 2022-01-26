@@ -1,1 +1,0 @@
-import{L as a,C as t}from"./vendor-f8dde2ec.js";const o=t(""),s=t(0),i=a(s,e=>e<=1280);function g(e){gtag("set","page_path",window.location.pathname),gtag("set","page_title",e),gtag("event","page_view")}export{o as c,g,i as s,s as w};

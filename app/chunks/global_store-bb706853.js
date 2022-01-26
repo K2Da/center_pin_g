@@ -1,0 +1,1 @@
+import{L as e,C as a}from"./vendor-183b23ac.js";const o=a(""),s=a(0),i=e(s,t=>t<=1280);function g(t){gtag("set","page_path",window.location.pathname),gtag("set","page_title",t),gtag("event","page_view")}export{o as c,g,i as s,s as w};

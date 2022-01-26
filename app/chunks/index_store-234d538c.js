@@ -1,0 +1,1 @@
+import{C as o}from"./vendor-183b23ac.js";const t=o(""),r=o(null);function n(s){for(const e of s.matches)e.wl=e.opponent_team_key===e.loser_key,e.score_text=e.wl?`${e.winner_score} - ${e.loser_score}`:`${e.loser_score} - ${e.winner_score}`;r.set(s)}export{r as a,t as p,n as s};
