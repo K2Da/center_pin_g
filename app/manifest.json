@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-5d78cb09.js",
+    "file": "start-1ac63bc2.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -96,20 +96,20 @@
     ]
   },
   "src/routes/tournament/detail/index.svelte": {
-    "file": "pages/tournament/detail/index.svelte-22601189.js",
+    "file": "pages/tournament/detail/index.svelte-963b4c12.js",
     "src": "src/routes/tournament/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-183b23ac.js",
+      "_PlayersLine-63009225.js",
+      "_paths-28a87002.js",
       "_global_store-bb706853.js",
       "_Date-c4b5d8a5.js",
       "src/routes/Header.svelte",
       "src/routes/PlaceHolder.svelte",
       "_T-f1f1b14a.js",
-      "_PlayersLine-a592b65f.js",
-      "_TournamentResult-5f3cc637.js",
-      "_paths-28a87002.js"
+      "_TournamentResult-5f3cc637.js"
     ]
   },
   "src/routes/player/index.svelte": {
@@ -142,7 +142,7 @@
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-7e8fa76a.js",
+    "file": "pages/player/detail/index.svelte-ad1cbabd.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -161,7 +161,7 @@
       "_T-f1f1b14a.js",
       "_Date-c4b5d8a5.js",
       "_TournamentResult-5f3cc637.js",
-      "_PlayersLine-a592b65f.js",
+      "_PlayersLine-63009225.js",
       "_paths-28a87002.js"
     ],
     "css": [
@@ -169,7 +169,7 @@
     ]
   },
   "src/routes/player/detail/Profile.svelte": {
-    "file": "pages/player/detail/Profile.svelte-ad049ff6.js",
+    "file": "pages/player/detail/Profile.svelte-4fb0307c.js",
     "src": "src/routes/player/detail/Profile.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -193,7 +193,7 @@
     ]
   },
   "src/routes/player/detail/Tournaments.svelte": {
-    "file": "pages/player/detail/Tournaments.svelte-d85f5b37.js",
+    "file": "pages/player/detail/Tournaments.svelte-fdaa5eda.js",
     "src": "src/routes/player/detail/Tournaments.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -204,12 +204,12 @@
       "_T-f1f1b14a.js",
       "_TournamentResult-5f3cc637.js",
       "_Date-c4b5d8a5.js",
-      "_PlayersLine-a592b65f.js",
+      "_PlayersLine-63009225.js",
       "_paths-28a87002.js"
     ]
   },
   "src/routes/player/detail/Matches.svelte": {
-    "file": "pages/player/detail/Matches.svelte-b5c8c462.js",
+    "file": "pages/player/detail/Matches.svelte-a02718fc.js",
     "src": "src/routes/player/detail/Matches.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -217,7 +217,7 @@
       "_vendor-183b23ac.js",
       "_index_store-234d538c.js",
       "_global_store-bb706853.js",
-      "_PlayersLine-a592b65f.js",
+      "_PlayersLine-63009225.js",
       "_TournamentResult-5f3cc637.js",
       "_T-f1f1b14a.js",
       "_Date-c4b5d8a5.js",
@@ -225,20 +225,20 @@
     ]
   },
   "src/routes/player/detail/Mates.svelte": {
-    "file": "pages/player/detail/Mates.svelte-c519a90c.js",
+    "file": "pages/player/detail/Mates.svelte-cc662ba2.js",
     "src": "src/routes/player/detail/Mates.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-183b23ac.js",
       "_index_store-234d538c.js",
-      "_PlayersLine-a592b65f.js",
+      "_PlayersLine-63009225.js",
       "_T-f1f1b14a.js",
       "_paths-28a87002.js"
     ]
   },
   "src/routes/player/detail/Opponents.svelte": {
-    "file": "pages/player/detail/Opponents.svelte-8b1c586b.js",
+    "file": "pages/player/detail/Opponents.svelte-8c3073a4.js",
     "src": "src/routes/player/detail/Opponents.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -246,7 +246,7 @@
       "_vendor-183b23ac.js",
       "_index_store-234d538c.js",
       "_T-f1f1b14a.js",
-      "_PlayersLine-a592b65f.js",
+      "_PlayersLine-63009225.js",
       "_paths-28a87002.js"
     ]
   },
@@ -281,8 +281,8 @@
       "_T-f1f1b14a.js"
     ]
   },
-  "_PlayersLine-a592b65f.js": {
-    "file": "chunks/PlayersLine-a592b65f.js",
+  "_PlayersLine-63009225.js": {
+    "file": "chunks/PlayersLine-63009225.js",
     "imports": [
       "_vendor-183b23ac.js",
       "_paths-28a87002.js"
