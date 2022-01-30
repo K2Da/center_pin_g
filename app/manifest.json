@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-910abbde.js",
+    "file": "start-15f62b98.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -23,7 +23,7 @@
       "src/routes/player/detail/Profile.svelte",
       "src/routes/player/detail/Mates.svelte",
       "src/routes/player/detail/Teams.svelte",
-      "src/routes/player/Pager.svelte"
+      "_Pager-e31ba87b.js"
     ],
     "css": [
       "assets/start-61d1577b.css"
@@ -80,7 +80,7 @@
     ]
   },
   "src/routes/tournament/index.svelte": {
-    "file": "pages/tournament/index.svelte-793ef724.js",
+    "file": "pages/tournament/index.svelte-626471b9.js",
     "src": "src/routes/tournament/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -88,7 +88,6 @@
       "_vendor-183b23ac.js",
       "_global_store-bb706853.js",
       "_paths-28a87002.js",
-      "_index_store-5b91dad2.js",
       "src/routes/Header.svelte",
       "src/routes/PlaceHolder.svelte",
       "_T-f1f1b14a.js",
@@ -113,32 +112,17 @@
     ]
   },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-b7e961fc.js",
+    "file": "pages/player/index.svelte-7e7ccca7.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-183b23ac.js",
-      "_index_store-5b91dad2.js",
+      "_Pager-e31ba87b.js",
       "_global_store-bb706853.js",
       "_paths-28a87002.js",
-      "src/routes/player/Pager.svelte",
       "src/routes/Header.svelte",
       "src/routes/PlaceHolder.svelte"
-    ]
-  },
-  "src/routes/player/Pager.svelte": {
-    "file": "pages/player/Pager.svelte-86fb5df8.js",
-    "src": "src/routes/player/Pager.svelte",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_vendor-183b23ac.js",
-      "_index_store-5b91dad2.js",
-      "_global_store-bb706853.js"
-    ],
-    "css": [
-      "assets/pages/player/Pager.svelte-33e45f73.css"
     ]
   },
   "src/routes/player/detail/index.svelte": {
@@ -255,6 +239,16 @@
       "_util-f29b5fc7.js"
     ]
   },
+  "src/routes/player/Pager.svelte": {
+    "file": "pages/player/Pager.svelte-a52cff4a.js",
+    "src": "src/routes/player/Pager.svelte",
+    "isEntry": true,
+    "imports": [
+      "_vendor-183b23ac.js",
+      "_Pager-e31ba87b.js",
+      "_global_store-bb706853.js"
+    ]
+  },
   "_vendor-183b23ac.js": {
     "file": "chunks/vendor-183b23ac.js"
   },
@@ -263,12 +257,6 @@
   },
   "_global_store-bb706853.js": {
     "file": "chunks/global_store-bb706853.js",
-    "imports": [
-      "_vendor-183b23ac.js"
-    ]
-  },
-  "_index_store-5b91dad2.js": {
-    "file": "chunks/index_store-5b91dad2.js",
     "imports": [
       "_vendor-183b23ac.js"
     ]
@@ -293,6 +281,17 @@
     "file": "chunks/TournamentResult-5f3cc637.js",
     "imports": [
       "_vendor-183b23ac.js"
+    ]
+  },
+  "_Pager-e31ba87b.js": {
+    "file": "chunks/Pager-e31ba87b.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-183b23ac.js",
+      "_global_store-bb706853.js"
+    ],
+    "css": [
+      "assets/Pager-2f53176e.css"
     ]
   },
   "_index_store-234d538c.js": {
