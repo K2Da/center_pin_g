@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-15f62b98.js",
+    "file": "start-191313aa.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -126,7 +126,7 @@
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-770daa4f.js",
+    "file": "pages/player/detail/index.svelte-7e1764c1.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -226,7 +226,7 @@
     ]
   },
   "src/routes/player/detail/Opponents.svelte": {
-    "file": "pages/player/detail/Opponents.svelte-bbe20b01.js",
+    "file": "pages/player/detail/Opponents.svelte-2733dec3.js",
     "src": "src/routes/player/detail/Opponents.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
