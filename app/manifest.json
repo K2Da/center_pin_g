@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-1befe3a1.js",
+    "file": "start-fa251a9b.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -26,6 +26,7 @@
       "_Pager-e31ba87b.js",
       "src/routes/team/index.svelte",
       "src/routes/team/detail/index.svelte",
+      "src/routes/team/detail/SimilarTeam.svelte",
       "src/routes/team/detail/Tournaments.svelte",
       "src/routes/team/detail/Members.svelte",
       "_Pager-8349956b.js"
@@ -55,7 +56,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-cb56bc8c.js",
+    "file": "pages/index.svelte-a0afdd22.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -100,12 +101,13 @@
     ]
   },
   "src/routes/tournament/detail/index.svelte": {
-    "file": "pages/tournament/detail/index.svelte-6dd6cd78.js",
+    "file": "pages/tournament/detail/index.svelte-3e9dc6e7.js",
     "src": "src/routes/tournament/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-183b23ac.js",
+      "_TeamName-ac843192.js",
       "_util-f29b5fc7.js",
       "_paths-28a87002.js",
       "_global_store-bb706853.js",
@@ -131,7 +133,7 @@
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-7e1764c1.js",
+    "file": "pages/player/detail/index.svelte-49d6192a.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -149,10 +151,11 @@
       "src/routes/PlaceHolder.svelte",
       "_T-f1f1b14a.js",
       "_Date-c4b5d8a5.js",
-      "_TournamentResult-5f3cc637.js",
-      "_PlayersLine-a41c5c62.js",
+      "_TeamName-ac843192.js",
       "_paths-28a87002.js",
-      "_util-f29b5fc7.js"
+      "_util-f29b5fc7.js",
+      "_TournamentResult-5f3cc637.js",
+      "_PlayersLine-a41c5c62.js"
     ],
     "css": [
       "assets/pages/player/detail/index.svelte-84229364.css"
@@ -171,7 +174,7 @@
     ]
   },
   "src/routes/player/detail/Teams.svelte": {
-    "file": "pages/player/detail/Teams.svelte-4c8ea342.js",
+    "file": "pages/player/detail/Teams.svelte-15936d03.js",
     "src": "src/routes/player/detail/Teams.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -179,7 +182,10 @@
       "_vendor-183b23ac.js",
       "_index_store-234d538c.js",
       "_Date-c4b5d8a5.js",
-      "_T-f1f1b14a.js"
+      "_T-f1f1b14a.js",
+      "_TeamName-ac843192.js",
+      "_paths-28a87002.js",
+      "_util-f29b5fc7.js"
     ]
   },
   "src/routes/player/detail/Tournaments.svelte": {
@@ -245,7 +251,7 @@
     ]
   },
   "src/routes/team/index.svelte": {
-    "file": "pages/team/index.svelte-edebf776.js",
+    "file": "pages/team/index.svelte-91f908de.js",
     "src": "src/routes/team/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -255,58 +261,78 @@
       "_global_store-bb706853.js",
       "src/routes/Header.svelte",
       "_PlayersLine-a41c5c62.js",
-      "_paths-28a87002.js",
-      "_util-f29b5fc7.js",
+      "_TeamName-ac843192.js",
       "src/routes/PlaceHolder.svelte",
-      "_T-f1f1b14a.js"
+      "_T-f1f1b14a.js",
+      "_paths-28a87002.js",
+      "_util-f29b5fc7.js"
     ]
   },
   "src/routes/team/detail/index.svelte": {
-    "file": "pages/team/detail/index.svelte-6e5813b4.js",
+    "file": "pages/team/detail/index.svelte-cf767071.js",
     "src": "src/routes/team/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-183b23ac.js",
-      "_TournamentName-236fa97f.js",
+      "_index_store-bc6b09eb.js",
       "_global_store-bb706853.js",
       "_T-f1f1b14a.js",
       "src/routes/Header.svelte",
       "src/routes/PlaceHolder.svelte",
       "src/routes/team/detail/Tournaments.svelte",
       "src/routes/team/detail/Members.svelte",
-      "_paths-28a87002.js",
+      "src/routes/team/detail/SimilarTeam.svelte",
       "_TournamentResult-5f3cc637.js",
       "_Date-c4b5d8a5.js",
       "_PlayersLine-a41c5c62.js",
-      "_util-f29b5fc7.js"
+      "_paths-28a87002.js",
+      "_util-f29b5fc7.js",
+      "_TournamentName-01e83cb8.js",
+      "_TeamName-ac843192.js"
     ]
   },
   "src/routes/team/detail/Tournaments.svelte": {
-    "file": "pages/team/detail/Tournaments.svelte-a0d32ee0.js",
+    "file": "pages/team/detail/Tournaments.svelte-da13bf80.js",
     "src": "src/routes/team/detail/Tournaments.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-183b23ac.js",
-      "_TournamentName-236fa97f.js",
+      "_index_store-bc6b09eb.js",
       "_global_store-bb706853.js",
       "_T-f1f1b14a.js",
       "_TournamentResult-5f3cc637.js",
       "_Date-c4b5d8a5.js",
       "_PlayersLine-a41c5c62.js",
+      "_TournamentName-01e83cb8.js",
       "_paths-28a87002.js",
       "_util-f29b5fc7.js"
     ]
   },
   "src/routes/team/detail/Members.svelte": {
-    "file": "pages/team/detail/Members.svelte-76c09d89.js",
+    "file": "pages/team/detail/Members.svelte-879b365c.js",
     "src": "src/routes/team/detail/Members.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-183b23ac.js",
-      "_TournamentName-236fa97f.js",
+      "_index_store-bc6b09eb.js",
+      "_paths-28a87002.js",
+      "_util-f29b5fc7.js",
+      "_TournamentName-01e83cb8.js"
+    ]
+  },
+  "src/routes/team/detail/SimilarTeam.svelte": {
+    "file": "pages/team/detail/SimilarTeam.svelte-342bed10.js",
+    "src": "src/routes/team/detail/SimilarTeam.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-183b23ac.js",
+      "_index_store-bc6b09eb.js",
+      "_PlayersLine-a41c5c62.js",
+      "_TeamName-ac843192.js",
       "_paths-28a87002.js",
       "_util-f29b5fc7.js"
     ]
@@ -356,6 +382,14 @@
       "_T-f1f1b14a.js"
     ]
   },
+  "_TeamName-ac843192.js": {
+    "file": "chunks/TeamName-ac843192.js",
+    "imports": [
+      "_vendor-183b23ac.js",
+      "_paths-28a87002.js",
+      "_util-f29b5fc7.js"
+    ]
+  },
   "_util-f29b5fc7.js": {
     "file": "chunks/util-f29b5fc7.js"
   },
@@ -401,8 +435,14 @@
       "assets/Pager-2f53176e.css"
     ]
   },
-  "_TournamentName-236fa97f.js": {
-    "file": "chunks/TournamentName-236fa97f.js",
+  "_index_store-bc6b09eb.js": {
+    "file": "chunks/index_store-bc6b09eb.js",
+    "imports": [
+      "_vendor-183b23ac.js"
+    ]
+  },
+  "_TournamentName-01e83cb8.js": {
+    "file": "chunks/TournamentName-01e83cb8.js",
     "imports": [
       "_vendor-183b23ac.js",
       "_paths-28a87002.js"
