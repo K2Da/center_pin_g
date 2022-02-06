@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-fadcb2c2.js",
+    "file": "start-3e8cf57a.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -120,7 +120,7 @@
     ]
   },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-ef9d78e0.js",
+    "file": "pages/player/index.svelte-10be4935.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -130,7 +130,9 @@
       "_paths-28a87002.js",
       "src/routes/Header.svelte",
       "src/routes/PlaceHolder.svelte",
-      "_global_store-bb706853.js"
+      "_TeamName-ac843192.js",
+      "_global_store-bb706853.js",
+      "_util-f29b5fc7.js"
     ]
   },
   "src/routes/player/detail/index.svelte": {
@@ -271,7 +273,7 @@
     ]
   },
   "src/routes/team/detail/index.svelte": {
-    "file": "pages/team/detail/index.svelte-119374e4.js",
+    "file": "pages/team/detail/index.svelte-1d8ace2e.js",
     "src": "src/routes/team/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -295,7 +297,7 @@
     ]
   },
   "src/routes/team/detail/Tournaments.svelte": {
-    "file": "pages/team/detail/Tournaments.svelte-1628e8c0.js",
+    "file": "pages/team/detail/Tournaments.svelte-4bc985c7.js",
     "src": "src/routes/team/detail/Tournaments.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -313,7 +315,7 @@
     ]
   },
   "src/routes/team/detail/Members.svelte": {
-    "file": "pages/team/detail/Members.svelte-6e7c6949.js",
+    "file": "pages/team/detail/Members.svelte-b8113957.js",
     "src": "src/routes/team/detail/Members.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -322,7 +324,8 @@
       "_index_store-bc6b09eb.js",
       "_paths-28a87002.js",
       "_util-f29b5fc7.js",
-      "_TournamentName-2fd546dc.js"
+      "_TournamentName-2fd546dc.js",
+      "_TeamName-ac843192.js"
     ]
   },
   "src/routes/team/detail/SimilarTeam.svelte": {
