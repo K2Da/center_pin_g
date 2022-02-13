@@ -49,6 +49,23 @@
 				border-bottom: var(--border) 1px solid;
 			}
 
+			tbody.quad { border-top: var(--border) 1px solid; }
+			tbody.quad tr:nth-child(8n+1) { background-color: var(--background) }
+			tbody.quad tr:nth-child(8n+2) { background-color: var(--background) }
+			tbody.quad tr:nth-child(8n+3) { background-color: var(--background) }
+			tbody.quad tr:nth-child(8n+4) {
+				background-color: var(--background);
+				border-bottom: var(--border) 1px solid;
+			}
+			tbody.quad tr:nth-child(8n+5) { background-color: transparent }
+			tbody.quad tr:nth-child(8n+6) { background-color: transparent }
+			tbody.quad tr:nth-child(8n+7) { background-color: transparent }
+			tbody.quad tr:nth-child(8n+8) {
+				background-color: transparent;
+				border-bottom: var(--border) 1px solid;
+			}
+
+
 			dl.one_line{ display: block }
 			dl.one_line dt { font-size: smaller; color: var(--text-muted); display: inline; margin: 0 6px 0 10px }
 			dl.one_line dd { color: var(--text-bright); display: inline; margin: 0 }
@@ -66,44 +83,19 @@
 			gtag('config', 'G-KQ7HCNR2RZ');
 		</script>
 
-		
-
-		
-
-		<link rel="stylesheet" href="/center_pin_g/app/assets/start-61d1577b.css">
-		<link rel="modulepreload" href="/center_pin_g/app/start-6b6d3e3c.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-183b23ac.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-c923e93e.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/global_store-bb706853.js">
-		<link rel="modulepreload" href="/center_pin_g/app/pages/player/detail/Teams.svelte-08900a4d.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-234d538c.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/Date-c4b5d8a5.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/T-f1f1b14a.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/TeamName-53501aae.js">
-		<link rel="modulepreload" href="/center_pin_g/app/chunks/util-f29b5fc7.js">
-
-		<script type="module">
-			import { start } from "/center_pin_g/app/start-6b6d3e3c.js";
-			start({
-				target: document.querySelector("#svelte"),
-				paths: {"base":"/center_pin_g","assets":"/center_pin_g"},
-				session: {},
-				route: true,
-				spa: false,
-				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("/center_pin_g/app/pages/__layout.svelte-c923e93e.js"),
-						import("/center_pin_g/app/pages/player/detail/Teams.svelte-08900a4d.js")
-					],
-					url: new URL("sveltekit://prerender/player/detail/Teams"),
-					params: {}
-				}
-			});
-		</script>
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="modulepreload" href="/center_pin_g/app/start-0012f433.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-96e95496.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-4b3c6e7e.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/singletons-a6a7384f.js">
+	<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-274ca761.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/global_store-941ba4d2.js">
+	<link rel="modulepreload" href="/center_pin_g/app/pages/player/detail/Teams.svelte-4a852cf8.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/index_store-6581fd16.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/Date-9d434d83.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/T-afcbe7b3.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/TeamName-33c9c422.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/util-4543d778.js">
 	</head>
 
 	<body style="max-width: 4800px; padding: 0 10px 0 10px">
@@ -127,6 +119,27 @@
 
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
 
-</div>
+
+		<script type="module" data-hydrate="c2cwtr">
+		import { start } from "/center_pin_g/app/start-0012f433.js";
+		start({
+			target: document.querySelector('[data-hydrate="c2cwtr"]').parentNode,
+			paths: {"base":"/center_pin_g","assets":"/center_pin_g"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/center_pin_g/app/pages/__layout.svelte-274ca761.js"),
+						import("/center_pin_g/app/pages/player/detail/Teams.svelte-4a852cf8.js")
+				],
+				url: new URL("http://sveltekit-prerender/center_pin_g/player/detail/Teams"),
+				params: {}
+			}
+		});
+	</script></div>
 	</body>
 </html>
