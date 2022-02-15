@@ -1,1 +1,0 @@
-import{N as a,D as e}from"./vendor-96e95496.js";const i=e(0),o=a(i,t=>t<=1280);function s(t){gtag("set","page_path",window.location.pathname),gtag("set","page_title",t),gtag("event","page_view")}export{s as g,o as s,i as w};
