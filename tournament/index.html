@@ -65,7 +65,6 @@
 				border-bottom: var(--border) 1px solid;
 			}
 
-
 			dl.one_line{ display: block }
 			dl.one_line dt { font-size: smaller; color: var(--text-muted); display: inline; margin: 0 6px 0 10px }
 			dl.one_line dd { color: var(--text-bright); display: inline; margin: 0 }
@@ -73,6 +72,32 @@
 			span.muted { font-size: smaller; color: var(--text-muted) }
 
 			.m { font-family:monospace, serif }
+
+			div.popup {
+				position: absolute;
+				margin: 0 0 0 0;
+				padding: 0 3px 5px 3px;
+
+				border: var(--border) solid 2px;
+				border-radius: 5px;
+				overflow-wrap: normal;
+
+				background-color: var(--background);
+				z-index: 256;
+			}
+			div.popup h3 {
+				margin: 0 0 4px 0;
+				padding: 10px 2px 6px 8px;
+			}
+			div.popup h4 {
+				margin: 0;
+				padding: 10px 2px 6px 10px;
+			}
+			div.popup p {
+				margin: 0;
+				padding: 2px 14px;
+				white-space: normal;
+			}
 		</style>
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ"></script>
@@ -84,19 +109,17 @@
 		</script>
 
 		<meta http-equiv="content-security-policy" content=""><title>Center Pin(g): 大会一覧</title><meta property="og:type" content="article" data-svelte="svelte-1uln2mm"><meta property="og:url" content="https://k2da.github.io/center_pin_g/tournament" data-svelte="svelte-1uln2mm"><meta property="og:site_name" content="Center Pin(g)" data-svelte="svelte-1uln2mm"><meta property="og:description" content="ポケモンユナイトの大会の一覧" data-svelte="svelte-1uln2mm"><meta name="twitter:card" content="summary" data-svelte="svelte-1uln2mm">
-	<link rel="modulepreload" href="/center_pin_g/app/start-ce420b4f.js">
-	<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-489defcd.js">
+	<link rel="modulepreload" href="/center_pin_g/app/start-25e5540c.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/vendor-96e95496.js">
 	<link rel="modulepreload" href="/center_pin_g/app/chunks/paths-4b3c6e7e.js">
 	<link rel="modulepreload" href="/center_pin_g/app/chunks/singletons-a6a7384f.js">
-	<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-a9dac0d7.js">
-	<link rel="modulepreload" href="/center_pin_g/app/chunks/global_store-f8ea0849.js">
-	<link rel="modulepreload" href="/center_pin_g/app/pages/tournament/index.svelte-2b44a124.js">
-	<link rel="modulepreload" href="/center_pin_g/app/chunks/Header-1a298f76.js">
+	<link rel="modulepreload" href="/center_pin_g/app/pages/__layout.svelte-016bdb71.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/global-b41d7bad.js">
+	<link rel="modulepreload" href="/center_pin_g/app/pages/tournament/index.svelte-e840e75e.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/Header-3ccdea0f.js">
 	<link rel="modulepreload" href="/center_pin_g/app/chunks/navigation-c0b2019f.js">
-	<link rel="modulepreload" href="/center_pin_g/app/chunks/PlaceHolder-ba5e3c5b.js">
-	<link rel="modulepreload" href="/center_pin_g/app/chunks/T-19a2dd45.js">
-	<link rel="modulepreload" href="/center_pin_g/app/chunks/Date-b46482bf.js">
-	<link rel="modulepreload" href="/center_pin_g/app/chunks/TournamentName-be2f99c9.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/Date-169c2039.js">
+	<link rel="modulepreload" href="/center_pin_g/app/chunks/TournamentName-d9d098a2.js">
 	</head>
 
 	<body style="max-width: 4800px; padding: 0 10px 0 10px">
@@ -117,15 +140,15 @@
 <h2>大会</h2>
 
 <table style="table-layout: auto"><thead></thead>
-  <tbody class="double"></tbody></table>
+  <tbody class="double"><div style="height: 4096px"></div></tbody></table>
 
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
 
 
-		<script type="module" data-hydrate="1ilza1b">
-		import { start } from "/center_pin_g/app/start-ce420b4f.js";
+		<script type="module" data-hydrate="djg1rg">
+		import { start } from "/center_pin_g/app/start-25e5540c.js";
 		start({
-			target: document.querySelector('[data-hydrate="1ilza1b"]').parentNode,
+			target: document.querySelector('[data-hydrate="djg1rg"]').parentNode,
 			paths: {"base":"/center_pin_g","assets":"/center_pin_g"},
 			session: {},
 			route: true,
@@ -135,8 +158,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/center_pin_g/app/pages/__layout.svelte-a9dac0d7.js"),
-						import("/center_pin_g/app/pages/tournament/index.svelte-2b44a124.js")
+					import("/center_pin_g/app/pages/__layout.svelte-016bdb71.js"),
+						import("/center_pin_g/app/pages/tournament/index.svelte-e840e75e.js")
 				],
 				url: new URL("http://sveltekit-prerender/center_pin_g/tournament"),
 				params: {}
