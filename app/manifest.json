@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-8af4b09f.js",
+    "file": "start-98c61189.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -42,27 +42,27 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-0ba5fbbb.js",
+    "file": "pages/index.svelte-6546eca3.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5fd0e214.js",
-      "_Header-280fe4a6.js",
+      "_Header-507f5c28.js",
       "_navigation-c0b2019f.js",
       "_singletons-a6a7384f.js",
       "_global-c7a9f53a.js"
     ]
   },
   "src/routes/tournament/index.svelte": {
-    "file": "pages/tournament/index.svelte-719f7b8b.js",
+    "file": "pages/tournament/index.svelte-c336103e.js",
     "src": "src/routes/tournament/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5fd0e214.js",
       "_global-c7a9f53a.js",
-      "_Header-280fe4a6.js",
+      "_Header-507f5c28.js",
       "_PopUpA-144fc6c5.js",
       "_TournamentName-b830e3c8.js",
       "_navigation-c0b2019f.js",
@@ -71,7 +71,7 @@
     ]
   },
   "src/routes/tournament/detail/index.svelte": {
-    "file": "pages/tournament/detail/index.svelte-f73858cb.js",
+    "file": "pages/tournament/detail/index.svelte-cdfa5feb.js",
     "src": "src/routes/tournament/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -81,14 +81,14 @@
       "_TeamName-bb10881f.js",
       "_global-c7a9f53a.js",
       "_PopUpA-144fc6c5.js",
-      "_Header-280fe4a6.js",
+      "_Header-507f5c28.js",
       "_PlayersLine-a0988390.js",
       "_singletons-a6a7384f.js",
       "_paths-4b3c6e7e.js"
     ]
   },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-bbbeb53e.js",
+    "file": "pages/player/index.svelte-ce77dd95.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -96,7 +96,7 @@
       "_vendor-5fd0e214.js",
       "_global-c7a9f53a.js",
       "_paths-4b3c6e7e.js",
-      "_Header-280fe4a6.js",
+      "_Header-507f5c28.js",
       "_PopUpA-144fc6c5.js",
       "_TeamName-bb10881f.js",
       "_navigation-c0b2019f.js",
@@ -107,7 +107,7 @@
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-c21ad0e9.js",
+    "file": "pages/player/detail/index.svelte-3bff40b6.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -116,7 +116,7 @@
       "_navigation-c0b2019f.js",
       "_TeamName-bb10881f.js",
       "_global-c7a9f53a.js",
-      "_Header-280fe4a6.js",
+      "_Header-507f5c28.js",
       "_PopUpA-144fc6c5.js",
       "_PlayersLine-a0988390.js",
       "_MatchResult-012f8a3d.js",
@@ -128,14 +128,14 @@
     ]
   },
   "src/routes/team/index.svelte": {
-    "file": "pages/team/index.svelte-54f571e0.js",
+    "file": "pages/team/index.svelte-f3feb444.js",
     "src": "src/routes/team/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5fd0e214.js",
       "_global-c7a9f53a.js",
-      "_Header-280fe4a6.js",
+      "_Header-507f5c28.js",
       "_PlayersLine-a0988390.js",
       "_TeamName-bb10881f.js",
       "_PopUpA-144fc6c5.js",
@@ -148,7 +148,7 @@
     ]
   },
   "src/routes/team/detail/index.svelte": {
-    "file": "pages/team/detail/index.svelte-7a6831d3.js",
+    "file": "pages/team/detail/index.svelte-80eb9d0b.js",
     "src": "src/routes/team/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -158,7 +158,7 @@
       "_navigation-c0b2019f.js",
       "_global-c7a9f53a.js",
       "_PopUpA-144fc6c5.js",
-      "_Header-280fe4a6.js",
+      "_Header-507f5c28.js",
       "_PlayersLine-a0988390.js",
       "_TournamentName-b830e3c8.js",
       "_PlayerName-6257b0d7.js",
@@ -203,8 +203,8 @@
       "_vendor-5fd0e214.js"
     ]
   },
-  "_Header-280fe4a6.js": {
-    "file": "chunks/Header-280fe4a6.js",
+  "_Header-507f5c28.js": {
+    "file": "chunks/Header-507f5c28.js",
     "imports": [
       "_vendor-5fd0e214.js",
       "_navigation-c0b2019f.js",
