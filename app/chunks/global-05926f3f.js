@@ -1,0 +1,1 @@
+import{O as e,D as t}from"./vendor-5787ed64.js";const s=t(0),n=t(0),o=e(s,a=>a<=1280),r=t({players:[],dic:{}}),g=t({list:[],dic:{}}),c=t({list:[],dic:{}});function d(a){gtag("set","page_path",window.location.pathname),gtag("set","page_title",a),gtag("event","page_view")}export{n as a,c as b,d as g,r as p,o as s,g as t,s as w};

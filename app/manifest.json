@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-25e5540c.js",
+    "file": "start-c7abfac3.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
+      "_vendor-5787ed64.js",
       "_paths-4b3c6e7e.js",
       "_singletons-a6a7384f.js"
     ],
@@ -22,83 +22,83 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-016bdb71.js",
+    "file": "pages/__layout.svelte-c1b989d6.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
-      "_global-b41d7bad.js",
+      "_vendor-5787ed64.js",
+      "_global-05926f3f.js",
       "_paths-4b3c6e7e.js"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-d5a2c49c.js",
+    "file": "error.svelte-7907cfc6.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js"
+      "_vendor-5787ed64.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-018cf65c.js",
+    "file": "pages/index.svelte-86d966af.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
-      "_Header-3ccdea0f.js",
+      "_vendor-5787ed64.js",
+      "_Header-e9e8528e.js",
       "_navigation-c0b2019f.js",
       "_singletons-a6a7384f.js",
-      "_global-b41d7bad.js"
+      "_global-05926f3f.js"
     ]
   },
   "src/routes/tournament/index.svelte": {
-    "file": "pages/tournament/index.svelte-e840e75e.js",
+    "file": "pages/tournament/index.svelte-32764000.js",
     "src": "src/routes/tournament/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
-      "_global-b41d7bad.js",
-      "_Header-3ccdea0f.js",
-      "_Date-169c2039.js",
-      "_TournamentName-d9d098a2.js",
+      "_vendor-5787ed64.js",
+      "_global-05926f3f.js",
+      "_Header-e9e8528e.js",
+      "_PopUpA-46557c1c.js",
+      "_TournamentName-ed59447c.js",
       "_navigation-c0b2019f.js",
       "_singletons-a6a7384f.js",
       "_paths-4b3c6e7e.js"
     ]
   },
   "src/routes/tournament/detail/index.svelte": {
-    "file": "pages/tournament/detail/index.svelte-a06277a3.js",
+    "file": "pages/tournament/detail/index.svelte-3665526c.js",
     "src": "src/routes/tournament/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
+      "_vendor-5787ed64.js",
       "_navigation-c0b2019f.js",
-      "_TeamName-59f9ad9d.js",
-      "_global-b41d7bad.js",
-      "_Date-169c2039.js",
-      "_Header-3ccdea0f.js",
-      "_PlayersLine-4f96f819.js",
+      "_TeamName-b07e86e2.js",
+      "_global-05926f3f.js",
+      "_PopUpA-46557c1c.js",
+      "_Header-e9e8528e.js",
+      "_PlayersLine-88da6897.js",
       "_singletons-a6a7384f.js",
       "_paths-4b3c6e7e.js"
     ]
   },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-27ac02a3.js",
+    "file": "pages/player/index.svelte-a163171a.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
-      "_global-b41d7bad.js",
+      "_vendor-5787ed64.js",
+      "_global-05926f3f.js",
       "_paths-4b3c6e7e.js",
-      "_Header-3ccdea0f.js",
-      "_Date-169c2039.js",
-      "_TeamName-59f9ad9d.js",
+      "_Header-e9e8528e.js",
+      "_PopUpA-46557c1c.js",
+      "_TeamName-b07e86e2.js",
       "_navigation-c0b2019f.js",
       "_singletons-a6a7384f.js"
     ],
@@ -107,19 +107,19 @@
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-3caf86c9.js",
+    "file": "pages/player/detail/index.svelte-35d08e8a.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
+      "_vendor-5787ed64.js",
       "_navigation-c0b2019f.js",
-      "_TeamName-59f9ad9d.js",
-      "_global-b41d7bad.js",
-      "_Header-3ccdea0f.js",
-      "_Date-169c2039.js",
-      "_PlayersLine-4f96f819.js",
-      "_MatchResult-a87074d0.js",
+      "_TeamName-b07e86e2.js",
+      "_global-05926f3f.js",
+      "_Header-e9e8528e.js",
+      "_PopUpA-46557c1c.js",
+      "_PlayersLine-88da6897.js",
+      "_MatchResult-dc00ac2e.js",
       "_singletons-a6a7384f.js",
       "_paths-4b3c6e7e.js"
     ],
@@ -128,17 +128,17 @@
     ]
   },
   "src/routes/team/index.svelte": {
-    "file": "pages/team/index.svelte-4483b017.js",
+    "file": "pages/team/index.svelte-bd5dff10.js",
     "src": "src/routes/team/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
-      "_global-b41d7bad.js",
-      "_Header-3ccdea0f.js",
-      "_PlayersLine-4f96f819.js",
-      "_TeamName-59f9ad9d.js",
-      "_Date-169c2039.js",
+      "_vendor-5787ed64.js",
+      "_global-05926f3f.js",
+      "_Header-e9e8528e.js",
+      "_PlayersLine-88da6897.js",
+      "_TeamName-b07e86e2.js",
+      "_PopUpA-46557c1c.js",
       "_navigation-c0b2019f.js",
       "_singletons-a6a7384f.js",
       "_paths-4b3c6e7e.js"
@@ -148,48 +148,48 @@
     ]
   },
   "src/routes/team/detail/index.svelte": {
-    "file": "pages/team/detail/index.svelte-43eb1c2b.js",
+    "file": "pages/team/detail/index.svelte-1b71e834.js",
     "src": "src/routes/team/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
-      "_TeamName-59f9ad9d.js",
+      "_vendor-5787ed64.js",
+      "_TeamName-b07e86e2.js",
       "_navigation-c0b2019f.js",
-      "_global-b41d7bad.js",
-      "_Date-169c2039.js",
-      "_Header-3ccdea0f.js",
-      "_PlayersLine-4f96f819.js",
-      "_TournamentName-d9d098a2.js",
-      "_PlayerName-f2dd8e81.js",
+      "_global-05926f3f.js",
+      "_PopUpA-46557c1c.js",
+      "_Header-e9e8528e.js",
+      "_PlayersLine-88da6897.js",
+      "_TournamentName-ed59447c.js",
+      "_PlayerName-f16038b1.js",
       "_paths-4b3c6e7e.js",
       "_singletons-a6a7384f.js"
     ]
   },
   "src/routes/log/detail/index.svelte": {
-    "file": "pages/log/detail/index.svelte-3602c8e4.js",
+    "file": "pages/log/detail/index.svelte-0e66263f.js",
     "src": "src/routes/log/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-96e95496.js",
+      "_vendor-5787ed64.js",
       "_navigation-c0b2019f.js",
       "_paths-4b3c6e7e.js",
-      "_TeamName-59f9ad9d.js",
-      "_Date-169c2039.js",
-      "_TournamentName-d9d098a2.js",
-      "_PlayersLine-4f96f819.js",
-      "_MatchResult-a87074d0.js",
-      "_PlayerName-f2dd8e81.js",
+      "_TeamName-b07e86e2.js",
+      "_PopUpA-46557c1c.js",
+      "_TournamentName-ed59447c.js",
+      "_PlayersLine-88da6897.js",
+      "_MatchResult-dc00ac2e.js",
+      "_PlayerName-f16038b1.js",
       "_singletons-a6a7384f.js",
-      "_global-b41d7bad.js"
+      "_global-05926f3f.js"
     ],
     "css": [
       "assets/pages/log/detail/index.svelte-cd3f9e40.css"
     ]
   },
-  "_vendor-96e95496.js": {
-    "file": "chunks/vendor-96e95496.js"
+  "_vendor-5787ed64.js": {
+    "file": "chunks/vendor-5787ed64.js"
   },
   "_paths-4b3c6e7e.js": {
     "file": "chunks/paths-4b3c6e7e.js"
@@ -197,18 +197,18 @@
   "_singletons-a6a7384f.js": {
     "file": "chunks/singletons-a6a7384f.js"
   },
-  "_global-b41d7bad.js": {
-    "file": "chunks/global-b41d7bad.js",
+  "_global-05926f3f.js": {
+    "file": "chunks/global-05926f3f.js",
     "imports": [
-      "_vendor-96e95496.js"
+      "_vendor-5787ed64.js"
     ]
   },
-  "_Header-3ccdea0f.js": {
-    "file": "chunks/Header-3ccdea0f.js",
+  "_Header-e9e8528e.js": {
+    "file": "chunks/Header-e9e8528e.js",
     "imports": [
-      "_vendor-96e95496.js",
+      "_vendor-5787ed64.js",
       "_navigation-c0b2019f.js",
-      "_global-b41d7bad.js"
+      "_global-05926f3f.js"
     ]
   },
   "_navigation-c0b2019f.js": {
@@ -217,53 +217,56 @@
       "_singletons-a6a7384f.js"
     ]
   },
-  "_Date-169c2039.js": {
-    "file": "chunks/Date-169c2039.js",
+  "_PopUpA-46557c1c.js": {
+    "file": "chunks/PopUpA-46557c1c.js",
     "imports": [
-      "_vendor-96e95496.js"
-    ]
-  },
-  "_TournamentName-d9d098a2.js": {
-    "file": "chunks/TournamentName-d9d098a2.js",
-    "imports": [
-      "_vendor-96e95496.js",
-      "_paths-4b3c6e7e.js"
-    ]
-  },
-  "_TeamName-59f9ad9d.js": {
-    "file": "chunks/TeamName-59f9ad9d.js",
-    "imports": [
-      "_vendor-96e95496.js",
-      "_paths-4b3c6e7e.js",
-      "_global-b41d7bad.js",
-      "_Date-169c2039.js"
+      "_vendor-5787ed64.js",
+      "_global-05926f3f.js"
     ],
     "css": [
-      "assets/TeamName-364db509.css"
+      "assets/PopUpA-6e689b5f.css"
     ]
   },
-  "_PlayersLine-4f96f819.js": {
-    "file": "chunks/PlayersLine-4f96f819.js",
+  "_TournamentName-ed59447c.js": {
+    "file": "chunks/TournamentName-ed59447c.js",
     "imports": [
-      "_vendor-96e95496.js",
+      "_vendor-5787ed64.js",
       "_paths-4b3c6e7e.js",
-      "_TeamName-59f9ad9d.js",
-      "_global-b41d7bad.js",
-      "_Date-169c2039.js"
+      "_global-05926f3f.js",
+      "_PopUpA-46557c1c.js"
     ]
   },
-  "_MatchResult-a87074d0.js": {
-    "file": "chunks/MatchResult-a87074d0.js",
+  "_TeamName-b07e86e2.js": {
+    "file": "chunks/TeamName-b07e86e2.js",
     "imports": [
-      "_vendor-96e95496.js"
-    ]
-  },
-  "_PlayerName-f2dd8e81.js": {
-    "file": "chunks/PlayerName-f2dd8e81.js",
-    "imports": [
-      "_vendor-96e95496.js",
+      "_vendor-5787ed64.js",
       "_paths-4b3c6e7e.js",
-      "_TeamName-59f9ad9d.js"
+      "_global-05926f3f.js",
+      "_PopUpA-46557c1c.js"
+    ]
+  },
+  "_PlayersLine-88da6897.js": {
+    "file": "chunks/PlayersLine-88da6897.js",
+    "imports": [
+      "_vendor-5787ed64.js",
+      "_paths-4b3c6e7e.js",
+      "_TeamName-b07e86e2.js",
+      "_global-05926f3f.js",
+      "_PopUpA-46557c1c.js"
+    ]
+  },
+  "_MatchResult-dc00ac2e.js": {
+    "file": "chunks/MatchResult-dc00ac2e.js",
+    "imports": [
+      "_vendor-5787ed64.js"
+    ]
+  },
+  "_PlayerName-f16038b1.js": {
+    "file": "chunks/PlayerName-f16038b1.js",
+    "imports": [
+      "_vendor-5787ed64.js",
+      "_paths-4b3c6e7e.js",
+      "_TeamName-b07e86e2.js"
     ]
   }
 }
