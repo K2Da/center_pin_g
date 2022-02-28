@@ -65,7 +65,7 @@
 				border-bottom: var(--border) 1px solid;
 			}
 
-			dl.one_line{ display: block }
+			dl.one_line { display: block }
 			dl.one_line dt { font-size: smaller; color: var(--text-muted); display: inline; margin: 0 6px 0 10px }
 			dl.one_line dd { color: var(--text-bright); display: inline; margin: 0 }
 
@@ -113,16 +113,16 @@
 		<meta http-equiv="content-security-policy" content=""><title>Center Pin(g): プレイヤー一覧</title><meta property="og:type" content="article" data-svelte="svelte-sum9dw"><meta property="og:url" content="https://center-ping.pages.dev/player" data-svelte="svelte-sum9dw"><meta property="og:site_name" content="Center Pin(g)" data-svelte="svelte-sum9dw"><meta property="og:description" content="ポケモンユナイトの大会のプレイヤーの一覧" data-svelte="svelte-sum9dw"><meta name="twitter:card" content="summary" data-svelte="svelte-sum9dw">
 	<link rel="stylesheet" href="/app/assets/pages/player/index.svelte-9eb28425.css">
 	<link rel="stylesheet" href="/app/assets/PopUpA-6e689b5f.css">
-	<link rel="modulepreload" href="/app/start-fc3dd933.js">
+	<link rel="modulepreload" href="/app/start-2b3ab1e5.js">
 	<link rel="modulepreload" href="/app/chunks/vendor-5fd0e214.js">
 	<link rel="modulepreload" href="/app/chunks/paths-4b3c6e7e.js">
 	<link rel="modulepreload" href="/app/chunks/singletons-a6a7384f.js">
-	<link rel="modulepreload" href="/app/pages/__layout.svelte-849991a5.js">
+	<link rel="modulepreload" href="/app/pages/__layout.svelte-0600e25f.js">
 	<link rel="modulepreload" href="/app/chunks/global-19891e9d.js">
-	<link rel="modulepreload" href="/app/pages/player/index.svelte-25202fd7.js">
+	<link rel="modulepreload" href="/app/pages/player/index.svelte-ac53c760.js">
 	<link rel="modulepreload" href="/app/chunks/Header-727f1b54.js">
-	<link rel="modulepreload" href="/app/chunks/PopUpA-03059bc3.js">
-	<link rel="modulepreload" href="/app/chunks/TeamName-683b439d.js">
+	<link rel="modulepreload" href="/app/chunks/PopUpA-509ec307.js">
+	<link rel="modulepreload" href="/app/chunks/TeamName-4170fc4d.js">
 	</head>
 
 	<body style="max-width: 4800px; padding: 0 10px 0 10px">
@@ -136,7 +136,8 @@
 <nav><a href="/">top </a> |
   <a href="/tournament">大会</a> |
   <a href="/player">プレイヤー</a> |
-  <a href="/team">チーム</a></nav>
+  <a href="/team">チーム</a> |
+  <a href="/log/detail?l=winter_final">ウィンタートーナメント決勝</a></nav>
 
 
 
@@ -144,12 +145,7 @@
 
 <div><input placeholder="プレイヤー名 / チーム名" style="box-sizing: border-box; width: 100%" value="">
 
-  <div style="text-align: center"><input id="tournament" type="checkbox">
-    <label for="tournament">最新参加大会</label>
-    <input id="record" type="checkbox" checked>
-    <label for="record">通算戦績</label>
-    <input id="sns" type="checkbox">
-    <label for="sns">アカウント</label></div></div>
+  </div>
 
 <div style="text-align: center;"><button disabled class="svelte-1ie98dx"><i class="fas fa-fast-backward"></i></button>
      
@@ -162,21 +158,7 @@
      
     <button class="svelte-1ie98dx"><i class="fas fa-fast-forward"></i></button></div>
 
-<table style="table-layout: auto"><thead><tr><th colspan="3"></th>
-      
-      <th colspan="3">通算戦績</th>
-      
-      <th></th></tr>
-    <tr><th>No.</th>
-      <th class="tal">名前</th>
-      <th class="tal">チーム</th>
-      
-      <th>出場</th>
-        <th>勝</th>
-        <th>敗</th>
-      
-      <th>rating</th></tr></thead>
-  <tbody></tbody></table>
+<table style="table-layout: auto"><tbody class="quad"></tbody></table>
 
 <div style="text-align: center;"><button disabled class="svelte-1ie98dx"><i class="fas fa-fast-backward"></i></button>
      
@@ -192,10 +174,10 @@
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
 
 
-		<script type="module" data-hydrate="hobz5x">
-		import { start } from "/app/start-fc3dd933.js";
+		<script type="module" data-hydrate="10aqnod">
+		import { start } from "/app/start-2b3ab1e5.js";
 		start({
-			target: document.querySelector('[data-hydrate="hobz5x"]').parentNode,
+			target: document.querySelector('[data-hydrate="10aqnod"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -205,8 +187,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/app/pages/__layout.svelte-849991a5.js"),
-						import("/app/pages/player/index.svelte-25202fd7.js")
+					import("/app/pages/__layout.svelte-0600e25f.js"),
+						import("/app/pages/player/index.svelte-ac53c760.js")
 				],
 				url: new URL("http://sveltekit-prerender/player"),
 				params: {}
