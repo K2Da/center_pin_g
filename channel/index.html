@@ -112,16 +112,17 @@
 
 		<meta http-equiv="content-security-policy" content=""><title>Center Pin(g): チャンネル一覧</title><script async src="https://platform.twitter.com/widgets.js" charset="utf-8" data-svelte="svelte-1d4674i"></script><meta property="og:type" content="article" data-svelte="svelte-1d4674i"><meta property="og:url" content="https://center-ping.pages.dev/channel" data-svelte="svelte-1d4674i"><meta property="og:site_name" content="Center Pin(g)" data-svelte="svelte-1d4674i"><meta property="og:description" content="ポケモンユナイトプレイヤのチャンネルの一覧" data-svelte="svelte-1d4674i"><meta name="twitter:card" content="summary" data-svelte="svelte-1d4674i">
 	<link rel="stylesheet" href="/app/assets/PopUpA-6e689b5f.css">
-	<link rel="modulepreload" href="/app/start-4dee1218.js">
+	<link rel="modulepreload" href="/app/start-4d362144.js">
 	<link rel="modulepreload" href="/app/chunks/vendor-aa1ac626.js">
 	<link rel="modulepreload" href="/app/chunks/paths-4b3c6e7e.js">
 	<link rel="modulepreload" href="/app/chunks/singletons-a6a7384f.js">
-	<link rel="modulepreload" href="/app/pages/__layout.svelte-51d0a934.js">
-	<link rel="modulepreload" href="/app/chunks/global-3c1712df.js">
-	<link rel="modulepreload" href="/app/pages/channel/index.svelte-33702dcc.js">
-	<link rel="modulepreload" href="/app/chunks/Header-83a11346.js">
-	<link rel="modulepreload" href="/app/chunks/PopUpA-a3aa5860.js">
-	<link rel="modulepreload" href="/app/chunks/PlayerName-35b18c0c.js">
+	<link rel="modulepreload" href="/app/pages/__layout.svelte-4967e55f.js">
+	<link rel="modulepreload" href="/app/chunks/global-1b5ae2c6.js">
+	<link rel="modulepreload" href="/app/pages/channel/index.svelte-e4c9b7f5.js">
+	<link rel="modulepreload" href="/app/chunks/Header-8f1e2548.js">
+	<link rel="modulepreload" href="/app/chunks/PopUpA-b5f3d206.js">
+	<link rel="modulepreload" href="/app/chunks/PlayerName-b46cc95c.js">
+	<link rel="modulepreload" href="/app/chunks/navigation-c0b2019f.js">
 	</head>
 
 	<body style="max-width: 4800px; padding: 0 10px 0 10px">
@@ -139,14 +140,11 @@
   <a href="/channel">チャンネル</a></nav>
 
 
+
 <h2>Channel</h2>
 
-<h3>ToDo</h3>
-<ul style="padding-left: 20px"><li>定期的にチャンネル情報を再取得する</li>
-  <li>チャンネルIDが設定されてるのに情報取れてないものがあるかチェックする</li>
-  <li>公式チャンネルなどもリストに入れる</li></ul>
-
-
+<div><input id="show_detail" type="checkbox">
+  <label for="show_detail">詳細表示</label></div>
 
 
 
@@ -156,10 +154,10 @@
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
 
 
-		<script type="module" data-hydrate="145wb7c">
-		import { start } from "/app/start-4dee1218.js";
+		<script type="module" data-hydrate="pwd2vv">
+		import { start } from "/app/start-4d362144.js";
 		start({
-			target: document.querySelector('[data-hydrate="145wb7c"]').parentNode,
+			target: document.querySelector('[data-hydrate="pwd2vv"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -169,8 +167,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/app/pages/__layout.svelte-51d0a934.js"),
-						import("/app/pages/channel/index.svelte-33702dcc.js")
+					import("/app/pages/__layout.svelte-4967e55f.js"),
+						import("/app/pages/channel/index.svelte-e4c9b7f5.js")
 				],
 				url: new URL("http://sveltekit-prerender/channel"),
 				params: {}
