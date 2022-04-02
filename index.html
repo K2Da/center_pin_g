@@ -48,6 +48,18 @@
 				background-color: transparent;
 				border-bottom: var(--border) 1px solid;
 			}
+			tbody.triple tr:nth-child(6n+1) td { padding: 6px 6px 1px 6px }
+			tbody.triple tr:nth-child(6n+2) td { padding: 1px 6px 1px 6px }
+			tbody.triple tr:nth-child(6n+3) td { padding: 1px 6px 6px 6px }
+			tbody.triple tr:nth-child(6n+4) td { padding: 6px 6px 1px 6px }
+			tbody.triple tr:nth-child(6n+5) td { padding: 1px 6px 1px 6px }
+			tbody.triple tr:nth-child(6n+6) td { padding: 1px 6px 6px 6px }
+			tbody.triple tr:nth-child(6n+1) th { padding: 6px 6px 1px 6px }
+			tbody.triple tr:nth-child(6n+2) th { padding: 1px 6px 1px 6px }
+			tbody.triple tr:nth-child(6n+3) th { padding: 1px 6px 6px 6px }
+			tbody.triple tr:nth-child(6n+4) th { padding: 6px 6px 1px 6px }
+			tbody.triple tr:nth-child(6n+5) th { padding: 1px 6px 1px 6px }
+			tbody.triple tr:nth-child(6n+6) th { padding: 1px 6px 6px 6px }
 
 			tbody.quad { border-top: var(--border) 1px solid; }
 			tbody.quad tr:nth-child(8n+1) { background-color: var(--background) }
@@ -64,6 +76,22 @@
 				background-color: transparent;
 				border-bottom: var(--border) 1px solid;
 			}
+			tbody.quad tr:nth-child(8n+1) td { padding: 6px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+2) td { padding: 1px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+3) td { padding: 1px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+4) td { padding: 1px 6px 6px 6px }
+			tbody.quad tr:nth-child(8n+5) td { padding: 6px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+6) td { padding: 1px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+7) td { padding: 1px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+8) td { padding: 1px 6px 6px 6px }
+			tbody.quad tr:nth-child(8n+1) th { padding: 6px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+2) th { padding: 1px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+3) th { padding: 1px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+4) th { padding: 1px 6px 6px 6px }
+			tbody.quad tr:nth-child(8n+5) th { padding: 6px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+6) th { padding: 1px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+7) th { padding: 1px 6px 1px 6px }
+			tbody.quad tr:nth-child(8n+8) th { padding: 1px 6px 6px 6px }
 
 			dl.one_line { display: block }
 			dl.one_line dt { font-size: smaller; color: var(--text-muted); display: inline; margin: 0 6px 0 10px }
@@ -111,14 +139,14 @@
 		</script>
 
 		<meta http-equiv="content-security-policy" content=""><title>Center Pin(g): Top</title><meta property="og:type" content="site" data-svelte="svelte-sum9dw"><meta property="og:url" content="https://center-ping.pages.dev/" data-svelte="svelte-sum9dw"><meta property="og:site_name" content="Center Pin(g)" data-svelte="svelte-sum9dw"><meta property="og:description" content="ポケモンユナイト大会の情報収集" data-svelte="svelte-sum9dw"><meta name="twitter:card" content="summary" data-svelte="svelte-sum9dw">
-	<link rel="modulepreload" href="/app/start-10be8906.js">
+	<link rel="modulepreload" href="/app/start-21e87a59.js">
 	<link rel="modulepreload" href="/app/chunks/vendor-20059ba1.js">
 	<link rel="modulepreload" href="/app/chunks/paths-396f020f.js">
 	<link rel="modulepreload" href="/app/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/app/pages/__layout.svelte-cf425808.js">
-	<link rel="modulepreload" href="/app/chunks/global-8ce4e9fc.js">
-	<link rel="modulepreload" href="/app/pages/index.svelte-8540566b.js">
-	<link rel="modulepreload" href="/app/chunks/Header-70457554.js">
+	<link rel="modulepreload" href="/app/pages/__layout.svelte-7aa6d5f7.js">
+	<link rel="modulepreload" href="/app/chunks/global-87a003dd.js">
+	<link rel="modulepreload" href="/app/pages/index.svelte-bcfd15c1.js">
+	<link rel="modulepreload" href="/app/chunks/Header-acb75701.js">
 	</head>
 
 	<body style="max-width: 4800px; padding: 0 10px 0 10px">
@@ -163,6 +191,7 @@
 <h3>チーム名について</h3>
 <p>チーム名は、表記ゆれと思われるものや、ほぼ同じメンバーで別の名前になっているものについては同一のチームとみなし、一番最近使われた名前を正式名称として扱っています。</p>
 <p>公式大会では、使用できないチーム名だった場合に、〇〇さんチームと変更されている場合があります。</p>
+<p>チーム一覧での表示は、優勝回数、top4回数、勝利数の順で優先して並べています。</p>
 
 <h3>ratingについて</h3>
 <p>プレイヤーのリストを表示する際、勝利数順だと試合数の多い総当り大会の影響が大きくなりすぎるため、<a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%AD%E3%83%AC%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">イロレーティング</a>で個人のratingを付けています。初期値1,500、係数は400です。</p>
@@ -173,10 +202,10 @@
 <footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
 
 
-		<script type="module" data-hydrate="7bkwlb">
-		import { start } from "/app/start-10be8906.js";
+		<script type="module" data-hydrate="p4ilzx">
+		import { start } from "/app/start-21e87a59.js";
 		start({
-			target: document.querySelector('[data-hydrate="7bkwlb"]').parentNode,
+			target: document.querySelector('[data-hydrate="p4ilzx"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -186,8 +215,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/app/pages/__layout.svelte-cf425808.js"),
-						import("/app/pages/index.svelte-8540566b.js")
+					import("/app/pages/__layout.svelte-7aa6d5f7.js"),
+						import("/app/pages/index.svelte-bcfd15c1.js")
 				],
 				params: {},
 				routeId: ""
