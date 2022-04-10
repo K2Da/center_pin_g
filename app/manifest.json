@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-a03326c6.js",
+    "file": "start-da8181c0.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -117,7 +117,7 @@
       "_TournamentName-1a5e72b8.js"
     ],
     "css": [
-      "assets/pages/player/index.svelte-9eb28425.css"
+      "assets/pages/team/index.svelte-f51710b3.css"
     ]
   },
   "src/routes/player/detail/index.svelte": {
@@ -159,11 +159,11 @@
       "_paths-396f020f.js"
     ],
     "css": [
-      "assets/pages/player/index.svelte-9eb28425.css"
+      "assets/pages/team/index.svelte-f51710b3.css"
     ]
   },
   "src/routes/team/detail/index.svelte": {
-    "file": "pages/team/detail/index.svelte-bd04db6b.js",
+    "file": "pages/team/detail/index.svelte-4c4ff432.js",
     "src": "src/routes/team/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
