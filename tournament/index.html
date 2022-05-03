@@ -19,6 +19,8 @@
 			.nw { white-space: nowrap }
 			ul { padding: 0 }
 
+			dl dt { font-weight: bold; margin-top: 8px; }
+
 			h1 { border-bottom: var(--border) 3px solid }
 			h2 { border-bottom: var(--border) 2px solid }
 			h3 { border-bottom: var(--border) 2px solid }
@@ -34,6 +36,10 @@
 				background-color: transparent;
 				border-bottom: var(--border) 1px solid;
 			}
+			tbody.double tr:nth-child(4n+1) td { padding: 6px 6px 1px 6px }
+			tbody.double tr:nth-child(4n+2) td { padding: 1px 6px 6px 2em }
+			tbody.double tr:nth-child(4n+3) td { padding: 6px 6px 1px 6px }
+			tbody.double tr:nth-child(4n+4) td { padding: 1px 6px 6px 2em }
 
 			tbody.triple { border-top: var(--border) 1px solid; }
 			tbody.triple tr:nth-child(6n+1) { background-color: var(--background) }
@@ -96,6 +102,7 @@
 			dl.one_line { display: block }
 			dl.one_line dt { font-size: smaller; color: var(--text-muted); display: inline; margin: 0 6px 0 10px }
 			dl.one_line dd { color: var(--text-bright); display: inline; margin: 0 }
+			dl dd { margin-left: 1em; }
 
 			span.muted { font-size: smaller; color: var(--text-muted) }
 
@@ -128,6 +135,16 @@
 				padding: 2px 14px;
 				white-space: normal;
 			}
+			td.row_no {
+				vertical-align: middle;
+				margin-left: 0;
+				margin-right: 0;
+				padding-right: 0;
+				padding-left: 0;
+			}
+			td.content {
+				padding-left: 2em;
+			}
 		</style>
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ"></script>
@@ -140,17 +157,17 @@
 
 		<meta http-equiv="content-security-policy" content=""><title>Center Pin(g): 大会一覧</title><meta property="og:type" content="article" data-svelte="svelte-sum9dw"><meta property="og:url" content="https://center-ping.pages.dev/tournament" data-svelte="svelte-sum9dw"><meta property="og:site_name" content="Center Pin(g)" data-svelte="svelte-sum9dw"><meta property="og:description" content="ポケモンユナイトの大会の一覧" data-svelte="svelte-sum9dw"><meta name="twitter:card" content="summary" data-svelte="svelte-sum9dw">
 	<link rel="stylesheet" href="/app/assets/PopUpA-6e689b5f.css">
-	<link rel="modulepreload" href="/app/start-43ce4f82.js">
-	<link rel="modulepreload" href="/app/chunks/vendor-51c80f4f.js">
+	<link rel="modulepreload" href="/app/start-f616da34.js">
+	<link rel="modulepreload" href="/app/chunks/vendor-30de17eb.js">
 	<link rel="modulepreload" href="/app/chunks/paths-396f020f.js">
 	<link rel="modulepreload" href="/app/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/app/pages/__layout.svelte-9e9a7492.js">
-	<link rel="modulepreload" href="/app/chunks/global-f2ffd441.js">
-	<link rel="modulepreload" href="/app/pages/tournament/index.svelte-d47203c8.js">
-	<link rel="modulepreload" href="/app/chunks/Header-102011d7.js">
-	<link rel="modulepreload" href="/app/chunks/PopUpA-e811d878.js">
-	<link rel="modulepreload" href="/app/chunks/TournamentName-1c247a51.js">
-	<link rel="modulepreload" href="/app/chunks/TeamName-6c6e016c.js">
+	<link rel="modulepreload" href="/app/pages/__layout.svelte-09fb71d5.js">
+	<link rel="modulepreload" href="/app/chunks/global-29f92d83.js">
+	<link rel="modulepreload" href="/app/pages/tournament/index.svelte-8c4fb444.js">
+	<link rel="modulepreload" href="/app/chunks/Header-f8007704.js">
+	<link rel="modulepreload" href="/app/chunks/PopUpA-2729ff34.js">
+	<link rel="modulepreload" href="/app/chunks/TournamentName-0ead040d.js">
+	<link rel="modulepreload" href="/app/chunks/TeamName-d7228082.js">
 	</head>
 
 	<body style="max-width: 4800px; padding: 0 10px 0 10px">
@@ -174,13 +191,13 @@
 <table style="table-layout: auto"><thead></thead>
   <tbody class="triple"></tbody></table>
 
-<footer><a href="https://twitter.com/K2Da">@K2Da</a></footer>
+<footer></footer>
 
 
-		<script type="module" data-hydrate="vilaa2">
-		import { start } from "/app/start-43ce4f82.js";
+		<script type="module" data-hydrate="kijpyl">
+		import { start } from "/app/start-f616da34.js";
 		start({
-			target: document.querySelector('[data-hydrate="vilaa2"]').parentNode,
+			target: document.querySelector('[data-hydrate="kijpyl"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -190,8 +207,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/app/pages/__layout.svelte-9e9a7492.js"),
-						import("/app/pages/tournament/index.svelte-d47203c8.js")
+					import("/app/pages/__layout.svelte-09fb71d5.js"),
+						import("/app/pages/tournament/index.svelte-8c4fb444.js")
 				],
 				params: {},
 				routeId: "tournament"
