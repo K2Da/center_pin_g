@@ -21,9 +21,10 @@
 
 			dl dt { font-weight: bold; margin-top: 8px; }
 
-			h1 { border-bottom: var(--border) 3px solid }
+			h1 { border-bottom: var(--border) 2px solid; margin-left: -5px; }
 			h2 { border-bottom: var(--border) 2px solid }
-			h3 { border-bottom: var(--border) 2px solid }
+			h3 { border-bottom: var(--border) 1px solid; }
+			h1, h2, h3, h4, h5, h6 { margin-top: 12px; }
 
 			tbody.double { border-top: var(--border) 1px solid; }
 			tbody.double tr:nth-child(4n+1) { background-color: var(--background) }
@@ -145,6 +146,14 @@
 			td.content {
 				padding-left: 2em;
 			}
+			body {
+				max-width: 4800px;
+				padding: 10px;
+				margin: 0;
+			}
+			.detail-tab {
+				margin: 0 -5px;
+			}
 		</style>
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ"></script>
@@ -156,31 +165,30 @@
 		</script>
 
 		<meta http-equiv="content-security-policy" content=""><title>Center Pin(g): Top</title><meta property="og:type" content="site" data-svelte="svelte-sum9dw"><meta property="og:url" content="https://center-ping.pages.dev/" data-svelte="svelte-sum9dw"><meta property="og:site_name" content="Center Pin(g)" data-svelte="svelte-sum9dw"><meta property="og:description" content="ポケモンユナイト大会の情報収集" data-svelte="svelte-sum9dw"><meta name="twitter:card" content="summary" data-svelte="svelte-sum9dw">
-	<link rel="modulepreload" href="/app/start-19dab77c.js">
+	<link rel="modulepreload" href="/app/start-5a810b4b.js">
 	<link rel="modulepreload" href="/app/chunks/vendor-19267f61.js">
 	<link rel="modulepreload" href="/app/chunks/paths-396f020f.js">
 	<link rel="modulepreload" href="/app/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/app/pages/__layout.svelte-277442bf.js">
+	<link rel="modulepreload" href="/app/pages/__layout.svelte-6b18c69b.js">
 	<link rel="modulepreload" href="/app/chunks/global-183ac30d.js">
-	<link rel="modulepreload" href="/app/pages/index.svelte-df3482aa.js">
+	<link rel="modulepreload" href="/app/pages/index.svelte-78b2e749.js">
 	<link rel="modulepreload" href="/app/chunks/Header-4c225c09.js">
 	</head>
 
-	<body style="max-width: 4800px; padding: 0 10px 0 10px">
+	<body>
 		<div id="svelte">
 
 
 
 
-<h1>Center Pin(g)</h1>
-
-<nav><a href="/">top </a> |
+<nav><a href="/">Cp(g) </a> |
   <a href="/tournament">大会</a> |
   <a href="/player">プレイヤー</a> |
   <a href="/team">チーム</a> |
   <a href="/channel">チャンネル</a></nav>
 
-
+<div style="margin: 0 5px">
+<h1>Center Pin(g)</h1>
 
 <p><a href="https://www.pokemonunite.jp/">ポケモンユナイト</a>の大会結果をメモしてく場所です。各種大会の結果を集めて、名前で寄せて集計してます。</p>
 <p>サイト内のデータは基本的に各大会で使用されたトーナメントサイトから取得したデータをそのまま使用していますが、各種SNSのアカウント、名寄せ等に誤りがある場合はメンションかDMでお知らせください。</p>
@@ -215,15 +223,15 @@
 <p>各メンバーが、相手チームの平均レートのプレイヤーと戦ったものとしてレートを変動させています。味方のレートは考慮していません。</p>
 <p>BO3などの場合、勝敗の順序が不明なため、勝者側の敗戦試合 -&gt; 勝者側の勝利試合、の順で計算しています。</p>
 <p>スコアが0-0の場合、棄権などで試合が行われなかったものと推測し、レートを変動させていません。その大会における、すべての試合が0-0となっているチームは不参加と見なし、記録を削除しています。このため、最終順位に抜けている順位が存在する可能性があります</p>
-<p>ユーザーを名寄せしたり、過去の大会を改めて登録した場合、過去にさかのぼって当時のレートが変動したりします。</p>
+<p>ユーザーを名寄せしたり、過去の大会を改めて登録した場合、過去にさかのぼって当時のレートが変動したりします。</p></div>
 
 <footer></footer>
 
 
-		<script type="module" data-hydrate="i8xm5m">
-		import { start } from "/app/start-19dab77c.js";
+		<script type="module" data-hydrate="12qq9pu">
+		import { start } from "/app/start-5a810b4b.js";
 		start({
-			target: document.querySelector('[data-hydrate="i8xm5m"]').parentNode,
+			target: document.querySelector('[data-hydrate="12qq9pu"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -233,8 +241,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/app/pages/__layout.svelte-277442bf.js"),
-						import("/app/pages/index.svelte-df3482aa.js")
+					import("/app/pages/__layout.svelte-6b18c69b.js"),
+						import("/app/pages/index.svelte-78b2e749.js")
 				],
 				params: {},
 				routeId: ""

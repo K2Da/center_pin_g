@@ -21,9 +21,10 @@
 
 			dl dt { font-weight: bold; margin-top: 8px; }
 
-			h1 { border-bottom: var(--border) 3px solid }
+			h1 { border-bottom: var(--border) 2px solid; margin-left: -5px; }
 			h2 { border-bottom: var(--border) 2px solid }
-			h3 { border-bottom: var(--border) 2px solid }
+			h3 { border-bottom: var(--border) 1px solid; }
+			h1, h2, h3, h4, h5, h6 { margin-top: 12px; }
 
 			tbody.double { border-top: var(--border) 1px solid; }
 			tbody.double tr:nth-child(4n+1) { background-color: var(--background) }
@@ -145,6 +146,14 @@
 			td.content {
 				padding-left: 2em;
 			}
+			body {
+				max-width: 4800px;
+				padding: 10px;
+				margin: 0;
+			}
+			.detail-tab {
+				margin: 0 -5px;
+			}
 		</style>
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ"></script>
@@ -158,13 +167,13 @@
 		<meta http-equiv="content-security-policy" content=""><title>Center Pin(g): プレイヤー一覧</title><meta property="og:type" content="article" data-svelte="svelte-sum9dw"><meta property="og:url" content="https://center-ping.pages.dev/player" data-svelte="svelte-sum9dw"><meta property="og:site_name" content="Center Pin(g)" data-svelte="svelte-sum9dw"><meta property="og:description" content="ポケモンユナイトの大会のプレイヤーの一覧" data-svelte="svelte-sum9dw"><meta name="twitter:card" content="summary" data-svelte="svelte-sum9dw">
 	<link rel="stylesheet" href="/app/assets/pages/team/index.svelte-f51710b3.css">
 	<link rel="stylesheet" href="/app/assets/PopUpA-6e689b5f.css">
-	<link rel="modulepreload" href="/app/start-19dab77c.js">
+	<link rel="modulepreload" href="/app/start-5a810b4b.js">
 	<link rel="modulepreload" href="/app/chunks/vendor-19267f61.js">
 	<link rel="modulepreload" href="/app/chunks/paths-396f020f.js">
 	<link rel="modulepreload" href="/app/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/app/pages/__layout.svelte-277442bf.js">
+	<link rel="modulepreload" href="/app/pages/__layout.svelte-6b18c69b.js">
 	<link rel="modulepreload" href="/app/chunks/global-183ac30d.js">
-	<link rel="modulepreload" href="/app/pages/player/index.svelte-333104ff.js">
+	<link rel="modulepreload" href="/app/pages/player/index.svelte-76613cce.js">
 	<link rel="modulepreload" href="/app/chunks/Header-4c225c09.js">
 	<link rel="modulepreload" href="/app/chunks/PopUpA-97acb3d4.js">
 	<link rel="modulepreload" href="/app/chunks/TeamName-5ea23c38.js">
@@ -172,23 +181,21 @@
 	<link rel="modulepreload" href="/app/chunks/Twitch-7a6a071e.js">
 	</head>
 
-	<body style="max-width: 4800px; padding: 0 10px 0 10px">
+	<body>
 		<div id="svelte">
 
 
 
 
-<h1>Center Pin(g)</h1>
-
-<nav><a href="/">top </a> |
+<nav><a href="/">Cp(g) </a> |
   <a href="/tournament">大会</a> |
   <a href="/player">プレイヤー</a> |
   <a href="/team">チーム</a> |
   <a href="/channel">チャンネル</a></nav>
 
+<div style="margin: 0 5px">
 
-
-<h2>プレイヤー</h2>
+<h1>プレイヤー</h1>
 
 <div><input placeholder="プレイヤー名 / チーム名" style="box-sizing: border-box; width: 100%" value="">
 
@@ -216,15 +223,15 @@
 
   <button class="svelte-1ie98dx"><i class="fas fa-step-forward"></i></button>
      
-    <button class="svelte-1ie98dx"><i class="fas fa-fast-forward"></i></button></div>
+    <button class="svelte-1ie98dx"><i class="fas fa-fast-forward"></i></button></div></div>
 
 <footer></footer>
 
 
-		<script type="module" data-hydrate="q5dm7s">
-		import { start } from "/app/start-19dab77c.js";
+		<script type="module" data-hydrate="oyml5r">
+		import { start } from "/app/start-5a810b4b.js";
 		start({
-			target: document.querySelector('[data-hydrate="q5dm7s"]').parentNode,
+			target: document.querySelector('[data-hydrate="oyml5r"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -234,8 +241,8 @@
 				status: 200,
 				error: null,
 				nodes: [
-					import("/app/pages/__layout.svelte-277442bf.js"),
-						import("/app/pages/player/index.svelte-333104ff.js")
+					import("/app/pages/__layout.svelte-6b18c69b.js"),
+						import("/app/pages/player/index.svelte-76613cce.js")
 				],
 				params: {},
 				routeId: "player"
