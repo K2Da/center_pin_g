@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-f086564f.js",
+    "file": "start-8ce4a800.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -45,13 +45,13 @@
     ]
   },
   "src/routes/channel/index.svelte": {
-    "file": "pages/channel/index.svelte-34f691f8.js",
+    "file": "pages/channel/index.svelte-bfaf81e3.js",
     "src": "src/routes/channel/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-15dce5f7.js",
-      "_Header-eb40b04b.js",
+      "_Header-17203e6d.js",
       "_PopUpA-022d3435.js",
       "_global-fab70934.js",
       "_PlayerName-5dd83597.js",
@@ -63,13 +63,13 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-df4c915c.js",
+    "file": "pages/index.svelte-d23427f7.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-15dce5f7.js",
-      "_Header-eb40b04b.js",
+      "_Header-17203e6d.js",
       "_global-fab70934.js",
       "_index-0695a55f.js"
     ]
@@ -99,7 +99,7 @@
     ]
   },
   "src/routes/player/detail/index.svelte": {
-    "file": "pages/player/detail/index.svelte-35f5c832.js",
+    "file": "pages/player/detail/index.svelte-75baa63c.js",
     "src": "src/routes/player/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -108,7 +108,7 @@
       "_navigation-13fd7038.js",
       "_index-0695a55f.js",
       "_global-fab70934.js",
-      "_Header-eb40b04b.js",
+      "_Header-17203e6d.js",
       "_PageTab-9361fc35.js",
       "_PopUpA-022d3435.js",
       "_Span-465bde08.js",
@@ -123,7 +123,7 @@
     ]
   },
   "src/routes/player/index.svelte": {
-    "file": "pages/player/index.svelte-b6c2b85d.js",
+    "file": "pages/player/index.svelte-e759f1ad.js",
     "src": "src/routes/player/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -131,7 +131,7 @@
       "_index-15dce5f7.js",
       "_global-fab70934.js",
       "_index-0695a55f.js",
-      "_Header-eb40b04b.js",
+      "_Header-17203e6d.js",
       "_paths-396f020f.js",
       "_PopUpA-022d3435.js",
       "_TeamName-7fa6d4ae.js",
@@ -143,7 +143,7 @@
     ]
   },
   "src/routes/team/detail/index.svelte": {
-    "file": "pages/team/detail/index.svelte-cf42f962.js",
+    "file": "pages/team/detail/index.svelte-05a86248.js",
     "src": "src/routes/team/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -153,7 +153,7 @@
       "_navigation-13fd7038.js",
       "_index-0695a55f.js",
       "_PageTab-9361fc35.js",
-      "_Header-eb40b04b.js",
+      "_Header-17203e6d.js",
       "_PopUpA-022d3435.js",
       "_TeamName-7fa6d4ae.js",
       "_PlayersLine-6e2a82ff.js",
@@ -167,7 +167,7 @@
     ]
   },
   "src/routes/team/index.svelte": {
-    "file": "pages/team/index.svelte-99834d63.js",
+    "file": "pages/team/index.svelte-de7cfa4b.js",
     "src": "src/routes/team/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -175,7 +175,7 @@
       "_index-15dce5f7.js",
       "_global-fab70934.js",
       "_index-0695a55f.js",
-      "_Header-eb40b04b.js",
+      "_Header-17203e6d.js",
       "_PlayersLine-6e2a82ff.js",
       "_TeamName-7fa6d4ae.js",
       "_PopUpA-022d3435.js",
@@ -189,7 +189,7 @@
     ]
   },
   "src/routes/tournament/detail/index.svelte": {
-    "file": "pages/tournament/detail/index.svelte-ba21b631.js",
+    "file": "pages/tournament/detail/index.svelte-8d551d6c.js",
     "src": "src/routes/tournament/detail/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -200,7 +200,7 @@
       "_index-0695a55f.js",
       "_TeamName-7fa6d4ae.js",
       "_PopUpA-022d3435.js",
-      "_Header-eb40b04b.js",
+      "_Header-17203e6d.js",
       "_PlayersLine-6e2a82ff.js",
       "_singletons-d1fb5791.js",
       "_paths-396f020f.js",
@@ -209,14 +209,14 @@
     ]
   },
   "src/routes/tournament/index.svelte": {
-    "file": "pages/tournament/index.svelte-92b0b1cd.js",
+    "file": "pages/tournament/index.svelte-d05ad4ca.js",
     "src": "src/routes/tournament/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-15dce5f7.js",
       "_global-fab70934.js",
-      "_Header-eb40b04b.js",
+      "_Header-17203e6d.js",
       "_PopUpA-022d3435.js",
       "_TournamentName-bac5c1ec.js",
       "_index-0695a55f.js",
@@ -245,8 +245,8 @@
       "_index-0695a55f.js"
     ]
   },
-  "_Header-eb40b04b.js": {
-    "file": "chunks/Header-eb40b04b.js",
+  "_Header-17203e6d.js": {
+    "file": "chunks/Header-17203e6d.js",
     "imports": [
       "_index-15dce5f7.js",
       "_global-fab70934.js"
