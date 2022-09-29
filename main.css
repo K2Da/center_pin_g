@@ -9,9 +9,13 @@ th { text-align: center }
 td { text-align: center }
 .tal { text-align: left }
 .tar { text-align: right }
+.tac { text-align: center }
 .nw { white-space: nowrap }
 
-ul { padding: 0 }
+ul {
+  padding: 0;
+  list-style-type: none;
+}
 
 dl dt {
   font-weight: bold;
@@ -20,79 +24,11 @@ dl dt {
 
 h1 {
   border-bottom: var(--border) 2px solid;
-  margin-left: -5px;
+  margin-top: 4px;
 }
 h2 { border-bottom: var(--border) 2px solid }
 h3 { border-bottom: var(--border) 1px solid; }
-h1, h2, h3, h4, h5, h6 { margin-top: 12px; }
-
-tbody.double { border-top: var(--border) 1px solid; }
-tbody.double tr:nth-child(4n+1) { background-color: var(--background) }
-tbody.double tr:nth-child(4n+2) {
-  background-color: var(--background);
-  border-bottom: var(--border) 1px solid;
-}
-tbody.double tr:nth-child(4n+3) { background-color: transparent }
-tbody.double tr:nth-child(4n+4) {
-  background-color: transparent;
-  border-bottom: var(--border) 1px solid;
-}
-tbody.double tr:nth-child(4n+1) td { padding: 6px 6px 1px 6px }
-tbody.double tr:nth-child(4n+2) td { padding: 1px 6px 6px 2em }
-tbody.double tr:nth-child(4n+3) td { padding: 6px 6px 1px 6px }
-tbody.double tr:nth-child(4n+4) td { padding: 1px 6px 6px 2em }
-
-tbody.triple { border-top: var(--border) 1px solid; }
-tbody.triple tr:nth-child(6n+1) { background-color: var(--background) }
-tbody.triple tr:nth-child(6n+2) { background-color: var(--background) }
-tbody.triple tr:nth-child(6n+3) {
-  background-color: var(--background);
-  border-bottom: var(--border) 1px solid;
-}
-tbody.triple tr:nth-child(6n+4) { background-color: transparent }
-tbody.triple tr:nth-child(6n+5) { background-color: transparent }
-tbody.triple tr:nth-child(6n+6) {
-  background-color: transparent;
-  border-bottom: var(--border) 1px solid;
-}
-tbody.triple tr:nth-child(6n+1) td { padding: 6px 6px 1px 6px }
-tbody.triple tr:nth-child(6n+2) td { padding: 1px 6px 1px 6px }
-tbody.triple tr:nth-child(6n+3) td { padding: 1px 6px 6px 6px }
-tbody.triple tr:nth-child(6n+4) td { padding: 6px 6px 1px 6px }
-tbody.triple tr:nth-child(6n+5) td { padding: 1px 6px 1px 6px }
-tbody.triple tr:nth-child(6n+6) td { padding: 1px 6px 6px 6px }
-tbody.triple tr:nth-child(6n+1) th { padding: 6px 6px 1px 6px }
-tbody.triple tr:nth-child(6n+2) th { padding: 1px 6px 1px 6px }
-tbody.triple tr:nth-child(6n+3) th { padding: 1px 6px 6px 6px }
-tbody.triple tr:nth-child(6n+4) th { padding: 6px 6px 1px 6px }
-tbody.triple tr:nth-child(6n+5) th { padding: 1px 6px 1px 6px }
-tbody.triple tr:nth-child(6n+6) th { padding: 1px 6px 6px 6px }
-
-tbody.quad { border-top: var(--border) 1px solid; }
-tbody.quad tr:nth-child(8n+1) { background-color: var(--background) }
-tbody.quad tr:nth-child(8n+2) { background-color: var(--background) }
-tbody.quad tr:nth-child(8n+3) { background-color: var(--background) }
-tbody.quad tr:nth-child(8n+4) { background-color: var(--background); border-bottom: var(--border) 1px solid; }
-tbody.quad tr:nth-child(8n+5) { background-color: transparent }
-tbody.quad tr:nth-child(8n+6) { background-color: transparent }
-tbody.quad tr:nth-child(8n+7) { background-color: transparent }
-tbody.quad tr:nth-child(8n+8) { background-color: transparent; border-bottom: var(--border) 1px solid; }
-tbody.quad tr:nth-child(8n+1) td { padding: 6px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+2) td { padding: 1px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+3) td { padding: 1px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+4) td { padding: 1px 6px 6px 6px }
-tbody.quad tr:nth-child(8n+5) td { padding: 6px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+6) td { padding: 1px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+7) td { padding: 1px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+8) td { padding: 1px 6px 6px 6px }
-tbody.quad tr:nth-child(8n+1) th { padding: 6px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+2) th { padding: 1px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+3) th { padding: 1px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+4) th { padding: 1px 6px 6px 6px }
-tbody.quad tr:nth-child(8n+5) th { padding: 6px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+6) th { padding: 1px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+7) th { padding: 1px 6px 1px 6px }
-tbody.quad tr:nth-child(8n+8) th { padding: 1px 6px 6px 6px }
+h2, h3, h4, h5, h6 { margin-top: 12px; }
 
 dl.one_line { display: block }
 dl.one_line dt {
@@ -108,7 +44,7 @@ dl.one_line dd {
 }
 dl dd { margin-left: 1em; }
 
-span.muted {
+.muted {
   font-size: smaller;
   color: var(--text-muted)
 }
@@ -163,7 +99,7 @@ td.content {
 }
 
 ul li {
-  margin-left: 16px;
+  margin-left: 8px;
 }
 
 .t1 {
@@ -173,4 +109,32 @@ ul li {
 
 .t2 {
   color: limegreen;
+  text-shadow: 0 0 1px orangered;
+}
+.t3 {
+  color: lightskyblue;
+}
+.t4 {
+  color: cadetblue;
+}
+
+.tc {
+  padding: 4px 0;
+  margin: 0;
+  border-top: var(--border) 1px solid;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tca {
+  background-color: var(--background);
+}
+.tcb {
+  background-color: transparent;
+}
+
+.ti {
+  margin: 0;
+  padding-left: 1em;
 }
