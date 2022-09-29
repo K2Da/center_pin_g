@@ -1,0 +1,1 @@
+import{a as n,x as o,o as c,c as m,B as s,h as r,t as u,u as _,I as l}from"./entry.357d18a4.js";const f=n({__name:"TeamName",props:{name:null,currentName:null},setup(e){const{$sha1:t}=o();return(p,i)=>{const a=l;return c(),m(a,{to:{name:"team-detail",query:{m:_(t)(e.currentName||e.name)}},"no-prefetch":""},{default:s(()=>[r(u(e.name),1)]),_:1},8,["to"])}}});export{f as _};
