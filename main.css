@@ -4,7 +4,11 @@ body {
   margin: 0;
 }
 
-table { table-layout: auto }
+table {
+  border-top: var(--border) 1px solid;
+  border-bottom: var(--border) 1px solid;
+  table-layout: auto;
+}
 th { text-align: center }
 td { text-align: center }
 .tal { text-align: left }
@@ -30,73 +34,12 @@ h2 { border-bottom: var(--border) 2px solid }
 h3 { border-bottom: var(--border) 1px solid; }
 h2, h3, h4, h5, h6 { margin-top: 12px; }
 
-dl.one_line { display: block }
-dl.one_line dt {
-  font-size: smaller;
-  color: var(--text-muted);
-  display: inline;
-  margin: 0 6px 0 10px
-}
-dl.one_line dd {
-  color: var(--text-bright);
-  display: inline;
-  margin: 0
-}
-dl dd { margin-left: 1em; }
-
 .muted {
   font-size: smaller;
   color: var(--text-muted)
 }
 
 .m { font-family: monospace, serif }
-
-div.popup {
-  position: absolute;
-  margin: 0 0 0 0;
-  padding: 0 3px 5px 3px;
-
-  border: var(--border) solid 2px;
-  border-radius: 5px;
-  overflow-wrap: normal;
-  text-align: left;
-
-  background-color: var(--background);
-  z-index: 256;
-  font-weight: normal;
-}
-
-div.popup h3 {
-  margin: 0 0 4px 0;
-  padding: 10px 2px 6px 8px;
-}
-
-div.popup h4 {
-  margin: 0;
-  padding: 10px 2px 6px 10px;
-}
-
-div.popup p {
-  margin: 0;
-  padding: 2px 14px;
-  white-space: normal;
-}
-
-td.row_no {
-  vertical-align: middle;
-  margin-left: 0;
-  margin-right: 0;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-td.content {
-  padding-left: 2em;
-}
-
-.detail-tab {
-  margin: 0 -5px;
-}
 
 ul li {
   margin-left: 8px;
@@ -121,20 +64,25 @@ ul li {
 .tc {
   padding: 4px 0;
   margin: 0;
-  border-top: var(--border) 1px solid;
+  border-bottom: var(--border) 1px solid;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-
+.tc1 {
+  border-top: var(--border) 1px solid;
+}
 .tca {
   background-color: var(--background);
 }
 .tcb {
   background-color: transparent;
 }
-
 .ti {
   margin: 0;
   padding-left: 1em;
+}
+.tight {
+  padding: 0;
+  margin: 0;
 }
