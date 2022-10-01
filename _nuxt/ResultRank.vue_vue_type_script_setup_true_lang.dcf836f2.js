@@ -1,1 +1,0 @@
-import{a as o,o as a,e as t,h as n,t as r,F as s,f as c}from"./entry.48111f46.js";const _=c("span",{class:"muted"},"\u4F4D",-1),k=n("-"),p=o({__name:"ResultRank",props:{rank:null},setup(e){return(l,m)=>e.rank?(a(),t(s,{key:0},[n(r(e.rank),1),_],64)):(a(),t(s,{key:1},[k],64))}});export{p as _};
