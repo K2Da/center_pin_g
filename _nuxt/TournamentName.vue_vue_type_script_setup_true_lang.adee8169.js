@@ -1,1 +1,0 @@
-import{a as n,o as a,c as o,B as r,h as m,t as c,I as s}from"./entry.45225e92.js";const p=n({__name:"TournamentName",props:{tournamentKey:null,name:null},setup(t){return(u,_)=>{const e=s;return a(),o(e,{to:{name:"tournament-detail",query:{t:t.tournamentKey}},"no-prefetch":""},{default:r(()=>[m(c(t.name),1)]),_:1},8,["to"])}}});export{p as _};
