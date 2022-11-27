@@ -1,0 +1,1 @@
+import{a as n,o as a,c as o,B as r,i as c,t as m,E as s}from"./entry.aaf6cfe9.js";const l=n({__name:"Name",props:{tournamentKey:null,name:null},setup(t){return(u,_)=>{const e=s;return a(),o(e,{to:{name:"tournament-detail",query:{t:t.tournamentKey}},"no-prefetch":""},{default:r(()=>[c(m(t.name),1)]),_:1},8,["to"])}}});export{l as _};
