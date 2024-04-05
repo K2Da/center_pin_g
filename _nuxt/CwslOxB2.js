@@ -1,1 +1,0 @@
-import{_ as m}from"./0lTa5olm.js";import{g as c,o as e,c as a,B as _,F as n,b as p,d as l,E as u}from"./CSdh4KVk.js";const y=c({__name:"PlayersLine",props:{names:{}},setup(i){return(r,d)=>{const t=m;return e(!0),a(n,null,_(r.names,(s,o)=>(e(),a(n,{key:s},[p(t,{name:s},null,8,["name"]),o!==r.names.length-1?(e(),a(n,{key:0},[l(", ")],64)):u("",!0)],64))),128)}}});export{y as _};
