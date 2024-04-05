@@ -1,0 +1,1 @@
+import{g as o,o as a,c as s,d as t,t as r,F as n,a as c}from"./Dt5vB_RT.js";const p=c("span",{class:"muted"},"位",-1),d=o({__name:"ResultRank",props:{rank:{}},setup(_){return(e,k)=>e.rank?(a(),s(n,{key:0},[t(r(e.rank),1),p],64)):(a(),s(n,{key:1},[t("-")],64))}});export{d as _};
