@@ -34,7 +34,7 @@ const { data } = await useFetch(
       <div style="width: 24em">
         <ul class="vanila" v-if="team.lost_team.length > 0">
           <li v-for="lost of team.lost_team" class="vanila">
-            <TeamName :name="lost.name" />
+            <TeamName :name="lost.name" currentName="lost.current_name" />
             ( {{ lost.rank }}位 )
           </li>
         </ul>
