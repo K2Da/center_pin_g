@@ -31,15 +31,16 @@ const filtered = () => {
       });
     }
   }
-  events = events.sort((a, b) => (a.date < b.date ? 1 : -1));
+  events.sort((a, b) => {
+    if (a.date.getTime() !== b.date.getTime())
+      return a.date.getTime() < b.date.getTime() ? 1 : -1;
+    if (a.title !== b.title) return a.title < b.title ? -1 : 1;
+    return a.topic < b.topic ? -1 : 1;
+  });
   return events;
 };
 
 const dayText = (d: Date) => {
-  if (!render) {
-    // SSG中は今日が何日かわからないので、表示しない
-    return '';
-  }
   const diff = diffDays(d.getTime(), new Date().getTime());
   if (-2 <= diff && diff <= 2) {
     return ['一昨日', '昨日', '今日', '明日', '明後日'][diff + 2];
@@ -47,12 +48,7 @@ const dayText = (d: Date) => {
     return '';
   }
 };
-const render = ref(false);
 const events = computed(() => filtered());
-
-onMounted(() => {
-  render.value = true;
-});
 </script>
 <template>
   <div class="calendar">
@@ -68,7 +64,12 @@ onMounted(() => {
       >
         {{ e.date.getDate() }}日 ({{
           e.date.toLocaleDateString('ja-JP', { weekday: 'short' })
-        }}) <span style="color: yellowgreen">{{ dayText(e.date) }}</span>
+        }})
+        <ClientOnly
+          ><span style="color: yellowgreen">{{
+            dayText(e.date)
+          }}</span></ClientOnly
+        >
       </h4>
       <div class="event" v-if="e.title != ''">
         <span class="m" v-if="e.date.getSeconds() !== 1">

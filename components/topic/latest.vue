@@ -2,7 +2,7 @@
 const { data } = await useAsyncData(() => {
   return queryContent('/topic')
     .where({ updated: { $exists: true } })
-    .sort({ updated: -1 })
+    .sort({ updated: -1, _path: 1 })
     .limit(5)
     .find();
 });
