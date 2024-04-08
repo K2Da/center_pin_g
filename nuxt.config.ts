@@ -26,16 +26,6 @@ export default defineNuxtConfig({
     ],
     '@nuxt/content',
   ],
-  nitro: {
-    prerender: {
-      ignore: [
-        '/tournament/detail?',
-        '/team/detail?',
-        '/player/detail?',
-        '/tournament/group?',
-      ],
-    },
-  },
   content: {
     documentDriven: false,
     markdown: {
