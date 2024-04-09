@@ -1,16 +1,16 @@
 <script setup lang="ts">
-  type Props = { date1: number; date2: number; };
+type Props = { date1: number; date2: number };
 const { date1, date2 } = defineProps<Props>();
 
 const ymd = computed(() => {
-  const dd1 = new Date(date1);
-  const dd2 = new Date(date2);
-  const y1 = dd1.getFullYear() % 100;
-  const m1 = dd1.getMonth() + 1;
-  const d1 = dd1.getDate();
-  const y2 = dd2.getFullYear() % 100;
-  const m2 = dd2.getMonth() + 1;
-  const d2 = dd2.getDate();
+  const dd1 = cdateJST(date1);
+  const dd2 = cdateJST(date2);
+  const y1 = dd1.get('year') % 100;
+  const m1 = dd1.get('month') + 1;
+  const d1 = dd1.get('date');
+  const y2 = dd2.get('year') % 100;
+  const m2 = dd2.get('month') + 1;
+  const d2 = dd2.get('date');
   return { y1, m1, d1, y2, m2, d2 };
 });
 </script>

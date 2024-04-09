@@ -2,13 +2,13 @@
 const { date } = defineProps<{ date: string; year?: boolean }>();
 
 const d = computed(() => {
-  const dd = new Date(date);
-  const y = dd.getFullYear();
-  const m = dd.getMonth() + 1;
-  const d = dd.getDate();
-  const hh = dd.getHours();
-  const mm = dd.getMinutes();
-  const ss = dd.getSeconds();
+  const dd = cdateJST(date);
+  const y = dd.get('year');
+  const m = dd.get('month') + 1;
+  const d = dd.get('date');
+  const hh = dd.get('hour');
+  const mm = dd.get('minute');
+  const ss = dd.get('second');
   const t = ` ${hh < 10 ? '0' : ''}${hh}:${mm < 10 ? '0' : ''}${mm}`;
   return { y, m, d, t, ss };
 });
