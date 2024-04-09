@@ -3,19 +3,19 @@ const { data } = await useAsyncData(() => queryContent('/topic').find());
 const { prev, next } = defineProps<{ prev: number; next: number }>();
 
 const filtered = () => {
-  const current = new Date();
+  const current = cdateJST();
   const day = 24 * 60 * 60 * 1000;
-  const from = new Date(current.getTime() - prev * day);
-  const to = new Date(current.getTime() + next * day);
+  const from = current.add(-prev, 'day');
+  const to = current.add(next, 'day');
 
-  let events: { topic: string; path: string; date: Date; title: string }[] = [
+  let events: { topic: string; path: string; date: CDate; title: string }[] = [
     { topic: '', path: '', date: current, title: '' },
   ];
   for (const topic of data.value) {
     for (const date of topic.dates) {
       if (
         prev !== 0 &&
-        (new Date(date.date) < from || new Date(date.date) > to)
+        (cdateJST(date.date) < from || cdateJST(date.date) > to)
       ) {
         continue;
       }
@@ -23,22 +23,22 @@ const filtered = () => {
         topic: topic.title || '',
         path: topic._path || '',
         title: date.title,
-        date: new Date(date.date),
+        date: cdateJST(date.date),
       });
     }
   }
   events.sort((a, b) => {
-    if (a.date.getTime() !== b.date.getTime())
-      return a.date.getTime() < b.date.getTime() ? 1 : -1;
-    if (a.title !== b.title) return a.title < b.title ? -1 : 1;
-    return a.topic < b.topic ? -1 : 1;
+    if (a.date.toDate().getTime() !== b.date.toDate().getTime())
+      return a.date.toDate().getTime() < b.date.toDate().getTime() ? 1 : -1;
+    if (a.title !== b.title) return a.title > b.title ? 1 : -1;
+    return a.topic > b.topic ? 1 : -1;
   });
   return events;
 };
 
-const dayText = (d: Date) => {
+const dayText = (d: CDate) => {
   if (!mounted.value) return '';
-  const diff = diffDays(d.getTime(), new Date().getTime());
+  const diff = diffDays(d.toDate().getTime(), cdateJST().toDate().getTime());
   if (-2 <= diff && diff <= 2) {
     return ['一昨日', '昨日', '今日', '明日', '明後日'][diff + 2];
   } else {
@@ -55,25 +55,27 @@ onMounted(async () => {
 <template>
   <div class="calendar" v-if="mounted || prev === 0">
     <template v-for="(e, i) in events" class="calendar">
-      <h3 v-if="i === 0 || e.date.getMonth() !== events[i - 1].date.getMonth()">
-        {{ e.date.getFullYear() }}年 {{ e.date.getMonth() + 1 }}月
+      <h3
+        v-if="
+          i === 0 || e.date.get('month') !== events[i - 1].date.get('month')
+        "
+      >
+        {{ e.date.format('YYYY年 MM月') }}
       </h3>
       <h4
         v-if="
           i === 0 ||
-          diffDays(e.date.getTime(), events[i - 1].date.getTime()) !== 0
+          e.date.format('YYYYMMDD') !== events[i - 1].date.format('YYYYMMDD')
         "
       >
-        {{ e.date.getDate() }}日 ({{
-          e.date.toLocaleDateString('ja-JP', { weekday: 'short' })
-        }})
+        {{ e.date.get('date') }}日 ({{ e.date.locale('ja').format('ddd') }})
 
         <span style="color: yellowgreen">{{ dayText(e.date) }}</span>
       </h4>
       <div class="event" v-if="e.title != ''">
-        <span class="m" v-if="e.date.getSeconds() !== 1">
-          {{ e.date.getHours().toString().padStart(2, '0') }}:{{
-            e.date.getMinutes().toString().padStart(2, '0')
+        <span class="m" v-if="e.date.get('second') !== 1">
+          {{ e.date.get('hour').toString().padStart(2, '0') }}:{{
+            e.date.get('minute').toString().padStart(2, '0')
           }}
         </span>
         <span v-else class="m">--:--</span>

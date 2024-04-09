@@ -1,3 +1,5 @@
+import { cdate } from 'cdate';
+
 export const containerClass = (row: number) => {
   return [row % 2 === 1 ? 'tcb' : 'tca', row === 0 ? 'tc1' : undefined];
 };
@@ -5,7 +7,7 @@ export const containerClass = (row: number) => {
 export const subContainerClass = (
   row: number,
   parentRow: number,
-  total: number
+  total: number,
 ) => {
   return [
     (row + parentRow) % 2 === 1 ? 'tca' : 'tcb',
@@ -33,3 +35,6 @@ export const ratingClass = (player: string) => {
   }
   return 't4';
 };
+
+export const cdateJST = cdate().tz('Asia/Tokyo').cdateFn();
+export type CDate = cdate.CDate;
