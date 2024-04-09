@@ -12,7 +12,7 @@ const { data } = await useAsyncData(() => {
   <div v-for="article in data" :key="article._path">
     <ContentDoc v-slot="{ doc }" :path="article._path" :head="false">
       <article>
-        <h3>{{ article.title }}</h3>
+        <h2>{{ article.title }}</h2>
         <p class="attr">
           <CalendarDate :date="article.updated" />
           <span class="muted">更新</span>
