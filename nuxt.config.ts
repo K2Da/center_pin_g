@@ -4,15 +4,7 @@ export default defineNuxtConfig({
     strict: true,
   },
   css: ['@/assets/main.scss'],
-  routeRules: {
-    '/': { prerender: true },
-    '/topic': { prerender: true },
-    '/calendar': { prerender: true },
-    '/tournament': { prerender: true },
-    '/player': { prerender: true },
-    '/team': { prerender: true },
-    '/about': { prerender: true },
-  },
+  routeRules: {},
   modules: [
     [
       '@pinia/nuxt',
