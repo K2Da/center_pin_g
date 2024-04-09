@@ -3,11 +3,11 @@ const route = useRoute();
 import type { Ref } from 'vue';
 import type { TeamDetail, TeamDetailView } from '~/api/TeamDetail';
 
-const detail: Ref<TeamDetailView|null> = ref(null);
+const detail: Ref<TeamDetailView | null> = ref(null);
 
-const load = () => {
-  $fetch(`${flare_host()}/team/${route.query.m}`)
-    .then((data) => { detail.value = teamToView(data as TeamDetail); });
+const load = async () => {
+  const { data } = await useFetch(`${flare_host()}/team/${route.query.m}`);
+  detail.value = teamToView(data.value);
 };
 
 watch(
@@ -19,18 +19,15 @@ watch(
 );
 
 setPage(route.path);
-
-if (process.client) load();
+await load();
 </script>
 
 <template>
   <div>
-    <ClientOnly v-if="detail">
-      <PageHead :title="`${detail.team.name}: 編成`" />
-      <h1>{{ detail.team.name }}</h1>
-      <TeamNaviLink current="member" :m="route.query.m" />
+    <PageHead :title="`${detail.team.name}: 編成`" />
+    <h1>{{ detail.team.name }}</h1>
+    <TeamNaviLink current="member" :m="route.query.m" />
 
-      <TeamDetailMember :detail="detail" />
-    </ClientOnly>
+    <TeamDetailMember :detail="detail" />
   </div>
 </template>

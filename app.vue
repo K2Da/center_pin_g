@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// SSG時にすべてのデータをロードしておく
+// SSG、SSR時にすべてのデータをロードしておく
 // Clientでは一部の大きいデータのみ全体をロードし直す
 const statsStore = useStatsStore();
 await statsStore.fetch();
@@ -11,4 +11,3 @@ await statsStore.fetch();
     <NuxtPage />
   </div>
 </template>
-

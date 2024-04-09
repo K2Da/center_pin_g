@@ -72,7 +72,7 @@ export const useStatsStore = defineStore('stats', {
   actions: {
     async fetch() {
       if (process.client) {
-        // SSG時にデータをカットしているものは、全体を取得し直す
+        // SSG/SSR時にデータをカットしているものは、全体を取得し直す
         fetchPlayerMaster().then((res) => {
           this.players = res;
         });
@@ -80,7 +80,7 @@ export const useStatsStore = defineStore('stats', {
           this.teams = res;
         });
       } else {
-        // SSG時に取得して、ページに埋め込むもの
+        // SSG/SSR時に取得して、ページに埋め込むもの
         const players = await fetchPlayerMaster();
         this.playerAlias = createPlayersAlias(players);
         this.tournaments = await fetchTournamentMaster();

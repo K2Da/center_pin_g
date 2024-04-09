@@ -1,10 +1,10 @@
-import type { PlayerDetail } from '~/api/PlayerDetail';
 import type { TeamDetail } from '~/api/TeamDetail';
 import type { PlayersResult, RankedPlayer } from '~/api/PlayerIndex';
 import type { TeamIndex } from '~/api/TeamIndex';
 import type { TournamentIndex } from '~/api/Tournaments';
 import type { TournamentDetail } from '~/api/TournamentDetail';
-
+// piniaから使うものはpayloadを残す必要がないので$fetchを使う
+// そうでないものは、useFetchを使う
 const FLARE_PREFIX = 'https://flare.center-ping.workers.dev';
 // const FLARE_PREFIX = 'http://localhost:8787';
 const FLARE_DATA = `${FLARE_PREFIX}/blue`;

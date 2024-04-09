@@ -3,11 +3,11 @@ import type { Ref } from 'vue';
 import type { PlayerDetail } from '~/api/PlayerDetail';
 
 const route = useRoute();
-const detail: Ref<PlayerDetail|null> = ref(null);
+const detail: Ref<PlayerDetail | null> = ref(null);
 
-const load = () => {
-  $fetch(`${flare_host()}/player/${route.query.p}`)
-    .then((data: PlayerDetail) => { detail.value = data; });
+const load = async () => {
+  const { data } = await useFetch(`${flare_host()}/player/${route.query.p}`);
+  detail.value = data.value;
 };
 
 watch(
@@ -19,21 +19,17 @@ watch(
 );
 
 setPage(route.path);
-
-if (process.client) load();
+await load();
 </script>
 
 <template>
   <div>
-    <ClientOnly v-if="detail">
-      <PageHead :title="`${detail.player.collated_name}: 編成`" />
-      <h1 :class="ratingClass(detail.player.collated_name)">{{ detail.player.collated_name }}</h1>
-      <PlayerNaviLink current="member" :p="route.query.p" />
+    <PageHead :title="`${detail.player.collated_name}: 編成`" />
+    <h1 :class="ratingClass(detail.player.collated_name)">
+      {{ detail.player.collated_name }}
+    </h1>
+    <PlayerNaviLink current="member" :p="route.query.p" />
 
-      <PlayerDetailMember :detail="detail" />
-
-      <template #fallback>
-      </template>
-    </ClientOnly>
+    <PlayerDetailMember :detail="detail" />
   </div>
 </template>
