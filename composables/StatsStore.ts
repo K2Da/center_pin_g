@@ -66,7 +66,6 @@ export const useStatsStore = defineStore('stats', {
     rating: {} as Record<string, number>,
     tournaments: {} as TournamentIndex,
     teams: [] as TeamIndex[],
-    playerAlias: {} as Record<string, string>,
     teamAlias: {} as Record<string, string>,
   }),
   actions: {
@@ -82,7 +81,6 @@ export const useStatsStore = defineStore('stats', {
       } else {
         // SSG/SSR時に取得して、ページに埋め込むもの
         const players = await fetchPlayerMaster();
-        this.playerAlias = createPlayersAlias(players);
         this.tournaments = await fetchTournamentMaster();
         this.ratingRange = createRateRange(players);
         this.players = players.slice(0, PER_PAGE);
