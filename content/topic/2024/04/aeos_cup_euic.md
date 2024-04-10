@@ -16,7 +16,7 @@ urls:
   - title: Day2 応援配信
     url: https://www.youtube.com/watch?v=GhEflVnfcU8
   - title: 大会結果
-    url: /tournament/detail?t=aeos_cup_at_euic
+    url: /tournament/detail/aeos_cup_at_euic
 ---
 
 EUIC(Pokémon Europe International Championships)内でAeos Cup(エオスカップ)が開催されました。
