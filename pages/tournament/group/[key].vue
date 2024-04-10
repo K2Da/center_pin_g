@@ -4,17 +4,20 @@ import type { TournamentIndex } from '~~/api/Tournaments';
 import { fetchTournamentGroup } from '~~/utils/fetches';
 
 const route = useRoute();
-const group: Ref<TournamentIndex|null> = ref(null);
+const group: Ref<TournamentIndex | null> = ref(null);
 
 const load = () => {
-  fetchTournamentGroup((route.query.g || '').toString())
-    .then((data: TournamentIndex) => { group.value = data; });
+  fetchTournamentGroup((route.params.key || '').toString()).then(
+    (data: TournamentIndex) => {
+      group.value = data;
+    },
+  );
 };
 
 setPage(route.path);
 
 watch(
-  () => route.query,
+  () => route.params.key,
   async () => {
     group.value = null;
     load();

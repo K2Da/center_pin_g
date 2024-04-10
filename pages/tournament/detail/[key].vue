@@ -8,13 +8,15 @@ const detail: Ref<TournamentDetail | null> = ref(null);
 
 const load = async () => {
   detail.value = null;
-  detail.value = await fetchTournamentDetail((route.query.t || '').toString());
+  detail.value = await fetchTournamentDetail(
+    (route.params.key || '').toString(),
+  );
 };
 
 setPage(route.path);
 
 watch(
-  () => route.query,
+  () => route.params.key,
   async () => {
     detail.value = null;
     await load();

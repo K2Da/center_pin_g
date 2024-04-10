@@ -6,13 +6,13 @@ export default defineNuxtConfig({
   typescript: { strict: true },
   css: ['@/assets/main.scss'],
   routeRules: {
-    '/': { prerender: true, swr: true },
-    '/topic': { prerender: true, swr: true },
-    '/calendar': { prerender: true, swr: true },
-    '/tournament': { prerender: true, swr: true },
-    '/player': { prerender: true, swr: true },
-    '/team': { prerender: true, swr: true },
-    '/about': { prerender: true, swr: true },
+    '/': { prerender: true },
+    '/topic': { prerender: true },
+    '/calendar': { prerender: true },
+    '/tournament': { prerender: true },
+    '/player': { prerender: true },
+    '/team': { prerender: true },
+    '/about': { prerender: true },
   },
   modules: [
     [
