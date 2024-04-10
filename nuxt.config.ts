@@ -1,8 +1,9 @@
 export default defineNuxtConfig({
-  hooks: undefined,
-  typescript: {
-    strict: true,
+  nitro: {
+    preset: 'cloudflare-pages',
   },
+  hooks: undefined,
+  typescript: { strict: true },
   css: ['@/assets/main.scss'],
   routeRules: {
     '/': { prerender: true, swr: true },
