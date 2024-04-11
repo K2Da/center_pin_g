@@ -2,7 +2,7 @@
 type Props = { name: string; page?: 'detail' | 'member' };
 const { name, page } = defineProps<Props>();
 const pageName =
-  page === 'member' ? 'player-member-name' : 'player-detail-name';
+  page === 'member' ? 'player-name-member' : 'player-name-detail';
 </script>
 
 <template>

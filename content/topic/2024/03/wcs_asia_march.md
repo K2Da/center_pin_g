@@ -20,11 +20,11 @@ urls:
   - title: Day1配信
     url: https://www.youtube.com/watch?v=ngwftUrnWjE
   - title: Day1結果
-    url: /tournament/detail/wcs_2024_03_day1
+    url: /tournament/wcs_2024_03_day1
   - title: Day2配信
     url: https://www.youtube.com/watch?v=bc0dW8uBhTw
   - title: Day2結果
-    url: /tournament/detail/wcs_2024_03_day2
+    url: /tournament/wcs_2024_03_day2
 ---
 
 上位 3 チームに PJCS2024 への出場権が与えられる大会。Day 1 ではスイスドローでのこり 1 チームになるまで試合を行い、全勝のチーム + 7 チームが Day 2 へ進出。

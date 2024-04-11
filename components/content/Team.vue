@@ -1,12 +1,11 @@
 <script setup lang="ts">
 const { n } = defineProps<{ n: string }>();
 const statsStore = useStatsStore();
-const currentName = statsStore.teamAlias[n];
 </script>
 <template>
   <NuxtLink
-    v-if="currentName"
-    :to="{ name: 'team-detail-name', params: { name: currentName } }"
+    v-if="n"
+    :to="{ name: 'team-name-detail', params: { name: n } }"
     no-prefetch
     >{{ n }}</NuxtLink
   >

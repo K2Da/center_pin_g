@@ -13,7 +13,7 @@ setPage(route.path, 'Center Pin(g)', 'Pokémon UNITE大会結果収集サイト'
     <div style="flex-grow: 1; padding: 4px">
       <TopicLatest />
       <p class="more">
-        トピック最新更新5件表示中 [<NuxtLink :to="{ name: 'topic' }"
+        トピック最新更新5件表示中 [<NuxtLink :to="{ name: 'topics' }"
           >+ more</NuxtLink
         >]
       </p>
