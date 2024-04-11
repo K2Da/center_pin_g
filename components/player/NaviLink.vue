@@ -12,7 +12,7 @@ const { current, name } = defineProps<Props>();
   <template v-else>戦績</template>
   |
   <NuxtLink
-    :to="{ name: 'player-name-detail', params: { name } }"
+    :to="{ name: 'player-name-member', params: { name } }"
     no-prefetch
     v-if="current !== 'member'"
     >編成</NuxtLink
