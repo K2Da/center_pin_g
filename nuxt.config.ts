@@ -7,11 +7,11 @@ export default defineNuxtConfig({
   css: ['@/assets/main.scss'],
   routeRules: {
     '/': { prerender: true },
-    '/topic': { prerender: true },
+    '/topics': { prerender: true },
     '/calendar': { prerender: true },
-    '/tournament': { prerender: true },
-    '/player': { prerender: true },
-    '/team': { prerender: true },
+    '/tournaments': { prerender: true },
+    '/players': { prerender: true },
+    '/teams': { prerender: true },
     '/about': { prerender: true },
   },
   modules: [
