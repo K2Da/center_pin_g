@@ -6,7 +6,7 @@ const currentName = statsStore.teamAlias[n];
 <template>
   <NuxtLink
     v-if="currentName"
-    :to="{ name: 'team-detail', query: { m: sha1(currentName) } }"
+    :to="{ name: 'team-detail-name', params: { name: currentName } }"
     no-prefetch
     >{{ n }}</NuxtLink
   >

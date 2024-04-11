@@ -49,6 +49,11 @@ export const fetchTeamDetail = async (teamHash: string) => {
   return data.value;
 };
 
+export const fetchTeam = async (teamName: string) => {
+  const { data } = await useFetch(`${FLARE_DATA}/team2/${teamName}`);
+  return data.value;
+};
+
 export const fetchTournamentDetail = async (tournamentKey: string) => {
   const { data } = await useFetch(`${FLARE_DATA}/tournament/${tournamentKey}`);
   return data.value;
