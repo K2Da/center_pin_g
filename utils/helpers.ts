@@ -22,8 +22,10 @@ export const diffDays = (date1: number, date2: number): number => {
   return Math.round((d1 - d2) / 1000.0 / 60.0 / 60.0 / 24.0);
 };
 
-export const ratingClass = (player: string) => {
-  const r = rating[player] ?? 0;
+export const ratingClass = (ratingRange, ratingDic, player: string) => {
+  if (ratingRange.t1 === 0) return 't4';
+
+  const r = ratingDic[player] ?? 0;
   if (ratingRange) {
     if (r > ratingRange.t1) return 't1';
     if (r > ratingRange.t2) return 't2';

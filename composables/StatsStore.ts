@@ -37,9 +37,9 @@ const createRateRange = (players: RankedPlayer[]) => {
 export const useStatsStore = defineStore('stats', {
   state: () => ({
     players: [] as RankedPlayer[],
-    ratingRange: { t1: 0, t2: 0, t3: 0 } as RatingRange,
+    ratingRange: { t1: 0, t2: 0, t3: 0 } as RatingRange, // 小さい
     stats: { count: { player: 0, tournament: 0, team: 0 } } as SiteStats,
-    rating: {} as Record<string, number>,
+    ratingDic: {} as Record<string, number>,
     tournaments: {} as TournamentIndex,
     teams: [] as TeamIndex[],
   }),
@@ -49,30 +49,40 @@ export const useStatsStore = defineStore('stats', {
         // SSG/SSR時にデータをカットしているものは、全体を取得し直す
         fetchPlayerMaster().then((res) => {
           this.players = res;
+          this.ratingRange = createRateRange(this.players);
+          this.ratingDic = createPlayersDic(this.players, this.ratingRange.t3);
         });
         fetchTeamMaster().then((res) => {
           this.teams = res;
         });
+        this.tournaments = await fetchTournamentMaster();
       } else {
         // SSG/SSR時に取得して、ページに埋め込むもの
-        const players = await fetchPlayerMaster();
-        this.tournaments = await fetchTournamentMaster();
-        this.ratingRange = createRateRange(players);
-        this.players = players.slice(0, PER_PAGE);
-        this.rating = createPlayersDic(players, this.ratingRange.t3);
-        const teams = (await fetchTeamMaster()) as TeamIndex[];
-        this.teams = teams.slice(0, PER_PAGE);
-
+        // const teams = (await fetchTeamMaster()) as TeamIndex[];
+        // this.teams = teams.slice(0, PER_PAGE);
+        /*
         this.stats.count = {
           player: players.length,
           tournament: this.tournaments.tournaments.length,
           team: teams.length,
         };
+        */
       }
-
-      // 変更されないものはglobal変数で直接扱う
-      ratingRange = this.ratingRange;
-      rating = this.rating;
+    },
+    async fetchTournamentsOnSSR() {
+      if (!process.client) this.tournaments = await fetchTournamentMaster();
+    },
+    async fetchPlayerMasterOnSSR() {
+      if (!process.client) {
+        const players = await fetchPlayerMaster();
+        this.players = players.slice(0, PER_PAGE);
+      }
+    },
+    async fetchTeamMasterOnSSR() {
+      if (!process.client) {
+        const teams = await fetchTeamMaster();
+        this.teams = teams.slice(0, PER_PAGE);
+      }
     },
   },
 });

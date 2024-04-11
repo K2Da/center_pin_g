@@ -7,7 +7,7 @@ let list: (
   | TournamentIndex['tournaments'][number]
   | TournamentIndex['groups'][number]
 )[] = [];
-list = list.concat(group.tournaments);
+if (group.tournaments) list = list.concat(group.tournaments);
 if (group.groups) list = list.concat(group.groups);
 list = list.sort((a, b) => b.date - a.date);
 </script>

@@ -44,6 +44,9 @@ onMounted(() => {
   isMounted.value = true;
   filterString.value = localStorage.getItem('playerFilter') || '';
 });
+onServerPrefetch(async () => {
+  await statsStore.fetchPlayerMasterOnSSR();
+});
 </script>
 
 <template>
@@ -54,7 +57,13 @@ onMounted(() => {
       style="box-sizing: border-box; width: 100%"
     />
 
-    <ListPager :pageNo="pageNoRef" :maxPage="maxPage" @change="changePageNo" />
+    <ClientOnly>
+      <ListPager
+        :pageNo="pageNoRef"
+        :maxPage="maxPage"
+        @change="changePageNo"
+      />
+    </ClientOnly>
 
     <div v-if="displayPlayers">
       <div v-if="displayPlayers.length > 0">
@@ -121,6 +130,12 @@ onMounted(() => {
       </div>
     </div>
 
-    <ListPager :pageNo="pageNoRef" :maxPage="maxPage" @change="changePageNo" />
+    <ClientOnly>
+      <ListPager
+        :pageNo="pageNoRef"
+        :maxPage="maxPage"
+        @change="changePageNo"
+      />
+    </ClientOnly>
   </div>
 </template>

@@ -11,16 +11,6 @@ setPage(route.path, 'About', 'Pokémon UNITE大会結果収集サイト', 'site'
     <h1>About</h1>
     <p>Pokémon UNITE大会結果を収集しているサイトです。</p>
     <p>
-      現在、{{ stats.count.tournament.toLocaleString() }}
-      <span class="muted">大会</span>
-      {{ stats.count.player.toLocaleString() }}
-      <span class="muted">プレイヤー</span>
-      {{ stats.count.team.toLocaleString() }}
-      <span class="muted">チーム</span>
-      の戦績を収集しています。
-    </p>
-
-    <p>
       サイト内のデータは基本的に各大会で使用されたトーナメントサイトから取得したデータをそのまま使用しています。
     </p>
     <p>
