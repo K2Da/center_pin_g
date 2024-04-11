@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const route = useRoute();
-const topic = '/topic/' + route.query.t;
+const topic = '/topic/' + route.params.key.replaceAll('-', '/');
 setPage(route.path);
 </script>
 <template>
-  <ContentDoc :path="topic" :head="true" v-if="route.query.t">
+  <ContentDoc :path="topic" :head="true" v-if="route.params.key">
     <template #not-found> </template>
     <template #empty> </template>
     <template #default="{ doc }">

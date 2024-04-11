@@ -17,8 +17,10 @@ const { data } = await useAsyncData(() => {
           }}<template v-if="article.excerpt">
             [<NuxtLink
               :to="{
-                name: 'topic-detail',
-                query: { t: article._path.substring(7) },
+                name: 'topic-key',
+                params: {
+                  key: article._path.substring(7).replaceAll('/', '-'),
+                },
               }"
               no-prefetch
               >+</NuxtLink
@@ -47,8 +49,8 @@ const { data } = await useAsyncData(() => {
         <p class="more" v-if="article.excerpt">
           要約表示中 [<NuxtLink
             :to="{
-              name: 'topic-detail',
-              query: { t: article._path.substring(7) },
+              name: 'topic-key',
+              params: { key: article._path.substring(7).replaceAll('/', '-') },
             }"
             no-prefetch
             >全文</NuxtLink

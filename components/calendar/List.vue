@@ -81,7 +81,10 @@ onMounted(async () => {
         <span v-else class="m">--:--</span>
         &nbsp;
         <NuxtLink
-          :to="{ name: 'topic-detail', query: { t: e.path.substring(7) } }"
+          :to="{
+            name: 'topic-key',
+            params: { key: e.path.substring(7).replaceAll('/', '-') },
+          }"
           no-prefetch
           >{{ e.topic }}</NuxtLink
         >&nbsp;- {{ e.title }}
