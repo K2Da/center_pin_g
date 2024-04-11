@@ -14,14 +14,6 @@ const load = async () => {
 };
 
 setPage(route.path);
-
-watch(
-  () => route.params.key,
-  async () => {
-    detail.value = null;
-    await load();
-  },
-);
 await load();
 </script>
 

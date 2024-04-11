@@ -6,8 +6,8 @@ import { fetchTournamentGroup } from '~~/utils/fetches';
 const route = useRoute();
 const group: Ref<TournamentIndex | null> = ref(null);
 
-const load = () => {
-  fetchTournamentGroup((route.params.key || '').toString()).then(
+const load = async () => {
+  await fetchTournamentGroup((route.params.key || '').toString()).then(
     (data: TournamentIndex) => {
       group.value = data;
     },
@@ -15,16 +15,7 @@ const load = () => {
 };
 
 setPage(route.path);
-
-watch(
-  () => route.params.key,
-  async () => {
-    group.value = null;
-    load();
-  },
-);
-
-if (process.client) load();
+await load();
 </script>
 
 <template>
