@@ -26,30 +26,6 @@ const createPlayersDic = (list: RankedPlayer[], t2: number) => {
   return playersDic;
 };
 
-const createPlayersAlias = (list: RankedPlayer[]) => {
-  const playersAlias: Record<string, string> = {};
-  for (const player of list) {
-    playersAlias[player.name] = player.name;
-    if (player?.data?.aliases === undefined) continue;
-
-    for (const alias of player.data?.aliases) {
-      playersAlias[alias] = player.name;
-    }
-  }
-  return playersAlias;
-};
-
-const createTeamAlias = (list: TeamIndex[]) => {
-  const teamAlias: Record<string, string> = {};
-  for (const team of list) {
-    teamAlias[team.name] = team.name;
-    for (const alias of team.names) {
-      teamAlias[alias] = team.name;
-    }
-  }
-  return teamAlias;
-};
-
 const createRateRange = (players: RankedPlayer[]) => {
   const t1 = players[Math.floor(players.length * t1Ratio)].rating;
   const t2 = players[Math.floor(players.length * t2Ratio)].rating;
@@ -66,7 +42,6 @@ export const useStatsStore = defineStore('stats', {
     rating: {} as Record<string, number>,
     tournaments: {} as TournamentIndex,
     teams: [] as TeamIndex[],
-    teamAlias: {} as Record<string, string>,
   }),
   actions: {
     async fetch() {
@@ -86,7 +61,6 @@ export const useStatsStore = defineStore('stats', {
         this.players = players.slice(0, PER_PAGE);
         this.rating = createPlayersDic(players, this.ratingRange.t3);
         const teams = (await fetchTeamMaster()) as TeamIndex[];
-        this.teamAlias = createTeamAlias(teams);
         this.teams = teams.slice(0, PER_PAGE);
 
         this.stats.count = {
