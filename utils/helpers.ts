@@ -22,10 +22,6 @@ export const diffDays = (date1: number, date2: number): number => {
   return Math.round((d1 - d2) / 1000.0 / 60.0 / 60.0 / 24.0);
 };
 
-export const sha1 = (txt: string): string => {
-  return createHash().update(txt).digest('hex');
-};
-
 export const ratingClass = (player: string) => {
   const r = rating[player] ?? 0;
   if (ratingRange) {
