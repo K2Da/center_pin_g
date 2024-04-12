@@ -25,10 +25,10 @@ const matches = detail.matches.filter(
       {{ match.bracket }}
       <span class="muted">r: </span>{{ match.round }}
     </div>
-    <div class="tac" style="width: 2em">
+    <div class="text-center" style="width: 2em">
       <MatchResult :win="match.wl" />
     </div>
-    <div class="tac" style="width: 4em">
+    <div class="text-center" style="width: 4em">
       {{ match.score_text }}
     </div>
     <div style="width: 24em">

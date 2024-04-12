@@ -70,7 +70,7 @@ const data = computed(() => teamsData(detail));
             ({{ team.count }})
           </template>
           <button
-            class="muted"
+            class="muted bg-slate-900 rounded"
             v-if="!showTeams && data.length > 3 && i === 1"
             @click="showOtherTeams"
           >

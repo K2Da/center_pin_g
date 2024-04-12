@@ -2,17 +2,21 @@
 import type { ComputedRef } from 'vue';
 import type { TeamDetailView } from '~/api/TeamDetail';
 
-type Props = { detail: TeamDetailView; };
+type Props = { detail: TeamDetailView };
 const { detail } = defineProps<Props>();
 const statsStore = useStatsStore();
 const { players } = storeToRefs(statsStore);
 
-const reversedTournaments = computed(() => detail.tournaments.slice().reverse());
+const reversedTournaments = computed(() =>
+  detail.tournaments.slice().reverse(),
+);
 const latestTeams: ComputedRef<Record<string, string>> = computed(() => {
   const ret: Record<string, string> = {};
   if (players.value) {
     for (const p of detail.players) {
-      ret[p] = players.value.filter(obj => obj.name === p)[0]?.latest.team_current || '';
+      ret[p] =
+        players.value.filter((obj) => obj.name === p)[0]?.latest.team_current ||
+        '';
       if (ret[p] === detail.team.name) ret[p] = '';
     }
   }
@@ -41,7 +45,7 @@ const entries = computed(() => {
         else if (max === i) img = current ? 'current' : 'end';
         else img = 'on';
       } else {
-        if (min < i && i <max) img = 'off';
+        if (min < i && i < max) img = 'off';
       }
       ret[p].push(img);
     }
@@ -50,49 +54,78 @@ const entries = computed(() => {
 });
 </script>
 <template>
-  <h2>出場メンバー</h2>
-  <div style="overflow-y: scroll">
-    <table :style="{ width: `${ 12 + 12 + 3 * reversedTournaments.length + 12 + 2 }em` }">
+  <h2 class="mb-2">出場メンバー</h2>
+  <div class="m-2" style="overflow-y: scroll">
+    <table
+      :style="{
+        width: `${12 + 12 + 3 * reversedTournaments.length + 12}em`,
+      }"
+    >
       <thead>
         <tr>
           <th style="width: 12em"></th>
-          <th class="tal" style="width: 12em">前チーム</th>
-          <th class="tac" style="width: 3em; padding-left: 0; padding-right:0; margin-left: 0; margin-right: 0" v-for="(t, i) of reversedTournaments" :key="i">
+          <th class="text-left" style="width: 12em">前チーム</th>
+          <th
+            class="text-center"
+            style="
+              width: 3em;
+              padding-left: 0;
+              padding-right: 0;
+              margin-left: 0;
+              margin-right: 0;
+            "
+            v-for="(t, i) of reversedTournaments"
+            :key="i"
+          >
             {{ i + 1 }}
           </th>
-          <th class="tal nw" style="width: 12em">最新チーム</th>
+          <th class="text-left nw" style="width: 12em">最新チーム</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="p of detail.players" :key="p">
-          <td class="tal"><PlayerName :name="p" page="member" /></td>
-          <td class="tal">
+          <td class="text-left"><PlayerName :name="p" page="member" /></td>
+          <td class="text-left">
             <template v-if="detail.previous_teams[p]">
-              <TeamName :name="detail.previous_teams[p]" :currentName="detail.previous_teams[p]" page="member" />
+              <TeamName
+                :name="detail.previous_teams[p]"
+                :currentName="detail.previous_teams[p]"
+                page="member"
+              />
             </template>
           </td>
           <td v-for="(entry, i) of entries[p]" :key="i" class="tight">
             <template v-if="entry !== ''">
-              <img :src="`/parts/${entry}.svg`" style="width: 3em; height: 2em;" />
+              <img
+                :src="`/parts/${entry}.svg`"
+                style="width: 3em; height: 2em"
+              />
             </template>
           </td>
-          <td class="tal">
+          <td class="text-left">
             <span v-if="latestTeams[p]">
-              <TeamName :name="latestTeams[p]" :currentName="latestTeams[p]" v-if="latestTeams[p]" page="member" />
+              <TeamName
+                :name="latestTeams[p]"
+                :currentName="latestTeams[p]"
+                v-if="latestTeams[p]"
+                page="member"
+              />
             </span>
           </td>
         </tr>
       </tbody>
     </table>
-    <ul>
-      <li v-for="(t, i) of reversedTournaments" :key="i">
-        {{ i + 1 }}.
-        <DateTime :date="t.tournament_date" :spacing="true" />
-        &nbsp;
-        <TournamentName :name="t.tournament_name" :tournamentKey="t.tournament_key" />
-        &nbsp;
-        (<ResultRank :rank="t.result" />)
-      </li>
-    </ul>
   </div>
+  <ul class="my-2">
+    <li v-for="(t, i) of reversedTournaments" :key="i">
+      {{ i + 1 }}.
+      <DateTime :date="t.tournament_date" :spacing="true" />
+      &nbsp;
+      <TournamentName
+        :name="t.tournament_name"
+        :tournamentKey="t.tournament_key"
+      />
+      &nbsp; (<ResultRank :rank="t.result" />)
+    </li>
+  </ul>
 </template>

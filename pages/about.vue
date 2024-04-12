@@ -82,7 +82,7 @@ setPage(route.path, 'About', 'Pokémon UNITE大会結果収集サイト', 'site'
     </p>
 
     <h3>rating対象外大会について</h3>
-    以下のような大会は、rating計算対象外としています。
+    <p>以下のような大会は、rating計算対象外としています。</p>
     <ul>
       <li>
         ・世界大会等、通常rating計算対象となっていない、かつ、強さが通常の未ratingプレイヤーとは大きく異なるプレイヤー参加している大会

@@ -29,19 +29,20 @@ const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
       @toggle="toggleMatches"
     />
   </div>
-  <div class="tal" style="width: 7em">
-    <DateTime :date="tournament.tournament_date" :spacing="true" />
-  </div>
-  <div class="tar" style="width: 3em; padding-right: 4px">
-    <ResultRank :rank="tournament.team_result" />
-  </div>
   <div style="width: 32em">
     <TournamentName
       :name="tournament.tournament_name"
       :tournamentKey="tournament.tournament_key"
+      class="font-bold lg:font-normal"
     />
   </div>
-  <div style="width: 18em">
+  <div class="text-left" style="width: 7em">
+    <DateTime :date="tournament.tournament_date" :spacing="true" />
+  </div>
+  <div class="text-right" style="width: 4em; padding-right: 4px">
+    <ResultRank :rank="tournament.team_result" />
+  </div>
+  <div class="overflow-hidden whitespace-nowrap" style="width: 18em">
     <TeamName
       :name="tournament.team_name"
       :currentName="tournament.team_current_name"
@@ -50,7 +51,7 @@ const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
   <div style="width: 34em">
     {{ tournament.member_name }}, <PlayersLine :names="tournament.mate_list" />
   </div>
-  <div style="width: 14em">
+  <div style="width: 16em">
     <span class="muted">📈</span> {{ formatNum(tournament.rating) }}
     <span class="muted"
       >({{ formatNum(tournament.rank) }}位 /

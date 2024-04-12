@@ -18,12 +18,6 @@ export const setPage = (
       { name: 'og:image', content: 'https://center-ping.pages.dev/ogp.png' },
       { name: 'twitter:card', content: 'summary' },
     ],
-    link: [
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css',
-      },
-    ],
     script: [
       {
         src: 'https://kit.fontawesome.com/fb58e9e936.js',

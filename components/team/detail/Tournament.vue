@@ -27,20 +27,20 @@ const isOpen = computed(() => open.value || props.openAll);
       @toggle="toggleMatches"
     />
   </div>
-  <div class="tal" style="width: 7em">
-    <DateTime :date="tournament.tournament_date" :spacing="true" />
-  </div>
-  <div class="tar" style="width: 3em; padding-right: 4px">
-    <ResultRank :rank="tournament.result" />
-  </div>
-  <div style="width: 32em">
+  <div style="width: 32em" class="font-bold lg:font-normal">
     <TournamentName
       :name="tournament.tournament_name"
       :tournamentKey="tournament.tournament_key"
     />
   </div>
+  <div class="text-left w-[4em] lg:text-right" style="padding-right: 4px">
+    <ResultRank :rank="tournament.result" />
+  </div>
+  <div class="text-left" style="width: 7em">
+    <DateTime :date="tournament.tournament_date" :spacing="true" />
+  </div>
   <div style="width: 24em">
-    {{ tournament.name }}
+    <TeamName :name="tournament.name" :currentName="tournament.name" />
   </div>
   <div style="width: 36em">
     <PlayersLine :names="tournament.player_list" />

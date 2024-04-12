@@ -43,11 +43,13 @@ onServerPrefetch(async () => {
 
 <template>
   <div>
-    <input
-      v-model="filterString"
-      placeholder="チーム名 / メンバー名"
-      style="box-sizing: border-box; width: 100%"
-    />
+    <div class="p-2">
+      <input
+        v-model="filterString"
+        placeholder="チーム名 / メンバー名"
+        class="w-full p-2"
+      />
+    </div>
 
     <ClientOnly>
       <ListPager
@@ -60,7 +62,7 @@ onServerPrefetch(async () => {
     <div v-if="displayTeams">
       <div v-if="displayTeams.length > 0">
         <div
-          class="tc"
+          class="tc py-3 lg:py-1"
           v-for="(t, i) of displayTeams.slice(
             (pageNoRef - 1) * PER_PAGE,
             pageNoRef * PER_PAGE,
@@ -70,14 +72,18 @@ onServerPrefetch(async () => {
         >
           <div style="width: 24em; padding-left: 4px">
             {{ ((pageNoRef - 1) * PER_PAGE + i + 1).toLocaleString() }}.&nbsp;
-            <TeamName :name="t.name" :currentName="t.name" />
+            <TeamName
+              :name="t.name"
+              :currentName="t.name"
+              class="font-bold lg:font-normal"
+            />
           </div>
-          <div style="width: 4em">
+          <div class="w-[5em]">
             <span class="muted" v-if="t.names.length > 0"
               >(別名{{ t.names.length }}件)</span
             >
           </div>
-          <div style="width: 15em">
+          <div class="w-[16em]">
             <span class="muted">出場: </span>
             {{ t.tournament_count }}
             <span class="muted">回 </span>
@@ -92,25 +98,25 @@ onServerPrefetch(async () => {
               <span class="muted">回 </span>
             </template>
           </div>
-          <div style="width: 6em">
+          <div class="w-[7em]">
             {{ t.win }}
             <span class="muted">勝 </span>
             {{ t.lose }}
             <span class="muted">敗 </span>
           </div>
-          <div style="width: 18em">
+          <div class="w-[19em]">
             <DateSpan
               :date1="t.first_tournament_date"
               :date2="t.latest_tournament_date"
             />
           </div>
-          <div style="width: 4em">
+          <div class="w-[5em]">
             {{
               diffDays(t.latest_tournament_date, t.first_tournament_date) + 1
             }}
             <span class="muted">日 </span>
           </div>
-          <div style="width: 38em">
+          <div class="w-[38em] overflow-hidden whitespace-nowrap">
             <PlayersLine :names="t.members.slice(0, 5)" />
             <span v-if="t.members.length > 5" class="muted"
               >(他{{ t.members.length - 5 }}人)</span

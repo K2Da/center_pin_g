@@ -34,7 +34,9 @@ export const fetchTournamentMaster = async () => {
 };
 
 export const fetchPlayer = async (playerName: string) => {
-  const result = await useFetch(`${FLARE_DATA}/player/${playerName}`);
+  const result = await useFetch(
+    `${FLARE_DATA}/player/${encodeURIComponent(playerName)}`,
+  );
   const data = result.data;
   for (const m of data.value.matches) {
     m.wl = m.opponent_team_key === m.loser_key;
@@ -46,7 +48,9 @@ export const fetchPlayer = async (playerName: string) => {
 };
 
 export const fetchTeam = async (teamName: string) => {
-  const { data } = await useFetch(`${FLARE_DATA}/team/${teamName}`);
+  const { data } = await useFetch(
+    `${FLARE_DATA}/team/${encodeURIComponent(teamName)}`,
+  );
   return data.value;
 };
 

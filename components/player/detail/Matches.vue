@@ -21,17 +21,17 @@ const matches = detail.matches.filter(
     :class="subContainerClass(i, index, matches.length)"
     style="margin-left: 0.5em; width: calc(100% - 0.5em)"
   >
-    <div style="width: 8em; padding-left: 0.5em">
+    <div style="width: 9em">
       {{ match.bracket }}
       <span class="muted">r: </span>{{ match.round }}
     </div>
-    <div class="tac" style="width: 2em">
+    <div class="text-center" style="width: 2em">
       <MatchResult :win="match.wl" />
     </div>
-    <div class="tac" style="width: 4em">
+    <div class="text-center" style="width: 4em">
       {{ match.score_text }}
     </div>
-    <div style="width: 24em">
+    <div style="width: 24em" class="pl-1">
       <TeamName
         :name="match.opponent_team_name"
         :currentName="match.opponent_team_current_name"

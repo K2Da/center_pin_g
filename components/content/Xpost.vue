@@ -10,6 +10,7 @@ const { id } = defineProps<{ id: string }>();
           <img
             src="/xpost.png"
             alt="loading"
+            class="mt-2"
             style="border: 1px solid #425364; border-radius: 12px"
           /> </span
       ></Tweet>
