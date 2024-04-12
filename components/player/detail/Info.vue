@@ -39,7 +39,9 @@ const data = computed(() => teamsData(detail));
       <span class="muted">大会出場名: </span>
       {{ detail.player.data.aliases.join(', ') }}
     </li>
-    <ResultsSum :resultsSum="resultsSum" />
+    <ClientOnly>
+      <ResultsSum :resultsSum="resultsSum" />
+    </ClientOnly>
     <li v-if="detail.player.rating">
       <span class="muted">ratings: </span>
       {{ detail.player.rating.toLocaleString() }}

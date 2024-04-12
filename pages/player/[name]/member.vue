@@ -7,7 +7,7 @@ setPage(route.path);
 <template>
   <div v-if="detail">
     <PageHead :title="`${detail.player.collated_name}: 編成`" />
-    <h1 :class="ratingClass(detail.player.collated_name)">
+    <h1>
       {{ detail.player.collated_name }}
     </h1>
     <PlayerNaviLink current="member" :name="route.params.name" />

@@ -5,7 +5,7 @@ const route = useRoute();
 
 const detail = await fetchPlayer(route.params.name);
 const resultsSum = computed(() => {
-  if (detail.value) {
+  if (detail.value && process.client) {
     return countTournamentResult(
       detail.value.matches.map((m) => ({ key: m.tnmt_key, wl: m.wl === true })),
       detail.value.tournaments.map((t) => ({
@@ -21,9 +21,9 @@ setPage(route.path);
 </script>
 
 <template>
-  <div v-if="detail && resultsSum">
+  <div v-if="detail">
     <PageHead :title="`${detail.player.collated_name}: 戦績`" />
-    <h1 :class="ratingClass(detail.player.collated_name)">
+    <h1>
       {{ detail.player.collated_name }}
     </h1>
     <PlayerNaviLink current="detail" :name="route.params.name" />
