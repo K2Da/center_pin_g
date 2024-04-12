@@ -17,7 +17,7 @@ button {
 </style>
 
 <template>
-  <div style="text-align: center">
+  <div class="text-center">
     <button :disabled="pageNo <= 1" v-on:click="setNo(1)">
       <i class="fas fa-fast-backward"></i>
     </button>

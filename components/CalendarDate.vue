@@ -15,10 +15,10 @@ const d = computed(() => {
 </script>
 
 <template>
-  <span class="m">
-    <template v-if="year">{{ d.y }}<span class="muted">年</span></template
-    >{{ d.m < 10 ? '&nbsp;' : '' }}{{ d.m }}<span class="muted">月</span
-    >{{ d.d < 10 ? '&nbsp;' : '' }}{{ d.d }}<span class="muted">日</span>
+  <span class="font-mono">
+    <template v-if="year">{{ d.y }}<span class="text-sm">年</span></template
+    >{{ d.m < 10 ? '&nbsp;' : '' }}{{ d.m }}<span class="text-sm">月</span
+    >{{ d.d < 10 ? '&nbsp;' : '' }}{{ d.d }}<span class="text-sm">日</span>
     <template v-if="d.ss != 1">{{ d.t }}</template>
   </span>
 </template>

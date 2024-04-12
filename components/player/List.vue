@@ -51,11 +51,13 @@ onServerPrefetch(async () => {
 
 <template>
   <div>
-    <input
-      v-model="filterString"
-      placeholder="プレイヤー名 / チーム名 / SNSアカウント"
-      style="box-sizing: border-box; width: 100%"
-    />
+    <div class="p-2">
+      <input
+        v-model="filterString"
+        placeholder="プレイヤー名 / チーム名 / SNSアカウント"
+        class="w-full p-2"
+      />
+    </div>
 
     <ClientOnly>
       <ListPager
@@ -68,7 +70,7 @@ onServerPrefetch(async () => {
     <div v-if="displayPlayers">
       <div v-if="displayPlayers.length > 0">
         <div
-          class="tc"
+          class="tc py-4 lg:py-1"
           v-for="(p, i) of displayPlayers.slice(
             (pageNoRef - 1) * PER_PAGE,
             pageNoRef * PER_PAGE,
@@ -76,50 +78,54 @@ onServerPrefetch(async () => {
           :key="p.name"
           :class="containerClass(i)"
         >
-          <div style="width: 24em; padding-left: 4px">
+          <div class="lgnowrap w-[24em] pl-1">
             {{ p.rank.toLocaleString() }}.
-            <PlayerName :name="p.name" :rating="p.rating" />
-            <span class="muted" v-if="p.data?.aliases?.length > 0">
+            <PlayerName
+              :name="p.name"
+              :rating="p.rating"
+              class="font-bold lg:font-normal"
+            />
+            <span class="text-sm" v-if="p.data?.aliases?.length > 0">
               ({{ p.data.aliases.slice(0, 3).join(', ')
               }}<span v-if="p.data?.aliases?.length > 3">
                 + 他{{ p.data.aliases.length - 3 }}件</span
               >)
             </span>
           </div>
-          <div style="width: 3em">
+          <div class="w-[4em]">
             {{ (p.rating ?? 0).toLocaleString() }}
           </div>
-          <div style="width: 13em">
-            {{ p.entries }} <span class="muted">大会</span>
+          <div class="w-[14em]">
+            {{ p.entries }} <span class="text-sm">大会</span>
             <span v-if="p.top_1 > 0"
-              ><span class="muted"> 優勝</span> {{ p.top_1 }}
-              <span class="muted">回</span></span
+              ><span class="text-sm"> 優勝</span> {{ p.top_1 }}
+              <span class="text-sm">回</span></span
             >
             <span v-if="p.top_4 > 0"
-              ><span class="muted"> Top4</span> {{ p.top_4 }}
-              <span class="muted">回</span></span
+              ><span class="text-sm"> Top4</span> {{ p.top_4 }}
+              <span class="text-sm">回</span></span
             >
           </div>
-          <div style="width: 6em">
-            {{ p.win }} <span class="muted">勝</span> {{ p.lose }}
-            <span class="muted">敗</span>
+          <div class="w-[7em]">
+            {{ p.win }} <span class="text-sm">勝</span> {{ p.lose }}
+            <span class="text-sm">敗</span>
           </div>
-          <div style="width: 14em">
+          <div class="w-[14em] lgnowrap">
             <TeamName
               :name="p.latest.team"
               :currentName="p.latest.team_current"
             />
           </div>
-          <div style="width: 7em">
+          <div class="w-[8em]">
             <DateTime :date="p.latest.date" :spacing="false" />
           </div>
-          <div style="width: 22em">
+          <div class="w-[22em] lgnowrap">
             <TournamentName
               :tournamentKey="p.latest.tournament_key"
               :name="p.latest.tournament_name"
             />
           </div>
-          <div style="width: 21em" v-if="p.data">
+          <div v-if="p.data" class="w-[21em] lgnowrap">
             <SocialAccounts
               :twitter="p.data.twitter"
               :youtube="p.data.youtube"

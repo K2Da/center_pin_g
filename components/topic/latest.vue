@@ -29,7 +29,7 @@ const { data } = await useAsyncData(() => {
         </h2>
         <p class="attr">
           <CalendarDate :date="article.updated" />
-          <span class="muted">更新</span>
+          <span class="text-sm">更新</span>
           <strong v-if="article.dates?.length ?? 0"> | </strong>
           <span v-for="(date, i) in article.dates" :key="i">
             <strong v-if="i > 0"> | </strong>
@@ -40,7 +40,7 @@ const { data } = await useAsyncData(() => {
           <li
             v-for="url in article.urls"
             :key="url.url"
-            style="margin: 0 0 0 16px"
+            class="mt-0 mr-0 mb-0 ml-4"
           >
             <a :href="url.url" target="_blank">{{ url.title }}</a>
           </li>

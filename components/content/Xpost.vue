@@ -4,13 +4,13 @@ const { id } = defineProps<{ id: string }>();
 </script>
 <template>
   <ClientOnly>
-    <div style="padding: 0 12px">
+    <div class="py-0 px-3">
       <Tweet :id="id" :options="{ theme: 'dark' }">
         <span>
           <img
             src="/xpost.png"
             alt="loading"
-            style="border: 1px solid #425364; border-radius: 12px"
+            class="mt-2 border rounded border-stone-200"
           /> </span
       ></Tweet>
     </div>

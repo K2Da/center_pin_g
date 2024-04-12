@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   },
   hooks: undefined,
   typescript: { strict: true },
-  css: ['@/assets/main.scss'],
   routeRules: {
     '/': { prerender: true },
     '/topics': { prerender: true },
@@ -25,8 +24,14 @@ export default defineNuxtConfig({
         ],
       },
     ],
+    '@nuxt/ui',
     '@nuxt/content',
   ],
+  css: ['@/assets/main.scss'],
+  ui: {
+    global: true,
+    icons: ['material-symbols'],
+  },
   content: {
     documentDriven: false,
     markdown: {

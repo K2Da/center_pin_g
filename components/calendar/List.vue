@@ -47,7 +47,6 @@ const dayText = (d: CDate) => {
 };
 const events = computed(() => filtered());
 const mounted = ref(false);
-
 onMounted(async () => {
   mounted.value = true;
 });
@@ -56,6 +55,7 @@ onMounted(async () => {
   <div class="calendar" v-if="mounted || prev === 0">
     <template v-for="(e, i) in events" class="calendar">
       <h3
+        class="mt-2"
         v-if="
           i === 0 || e.date.get('month') !== events[i - 1].date.get('month')
         "
@@ -63,6 +63,7 @@ onMounted(async () => {
         {{ e.date.format('YYYY年 MM月') }}
       </h3>
       <h4
+        class="mt-1"
         v-if="
           i === 0 ||
           e.date.format('YYYYMMDD') !== events[i - 1].date.format('YYYYMMDD')
@@ -70,15 +71,15 @@ onMounted(async () => {
       >
         {{ e.date.get('date') }}日 ({{ e.date.locale('ja').format('ddd') }})
 
-        <span style="color: yellowgreen">{{ dayText(e.date) }}</span>
+        <span class="text-yellow-500">{{ dayText(e.date) }}</span>
       </h4>
       <div class="event" v-if="e.title != ''">
-        <span class="m" v-if="e.date.get('second') !== 1">
+        <span class="font-mono" v-if="e.date.get('second') !== 1">
           {{ e.date.get('hour').toString().padStart(2, '0') }}:{{
             e.date.get('minute').toString().padStart(2, '0')
           }}
         </span>
-        <span v-else class="m">--:--</span>
+        <span v-else class="font-mono">--:--</span>
         &nbsp;
         <NuxtLink
           :to="{

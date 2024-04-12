@@ -6,6 +6,6 @@ const { win } = defineProps<Props>();
 </script>
 
 <template>
-  <span v-if="win" style='font-weight: bold; color: red'>W</span>
-  <span v-else style='font-weight: bold; color: dodgerblue'>L</span>
+  <span v-if="win" class="font-bold text-red-500">W</span>
+  <span v-else class="font-bold text-blue-500">L</span>
 </template>

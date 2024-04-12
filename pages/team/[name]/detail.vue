@@ -17,7 +17,7 @@ setPage(route.path);
     <TeamDetailInfo :detail="detail" />
 
     <div v-if="detail.tournaments.length > 0">
-      <h2>大会結果</h2>
+      <h2 class="mb-2">大会結果</h2>
       <TeamDetailTournaments :detail="detail" />
     </div>
   </div>
