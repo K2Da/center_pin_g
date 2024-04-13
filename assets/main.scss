@@ -1,6 +1,11 @@
 :root {
   --border: #0891b2; // border-cyan-600
 }
+
+.lgnowrap {
+  @apply lg:overflow-hidden lg:overflow-ellipsis lg:whitespace-nowrap;
+}
+
 body {
   background-color: #202b38;
   font-family: 'Helvetica Neue', 'Helvetica', 'Hiragino Sans',

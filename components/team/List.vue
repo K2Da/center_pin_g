@@ -116,7 +116,7 @@ onServerPrefetch(async () => {
             }}
             <span class="text-sm">日 </span>
           </div>
-          <div class="w-[38em] overflow-hidden whitespace-nowrap">
+          <div class="w-[38em] lgnowrap">
             <PlayersLine :names="t.members.slice(0, 5)" />
             <span v-if="t.members.length > 5" class="text-sm"
               >(他{{ t.members.length - 5 }}人)</span

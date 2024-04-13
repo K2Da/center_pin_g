@@ -10,7 +10,7 @@ const { data } = await useFetch(
 </script>
 <template>
   <div
-    class="vtable"
+    class="vtable py-2"
     v-for="(team, i) of data.teams"
     :key="i"
     :class="containerClass(i)"

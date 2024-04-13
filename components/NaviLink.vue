@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="rounded m-1 pt-2 pb-2 px-4 bg-zinc-900 text-lg">
+  <div class="p-1 text-base">
     <NuxtLink :to="{ name: 'index' }" no-prefetch>CP(g)</NuxtLink> |
     <NuxtLink :to="{ name: 'topics' }" no-prefetch>Topic</NuxtLink> |
     <NuxtLink :to="{ name: 'calendar' }" no-prefetch>Cal</NuxtLink> |

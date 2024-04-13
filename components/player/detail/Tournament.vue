@@ -42,7 +42,7 @@ const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
   <div class="text-right w-[4em] pr-1">
     <ResultRank :rank="tournament.team_result" />
   </div>
-  <div class="overflow-hidden whitespace-nowrap w-[18em]">
+  <div class="w-[18em] lgnowrap">
     <TeamName
       :name="tournament.team_name"
       :currentName="tournament.team_current_name"

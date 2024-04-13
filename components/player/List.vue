@@ -78,7 +78,7 @@ onServerPrefetch(async () => {
           :key="p.name"
           :class="containerClass(i)"
         >
-          <div class="overflow-hidden whitespace-nowrap w-[24em] pl-1">
+          <div class="lgnowrap w-[24em] pl-1">
             {{ p.rank.toLocaleString() }}.
             <PlayerName
               :name="p.name"
@@ -110,7 +110,7 @@ onServerPrefetch(async () => {
             {{ p.win }} <span class="text-sm">勝</span> {{ p.lose }}
             <span class="text-sm">敗</span>
           </div>
-          <div class="w-[14em] overflow-hidden whitespace-nowrap">
+          <div class="w-[14em] lgnowrap">
             <TeamName
               :name="p.latest.team"
               :currentName="p.latest.team_current"
@@ -119,13 +119,13 @@ onServerPrefetch(async () => {
           <div class="w-[8em]">
             <DateTime :date="p.latest.date" :spacing="false" />
           </div>
-          <div class="w-[22em] overflow-hidden whitespace-nowrap">
+          <div class="w-[22em] lgnowrap">
             <TournamentName
               :tournamentKey="p.latest.tournament_key"
               :name="p.latest.tournament_name"
             />
           </div>
-          <div v-if="p.data" class="overflow-hidden whitespace-nowrap w-[21em]">
+          <div v-if="p.data" class="w-[21em] lgnowrap">
             <SocialAccounts
               :twitter="p.data.twitter"
               :youtube="p.data.youtube"
