@@ -1,42 +1,40 @@
 <script setup lang="ts">
 const route = useRoute();
 const topic = '/topic/' + route.params.key.replaceAll('-', '/');
-setPage(route.path);
+const { data } = await useAsyncData(() => {
+  return queryContent(topic).findOne();
+});
+setPage(
+  route.path,
+  `トピック: ${data.value.title}`,
+  `${data.value.title}についてまとめた記事`,
+);
 </script>
 <template>
-  <ContentDoc :path="topic" :head="true" v-if="route.params.key">
-    <template #not-found> </template>
-    <template #empty> </template>
-    <template #default="{ doc }">
-      <article>
-        <PageHead :title="doc.title" />
-        <h2 class="mb-2">{{ doc.title }}</h2>
-        <p class="attr" v-if="doc.updated">
-          <template v-if="doc.updated">
-            <CalendarDate :date="doc.updated" :year="true" />
-            <span class="text-sm">更新</span>
-          </template>
-        </p>
-        <div v-if="doc.dates?.length ?? 0">
-          <h3 class="mb-2">日程</h3>
-          <ul>
-            <li v-for="(date, i) in doc.dates" :key="i">
-              <CalendarDate :date="date.date" /> {{ date.title }}
-            </li>
-          </ul>
-        </div>
-        <div v-if="doc.urls?.length ?? 0">
-          <h3>関連URL</h3>
-          <ul>
-            <li v-for="(url, i) in doc.urls" :key="i">
-              <a :href="url.url" target="_blank">{{ url.title }}</a>
-            </li>
-          </ul>
-        </div>
-
-        <hr />
-        <ContentRenderer :value="doc" />
-      </article>
+  <h2 class="mb-2">{{ data.title }}</h2>
+  <p class="attr" v-if="data.updated">
+    <template v-if="data.updated">
+      <CalendarDate :date="data.updated" :year="true" />
+      <span class="text-sm">更新</span>
     </template>
-  </ContentDoc>
+  </p>
+  <div v-if="data.dates?.length ?? 0">
+    <h3 class="mb-2">日程</h3>
+    <ul>
+      <li v-for="(date, i) in data.dates" :key="i">
+        <CalendarDate :date="date.date" /> {{ date.title }}
+      </li>
+    </ul>
+  </div>
+  <div v-if="data.urls?.length ?? 0">
+    <h3>関連URL</h3>
+    <ul>
+      <li v-for="(url, i) in data.urls" :key="i">
+        <a :href="url.url" target="_blank">{{ url.title }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <hr />
+  <ContentRenderer :value="data" />
 </template>

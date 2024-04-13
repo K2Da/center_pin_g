@@ -2,8 +2,12 @@
 const statsStore = useStatsStore();
 const { tournaments } = storeToRefs(statsStore);
 const route = useRoute();
-
-const detail = await fetchPlayer(route.params.name);
+setPage(
+  route.path,
+  `Player ${route.params.name}: 戦績`,
+  `${route.params.name}選手のポケモンユナイトにおける戦績等をまとめたページ`,
+);
+const detail = await fetchPlayer(route.params.name as string);
 const resultsSum = computed(() => {
   if (detail.value && process.client) {
     return countTournamentResult(
@@ -16,13 +20,10 @@ const resultsSum = computed(() => {
     );
   }
 });
-
-setPage(route.path);
 </script>
 
 <template>
   <div v-if="detail">
-    <PageHead :title="`${detail.player.collated_name}: 戦績`" />
     <h1>
       {{ detail.player.collated_name }}
     </h1>

@@ -56,7 +56,7 @@ export const fetchTeam = async (teamName: string) => {
 
 export const fetchTournamentDetail = async (tournamentKey: string) => {
   const { data } = await useFetch(`${FLARE_DATA}/tournament/${tournamentKey}`);
-  return data.value;
+  return data.value as TournamentDetail;
 };
 
 export const fetchTournamentGroup = async (groupKey: string) => {

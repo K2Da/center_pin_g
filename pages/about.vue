@@ -3,7 +3,7 @@ const route = useRoute();
 const statsStore = useStatsStore();
 const { stats } = storeToRefs(statsStore);
 
-setPage(route.path, 'About', 'Pokémon UNITE大会結果収集サイト', 'site');
+setPage(route.path, 'About', 'Center Pin(g)について');
 </script>
 
 <template>

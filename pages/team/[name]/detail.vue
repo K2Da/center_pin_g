@@ -5,12 +5,15 @@ const route = useRoute();
 const detail: Ref<TeamDetailView | null> = teamToView(
   await fetchTeam(route.params.name),
 );
-setPage(route.path);
+setPage(
+  route.path,
+  `Team ${route.params.name}: 戦績`,
+  `「${route.params.name}」のポケモンユナイトにおける戦績等をまとめたページ`,
+);
 </script>
 
 <template>
   <div v-if="detail">
-    <PageHead :title="`${detail.team.name}: 戦績`" />
     <h1>{{ detail.team.name }}</h1>
     <TeamNaviLink current="detail" :name="route.params.name" />
 

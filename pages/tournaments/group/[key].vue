@@ -1,21 +1,13 @@
 <script setup lang="ts">
-import type { Ref } from 'vue';
-import type { TournamentIndex } from '~~/api/Tournaments';
 import { fetchTournamentGroup } from '~~/utils/fetches';
 
 const route = useRoute();
-const group: Ref<TournamentIndex | null> = ref(null);
-
-const load = async () => {
-  await fetchTournamentGroup((route.params.key || '').toString()).then(
-    (data: TournamentIndex) => {
-      group.value = data;
-    },
-  );
-};
-
-setPage(route.path);
-await load();
+const group = await fetchTournamentGroup((route.params.key || '').toString());
+setPage(
+  route.path,
+  `大会グループ: ${group.group?.name}`,
+  `ポケモンユナイト大会「${group.group?.name}」の詳細結果`,
+);
 </script>
 
 <template>

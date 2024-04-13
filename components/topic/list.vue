@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// TODO: ページングする
 const { data } = await useAsyncData(() => {
   return queryContent('/topic')
     .where({ updated: { $exists: true } })

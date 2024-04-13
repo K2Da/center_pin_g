@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
-setPage(route.path, 'ログ');
+setPage(route.path, 'ログ', '');
 </script>
 
 <template>

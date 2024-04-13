@@ -3,7 +3,7 @@ import type { PlayerDetail } from '~/api/PlayerDetail';
 import type { Result } from '~/types/result';
 type Props = {
   detail: PlayerDetail;
-  resultsSum: Result;
+  resultsSum?: Result;
 };
 const { detail, resultsSum } = defineProps<Props>();
 

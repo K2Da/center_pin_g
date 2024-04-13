@@ -4,7 +4,6 @@ const { prev, next } = defineProps<{ prev: number; next: number }>();
 
 const filtered = () => {
   const current = cdateJST();
-  const day = 24 * 60 * 60 * 1000;
   const from = current.add(-prev, 'day');
   const to = current.add(next, 'day');
 
@@ -52,7 +51,7 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <div class="calendar" v-if="mounted || prev === 0">
+  <div class="calendar" v-if="(mounted || prev === 0) && events.length > 0">
     <template v-for="(e, i) in events" class="calendar">
       <h3
         class="mt-2"
@@ -96,5 +95,29 @@ onMounted(async () => {
         >+ more</NuxtLink
       >]
     </p>
+  </div>
+  <div v-else>
+    <template v-if="!mounted">
+      <div class="p-2">
+        <USkeleton class="h-6 w-[120px] mb-1 border-bottom" />
+        <USkeleton
+          class="h-[1px] w-full mb-2"
+          :ui="{ background: 'bg-cyan-600' }"
+        />
+        <USkeleton class="h-5 w-[80px] mb-1 border-bottom" />
+        <USkeleton
+          class="h-[1px] w-full mb-2"
+          :ui="{ background: 'bg-cyan-600' }"
+        />
+        <div class="flex items-center space-x-4 mb-1">
+          <USkeleton class="h-4 w-[80px]" />
+          <USkeleton class="h-4 w-[200px]" />
+        </div>
+        <div class="flex items-center space-x-4">
+          <USkeleton class="h-4 w-[80px]" />
+          <USkeleton class="h-4 w-[300px]" />
+        </div>
+      </div>
+    </template>
   </div>
 </template>

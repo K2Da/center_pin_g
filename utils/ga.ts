@@ -1,18 +1,16 @@
 export const setPage = (
   path: string,
-  title?: string,
-  description?: string,
-  ogType?: string,
+  title: string,
+  description: string,
+  website?: boolean = false,
 ) => {
   if (title && process.client) gaView(title);
-  const desc =
-    description || 'ポケモンユナイトの大会結果などを収集、集計しているサイト';
   useHead({
     title: `CP(g): ${title || ''}`,
     meta: [
-      { name: 'description', content: desc },
+      { name: 'description', content: description },
       { name: 'og:title', content: title },
-      { name: 'og:type', content: ogType || 'article' },
+      { name: 'og:type', content: website ? 'website' : 'article' },
       { name: 'og:url', content: `https://center-ping.pages.dev${path}` },
       { name: 'og:site_name', content: 'Center Pin(g)' },
       { name: 'og:image', content: 'https://center-ping.pages.dev/ogp.png' },

@@ -93,10 +93,7 @@ const members = computed(() => {
           <td class="pl-2 text-left"><PlayerName :name="p" page="member" /></td>
           <td v-for="(entry, i) of entries[p]" :key="i" class="p-0 m-0">
             <template v-if="entry !== ''">
-              <img
-                :src="`/parts/${entry}.svg`"
-                class="w-[3em] h-[2em]""
-              />
+              <img :src="`/parts/${entry}.svg`" class="w-[3em] h-[2em]" />
             </template>
           </td>
           <td class="text-left">
