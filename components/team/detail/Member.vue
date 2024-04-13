@@ -55,7 +55,7 @@ const entries = computed(() => {
 </script>
 <template>
   <h2 class="mb-2">出場メンバー</h2>
-  <div class="m-2" style="overflow-y: scroll">
+  <div class="m-2 overflow-y-scroll">
     <table
       :style="{
         width: `${12 + 12 + 3 * reversedTournaments.length + 12}em`,
@@ -63,8 +63,8 @@ const entries = computed(() => {
     >
       <thead>
         <tr>
-          <th style="width: 12em"></th>
-          <th class="text-left" style="width: 12em">前チーム</th>
+          <th class="w-[12em]"></th>
+          <th class="text-left w-[12em]">前チーム</th>
           <th
             class="text-center"
             style="
@@ -79,7 +79,7 @@ const entries = computed(() => {
           >
             {{ i + 1 }}
           </th>
-          <th class="text-left nw" style="width: 12em">最新チーム</th>
+          <th class="text-left nw w-[12em]">最新チーム</th>
         </tr>
       </thead>
       <tbody>
@@ -94,11 +94,12 @@ const entries = computed(() => {
               />
             </template>
           </td>
-          <td v-for="(entry, i) of entries[p]" :key="i" class="tight">
+          <td v-for="(entry, i) of entries[p]" :key="i" class="p-0 m-0">
             <template v-if="entry !== ''">
               <img
                 :src="`/parts/${entry}.svg`"
-                style="width: 3em; height: 2em"
+                class="w-[3em]"
+                style="height: 2em"
               />
             </template>
           </td>

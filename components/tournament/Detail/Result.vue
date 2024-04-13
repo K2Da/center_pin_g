@@ -26,30 +26,30 @@ const sortByRank = (teams: TournamentTeam[]) =>
 
 <template>
   <div
-    class="tc py-3 lg:py-1"
+    class="tc py-4 lg:py-1"
     v-for="(result, i) of sortByRank(detail.teams)"
     :key="result.team_key"
     :class="containerClass(i)"
   >
-    <div class="text-left lg:text-right" style="width: 4em">
+    <div class="text-left lg:text-right w-[4em]">
       <ResultRank :rank="result.team_rank" />.
     </div>
-    <div style="width: 24em">
+    <div class="w-[24em]">
       <TeamName
         :name="result.team_name"
         :currentName="result.team_current_name"
       />
     </div>
-    <div style="width: 5em">
+    <div class="w-[5em]">
       <template v-if="result.win !== 0 || result.lose !== 0">
         {{ result.win }}
-        <span class="muted">勝</span>
+        <span class="text-sm">勝</span>
         {{ result.lose }}
-        <span class="muted">敗</span>
+        <span class="text-sm">敗</span>
       </template>
       <template v-else>-</template>
     </div>
-    <div style="width: 48em">
+    <div class="w-[48em]">
       <PlayersLine :names="result.members" />
     </div>
   </div>

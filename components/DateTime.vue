@@ -22,13 +22,14 @@ const d = computed(() => {
 </script>
 
 <template>
-  <span class="m" v-if="spacing">
-    '{{ d.y }}<span class="muted">年</span>{{ d.m < 10 ? '&nbsp;' : '' }}{{ d.m
-    }}<span class="muted">月</span>{{ d.d < 10 ? '&nbsp;' : '' }}{{ d.d
-    }}<span class="muted">日</span>{{ d.t }}
+  <span class="font-mono" v-if="spacing">
+    '{{ d.y }}<span class="text-sm">年</span>{{ d.m < 10 ? '&nbsp;' : ''
+    }}{{ d.m }}<span class="text-sm">月</span>{{ d.d < 10 ? '&nbsp;' : ''
+    }}{{ d.d }}<span class="text-sm">日</span>{{ d.t }}
   </span>
-  <span class="m" v-else>
-    '{{ d.y }}<span class="muted">年</span>{{ d.m }}<span class="muted">月</span
-    >{{ d.d }}<span class="muted">日</span>{{ d.t }}
+  <span class="font-mono" v-else>
+    '{{ d.y }}<span class="text-sm">年</span>{{ d.m
+    }}<span class="text-sm">月</span>{{ d.d }}<span class="text-sm">日</span
+    >{{ d.t }}
   </span>
 </template>

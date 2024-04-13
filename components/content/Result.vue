@@ -17,21 +17,22 @@ const { data } = await useFetch(
     style="margin-left: 12px; max-width: 600px"
   >
     <div>
-      <div style="width: 4em">
-        {{ team.team_rank }}<span class="muted">位</span>
+      <div class="font-bold pl-1">
+        {{ team.team_rank }}<span class="text-sm">位</span>
       </div>
-      <div style="width: 24em">
+      <div>
         <TeamName
           :name="team.team_name"
           :currentName="team.team_current_name"
+          class="font-bold"
         />
-        ( {{ team.win }}<span class="muted">勝</span> {{ team.lose
-        }}<span class="muted">敗</span> )
+        ( {{ team.win }}<span class="text-sm">勝</span> {{ team.lose
+        }}<span class="text-sm">敗</span> )
       </div>
     </div>
     <div>
-      <div style="width: 4em">敗</div>
-      <div style="width: 24em">
+      <div class="text-sm text-right">敗戦</div>
+      <div class="pl-2">
         <ul class="vanila" v-if="team.lost_team.length > 0">
           <li v-for="lost of team.lost_team" class="vanila">
             <TeamName :name="lost.name" currentName="lost.current_name" />
@@ -42,8 +43,8 @@ const { data } = await useFetch(
       </div>
     </div>
     <div v-if="member">
-      <div style="width: 4em">編成</div>
-      <div style="width: 24em; display: flex">
+      <div class="text-sm text-right">編成</div>
+      <div class="flex">
         <ul class="vanila">
           <li v-for="member of team.members" class="vanila">
             <PlayerName :name="member" />

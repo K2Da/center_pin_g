@@ -10,15 +10,15 @@ setPage(route.path);
     <template #default="{ doc }">
       <article>
         <PageHead :title="doc.title" />
-        <h2>{{ doc.title }}</h2>
+        <h2 class="mb-2">{{ doc.title }}</h2>
         <p class="attr" v-if="doc.updated">
           <template v-if="doc.updated">
             <CalendarDate :date="doc.updated" :year="true" />
-            <span class="muted">更新</span>
+            <span class="text-sm">更新</span>
           </template>
         </p>
         <div v-if="doc.dates?.length ?? 0">
-          <h3>日程</h3>
+          <h3 class="mb-2">日程</h3>
           <ul>
             <li v-for="(date, i) in doc.dates" :key="i">
               <CalendarDate :date="date.date" /> {{ date.title }}

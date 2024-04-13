@@ -13,12 +13,12 @@ list = list.sort((a, b) => b.date - a.date);
 </script>
 
 <template>
-  <div style="margin: 4px">
-    <span class="muted">✔ 公式 📈 ratings計算対象 👾 複数グループあり</span>
+  <div class="m-1">
+    <span class="text-sm">✔ 公式 📈 ratings計算対象 👾 複数グループあり</span>
   </div>
   <div v-if="list && list.length > 0">
     <div
-      class="tc py-3 lg:py-1"
+      class="tc py-4 lg:py-1"
       v-for="(t, i) of list"
       :key="t.key"
       :class="containerClass(i)"
@@ -27,49 +27,49 @@ list = list.sort((a, b) => b.date - a.date);
         <div class="pl-0 lg:pl-1 w-[29em] font-bold lg:font-normal">
           <GroupName :groupKey="t.group_key" :name="t.name" />
         </div>
-        <div class="text-right" style="width: 7em">
+        <div class="text-right w-[7em]">
           {{ t.tournament_count }}
-          <span class="muted">グループ</span>
+          <span class="text-sm">グループ</span>
         </div>
-        <div style="width: 7em">
+        <div class="w-[8em]">
           <DateTime :date="t.date" :spacing="true" />
         </div>
-        <div class="text-center" style="width: 2em">
-          <span class="muted">👾</span>
+        <div class="text-center w-[2em]">
+          <span class="text-sm">👾</span>
         </div>
       </template>
       <template v-else>
-        <div style="width: 36em" class="pl-1 font-bold lg:font-normal">
+        <div class="w-[36em] pl-1 font-bold lg:font-normal">
           <TournamentName :tournamentKey="t.key" :name="t.name" />
         </div>
-        <div style="width: 7em">
+        <div class="w-[8em]">
           <DateTime :date="t.date" :spacing="true" />
         </div>
-        <div class="text-center" style="width: 1em">
-          <span v-if="t.info.official" class="muted">✔</span>
+        <div class="text-center w-[1em]">
+          <span v-if="t.info.official" class="text-sm">✔</span>
         </div>
-        <div class="text-center" style="width: 1em; padding-left: 0">
-          <span v-if="t.rating" class="muted">📈</span>
+        <div class="text-center w-[1em] pl-0">
+          <span v-if="t.rating" class="text-sm">📈</span>
         </div>
       </template>
-      <div class="text-right" style="width: 6em">
+      <div class="text-right w-[6em]">
         {{ t.team_count }}
-        <span class="muted">チーム</span>
+        <span class="text-sm">チーム</span>
       </div>
-      <div class="text-right" style="width: 5em">
+      <div class="text-right w-[5em]">
         {{ t.player_count }}
-        <span class="muted">人</span>
+        <span class="text-sm">人</span>
       </div>
-      <div class="text-right" style="width: 5em">
+      <div class="text-right w-[5em]">
         {{ t.match_count }}
-        <span class="muted">試合</span>
+        <span class="text-sm">試合</span>
       </div>
-      <div style="width: 48em">
+      <div class="w-[48em]">
         <template
           v-for="team of group.tournament_winners[t.key]"
           :key="team.name"
         >
-          <span class="muted">{{ team.rank }}. </span>
+          <span class="text-sm">{{ team.rank }}. </span>
           <TeamName :name="team.name" :currentName="team.current_name" />
           &nbsp;
         </template>

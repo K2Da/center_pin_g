@@ -17,20 +17,20 @@ const ymd = computed(() => {
 
 <template>
   '{{ ymd.y1 }}
-  <span class="muted">年</span>
+  <span class="text-sm">年</span>
   {{ ymd.m1 }}
-  <span class="muted">月</span>
+  <span class="text-sm">月</span>
   {{ ymd.d1 }}
-  <span class="muted">日</span>
+  <span class="text-sm">日</span>
   <template v-if="ymd.y1 !== ymd.y2 || ymd.m1 !== ymd.m2 || ymd.d1 !== ymd.d2">
     〜
     <template v-if="ymd.y1 !== ymd.y2">
       '{{ ymd.y2 }}
-      <span class="muted">年</span>
+      <span class="text-sm">年</span>
     </template>
     {{ ymd.m2 }}
-    <span class="muted">月</span>
+    <span class="text-sm">月</span>
     {{ ymd.d2 }}
-    <span class="muted">日</span>
+    <span class="text-sm">日</span>
   </template>
 </template>

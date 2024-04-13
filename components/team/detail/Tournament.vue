@@ -20,29 +20,29 @@ const isOpen = computed(() => open.value || props.openAll);
 </script>
 
 <template>
-  <div style="width: 2em; padding-left: 0.5em">
+  <div class="w-[2em] pl-2">
     <ToggleButton
       :id="`tournaments-toggle-${i}`"
       :value="false"
       @toggle="toggleMatches"
     />
   </div>
-  <div style="width: 32em" class="font-bold lg:font-normal">
+  <div class="w-[32em] font-bold lg:font-normal">
     <TournamentName
       :name="tournament.tournament_name"
       :tournamentKey="tournament.tournament_key"
     />
   </div>
-  <div class="text-left w-[4em] lg:text-right" style="padding-right: 4px">
+  <div class="text-left w-[5em] lg:text-right pr-1">
     <ResultRank :rank="tournament.result" />
   </div>
-  <div class="text-left" style="width: 7em">
+  <div class="text-left w-[8em]">
     <DateTime :date="tournament.tournament_date" :spacing="true" />
   </div>
-  <div style="width: 24em">
+  <div class="w-[24em]">
     <TeamName :name="tournament.name" :currentName="tournament.name" />
   </div>
-  <div style="width: 36em">
+  <div class="w-[36em]">
     <PlayersLine :names="tournament.player_list" />
   </div>
   <TeamDetailMatches
