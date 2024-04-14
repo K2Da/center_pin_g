@@ -27,24 +27,22 @@ urls:
 
 <!-- more -->
 
-### オセアニア予選
+### オセアニア
 
-:team{n="Greater Zenith"} が優勝し、エオスカップ出場権を獲得しました。Aeos Cupでは、"Antic Esports"というチーム名に変更されています。
+:result{tournament="pucs_2024_march_oceania" :rank="4" :member="true"}
 
-:result{tournament="aeos_cup_oceania" :rank="4" :member="true"}
+### ヨーロッパ
 
-### ヨーロッパ予選
+:result{tournament="pucs_2024_march_europe" :rank="4" :member="true"}
 
-:result{tournament="aeos_cup_europe" :rank="4" :member="true"}
+### 北ラテンアメリカ
 
-### 北ラテンアメリカ予選
+:result{tournament="pucs_2024_march_lan" :rank="4" :member="true"}
 
-:result{tournament="aeos_cup_lan" :rank="4" :member="true"}
+### 南ラテンアメリカ
 
-### 南ラテンアメリカ予選
+:result{tournament="pucs_2024_march_las" :rank="4" :member="true"}
 
-:result{tournament="aeos_cup_las" :rank="4" :member="true"}
+### 北アメリカ
 
-### 北アメリカ予選
-
-:result{tournament="aeos_cup_na" :rank="4" :member="true"}
+:result{tournament="pucs_2024_march_na" :rank="4" :member="true"}

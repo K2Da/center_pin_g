@@ -1,5 +1,5 @@
 ---
-title: PUCS(アジア)
+title: PWCS アジア予選
 tags:
   - 海外公式大会
 dates:
@@ -32,8 +32,6 @@ urls:
     url: https://pokemonunite-wcs-asia.com/en/
 ---
 
-2024 Pokémon UNITE Championship Seriesは、ホノルルで行われるPWCへの予選も兼ねています。
+アジア地域で行われる2024 Pokémon World Championships(PWCS 2024)予選の日程メモ。
 
-管理は、アジアとそれ以外でわかれています。
-
-ここには[アジア公式](https://pokemonunite-wcs-asia.com/en/)で管理されている、日本、韓国、アジア太平洋(西)、アジア太平洋(東)、インドのスケジュールを記載しています。
+ここには[アジア公式](https://pokemonunite-wcs-asia.com/en/)で管理されている、日本、韓国、アジア太平洋(西)、アジア太平洋(東)、インドのうち、日本以外のスケジュールを記載しています。

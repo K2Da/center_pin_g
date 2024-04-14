@@ -11,7 +11,7 @@ console.log();
     <h2 class="flex justify-between">
       {{ topic.title }}
       <button
-        class="bg-sky-700 rounded pt-1 pb-0 px-1 text-sm mb-1 mr-8"
+        class="bg-sky-800 rounded pt-1 pb-0 px-1 text-sm mb-1 mr-8"
         @click="toggleOpen"
         v-if="open"
       >
@@ -28,7 +28,7 @@ console.log();
       <ContentRenderer :value="topic" :excerpt="true" />
     </div>
     <div class="w-full my-2 py-0 px-8">
-      <button class="w-full bg-sky-700 rounded" @click="toggleOpen">
+      <button class="w-full bg-sky-800 rounded" @click="toggleOpen">
         <UIcon
           class="mr-1"
           style="vertical-align: -4px"

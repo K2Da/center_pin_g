@@ -40,7 +40,7 @@ const sortByRank = (teams: TournamentTeam[]) =>
         :currentName="result.team_current_name"
       />
     </div>
-    <div class="w-[5em]">
+    <div class="w-[6em]">
       <template v-if="result.win !== 0 || result.lose !== 0">
         {{ result.win }}
         <span class="text-sm">勝</span>

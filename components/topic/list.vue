@@ -8,7 +8,7 @@ const { data } = await useAsyncData(() => {
 </script>
 
 <template>
-  <div v-for="topic in data" :key="article._path">
+  <div v-for="topic in data" :key="topic._path">
     <article>
       <h2 class="mb-2">{{ topic.title }}</h2>
       <TopicInfo :topic="topic" />
