@@ -19,9 +19,11 @@ urls:
     url: /tournament/aeos_cup_at_euic
 ---
 
-EUIC(Pokémon Europe International Championships)内でAeos Cup(エオスカップ)が開催されました。
+EUIC(Pokémon Europe International Championships)内でAeos Cup(エオスカップ)の結果をまとめています。
 
 日本からは、 :team{n="かびちゃんず"}、 :team{n="Unite Holic"}が招待参加しました。
+
+<!-- more -->
 
 ### 1日目結果
 1日目は、オープン予選にあたるオープンブラケットと、決勝のTOP8(Upper 4チーム、Lower 4チーム)までがグループステージとして行われ、以下、8チームが2日目のTop 8へ進出しました。

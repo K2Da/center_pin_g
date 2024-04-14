@@ -8,7 +8,7 @@ setPage(
 );
 </script>
 <template>
-  <h1>Center Pin(g)</h1>
+  <h1 class="mb-4">Center Pin(g)</h1>
 
   <div class="flex flex-col lg:flex-row-reverse pt-1">
     <div class="md:w-[600px] md:pt-2">

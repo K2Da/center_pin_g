@@ -1,5 +1,6 @@
 :root {
   --border: #0891b2; // border-cyan-600
+  --link: #0ea5e9; // text-sky-500
 }
 
 .lgnowrap {
@@ -11,6 +12,7 @@ body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Hiragino Sans',
     'Hiragino Kaku Gothic ProN', 'Arial', 'Yu Gothic', 'Meiryo', sans-serif;
 }
+
 * {
   color: #dbdbdb;
 }
@@ -51,7 +53,7 @@ h4 {
 }
 
 a {
-  color: #41adff;
+  color: var(--link);
 }
 
 p {
@@ -224,6 +226,10 @@ article {
   table {
     width: auto;
     margin: 8px;
+  }
+  h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
   }
   h4,
   h5 {

@@ -1,16 +1,8 @@
 ---
-title: PUCS(除アジア)
+title: PUCS
 tags:
   - 海外公式大会
 dates:
-  - title: Aeos Cup - オンライン予選
-    date: 2024-02-03 00:00:01 +09:00
-  - title: Aeos Cup - 予選
-    date: 2024-02-10 00:00:01 +09:00
-  - title: March Cup - オープン予選
-    date: 2024-03-09 00:00:01 +09:00
-  - title: March Cup - 決勝
-    date: 2024-03-16 00:00:01 +09:00
   - title: April Cup - オープン予選
     date: 2024-04-13 00:00:01 +09:00
   - title: April Cup - 決勝
@@ -32,16 +24,23 @@ dates:
 urls:
   - title: 2024 Pokémon UNITE Championship Series
     url: https://unite.pokemon.com/en-us/championship/
-  - title: アジア以外
+  - title: PUCS公式
     url: https://www.start.gg/league/2024-pok-mon-unite-championship-series
-  - title: アジア公式
+  - title: PWCSアジア公式
     url: https://pokemonunite-wcs-asia.com/en/
 ---
 
-2024 Pokémon UNITE Championship Series(以下PUCS)は、2024年2月から、開催される、ポイント制の大会シリーズで、ホノルルで行われるPWCへの予選も兼ねています。
+2024 Pokémon UNITE Championship Series(以下PUCS)は、2024年2月から、開催される、ポイント制の大会シリーズで、2024年8月にホノルルで行われるPokémon World Championships(PWCS) 2024への予選も兼ねています。
 
-管理は、アジアとそれ以外でわかれています。
+このページでは、まだ開催されていないシリーズ大会のスケジュールを記載しています。既に開催が終わった大会については、各大会のページにまとめています。
 
-オセアニア、北ラテンアメリカ、南ラテンアメリカ、ブラジル、ヨーロッパ、北アメリカは、[start.gg](https://www.start.gg/league/2024-pok-mon-unite-championship-series)で管理されており、ここに記載している日程は、アジア以外のものです。
+### 開催地域
+PUCSは、 オセアニア、北ラテンアメリカ、南ラテンアメリカ、ブラジル、ヨーロッパ、北アメリカの各地域でそれぞれの大会が開催されます。
 
- 日本、韓国、アジア太平洋(西)、アジア太平洋(東)、インドは[アジア公式](https://pokemonunite-wcs-asia.com/en/)で管理されています。
+日本、韓国、アジア太平洋(西)、アジア太平洋(東)、インドなどのアジア地域はPUCSに含まれておらず、Pokémon World Championships Asia(PWCS Asia)として予選が開催されています。
+
+### 開催済み
+- aeos cup予選
+- aeos cup
+- March Cup
+- April Cup(開催中)

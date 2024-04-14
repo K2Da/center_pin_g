@@ -9,54 +9,7 @@ const { data } = await useAsyncData(() => {
 </script>
 
 <template>
-  <div v-for="article in data" :key="article._path">
-    <ContentDoc v-slot="{ doc }" :path="article._path" :head="false">
-      <article>
-        <h2>
-          {{ article.title
-          }}<template v-if="article.excerpt">
-            [<NuxtLink
-              :to="{
-                name: 'topic-key',
-                params: {
-                  key: article._path.substring(7).replaceAll('/', '-'),
-                },
-              }"
-              no-prefetch
-              >+</NuxtLink
-            >]</template
-          >
-        </h2>
-        <p class="attr">
-          <CalendarDate :date="article.updated" />
-          <span class="text-sm">更新</span>
-          <strong v-if="article.dates?.length ?? 0"> | </strong>
-          <span v-for="(date, i) in article.dates" :key="i">
-            <strong v-if="i > 0"> | </strong>
-            {{ date.title }}:<CalendarDate :date="date.date" />
-          </span>
-        </p>
-        <ul>
-          <li
-            v-for="url in article.urls"
-            :key="url.url"
-            class="mt-0 mr-0 mb-0 ml-4"
-          >
-            <a :href="url.url" target="_blank">{{ url.title }}</a>
-          </li>
-        </ul>
-        <ContentRenderer :value="article" :excerpt="!!article.excerpt" />
-        <p class="more" v-if="article.excerpt">
-          要約表示中 [<NuxtLink
-            :to="{
-              name: 'topic-key',
-              params: { key: article._path.substring(7).replaceAll('/', '-') },
-            }"
-            no-prefetch
-            >全文</NuxtLink
-          >]
-        </p>
-      </article>
-    </ContentDoc>
+  <div v-for="topic in data" :key="topic._path">
+    <TopicExcerpt :topic />
   </div>
 </template>

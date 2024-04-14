@@ -4,9 +4,13 @@ updated: 2024-02-04 00:00:00 +09:00
 tags:
   - 海外公式大会
 dates:
-  - title: 開催
+  - title: 予選
     date: 2024-02-03 00:00:01 +01:00
+  - title: 決勝
+    date: 2024-02-10 00:00:01 +09:00
 urls:
+  - title: /topic/2024-pucs
+    url: PUCS 2024
   - title: Aeos Cup オセアニア予選
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-oceania/details
   - title: Aeos Cup ヨーロッパ予選
@@ -19,7 +23,9 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-north-america/details
 ---
 
-EUIC(Pokémon Europe International Championships)内で行われる、Aeos Cup(エオスカップ)の予選が各地で行われました。
+EUIC(Pokémon Europe International Championships)内で行われる、Aeos Cup(エオスカップ)の予選が4/13(土)に各地域で行われました。Top 8までの途中経過を記録しています。
+
+<!-- more -->
 
 ### オセアニア予選
 
