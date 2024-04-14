@@ -3,10 +3,6 @@ title: PUCS
 tags:
   - 海外公式大会
 dates:
-  - title: April Cup - オープン予選
-    date: 2024-04-13 00:00:01 +09:00
-  - title: April Cup - 決勝
-    date: 2024-04-20 00:00:01 +09:00
   - title: Regional Championship - オープン予選
     date: 2024-05-04 00:00:01 +09:00
   - title: Regional Championship - 決勝 Day 1
