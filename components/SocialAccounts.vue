@@ -9,15 +9,34 @@ const { twitter, youtube, twitch } = defineProps<Props>();
 
 <template>
   <span v-if="twitter">
-    <i class="fab fa-twitter"></i> <a :href="`https://twitter.com/${twitter}`" target="_blank">{{ twitter }}</a>
+    <UIcon
+      name="i-fa6-brands-x-twitter"
+      style="vertical-align: -3px"
+      class="mr-1"
+    />
+    <a :href="`https://twitter.com/${twitter}`" target="_blank">{{
+      twitter
+    }}</a>
     &nbsp;
   </span>
   <span v-if="youtube">
-    <i class="fab fa-youtube"></i> <a :href="`https://www.youtube.com/channel/${youtube[0]}`">{{ youtube[1] }}</a>
+    <UIcon
+      name="i-fa6-brands-youtube"
+      style="vertical-align: -2px"
+      class="mr-1"
+    />
+    <a :href="`https://www.youtube.com/channel/${youtube[0]}`">{{
+      youtube[1]
+    }}</a>
     &nbsp;
   </span>
   <span v-if="twitch">
-    <i class="fab fa-twitch"></i> <a :href="`https://www.twitch.tv/${twitch}`">{{ twitch }}</a>
+    <UIcon
+      name="i-fa6-brands-twitch"
+      style="vertical-align: -4px"
+      class="mr-1"
+    />
+    <a :href="`https://www.twitch.tv/${twitch}`">{{ twitch }}</a>
     &nbsp;
   </span>
 </template>

@@ -5,31 +5,21 @@ type Emits = { (e: 'change', id: number): void };
 const emit = defineEmits<Emits>();
 
 const setNo = (v: number) => {
+  console.log('setNo', v);
   emit('change', v);
 };
 </script>
 
-<style>
-button {
-  padding: 1px 20px;
-  margin: 6px;
-}
-</style>
-
 <template>
-  <div class="text-center">
-    <button :disabled="pageNo <= 1" v-on:click="setNo(1)">
-      <i class="fas fa-fast-backward"></i>
-    </button>
-    <button :disabled="pageNo <= 1" v-on:click="setNo(pageNo - 1)">
-      <i class="fas fa-step-backward"></i>
-    </button>
-    {{ pageNo }} / {{ maxPage }}
-    <button :disabled="pageNo >= maxPage" v-on:click="setNo(pageNo + 1)">
-      <i class="fas fa-step-forward"></i>
-    </button>
-    <button :disabled="pageNo >= maxPage" v-on:click="setNo(maxPage)">
-      <i class="fas fa-fast-forward"></i>
-    </button>
+  <div class="flex justify-center my-2 pager">
+    <UPagination
+      @update:model-value="setNo"
+      :model-value="pageNo"
+      :page-count="3"
+      :total="maxPage"
+      show-last
+      show-first
+      class="text-black"
+    />
   </div>
 </template>

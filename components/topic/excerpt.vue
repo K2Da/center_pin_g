@@ -15,7 +15,7 @@ console.log();
         @click="toggleOpen"
         v-if="open"
       >
-        <UIcon name="i-material-symbols-cancel-presentation-sharp" />
+        <UIcon name="i-material-symbols-close-fullscreen" />
       </button>
     </h2>
     <TopicUpdated :topic="topic" />
@@ -37,8 +37,8 @@ console.log();
           style="vertical-align: -4px"
           :name="
             open
-              ? 'i-material-symbols-upload-2'
-              : 'i-material-symbols-download-2'
+              ? 'i-material-symbols-close-fullscreen'
+              : 'i-material-symbols-open-in-full'
           "
         />
       </button>

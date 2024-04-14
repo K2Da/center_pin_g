@@ -30,7 +30,7 @@ export default defineNuxtConfig({
   css: ['@/assets/main.scss'],
   ui: {
     global: true,
-    icons: ['material-symbols'],
+    icons: ['material-symbols', 'fa6-brands'],
   },
   content: {
     documentDriven: false,

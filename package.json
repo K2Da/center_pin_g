@@ -22,6 +22,7 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
+    "@iconify-json/fa6-brands": "^1.1.19",
     "@jacksongross/vue-tweet-embed": "^3.0.1",
     "@nuxt/content": "^2.12.1",
     "@nuxt/ui": "^2.15.1",

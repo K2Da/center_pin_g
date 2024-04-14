@@ -18,10 +18,6 @@ export const setPage = (
     ],
     script: [
       {
-        src: 'https://kit.fontawesome.com/fb58e9e936.js',
-        crossorigin: 'anonymous',
-      },
-      {
         src: 'https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ',
         async: true,
       },

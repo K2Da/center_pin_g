@@ -6,7 +6,7 @@ await statsStore.fetch();
 </script>
 
 <template>
-  <div class="p-1">
+  <div class="p-1 dark">
     <NaviLink />
     <NuxtPage />
   </div>

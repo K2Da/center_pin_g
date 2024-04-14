@@ -4,9 +4,12 @@ const statsStore = useStatsStore();
 const { stats } = storeToRefs(statsStore);
 
 setPage(route.path, 'About', 'Center Pin(g)について');
+
+const changePageNo = (v: number) => {};
 </script>
 
 <template>
+  <ListPager :pageNo="1" :maxPage="20" @change="changePageNo" />
   <div>
     <h1>About</h1>
     <p>Pokémon UNITE大会結果を収集しているサイトです。</p>

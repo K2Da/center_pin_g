@@ -1,6 +1,7 @@
 :root {
   --border: #0891b2; // border-cyan-600
   --link: #0ea5e9; // text-sky-500
+  --normal: #dbdbdb;
 }
 
 .lgnowrap {
@@ -277,4 +278,8 @@ ul.vanila {
     padding: 0;
     margin: 0;
   }
+}
+
+.pager {
+  color: black;
 }
