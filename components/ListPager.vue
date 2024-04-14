@@ -15,7 +15,7 @@ const setNo = (v: number) => {
     <UPagination
       @update:model-value="setNo"
       :model-value="pageNo"
-      :page-count="3"
+      :page-count="1"
       :total="maxPage"
       show-last
       show-first
