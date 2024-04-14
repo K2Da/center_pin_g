@@ -28,65 +28,71 @@ urls:
 <!-- more -->
 
 ### オセアニア
+Aeos Cupに出場した :team{n="Antic Esports"} 、3月大会で優勝した :team{n="Ground Zero Gaming"} などがUpperでTop 8へ進出しています。
 
 - Upper
   - :team{n="Antic Esports"}
-  - :team{n="Legends Reappear"}
+  - Legends Reappear
   - :team{n="Ground Zero Gaming"}
-  - :team{n="Team Avatar"}
+  - Team Avatar
 - Lower
-  - :team{n="Dodo 2"}
+  - Dodo 2
   - :team{n="Achar um Trabalho"}
   - :team{n="FURY Global"}
   - :team{n="BlackGlasses"}
 
 ### ヨーロッパ
+3月大会優勝の :team{n="Yalla Bingo"} 、Aeos Cupでオープン予選から本戦へ出場した :team{n="Nouns Esports ⌐◨-◨"} などがTop 8へ進出。同じく、Aeos Cupオープン予選を突破した :team{n="Capybabas"} はLowerで進出。
 
 - Upper
   - :team{n="Nouns Esports ⌐◨-◨"}
-  - :team{n="Talibobo Unleashed"}
+  - Talibobo Unleashed
   - :team{n="Yalla Bingo"}
   - :team{n="abcdefghijkl"}
 - Lower
   - :team{n="CincoGolemo"}
   - :team{n="Capybabas"}
-  - :team{n="ROSTERMANIA"}
+  - ROSTERMANIA
   - :team{n="SUCRÉOSUCRE"}
 
 ### 北ラテンアメリカ
+Aeos Cup 3位の :team{n="Rework Respawn"}、Aeos Cup オープン予選突破、3月大会優勝の :team{n="E7 Janus"} などがUpperでTop 8進出。
 
 - Upper
   - :team{n="Rework Respawn"}
   - :team{n="E7 Janus"}
   - :team{n="Osaka"}
-  - :team{n="aaksasakj"}
+  - aaksasakj
 - Lower
-  - :team{n="No Reading Compression"}
-  - :team{n="MooMoo Milk"}
+  - No Reading Compression
+  - MooMoo Milk
   - :team{n="Anteiku"}
-  - :team{n="Bajitos!!!"}
+  - Bajitos!!!
 
 ### 南ラテンアメリカ
+Aeos Cup南ラテンアメリカ予選優勝、3月大会優勝、Aeos Cup優勝、 :team{n="FUSION"} がUpperでTop 8。
 
 - Upper
   - :team{n="FUSION"}
   - :team{n="LIGA PERÚ ESPORT"}
   - :team{n="Punto cL"}
-  - :team{n="2+ Y Nos Vamos"}
+  - 2+ Y Nos Vamos
 - Lower
   - :team{n="REVENANT"}
   - :team{n="1974"}
   - :team{n="Imperio E-sport"}
-  - :team{n="XRL8"}
+  - XRL8
 
 ### 北アメリカ
+Aeos Cup 4位の :team{n="Nemesis"} 、Aeos Cup オープン予選出場の :team{n="exile"} などがUppper でTop 8進出。Aeos Cup オープン予選突破の :team{n="Team YT"} はLowerへ。
+
 - Upper
   - :team{n="Nemesis"}
   - :team{n="exile"}
-  - :team{n="Luminosity Unite"}
-  - :team{n="Orange Team"}
+  - Luminosity Unite
+  - Orange Team
 - Lower
-  - :team{n="DoL Kittens"}
-  - :team{n="UFEELME???"}
+  - DoL Kittens
+  - UFEELME???
   - :team{n="Hades"}
   - :team{n="Team YT"}

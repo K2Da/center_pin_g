@@ -21,6 +21,7 @@ console.log();
     <!-- v-showにしたいが、するとhydration mismatchになる -->
     <div v-if="open">
       <TopicInfo :topic="topic" />
+      <hr />
       <ContentRenderer :value="topic" :excerpt="false" />
     </div>
 
