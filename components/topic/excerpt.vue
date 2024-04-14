@@ -11,13 +11,15 @@ console.log();
     <h2 class="flex justify-between">
       {{ topic.title }}
       <button
-        class="bg-sky-800 rounded pt-1 pb-0 px-1 text-sm mb-1 mr-8"
+        class="bg-sky-800 rounded pt-1 pb-0 px-1 text-sm mb-1 mr-1 lg:mr-8"
         @click="toggleOpen"
         v-if="open"
       >
         <UIcon name="i-material-symbols-cancel-presentation-sharp" />
       </button>
     </h2>
+    <TopicUpdated :topic="topic" />
+
     <!-- v-showにしたいが、するとhydration mismatchになる -->
     <div v-if="open">
       <TopicInfo :topic="topic" />

@@ -2,20 +2,6 @@
 const { topic } = defineProps<{ topic }>();
 </script>
 <template>
-  <p class="attr text-right" v-if="topic.updated">
-    <CalendarDate :date="topic.updated" :year="true" />
-    <span class="text-sm">更新</span>
-    [<NuxtLink
-      :to="{
-        name: 'topic-key',
-        params: {
-          key: topic._path.substring(7).replaceAll('/', '-'),
-        },
-      }"
-      no-prefetch
-      >URL</NuxtLink
-    >]
-  </p>
   <div class="my-4" v-if="topic.dates?.length ?? 0">
     <h3 class="my-2">日程</h3>
     <ul>
