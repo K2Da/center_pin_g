@@ -62,7 +62,7 @@ onMounted(async () => {
         {{ e.date.format('YYYY年 MM月') }}
       </h3>
       <h4
-        class="mt-1"
+        class="my-1"
         v-if="
           i === 0 ||
           e.date.format('YYYYMMDD') !== events[i - 1].date.format('YYYYMMDD')
