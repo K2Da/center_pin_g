@@ -20,7 +20,7 @@ const isOpen = computed(() => open.value || props.openAll);
 </script>
 
 <template>
-  <div class="w-[2em] pl-2">
+  <div class="w-[2em] mr-2">
     <ToggleButton
       :id="`tournaments-toggle-${i}`"
       :value="false"

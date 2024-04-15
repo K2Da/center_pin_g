@@ -22,14 +22,14 @@ const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
 </script>
 
 <template>
-  <div class="w-[2em] pl-2">
+  <div class="w-[2em] mr-2">
     <ToggleButton
       :id="`tournaments-toggle-${i}`"
       :value="false"
       @toggle="toggleMatches"
     />
   </div>
-  <div class="w-[32em]">
+  <div class="w-[32em] font-bold lg:font-normal">
     <TournamentName
       :name="tournament.tournament_name"
       :tournamentKey="tournament.tournament_key"

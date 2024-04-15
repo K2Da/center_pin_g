@@ -12,9 +12,3 @@ function send() {
   <textarea v-model="text" />
   <button :disabled="text.length == 0" v-on:click="send">送信</button>
 </template>
-
-<style>
-button {
-  padding: 5px 10px 5px 10px;
-}
-</style>

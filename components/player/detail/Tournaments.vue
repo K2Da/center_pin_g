@@ -11,13 +11,13 @@ const toggleAllMatches = (value: boolean) => {
 </script>
 
 <template>
-  <div class="pt-0 pr-0 pb-1 pl-2">
+  <div class="pt-0 pb-1 pl-2">
     <ToggleButton
       id="tournaments-all-toggle"
       :value="false"
       @toggle="toggleAllMatches"
     />
-    <span>All</span>
+    <span class="ml-2">All</span>
   </div>
 
   <div

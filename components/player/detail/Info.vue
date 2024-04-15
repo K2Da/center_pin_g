@@ -81,10 +81,3 @@ const data = computed(() => teamsData(detail));
     </li>
   </ul>
 </template>
-
-<style>
-button {
-  padding: 1px 20px;
-  margin: 6px;
-}
-</style>

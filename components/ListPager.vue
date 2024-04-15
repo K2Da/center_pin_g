@@ -5,7 +5,6 @@ type Emits = { (e: 'change', id: number): void };
 const emit = defineEmits<Emits>();
 
 const setNo = (v: number) => {
-  console.log('setNo', v);
   emit('change', v);
 };
 </script>
