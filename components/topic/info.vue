@@ -2,7 +2,7 @@
 const { topic } = defineProps<{ topic }>();
 </script>
 <template>
-  <div class="my-4" v-if="topic.dates?.length ?? 0">
+  <div class="my-2" v-if="topic.dates?.length ?? 0">
     <h3 class="my-2">日程</h3>
     <ul>
       <li v-for="(date, i) in topic.dates" :key="i">
@@ -10,7 +10,7 @@ const { topic } = defineProps<{ topic }>();
       </li>
     </ul>
   </div>
-  <div class="my-4" v-if="topic.urls?.length ?? 0">
+  <div class="my-2" v-if="topic.urls?.length ?? 0">
     <h3 class="my-2">関連URL</h3>
     <ul>
       <li v-for="(url, i) in topic.urls" :key="i">
