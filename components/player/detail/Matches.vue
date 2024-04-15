@@ -18,8 +18,8 @@ const matches = detail.matches.filter(
     v-for="(match, i) of matches"
     v-show="show"
     :key="`${match.bracket}_${match.round}`"
-    :class="subContainerClass(i, index, matches.length)"
-    style="margin-left: 0.5em; width: calc(100% - 0.5em)"
+    :class="[subContainerClass(i, index, matches.length), 'ml-[0.5em]']"
+    style="width: calc(100% - 0.5em)"
   >
     <div class="w-[9em]">
       {{ match.bracket }}

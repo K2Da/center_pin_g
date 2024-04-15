@@ -13,8 +13,7 @@ const { data } = await useFetch(
     class="vtable py-2"
     v-for="(team, i) of data.teams"
     :key="i"
-    :class="containerClass(i)"
-    style="margin-left: 12px; max-width: 600px"
+    :class="[containerClass(i), 'ml-3', 'max-w-[600px]']"
   >
     <div>
       <div class="font-bold pl-1">

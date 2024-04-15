@@ -52,7 +52,10 @@ const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
     {{ tournament.member_name }}, <PlayersLine :names="tournament.mate_list" />
   </div>
   <div class="w-[16em]">
-    <span class="text-sm">📈</span> {{ formatNum(tournament.rating) }}
+    <span class="text-sm"
+      ><UIcon name="i-material-symbols-show-chart" style="vertical-align: -1px"
+    /></span>
+    {{ formatNum(tournament.rating) }}
     <span class="text-sm"
       >({{ formatNum(tournament.rank) }}位 /
       {{ formatNum(tournament.total) }}人)</span

@@ -14,7 +14,25 @@ list = list.sort((a, b) => b.date - a.date);
 
 <template>
   <div class="m-1">
-    <span class="text-sm">✔ 公式 📈 ratings計算対象 👾 複数グループあり</span>
+    <span class="text-sm">
+      <UIcon
+        name="i-material-symbols-check-circle"
+        style="vertical-align: -1px"
+      />
+      公式
+      <span class="text-sm"
+        ><UIcon
+          name="i-material-symbols-show-chart"
+          style="vertical-align: -1px"
+      /></span>
+      ratings計算対象
+      <span class="text-sm"
+        ><UIcon
+          name="i-material-symbols-auto-awesome-motion-outline"
+          style="vertical-align: -1px"
+      /></span>
+      複数グループあり</span
+    >
   </div>
   <div v-if="list && list.length > 0">
     <div
@@ -35,7 +53,13 @@ list = list.sort((a, b) => b.date - a.date);
           <DateTime :date="t.date" :spacing="true" />
         </div>
         <div class="text-center w-[2em]">
-          <span class="text-sm">👾</span>
+          <span class="text-sm">
+            <span class="text-sm"
+              ><UIcon
+                name="i-material-symbols-auto-awesome-motion-outline"
+                style="vertical-align: -1px"
+            /></span>
+          </span>
         </div>
       </template>
       <template v-else>
@@ -46,10 +70,21 @@ list = list.sort((a, b) => b.date - a.date);
           <DateTime :date="t.date" :spacing="true" />
         </div>
         <div class="text-center w-[1em]">
-          <span v-if="t.info.official" class="text-sm">✔</span>
+          <span v-if="t.info.official" class="text-sm">
+            <UIcon
+              name="i-material-symbols-check-circle"
+              style="vertical-align: -1px"
+            />
+          </span>
         </div>
         <div class="text-center w-[1em] pl-0">
-          <span v-if="t.rating" class="text-sm">📈</span>
+          <span v-if="t.rating" class="text-sm">
+            <span class="text-sm"
+              ><UIcon
+                name="i-material-symbols-show-chart"
+                style="vertical-align: -1px"
+            /></span>
+          </span>
         </div>
       </template>
       <div class="text-right w-[6em]">

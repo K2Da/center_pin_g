@@ -66,14 +66,7 @@ const entries = computed(() => {
           <th class="w-[12em]"></th>
           <th class="text-left w-[12em]">前チーム</th>
           <th
-            class="text-center"
-            style="
-              width: 3em;
-              padding-left: 0;
-              padding-right: 0;
-              margin-left: 0;
-              margin-right: 0;
-            "
+            class="text-center w-[3em] px-0 mx-0"
             v-for="(t, i) of reversedTournaments"
             :key="i"
           >
@@ -96,11 +89,7 @@ const entries = computed(() => {
           </td>
           <td v-for="(entry, i) of entries[p]" :key="i" class="p-0 m-0">
             <template v-if="entry !== ''">
-              <img
-                :src="`/parts/${entry}.svg`"
-                class="w-[3em]"
-                style="height: 2em"
-              />
+              <img :src="`/parts/${entry}.svg`" class="w-[3em] h-[2em]" />
             </template>
           </td>
           <td class="text-left">
