@@ -11,9 +11,10 @@ urls:
     url: https://www.start.gg/tournament/asia-unity-clash-spring-showdown-x-ingage/details
 ---
 
-4/28に日本、アジア太平洋、インド、韓国のチームで行われる大会についてのメモ。
+4/28に日本、アジア太平洋、インド、韓国のチームで行われる大会「Unity Clash [Asia]」についてのメモ。
 
 <!-- more -->
 
+### 告知
 :xpost{id="1779907785628811440"}
 :xpost{id="1779855585061617716"}

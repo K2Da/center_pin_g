@@ -73,7 +73,7 @@ onMounted(async () => {
         <span class="text-yellow-500">{{ dayText(e.date) }}</span>
       </h4>
       <div class="event" v-if="e.title != ''">
-        <span class="font-mono" v-if="e.date.get('second') !== 1">
+        <span class="font-mono ml-1" v-if="e.date.get('second') !== 1">
           {{ e.date.get('hour').toString().padStart(2, '0') }}:{{
             e.date.get('minute').toString().padStart(2, '0')
           }}
