@@ -35,7 +35,6 @@ export const ratingClass = (ratingRange, ratingDic, player: string) => {
 };
 
 export const host = (url: string) => {
-  console.log(url);
   return url.startsWith('/') ? 'center-ping' : new URL(url).hostname;
 };
 

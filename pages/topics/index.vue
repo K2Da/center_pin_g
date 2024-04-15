@@ -4,6 +4,6 @@ setPage(route.path, 'Topic', 'Pokémon UNITE大会結果、話題収集サイト
 </script>
 
 <template>
-  <h1>トピック</h1>
+  <h1 class="mb-2">トピック</h1>
   <TopicList />
 </template>
