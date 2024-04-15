@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     ],
     '@nuxt/ui',
     '@nuxt/content',
+    'nuxt-gtag',
   ],
   css: ['@/assets/main.scss'],
   ui: {
@@ -37,5 +38,8 @@ export default defineNuxtConfig({
     markdown: {
       anchorLinks: false,
     },
+  },
+  gtag: {
+    id: 'G-KQ7HCNR2RZ',
   },
 });

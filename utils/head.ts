@@ -4,7 +4,6 @@ export const setPage = (
   description: string,
   website: boolean = false,
 ) => {
-  if (title && process.client) gaView(title);
   useHead({
     title: `CP(g): ${title || ''}`,
     meta: [
@@ -18,30 +17,10 @@ export const setPage = (
     ],
     script: [
       {
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-KQ7HCNR2RZ',
-        async: true,
-      },
-      {
-        children:
-          "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());gtag('config', 'G-KQ7HCNR2RZ');",
-      },
-      {
         async: true,
         src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3152944921325337',
         crossorigin: 'anonymous',
       },
     ],
   });
-};
-
-export const gaView = (title: string): void => {
-  // eslint-disable-next-line
-  // @ts-ignore
-  gtag('set', 'page_path', window.location.pathname);
-  // eslint-disable-next-line
-  // @ts-ignore
-  gtag('set', 'page_title', `CP(g): ${title}`);
-  // eslint-disable-next-line
-  // @ts-ignore
-  gtag('event', 'page_view');
 };
