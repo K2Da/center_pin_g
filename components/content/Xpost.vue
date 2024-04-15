@@ -4,7 +4,7 @@ const { id } = defineProps<{ id: string }>();
 </script>
 <template>
   <ClientOnly>
-    <div class="py-0 px-3">
+    <div class="py-0 px-3" style="color-scheme: auto">
       <Tweet :id="id" :options="{ theme: 'dark' }">
         <span>
           <img

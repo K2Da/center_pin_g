@@ -3,25 +3,25 @@ title: PWCS アジア予選
 tags:
   - 海外公式大会
 dates:
-  - title: 韓国予選 Day 1
+  - title: 韓国 Day 1
     date: 2024-05-18 00:00:01 +09:00
-  - title: 韓国予選 Day 2
+  - title: 韓国 Day 2
     date: 2024-05-19 00:00:01 +09:00
-  - title: 台湾・香港予選 Day 1
+  - title: 台湾・香港 Day 1
     date: 2024-05-05 00:00:01 +09:00
-  - title: 台湾・香港予選 Day 2
+  - title: 台湾・香港 Day 2
     date: 2024-05-12 00:00:01 +09:00
-  - title: フィリピン予選 Day 1
+  - title: フィリピン Day 1
     date: 2024-05-11 00:00:01 +09:00
-  - title: フィリピン予選 Day 2
+  - title: フィリピン Day 2
     date: 2024-05-12 00:00:01 +09:00
-  - title: インドネシア予選 Day 1
+  - title: インドネシア Day 1
     date: 2024-05-11 00:00:01 +09:00
-  - title: インドネシア 予選 Day 2
+  - title: インドネシア Day 2
     date: 2024-05-12 00:00:01 +09:00
-  - title: マレーシア・シンガポール予選 Day 1
+  - title: マレーシア・シンガポール Day 1
     date: 2024-05-04 00:00:01 +09:00
-  - title: マレーシア・シンガポール予選 Day 2
+  - title: マレーシア・シンガポール Day 2
     date: 2024-05-05 00:00:01 +09:00
 urls:
   - title: 2024 Pokémon UNITE Championship Series

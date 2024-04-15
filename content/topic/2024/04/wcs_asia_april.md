@@ -1,5 +1,5 @@
 ---
-title: WCS2024 アジア予選 日本地域 4月大会
+title: WCS 日本 4月大会
 tags:
   - 公式大会
 dates:
