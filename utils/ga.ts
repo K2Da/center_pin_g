@@ -2,7 +2,7 @@ export const setPage = (
   path: string,
   title: string,
   description: string,
-  website?: boolean = false,
+  website: boolean = false,
 ) => {
   if (title && process.client) gaView(title);
   useHead({
