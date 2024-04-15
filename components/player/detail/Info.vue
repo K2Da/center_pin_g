@@ -36,18 +36,18 @@ const data = computed(() => teamsData(detail));
 <template>
   <ul>
     <li v-if="detail.player.data?.aliases?.length > 0">
-      <span class="text-sm">大会出場名: </span>
+      <span class="muted">大会出場名: </span>
       {{ detail.player.data.aliases.join(', ') }}
     </li>
     <ClientOnly>
       <ResultsSum :resultsSum="resultsSum" />
     </ClientOnly>
     <li v-if="detail.player.rating">
-      <span class="text-sm">ratings: </span>
+      <span class="muted">ratings: </span>
       {{ detail.player.rating.toLocaleString() }}
     </li>
     <li v-if="detail.player.data">
-      <span class="text-sm">url: </span>
+      <span class="muted">url: </span>
       <SocialAccounts
         :twitter="detail.player.data?.twitter"
         :youtube="detail.player.data?.youtube"
@@ -55,7 +55,7 @@ const data = computed(() => teamsData(detail));
       />
     </li>
     <li>
-      <span class="text-sm">チーム</span>
+      <span class="muted">チーム</span>
       <ul>
         <li v-for="(team, i) of data" :key="team.name">
           <template
@@ -63,14 +63,14 @@ const data = computed(() => teamsData(detail));
               data.length <= 3 || i === 0 || i === data.length - 1 || showTeams
             "
           >
-            <span class="text-sm"
+            <span class="muted"
               ><DateTime :date="team.lastMatchAt" :spacing="true" /></span
             >&nbsp;
             <TeamName :name="team.name" :currentName="team.name" />
             ({{ team.count }})
           </template>
           <button
-            class="text-sm bg-slate-900 rounded"
+            class="muted bg-slate-900 rounded"
             v-if="!showTeams && data.length > 3 && i === 1"
             @click="showOtherTeams"
           >

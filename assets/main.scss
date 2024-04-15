@@ -1,11 +1,14 @@
 :root {
   --border: #0891b2; // border-cyan-600
   --link: #0ea5e9; // text-sky-500
-  --normal: #dbdbdb;
+  --normal: #e5e7eb; // text-gray-200
 }
 
 .lgnowrap {
   @apply lg:overflow-hidden lg:overflow-ellipsis lg:whitespace-nowrap;
+}
+.muted {
+  @apply text-gray-300 text-sm;
 }
 
 body {
@@ -159,6 +162,8 @@ table {
 }
 
 article {
+  margin-bottom: 48px;
+
   td {
     padding: 4px 12px;
   }
@@ -177,8 +182,6 @@ article {
       margin-left: 8px;
     }
   }
-
-  margin-bottom: 48px;
   table {
     width: auto;
     margin: 8px;

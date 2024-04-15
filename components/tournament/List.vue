@@ -14,19 +14,19 @@ list = list.sort((a, b) => b.date - a.date);
 
 <template>
   <div class="m-1">
-    <span class="text-sm">
+    <span class="muted">
       <UIcon
         name="i-material-symbols-check-circle"
         style="vertical-align: -1px"
       />
       公式
-      <span class="text-sm"
+      <span class="muted"
         ><UIcon
           name="i-material-symbols-show-chart"
           style="vertical-align: -1px"
       /></span>
       ratings計算対象
-      <span class="text-sm"
+      <span class="muted"
         ><UIcon
           name="i-material-symbols-auto-awesome-motion-outline"
           style="vertical-align: -1px"
@@ -47,14 +47,14 @@ list = list.sort((a, b) => b.date - a.date);
         </div>
         <div class="text-right w-[7em]">
           {{ t.tournament_count }}
-          <span class="text-sm">グループ</span>
+          <span class="muted">グループ</span>
         </div>
         <div class="w-[8em]">
           <DateTime :date="t.date" :spacing="true" />
         </div>
         <div class="text-center w-[2em]">
-          <span class="text-sm">
-            <span class="text-sm"
+          <span class="muted">
+            <span class="muted"
               ><UIcon
                 name="i-material-symbols-auto-awesome-motion-outline"
                 style="vertical-align: -1px"
@@ -70,7 +70,7 @@ list = list.sort((a, b) => b.date - a.date);
           <DateTime :date="t.date" :spacing="true" />
         </div>
         <div class="text-center w-[1em]">
-          <span v-if="t.info.official" class="text-sm">
+          <span v-if="t.info.official" class="muted">
             <UIcon
               name="i-material-symbols-check-circle"
               style="vertical-align: -1px"
@@ -78,8 +78,8 @@ list = list.sort((a, b) => b.date - a.date);
           </span>
         </div>
         <div class="text-center w-[1em] pl-0">
-          <span v-if="t.rating" class="text-sm">
-            <span class="text-sm"
+          <span v-if="t.rating" class="muted">
+            <span class="muted"
               ><UIcon
                 name="i-material-symbols-show-chart"
                 style="vertical-align: -1px"
@@ -89,22 +89,22 @@ list = list.sort((a, b) => b.date - a.date);
       </template>
       <div class="text-right w-[6em]">
         {{ t.team_count }}
-        <span class="text-sm">チーム</span>
+        <span class="muted">チーム</span>
       </div>
       <div class="text-right w-[5em]">
         {{ t.player_count }}
-        <span class="text-sm">人</span>
+        <span class="muted">人</span>
       </div>
       <div class="text-right w-[5em]">
         {{ t.match_count }}
-        <span class="text-sm">試合</span>
+        <span class="muted">試合</span>
       </div>
       <div class="w-[48em]">
         <template
           v-for="team of group.tournament_winners[t.key]"
           :key="team.name"
         >
-          <span class="text-sm">{{ team.rank }}. </span>
+          <span class="muted">{{ team.rank }}. </span>
           <TeamName :name="team.name" :currentName="team.current_name" />
           &nbsp;
         </template>

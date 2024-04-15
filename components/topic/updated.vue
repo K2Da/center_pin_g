@@ -4,7 +4,7 @@ const { topic } = defineProps<{ topic }>();
 <template>
   <p class="attr text-right py-1 pr-2" v-if="topic.updated">
     <CalendarDate :date="topic.updated" :year="true" />
-    <span class="text-sm">更新</span>
+    <span class="muted">更新</span>
     <NuxtLink
       :to="{
         name: 'topic-key',

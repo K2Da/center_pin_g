@@ -23,7 +23,7 @@ const matches = detail.matches.filter(
   >
     <div class="w-[9em]">
       {{ match.bracket }}
-      <span class="text-sm">r: </span>{{ match.round }}
+      <span class="muted">r: </span>{{ match.round }}
     </div>
     <div class="text-center w-[2em]">
       <MatchResult :win="match.wl" />

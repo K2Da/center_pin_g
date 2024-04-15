@@ -4,6 +4,6 @@ const { rank } = defineProps<Props>();
 </script>
 
 <template>
-  <template v-if="rank">{{ rank }}<span class="text-sm">位</span></template>
+  <template v-if="rank">{{ rank }}<span class="muted">位</span></template>
   <template v-else>-</template>
 </template>

@@ -6,7 +6,7 @@ const { topic } = defineProps<{ topic }>();
     <h2 class="mb-2">{{ topic.title }}</h2>
     <p class="attr text-right pr-8" v-if="topic.updated">
       <CalendarDate :date="topic.updated" :year="true" />
-      <span class="text-sm">更新</span>
+      <span class="muted">更新</span>
     </p>
 
     <TopicInfo :topic="topic" />

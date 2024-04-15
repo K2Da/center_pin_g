@@ -10,7 +10,7 @@ const toggleOpen = () => {
     <h2 class="flex justify-between">
       {{ topic.title }}
       <button
-        class="bg-sky-800 rounded pt-1 pb-0 px-1 text-sm mb-1 mr-1 lg:mr-8"
+        class="bg-sky-800 rounded pt-1 pb-0 px-1 muted mb-1 mr-1 lg:mr-8"
         @click="toggleOpen"
         v-if="open"
       >

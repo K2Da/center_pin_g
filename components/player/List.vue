@@ -85,7 +85,7 @@ onServerPrefetch(async () => {
               :rating="p.rating"
               class="font-bold lg:font-normal"
             />
-            <span class="text-sm" v-if="p.data?.aliases?.length > 0">
+            <span class="muted" v-if="p.data?.aliases?.length > 0">
               ({{ p.data.aliases.slice(0, 3).join(', ')
               }}<span v-if="p.data?.aliases?.length > 3">
                 + 他{{ p.data.aliases.length - 3 }}件</span
@@ -96,19 +96,19 @@ onServerPrefetch(async () => {
             {{ (p.rating ?? 0).toLocaleString() }}
           </div>
           <div class="w-[14em]">
-            {{ p.entries }} <span class="text-sm">大会</span>
+            {{ p.entries }} <span class="muted">大会</span>
             <span v-if="p.top_1 > 0"
-              ><span class="text-sm"> 優勝</span> {{ p.top_1 }}
-              <span class="text-sm">回</span></span
+              ><span class="muted"> 優勝</span> {{ p.top_1 }}
+              <span class="muted">回</span></span
             >
             <span v-if="p.top_4 > 0"
-              ><span class="text-sm"> Top4</span> {{ p.top_4 }}
-              <span class="text-sm">回</span></span
+              ><span class="muted"> Top4</span> {{ p.top_4 }}
+              <span class="muted">回</span></span
             >
           </div>
           <div class="w-[7em]">
-            {{ p.win }} <span class="text-sm">勝</span> {{ p.lose }}
-            <span class="text-sm">敗</span>
+            {{ p.win }} <span class="muted">勝</span> {{ p.lose }}
+            <span class="muted">敗</span>
           </div>
           <div class="w-[14em] lgnowrap">
             <TeamName

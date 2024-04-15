@@ -9,8 +9,8 @@ dates:
   - title: 決勝
     date: 2024-02-10 00:00:01 +09:00
 urls:
-  - title: /topic/2024-pucs
-    url: PUCS 2024
+  - title: PUCS 2024
+    url: /topic/2024-pucs
   - title: Aeos Cup オセアニア予選
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-oceania/details
   - title: Aeos Cup ヨーロッパ予選

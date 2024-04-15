@@ -15,6 +15,7 @@ const { topic } = defineProps<{ topic }>();
     <ul>
       <li v-for="(url, i) in topic.urls" :key="i">
         <a :href="url.url" target="_blank">{{ url.title }}</a>
+        <span class="muted ml-1">( {{ host(url.url) }} )</span>
       </li>
     </ul>
   </div>

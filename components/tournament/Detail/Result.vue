@@ -43,9 +43,9 @@ const sortByRank = (teams: TournamentTeam[]) =>
     <div class="w-[6em]">
       <template v-if="result.win !== 0 || result.lose !== 0">
         {{ result.win }}
-        <span class="text-sm">勝</span>
+        <span class="muted">勝</span>
         {{ result.lose }}
-        <span class="text-sm">敗</span>
+        <span class="muted">敗</span>
       </template>
       <template v-else>-</template>
     </div>

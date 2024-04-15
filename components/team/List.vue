@@ -79,30 +79,30 @@ onServerPrefetch(async () => {
             />
           </div>
           <div class="w-[5em]">
-            <span class="text-sm" v-if="t.names.length > 0"
+            <span class="muted" v-if="t.names.length > 0"
               >(別名{{ t.names.length }}件)</span
             >
           </div>
           <div class="w-[16em]">
-            <span class="text-sm">出場: </span>
+            <span class="muted">出場: </span>
             {{ t.tournament_count }}
-            <span class="text-sm">回 </span>
+            <span class="muted">回 </span>
             <template v-if="t.top_1">
-              <span class="text-sm">優勝: </span>
+              <span class="muted">優勝: </span>
               {{ t.top_1 }}
-              <span class="text-sm">回 </span>
+              <span class="muted">回 </span>
             </template>
             <template v-if="t.top_4">
-              <span class="text-sm">Top4: </span>
+              <span class="muted">Top4: </span>
               {{ t.top_4 }}
-              <span class="text-sm">回 </span>
+              <span class="muted">回 </span>
             </template>
           </div>
           <div class="w-[7em]">
             {{ t.win }}
-            <span class="text-sm">勝 </span>
+            <span class="muted">勝 </span>
             {{ t.lose }}
-            <span class="text-sm">敗 </span>
+            <span class="muted">敗 </span>
           </div>
           <div class="w-[19em]">
             <DateSpan
@@ -114,11 +114,11 @@ onServerPrefetch(async () => {
             {{
               diffDays(t.latest_tournament_date, t.first_tournament_date) + 1
             }}
-            <span class="text-sm">日 </span>
+            <span class="muted">日 </span>
           </div>
           <div class="w-[38em] lgnowrap">
             <PlayersLine :names="t.members.slice(0, 5)" />
-            <span v-if="t.members.length > 5" class="text-sm"
+            <span v-if="t.members.length > 5" class="muted"
               >(他{{ t.members.length - 5 }}人)</span
             >
           </div>

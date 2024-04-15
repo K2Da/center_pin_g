@@ -34,5 +34,10 @@ export const ratingClass = (ratingRange, ratingDic, player: string) => {
   return 't4';
 };
 
+export const host = (url: string) => {
+  console.log(url);
+  return url.startsWith('/') ? 'center-ping' : new URL(url).hostname;
+};
+
 export const cdateJST = cdate().tz('Asia/Tokyo').cdateFn();
 export type CDate = cdate.CDate;
