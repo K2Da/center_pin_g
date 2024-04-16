@@ -6,7 +6,11 @@ const open = ref(false);
 const toggleOpen = () => {
   open.value = !open.value;
   if (open.value) {
-    gtag('event', 'open_topic', { title: topic.title });
+    gtag('event', 'open_topic', {
+      event_category: 'user_interaction',
+      event_label: 'Button clicked',
+      value: topic.title,
+    });
   }
 };
 </script>
