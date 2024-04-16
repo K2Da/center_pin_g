@@ -78,7 +78,7 @@ onMounted(async () => {
             e.date.get('minute').toString().padStart(2, '0')
           }}
         </span>
-        <span v-else class="font-mono">--:--</span>
+        <span v-else class="font-mono ml-1">--:--</span>
         &nbsp;
         <NuxtLink
           :to="{

@@ -31,7 +31,7 @@ const toggleOpen = () => {
     <!-- v-showにしたいが、するとhydration mismatchになる -->
     <div v-if="open">
       <TopicInfo :topic="topic" />
-      <hr />
+      <h3>概要</h3>
       <ContentRenderer :value="topic" :excerpt="false" />
     </div>
 
