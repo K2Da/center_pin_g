@@ -19,6 +19,7 @@ body {
 
 * {
   color: #dbdbdb;
+  border-color: var(--border);
 }
 
 h1,
@@ -29,7 +30,6 @@ h5,
 h6 {
   color: white;
   font-weight: 600;
-  border-bottom-color: var(--border);
   padding-left: 4px;
 }
 h1 {
@@ -115,19 +115,13 @@ dl {
 .stc {
   padding: 4px 0;
   margin: 0;
-  border-bottom: var(--border) 1px solid;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.tc1 {
-  border-top: var(--border) 1px solid;
-}
-
 .stc1 {
   margin-top: 6px;
-  border-top: var(--border) 1px solid;
 }
 
 .tca {

@@ -10,10 +10,32 @@ const { data } = await useFetch(
 </script>
 <template>
   <div
-    class="vtable py-2"
+    :class="[
+      containerClass(2),
+      'max-w-[600px]',
+      'px-2',
+      'pt-1',
+      'pb-0',
+      'border-y-2',
+    ]"
+  >
+    <div class="font-bold">
+      <TournamentName
+        :tournamentKey="tournament"
+        :name="data.tournament.name"
+      />
+    </div>
+    <div>
+      <DateTime :date="data.tournament.date" /><span class="muted">開催</span>
+      {{ data.tournament.team_count }}<span class="muted">チーム</span>
+      {{ data.tournament.player_count }}<span class="muted">人</span>
+      {{ data.tournament.match_count }}<span class="muted">試合</span>
+    </div>
+  </div>
+  <div
     v-for="(team, i) of data.teams"
     :key="i"
-    :class="[containerClass(i), 'ml-3', 'max-w-[600px]']"
+    :class="[containerClass(i + 1), 'max-w-[600px]', 'vtable', 'pb-2']"
   >
     <div>
       <div class="font-bold pl-1">
