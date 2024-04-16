@@ -14,11 +14,15 @@ const matches = detail.matches.filter(
 
 <template>
   <div
-    class="stc"
     v-for="(match, i) of matches"
     v-show="show"
     :key="`${match.bracket}_${match.round}`"
-    :class="[subContainerClass(i, index, matches.length), 'ml-[0.5em]']"
+    :class="[
+      subContainerClass(i, index, matches.length),
+      'ml-[0.5em]',
+      'stc',
+      'border-t',
+    ]"
     style="width: calc(100% - 0.5em)"
   >
     <div class="w-[9em]">
@@ -31,14 +35,12 @@ const matches = detail.matches.filter(
     <div class="text-center w-[4em]">
       {{ match.score_text }}
     </div>
-    <div class="pl-1 w-[24em]">
+    <div class="pl-1 w-[32em]">
       <TeamName
         :name="match.opponent_team_name"
         :currentName="match.opponent_team_current_name"
       />
-    </div>
-    <div class="w-[4em]">
-      <ResultRank :rank="match.opponent_team_rank" />
+      (<ResultRank :rank="match.opponent_team_rank" />)
     </div>
     <div class="w-[48em]">
       <PlayersLine :names="match.opponents_list" />

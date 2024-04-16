@@ -24,7 +24,15 @@ const toggleAllMatches = (value: boolean) => {
     class="tc py-4 lg:py-1"
     v-for="(tournament, i) of detail.tournaments"
     :key="tournament.tournament_key"
-    :class="containerClass(i)"
+    :class="[
+      containerClass(i),
+      'tc',
+      'py-3',
+      'lg:py-2',
+      'lg:pb-0',
+      'border-t-2',
+      'lg:border-t',
+    ]"
   >
     <PlayerDetailTournament
       :tournament="tournament"
