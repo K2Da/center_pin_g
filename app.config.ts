@@ -17,5 +17,12 @@ export default defineAppConfig({
         },
       },
     },
+    skeleton: {
+      default: {
+        base: 'animate-pulse',
+        background: 'bg-gray-100 dark:bg-gray-100',
+        rounded: 'rounded-md',
+      },
+    },
   },
 });

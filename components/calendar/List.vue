@@ -99,23 +99,41 @@ onMounted(async () => {
   <div v-else>
     <template v-if="!mounted">
       <div class="p-2">
-        <USkeleton class="h-6 w-[120px] mb-1 border-bottom" />
         <USkeleton
-          class="h-[1px] w-full mb-2"
-          :ui="{ background: 'bg-cyan-600' }"
+          class="h-6 w-[120px] mb-1 border-bottom"
+          :ui="{ background: 'dark:bg-gray-600' }"
         />
-        <USkeleton class="h-5 w-[80px] mb-1 border-bottom" />
         <USkeleton
           class="h-[1px] w-full mb-2"
-          :ui="{ background: 'bg-cyan-600' }"
+          :ui="{ background: 'dark:bg-gray-600' }"
+        />
+        <USkeleton
+          class="h-5 w-[80px] mb-1 border-bottom"
+          :ui="{ background: 'dark:bg-gray-600' }"
+        />
+        <USkeleton
+          class="h-[1px] w-full mb-2"
+          :ui="{ background: 'dark:bg-gray-600' }"
         />
         <div class="flex items-center space-x-4 mb-1">
-          <USkeleton class="h-4 w-[80px]" />
-          <USkeleton class="h-4 w-[200px]" />
+          <USkeleton
+            class="h-4 w-[80px]"
+            :ui="{ background: 'dark:bg-gray-600' }"
+          />
+          <USkeleton
+            class="h-4 w-[200px]"
+            :ui="{ background: 'dark:bg-gray-600' }"
+          />
         </div>
         <div class="flex items-center space-x-4">
-          <USkeleton class="h-4 w-[80px]" />
-          <USkeleton class="h-4 w-[300px]" />
+          <USkeleton
+            class="h-4 w-[80px]"
+            :ui="{ background: 'dark:bg-gray-600' }"
+          />
+          <USkeleton
+            class="h-4 w-[300px]"
+            :ui="{ background: 'dark:bg-gray-600' }"
+          />
         </div>
       </div>
     </template>
