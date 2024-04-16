@@ -1,8 +1,13 @@
 <script setup lang="ts">
 const { topic } = defineProps<{ topic }>();
+const { gtag } = useGtag();
+
 const open = ref(false);
 const toggleOpen = () => {
   open.value = !open.value;
+  if (open.value) {
+    gtag('event', 'open_topic', { title: topic.title });
+  }
 };
 </script>
 <template>
