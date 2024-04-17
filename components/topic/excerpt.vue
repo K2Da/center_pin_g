@@ -19,7 +19,7 @@ const toggleOpen = () => {
     <h2 class="flex justify-between">
       {{ topic.title }}
       <button
-        class="bg-sky-800 rounded pt-1 pb-0 px-1 muted mb-1 mr-1 lg:mr-8"
+        class="bg-green-700 rounded pt-1 pb-0 px-1 muted mb-1 mr-1 lg:mr-8"
         @click="toggleOpen"
         v-show="open"
       >
@@ -28,7 +28,6 @@ const toggleOpen = () => {
     </h2>
     <TopicUpdated :topic="topic" />
 
-    <!-- v-showにしたいが、するとhydration mismatchになる -->
     <div v-show="open">
       <TopicInfo :topic="topic" />
       <h3>概要</h3>
@@ -39,7 +38,10 @@ const toggleOpen = () => {
       <ContentRenderer :value="topic" :excerpt="true" />
     </div>
     <div class="w-full my-2 py-0 px-8">
-      <button class="w-full bg-sky-800 rounded" @click="toggleOpen">
+      <button
+        :class="['w-full', open ? 'bg-green-700' : 'bg-sky-800', 'rounded']"
+        @click="toggleOpen"
+      >
         <UIcon
           class="mr-1"
           style="vertical-align: -4px"
