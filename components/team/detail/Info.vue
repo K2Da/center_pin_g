@@ -46,7 +46,9 @@ const sortedPlayers = (
       />
     </div>
   </div>
-  <ResultsSum :resultsSum="resultsSum" />
+  <ClientOnly>
+    <ResultsSum :resultsSum="resultsSum" />
+  </ClientOnly>
   <div class="flex">
     <div class="w-24 divhead">メンバー<br />(出場回数)</div>
     <div class="pl-2 divdata">
