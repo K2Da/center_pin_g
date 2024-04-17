@@ -10,6 +10,12 @@
 .muted {
   @apply text-gray-300 text-sm;
 }
+.divhead {
+  @apply flex-grow-0 flex-shrink-0 font-bold text-right muted;
+}
+.divdata {
+  @apply flex-grow flex-shrink;
+}
 
 body {
   background-color: #202b38;

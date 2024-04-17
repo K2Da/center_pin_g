@@ -31,23 +31,25 @@ const sortedPlayers = (
 };
 </script>
 <template>
-  <ul>
-    <li v-if="detail.info?.aliases?.length > 0">
-      <span class="muted">大会登録チーム名: </span>
+  <div class="flex" v-if="detail.info?.aliases?.length > 0">
+    <div class="w-24 divhead">大会登録チーム名</div>
+    <div class="pl-2 divdata">
       {{ detail.info?.aliases.join(', ') }}
-    </li>
-    <li>
-      <span class="muted">活動期間: </span>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="w-24 divhead">活動期間</div>
+    <div class="pl-2 divdata">
       <DateSpan
         :date1="detail.team.first_tournament_date"
         :date2="detail.team.latest_tournament_date"
       />
-    </li>
-    <ClientOnly>
-      <ResultsSum :resultsSum="resultsSum" />
-    </ClientOnly>
-    <li>
-      <span class="muted">メンバー(出場回数): </span>
+    </div>
+  </div>
+  <ResultsSum :resultsSum="resultsSum" />
+  <div class="flex">
+    <div class="w-24 divhead">メンバー<br />(出場回数)</div>
+    <div class="pl-2 divdata">
       <span
         v-for="(p, i) of sortedPlayers(detail.players, detail.playerStats)"
         :key="p"
@@ -57,6 +59,6 @@ const sortedPlayers = (
           >({{ detail.playerStats[p].count }})</span
         >
       </span>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>

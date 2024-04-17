@@ -34,28 +34,34 @@ const showTeams = ref(false);
 const data = computed(() => teamsData(detail));
 </script>
 <template>
-  <ul>
-    <li v-if="detail.player.data?.aliases?.length > 0">
-      <span class="muted">大会出場名: </span>
+  <div class="flex" v-if="detail.player.data?.aliases?.length > 0">
+    <div class="w-24 divhead">大会出場名</div>
+    <div class="pl-2 divdata">
       {{ detail.player.data.aliases.join(', ') }}
-    </li>
-    <ClientOnly>
-      <ResultsSum :resultsSum="resultsSum" />
-    </ClientOnly>
-    <li v-if="detail.player.rating">
-      <span class="muted">ratings: </span>
+    </div>
+  </div>
+  <ClientOnly>
+    <ResultsSum :resultsSum="resultsSum" />
+  </ClientOnly>
+  <div class="flex" v-if="detail.player.rating">
+    <div class="w-24 divhead">ratings</div>
+    <div class="pl-2 divdata">
       {{ detail.player.rating.toLocaleString() }}
-    </li>
-    <li v-if="detail.player.data">
-      <span class="muted">url: </span>
+    </div>
+  </div>
+  <div class="flex" v-if="detail.player.data">
+    <div class="w-24 divhead">url</div>
+    <div class="pl-2 divdata">
       <SocialAccounts
         :twitter="detail.player.data?.twitter"
         :youtube="detail.player.data?.youtube"
         :twitch="detail.player.data?.twitch"
       />
-    </li>
-    <li>
-      <span class="muted">チーム</span>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="w-24 divhead">チーム</div>
+    <div class="pl-2 divdata">
       <ul>
         <li v-for="(team, i) of data" :key="team.name">
           <template
@@ -78,6 +84,6 @@ const data = computed(() => teamsData(detail));
           </button>
         </li>
       </ul>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
