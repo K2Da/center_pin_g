@@ -14,7 +14,7 @@ const { data } = await useAsyncData(() => {
       <TopicUpdated :topic="topic" />
 
       <TopicInfo :topic="topic" />
-      <hr />
+      <h3>概要</h3>
       <ContentRenderer :value="topic" />
     </article>
   </div>
