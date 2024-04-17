@@ -21,7 +21,7 @@ const toggleOpen = () => {
       <button
         class="bg-sky-800 rounded pt-1 pb-0 px-1 muted mb-1 mr-1 lg:mr-8"
         @click="toggleOpen"
-        v-if="open"
+        v-show="open"
       >
         <UIcon name="i-material-symbols-close-fullscreen" />
       </button>
@@ -29,13 +29,13 @@ const toggleOpen = () => {
     <TopicUpdated :topic="topic" />
 
     <!-- v-showにしたいが、するとhydration mismatchになる -->
-    <div v-if="open">
+    <div v-show="open">
       <TopicInfo :topic="topic" />
       <h3>概要</h3>
       <ContentRenderer :value="topic" :excerpt="false" />
     </div>
 
-    <div v-if="!open">
+    <div v-show="!open">
       <ContentRenderer :value="topic" :excerpt="true" />
     </div>
     <div class="w-full my-2 py-0 px-8">
