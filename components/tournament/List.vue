@@ -36,7 +36,7 @@ list = list.sort((a, b) => b.date - a.date);
   </div>
   <div v-if="list && list.length > 0">
     <div
-      class="tc py-4 lg:py-1"
+      class="tc py-3 border-t lg:pt-1 lg:pb-0"
       v-for="(t, i) of list"
       :key="t.key"
       :class="containerClass(i)"
