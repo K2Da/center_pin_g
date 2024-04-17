@@ -8,26 +8,34 @@ const { detail } = defineProps<Props>();
 </script>
 
 <template>
-  <ul>
-    <li v-if="detail.tournament.date">
-      <span class="muted">開催日: </span>
+  <div class="flex" v-if="detail.tournament.date">
+    <div class="w-16 divhead">開催日</div>
+    <div class="pl-2 divdata">
       <DateTime :date="detail.tournament.date" />
-    </li>
-    <li v-if="detail.data.type">
-      <span class="muted">形式: </span>
+    </div>
+  </div>
+  <div class="flex" v-if="detail.data.type">
+    <div class="w-16 divhead">形式</div>
+    <div class="pl-2 divdata">
       {{ detail.data.type }} / {{ detail.data.official ? '公式' : '非公式' }} /
       {{ detail.tournament.rating ? 'レート計算対象' : 'レート計算非対象' }}
-    </li>
-    <li v-if="detail.data.note">
-      <span class="muted">備考: </span>
+    </div>
+  </div>
+  <div class="flex" v-if="detail.data.note">
+    <div class="w-16 divhead">備考</div>
+    <div class="pl-2 divdata">
       {{ detail.data.note }}
-    </li>
-    <li v-if="detail.data.urls?.length > 0">
+    </div>
+  </div>
+  <div class="flex mb-2" v-if="detail.data.urls?.length > 0">
+    <div class="w-16 divhead">関連URL</div>
+    <div class="pl-2 divdata">
       <ul>
         <li v-for="(link, i) of detail.data.urls" :key="i">
-          <i :class="link.icon"></i> <a :href="link.url">{{ link.title }}</a>
+          <i :class="link.icon"></i> <a :href="link.url">{{ link.title }}</a> (
+          {{ host(link.url) }} )
         </li>
       </ul>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>

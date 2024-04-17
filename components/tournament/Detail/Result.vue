@@ -26,7 +26,7 @@ const sortByRank = (teams: TournamentTeam[]) =>
 
 <template>
   <div
-    class="tc py-4 lg:py-1"
+    class="tc py-4 border-t lg:py-1 lg:pb-0"
     v-for="(result, i) of sortByRank(detail.teams)"
     :key="result.team_key"
     :class="containerClass(i)"

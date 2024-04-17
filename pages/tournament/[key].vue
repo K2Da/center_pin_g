@@ -11,7 +11,7 @@ setPage(
 </script>
 
 <template>
-  <div v-if="detail">
+  <div v-if="detail" class="border-b">
     <h1>{{ detail.tournament.name }}</h1>
     <TournamentDetailInfo :detail="detail" />
     <TournamentDetailResult :detail="detail" />
