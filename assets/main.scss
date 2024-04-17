@@ -180,6 +180,12 @@ article {
   table {
     width: auto;
     margin: 8px;
+    th {
+      padding: 5px 12px 2px 12px;
+    }
+    td {
+      padding: 5px 12px 2px 12px;
+    }
   }
   h3 {
     margin-top: 16px;

@@ -62,7 +62,7 @@ onServerPrefetch(async () => {
     <div v-if="displayTeams">
       <div v-if="displayTeams.length > 0">
         <div
-          class="tc py-4 lg:py-1"
+          class="tc py-4 lg:pt-2 lg:pb-1"
           v-for="(t, i) of displayTeams.slice(
             (pageNoRef - 1) * PER_PAGE,
             pageNoRef * PER_PAGE,
