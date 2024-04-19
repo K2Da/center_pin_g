@@ -8,11 +8,12 @@ const statsStore = useStatsStore();
 const { players } = storeToRefs(statsStore);
 
 const showAll = ref(false);
+const MAX = 10;
 
 const reversedTournaments = computed(() => {
   return showAll.value
     ? detail.tournaments.slice().reverse()
-    : detail.tournaments.slice().reverse().slice(-10);
+    : detail.tournaments.slice().reverse().slice(-MAX);
 });
 const latestTeams: ComputedRef<Record<string, string>> = computed(() => {
   const ret: Record<string, string> = {};
@@ -58,7 +59,7 @@ const entries = computed(() => {
 const members = computed(() => {
   const dic: Record<string, [number, number]> = {};
   for (const [i, t] of detail.tournaments.entries()) {
-    if (!showAll.value && i > 10) break;
+    if (!showAll.value && i > MAX) break;
     for (const m of t.mate_list) {
       if (dic[m]) {
         dic[m] = [Math.min(dic[m][0], i), dic[m][1] + 1];
@@ -77,7 +78,7 @@ const members = computed(() => {
 });
 </script>
 <template>
-  <div class="m-2">
+  <div class="m-2" v-if="detail.tournaments.length > MAX">
     <span class="muted">全大会表示</span> <UToggle v-model="showAll" />
   </div>
   <div class="m-2 overflow-y-scroll">
