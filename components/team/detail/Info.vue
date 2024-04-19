@@ -63,4 +63,27 @@ const sortedPlayers = (
       </span>
     </div>
   </div>
+  <div class="flex" v-for="(achievement, i) of detail.achievements">
+    <div class="w-24 divhead">
+      <template
+        v-if="
+          i === 0 ||
+          cdateJST(detail.achievements[i - 1].date).get('year') !==
+            cdateJST(achievement.date).get('year')
+        "
+      >
+        {{ cdateJST(achievement.date).get('year') }}年
+      </template>
+    </div>
+    <div class="pl-2 divdata flex flex-col">
+      <div
+        v-if="i === 0 || achievement.name !== detail.achievements[i - 1].name"
+      >
+        {{ achievement.name }}
+      </div>
+      <div class="pl-4">
+        {{ achievement.title }}
+      </div>
+    </div>
+  </div>
 </template>

@@ -11,7 +11,7 @@
   @apply text-gray-300 text-sm;
 }
 .divhead {
-  @apply flex-grow-0 flex-shrink-0 font-bold text-right muted pt-1;
+  @apply flex-grow-0 flex-shrink-0 font-bold text-right muted pt-[2px];
 }
 .divdata {
   @apply flex-grow flex-shrink;

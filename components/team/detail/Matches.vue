@@ -15,7 +15,7 @@ const matches = detail.matches.filter(
 <template>
   <div
     v-for="(match, i) of matches"
-    v-show="show"
+    v-if="show"
     :key="`${match.bracket}_${match.round}`"
     :class="[
       subContainerClass(i, index, matches.length),

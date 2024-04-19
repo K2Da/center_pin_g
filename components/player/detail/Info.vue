@@ -59,31 +59,41 @@ const data = computed(() => teamsData(detail));
       />
     </div>
   </div>
-  <div class="flex">
-    <div class="w-24 divhead">チーム</div>
-    <div class="pl-2 divdata">
-      <ul>
-        <li v-for="(team, i) of data" :key="team.name">
-          <template
-            v-if="
-              data.length <= 3 || i === 0 || i === data.length - 1 || showTeams
-            "
-          >
-            <span class="muted"
-              ><DateTime :date="team.lastMatchAt" :spacing="true" /></span
-            >&nbsp;
-            <TeamName :name="team.name" :currentName="team.name" />
-            ({{ team.count }})
-          </template>
-          <button
-            class="muted bg-slate-900 rounded"
-            v-if="!showTeams && data.length > 3 && i === 1"
-            @click="showOtherTeams"
-          >
-            /* 他{{ data.length - 2 }}チーム */
-          </button>
-        </li>
-      </ul>
+  <div class="flex" v-for="(achievement, i) of detail.achievements">
+    <div class="w-24 divhead">
+      <template
+        v-if="
+          i === 0 ||
+          cdateJST(detail.achievements[i - 1].date).get('year') !==
+            cdateJST(achievement.date).get('year')
+        "
+      >
+        {{ cdateJST(achievement.date).get('year') }}年
+      </template>
+    </div>
+    <div class="pl-2 divdata flex flex-col">
+      <div
+        v-if="
+          i === 0 ||
+          detail.achievements[i - 1].tournament_name !==
+            achievement.tournament_name
+        "
+      >
+        {{ achievement.tournament_name }}
+      </div>
+      <div class="pl-4">
+        {{ achievement.title }}
+        <teamplate
+          v-if="
+            i === 0 ||
+            detail.achievements[i - 1].tournament_name !==
+              achievement.tournament_name ||
+            detail.achievements[i - 1].team_name !== achievement.team_name
+          "
+        >
+          - {{ achievement.team_name }}</teamplate
+        >
+      </div>
     </div>
   </div>
 </template>
