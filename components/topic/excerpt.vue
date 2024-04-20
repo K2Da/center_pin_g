@@ -37,7 +37,7 @@ const toggleOpen = () => {
     <div v-show="!open">
       <ContentRenderer :value="topic" :excerpt="true" />
     </div>
-    <div class="w-full my-2 py-0 px-8">
+    <div class="w-full my-4 py-0 px-8">
       <button
         :class="['w-full', open ? 'bg-green-700' : 'bg-sky-800', 'rounded']"
         @click="toggleOpen"

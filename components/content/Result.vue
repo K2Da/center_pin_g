@@ -14,8 +14,8 @@ const { data } = await useFetch(
       containerClass(2),
       'max-w-[600px]',
       'px-2',
-      'pt-1',
-      'pb-0',
+      'pt-4',
+      'pb-3',
       'border-y-2',
     ]"
   >
@@ -35,7 +35,7 @@ const { data } = await useFetch(
   <div
     v-for="(team, i) of data.teams"
     :key="i"
-    :class="[containerClass(i + 1), 'max-w-[600px]', 'vtable', 'pb-2']"
+    :class="[containerClass(i + 1), 'max-w-[600px]', 'vtable', 'pt-2', 'pb-2']"
   >
     <div>
       <div class="font-bold pl-1">
