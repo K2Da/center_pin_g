@@ -59,41 +59,52 @@ const data = computed(() => teamsData(detail));
       />
     </div>
   </div>
-  <div class="flex" v-for="(achievement, i) of detail.achievements">
-    <div class="w-24 divhead">
-      <template
-        v-if="
-          i === 0 ||
-          cdateJST(detail.achievements[i - 1].date).get('year') !==
-            cdateJST(achievement.date).get('year')
-        "
-      >
+  <template class="flex" v-for="(achievement, i) of detail.achievements">
+    <div
+      class="flex"
+      v-if="
+        i === 0 ||
+        cdateJST(detail.achievements[i - 1].date).get('year') !==
+          cdateJST(achievement.date).get('year')
+      "
+    >
+      <div class="w-24 divhead">
         {{ cdateJST(achievement.date).get('year') }}年
-      </template>
-    </div>
-    <div class="pl-2 divdata flex flex-col">
-      <div
-        v-if="
-          i === 0 ||
-          detail.achievements[i - 1].tournament_name !==
-            achievement.tournament_name
-        "
-      >
-        {{ achievement.tournament_name }}
       </div>
-      <div class="pl-4">
-        {{ achievement.title }}
-        <teamplate
+      <div></div>
+    </div>
+    <div class="flex">
+      <div class="w-24 divhead">
+        <template
+          v-if="i === 0 || detail.achievements[i - 1].date !== achievement.date"
+        >
+          {{ cdateJST(achievement.date).format('M/DD') }}
+        </template>
+      </div>
+      <div class="pl-2 divdata flex flex-col">
+        <div
           v-if="
             i === 0 ||
             detail.achievements[i - 1].tournament_name !==
-              achievement.tournament_name ||
-            detail.achievements[i - 1].team_name !== achievement.team_name
+              achievement.tournament_name
           "
         >
-          - {{ achievement.team_name }}</teamplate
-        >
+          {{ achievement.tournament_name }}
+        </div>
+        <div class="pl-4">
+          {{ achievement.title }}
+          <teamplate
+            v-if="
+              i === 0 ||
+              detail.achievements[i - 1].tournament_name !==
+                achievement.tournament_name ||
+              detail.achievements[i - 1].team_name !== achievement.team_name
+            "
+          >
+            - {{ achievement.team_name }}</teamplate
+          >
+        </div>
       </div>
     </div>
-  </div>
+  </template>
 </template>
