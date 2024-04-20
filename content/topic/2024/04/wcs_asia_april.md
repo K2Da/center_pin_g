@@ -15,7 +15,7 @@ dates:
 urls:
   - title: WCS2024 アジア予選 公式サイト
     url: https://pokemonunite-wcs-asia.com/jp/
-  - title: 3月大会公式サイト
+  - title: 4月大会公式サイト
     url: https://pokemonunite.j-cg.com/ja/wcs/competition/jp2024-aprill-day1
   - title: Day1配信
     url: https://www.youtube.com/watch?v=oFO4SSOe3I4
