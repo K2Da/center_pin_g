@@ -31,13 +31,13 @@ urls:
 
 <!-- more -->
 
-### Day1結果
+### Day 1結果
 
-下記 8 チームが Day 2 へ進出。()内は、前所属チームです。
+下記8チームが Day 2へ進出。()内は、前所属チームです。
 
 :result{tournament="wcs_2024_03_day1" :rank="8" :member="true"}
 
-### Day2結果
+### Day 2結果
 
 Upperサイドで :team{n="JSV NoTitle"}に敗れた :team{n="チャンピオンロード"} が、グランドファイナルで :team{n="JSV NoTitle"}に対してリセット、そのまま次戦も勝ち、優勝しました。
 
