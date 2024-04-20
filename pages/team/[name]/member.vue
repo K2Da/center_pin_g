@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { TeamDetailView } from '~/api/TeamDetail';
-
 const route = useRoute();
 const name = route.params.name;
 const detail = teamToView(await fetchTeam(name));

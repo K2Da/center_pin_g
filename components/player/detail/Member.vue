@@ -59,7 +59,7 @@ const entries = computed(() => {
 const members = computed(() => {
   const dic: Record<string, [number, number]> = {};
   for (const [i, t] of detail.tournaments.entries()) {
-    if (!showAll.value && i > MAX) break;
+    if (!showAll.value && i >= MAX) break;
     for (const m of t.mate_list) {
       if (dic[m]) {
         dic[m] = [Math.min(dic[m][0], i), dic[m][1] + 1];
