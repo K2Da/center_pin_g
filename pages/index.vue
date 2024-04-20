@@ -11,7 +11,7 @@ setPage(
   <h1 class="mb-2 lg:mb-4">Center Pin(g)</h1>
 
   <div class="flex flex-col lg:flex-row-reverse pt-1">
-    <div class="md:w-[600px] md:pt-2">
+    <div class="lg:w-[600px] lg:pt-2 lg:shrink-0">
       <CalendarList :prev="3" :next="7" />
     </div>
     <div class="lg:flex-grow">
