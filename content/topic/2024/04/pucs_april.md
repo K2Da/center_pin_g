@@ -64,4 +64,4 @@ Aeos Cup南ラテンアメリカ予選優勝、3月大会優勝、Aeos Cup優勝
 
 3月大会と同じく、 :team{n="DreamMax Esports"} が優勝しています。
 
-:result{tournament="pucs_2024_april_brazil" :rank="4" :member="true"} - :team{n="Team YT"}
+:result{tournament="pucs_2024_april_brazil" :rank="4" :member="true"}
