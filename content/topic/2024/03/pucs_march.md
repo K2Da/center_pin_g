@@ -48,3 +48,7 @@ urls:
 ### 北アメリカ
 
 :result{tournament="pucs_2024_march_na" :rank="4" :member="true"}
+
+### ブラジル
+
+:result{tournament="pucs_2024_march_brazil" :rank="4" :member="true"}

@@ -1,6 +1,6 @@
 ---
 title: PUCS April CUP
-updated: 2024-04-14 13:00:00 +09:00
+updated: 2024-04-21 16:00:00 +09:00
 tags:
   - 海外公式大会
 dates:
@@ -11,8 +11,12 @@ dates:
 urls:
   - title: PUCS 2024
     url: /topic/2024-pucs
-  - title:  EU & NA April Finals | Pokémon UNITE Championship Series 
+  - title: EU & NA April Finals | Pokémon UNITE Championship Series 
     url: https://www.youtube.com/watch?v=vf0gfA2DCs4
+  - title: Finales de Abril LA-N y LA-S | Pokémon UNITE Championship Series
+    url: https://www.twitch.tv/videos/2125364781
+  - title: Finais de Abril do Brasil | Pokémon UNITE Championship Series
+    url: https://www.twitch.tv/videos/2124963009
   - title: April Cup オセアニア
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-oceania/details
   - title: April Cup ヨーロッパ
@@ -27,76 +31,37 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-brazil/details
 ---
 
-世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のApril CUP(4月大会)の結果まとめです。Day 1(13日)にTop 8まで、Day 2(20日)にTop 8以降が行われるため、現在は各地域でTop 8が確定しています。
+世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のApril CUP(4月大会)の結果まとめです。Top 8が実施されたDay 2(20日)の結果を記載しました。
 
 <!-- more -->
 
 ### オセアニア
-Aeos Cupに出場した :team{n="Antic Esports"} 、3月大会で優勝した :team{n="Ground Zero Gaming"} などがUpperでTop 8へ進出しています。
+Aeos Cupに出場した :team{n="Antic Esports"} が優勝しています。
 
-- Upper
-  - :team{n="Antic Esports"}
-  - Legends Reappear
-  - :team{n="Ground Zero Gaming"}
-  - Team Avatar
-- Lower
-  - Dodo 2
-  - :team{n="Achar um Trabalho"}
-  - :team{n="FURY Global"}
-  - :team{n="BlackGlasses"}
+:result{tournament="pucs_2024_april_oceania" :rank="4" :member="true"}
 
 ### ヨーロッパ
-3月大会優勝の :team{n="Yalla Bingo"} 、Aeos Cupでオープン予選から本戦へ出場した :team{n="Nouns Esports ⌐◨-◨"} などがTop 8へ進出。同じく、Aeos Cupオープン予選を突破した :team{n="Capybabas"} はLowerで進出。
+Aeos Cupでオープン予選から本戦へ出場した :team{n="Nouns Esports ⌐◨-◨"} が優勝。3月大会優勝の :team{n="Yalla Bingo"} は2位となっています。
 
-- Upper
-  - :team{n="Nouns Esports ⌐◨-◨"}
-  - Talibobo Unleashed
-  - :team{n="Yalla Bingo"}
-  - :team{n="abcdefghijkl"}
-- Lower
-  - :team{n="CincoGolemo"}
-  - :team{n="Capybabas"}
-  - ROSTERMANIA
-  - :team{n="SUCRÉOSUCRE"}
+:result{tournament="pucs_2024_april_europe" :rank="4" :member="true"}
 
 ### 北ラテンアメリカ
-Aeos Cup 3位の :team{n="Rework Respawn"}、Aeos Cup オープン予選突破、3月大会優勝の :team{n="E7 Janus"} などがUpperでTop 8進出。
+3月大会優勝の :team{n="E7 Janus"} が優勝、 Aeos Cup 3位の :team{n="Rework Respawn"} が2位となっています。
 
-- Upper
-  - :team{n="Rework Respawn"}
-  - :team{n="E7 Janus"}
-  - :team{n="Osaka"}
-  - aaksasakj
-- Lower
-  - No Reading Compression
-  - MooMoo Milk
-  - :team{n="Anteiku"}
-  - Bajitos!!!
+:result{tournament="pucs_2024_april_lan" :rank="4" :member="true"}
 
 ### 南ラテンアメリカ
-Aeos Cup南ラテンアメリカ予選優勝、3月大会優勝、Aeos Cup優勝、 :team{n="FUSION"} がUpperでTop 8。
+Aeos Cup南ラテンアメリカ予選優勝、3月大会優勝、Aeos Cup優勝の :team{n="FUSION"} が全勝で優勝しています。
 
-- Upper
-  - :team{n="FUSION"}
-  - :team{n="LIGA PERÚ ESPORT"}
-  - :team{n="Punto cL"}
-  - 2+ Y Nos Vamos
-- Lower
-  - :team{n="REVENANT"}
-  - :team{n="1974"}
-  - :team{n="Imperio E-sport"}
-  - XRL8
+:result{tournament="pucs_2024_april_las" :rank="4" :member="true"}
 
 ### 北アメリカ
-Aeos Cup 4位の :team{n="Nemesis"} 、Aeos Cup オープン予選出場の :team{n="exile"} などがUppper でTop 8進出。Aeos Cup オープン予選突破の :team{n="Team YT"} はLowerへ。
+解散した :team{n="Alter Ego"} の選手を中心とした、 :team{n="Orange Team"} が優勝、2位は同じく、元 :team{n="Alter Ego"} の選手を含む、 :team{n="Luminosity Unite"} となりました。
 
-- Upper
-  - :team{n="Nemesis"}
-  - :team{n="exile"}
-  - Luminosity Unite
-  - Orange Team
-- Lower
-  - DoL Kittens
-  - UFEELME???
-  - :team{n="Hades"}
-  - :team{n="Team YT"}
+:result{tournament="pucs_2024_april_na" :rank="4" :member="true"}
+
+### ブラジル
+
+3月大会と同じく、 :team{n="DreamMax Esports"} が優勝しています。
+
+:result{tournament="pucs_2024_april_brazil" :rank="4" :member="true"} - :team{n="Team YT"}
