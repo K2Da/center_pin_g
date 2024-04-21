@@ -6,7 +6,6 @@ const { groupKey, name } = defineProps<Props>();
 <template>
   <NuxtLink
     :to="{ name: 'tournaments-group-key', params: { key: groupKey } }"
-    no-prefetch
     >{{ name }}</NuxtLink
   >
 </template>

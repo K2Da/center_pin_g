@@ -85,7 +85,6 @@ onMounted(async () => {
             name: 'topic-key',
             params: { key: e.path.substring(7).replaceAll('/', '-') },
           }"
-          no-prefetch
           >{{ e.topic }}</NuxtLink
         >&nbsp;- {{ e.title }}
       </div>

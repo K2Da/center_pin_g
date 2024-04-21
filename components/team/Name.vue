@@ -13,7 +13,6 @@ const pageName = page === 'member' ? 'team-name-member' : 'team-name-detail';
   <NuxtLink
     :to="{ name: pageName, params: { name: currentName || name } }"
     :class="$attrs.class"
-    no-prefetch
     >{{ name }}</NuxtLink
   >
 </template>

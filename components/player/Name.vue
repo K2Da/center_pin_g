@@ -18,7 +18,6 @@ onMounted(() => {
   <NuxtLink
     :to="{ name: pageName, params: { name } }"
     :class="isMounted ? ratingClass(ratingRange, ratingDic, name) : 't4'"
-    no-prefetch
     >{{ name }}</NuxtLink
   >
 </template>

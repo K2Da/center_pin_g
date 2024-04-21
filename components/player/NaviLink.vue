@@ -6,7 +6,6 @@ const { current, name } = defineProps<Props>();
   <nav class="m-1">
     <NuxtLink
       :to="{ name: 'player-name-detail', params: { name } }"
-      no-prefetch
       v-if="current !== 'detail'"
       >戦績</NuxtLink
     >
@@ -14,7 +13,6 @@ const { current, name } = defineProps<Props>();
     |
     <NuxtLink
       :to="{ name: 'player-name-member', params: { name } }"
-      no-prefetch
       v-if="current !== 'member'"
       >編成</NuxtLink
     >

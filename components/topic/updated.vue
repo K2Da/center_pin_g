@@ -10,7 +10,6 @@ const { topic } = defineProps<{ topic }>();
         name: 'topic-key',
         params: { key: topic._path.substring(7).replaceAll('/', '-') },
       }"
-      no-prefetch
     >
       <UIcon
         name="i-material-symbols-article-shortcut-outline-sharp"
