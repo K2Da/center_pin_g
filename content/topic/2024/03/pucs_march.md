@@ -21,6 +21,8 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-march-cup-latin-america-south/details
   - title: March Cup 北アメリカ
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-march-cup-north-america/details
+  - title: March Cup ブラジル
+    url: https://www.start.gg/tournament/2024-pok-mon-ucs-march-cup-brazil/details
 ---
 
 世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のMarch CUP(3月大会)の結果まとめです。

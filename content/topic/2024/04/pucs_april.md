@@ -11,6 +11,8 @@ dates:
 urls:
   - title: PUCS 2024
     url: /topic/2024-pucs
+  - title:  EU & NA April Finals | Pokémon UNITE Championship Series 
+    url: https://www.youtube.com/watch?v=vf0gfA2DCs4
   - title: April Cup オセアニア
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-oceania/details
   - title: April Cup ヨーロッパ
@@ -21,6 +23,8 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-latin-america-south/details
   - title: April Cup 北アメリカ
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-north-america/details
+  - title: April Cup ブラジル
+    url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-brazil/details
 ---
 
 世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のApril CUP(4月大会)の結果まとめです。Day 1(13日)にTop 8まで、Day 2(20日)にTop 8以降が行われるため、現在は各地域でTop 8が確定しています。

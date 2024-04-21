@@ -21,6 +21,8 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-latin-america-south/details
   - title: Aeos Cup 北アメリカ予選
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-north-america/details
+  - title: Aeos Cup ブラジル
+    url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-brazil/details
 ---
 
 EUIC(Pokémon Europe International Championships)内で行われる、Aeos Cup(エオスカップ)の予選が4/13(土)に各地域で行われました。Top 8までの途中経過を記録しています。
@@ -48,3 +50,7 @@ EUIC(Pokémon Europe International Championships)内で行われる、Aeos Cup(�
 ### 北アメリカ予選
 
 :result{tournament="aeos_cup_na" :rank="4" :member="true"}
+
+### ブラジル予選
+
+:result{tournament="aeos_cup_brazil" :rank="4" :member="true"}
