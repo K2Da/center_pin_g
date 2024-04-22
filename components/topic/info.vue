@@ -1,11 +1,21 @@
 <script setup lang="ts">
-const { topic } = defineProps<{ topic }>();
+const { topic } = defineProps<{
+  topic: {
+    dates: { date: string; url: string; title: string }[];
+    urls: { url: string; title: string }[];
+  };
+}>();
 </script>
 <template>
   <div class="my-2" v-if="topic.dates?.length ?? 0">
     <h3 class="my-2">日程</h3>
     <ul>
-      <li v-for="(date, i) in topic.dates" :key="i">
+      <li
+        v-for="(date, i) in topic.dates.sort((a, b) =>
+          a.date > b.date ? 1 : -1,
+        )"
+        :key="i"
+      >
         <CalendarDate :date="date.date" class="mr-2" />
         <template v-if="date.url">
           <a :href="date.url" target="_blank">{{ date.title }}</a>
