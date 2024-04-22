@@ -6,7 +6,14 @@ const { topic } = defineProps<{ topic }>();
     <h3 class="my-2">日程</h3>
     <ul>
       <li v-for="(date, i) in topic.dates" :key="i">
-        <CalendarDate :date="date.date" /> {{ date.title }}
+        <CalendarDate :date="date.date" class="mr-2" />
+        <template v-if="date.url">
+          <a :href="date.url" target="_blank">{{ date.title }}</a>
+          <span class="muted ml-1">( {{ host(date.url) }} )</span>
+        </template>
+        <template v-else>
+          {{ date.title }}
+        </template>
       </li>
     </ul>
   </div>

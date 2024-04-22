@@ -12,4 +12,4 @@ urls:
     url: https://tonamel.com/competition/Vu03H
 ---
 
-:xpost{id="1776897772786229741"}
+:xpost{id="1777255057777631265"}
