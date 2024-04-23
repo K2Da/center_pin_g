@@ -12,7 +12,11 @@ const { topic } = defineProps<{
     <ul>
       <li
         v-for="(date, i) in topic.dates.sort((a, b) =>
-          a.date > b.date ? 1 : -1,
+          a.date > b.date
+            ? 1
+            : a.date < b.date
+              ? -1
+              : a.title.localeCompare(b.title),
         )"
         :key="i"
       >
