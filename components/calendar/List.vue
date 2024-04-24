@@ -36,7 +36,6 @@ const filtered = () => {
 };
 
 const dayText = (d: CDate) => {
-  if (!mounted.value) return '';
   const diff = diffDays(d.toDate().getTime(), cdateJST().toDate().getTime());
   if (-2 <= diff && diff <= 2) {
     return ['一昨日', '昨日', '今日', '明日', '明後日'][diff + 2];
@@ -45,13 +44,9 @@ const dayText = (d: CDate) => {
   }
 };
 const events = computed(() => filtered());
-const mounted = ref(false);
-onMounted(async () => {
-  mounted.value = true;
-});
 </script>
 <template>
-  <div class="calendar" v-if="(mounted || prev === 0) && events.length > 0">
+  <div class="calendar" v-if="events.length > 0">
     <template v-for="(e, i) in events" class="calendar">
       <h3
         class="mt-2"
@@ -94,47 +89,5 @@ onMounted(async () => {
         >+ more</NuxtLink
       >]
     </p>
-  </div>
-  <div v-else>
-    <template v-if="!mounted">
-      <div class="p-2">
-        <USkeleton
-          class="h-6 w-[120px] mb-1 border-bottom"
-          :ui="{ background: 'dark:bg-gray-600' }"
-        />
-        <USkeleton
-          class="h-[1px] w-full mb-2"
-          :ui="{ background: 'dark:bg-gray-600' }"
-        />
-        <USkeleton
-          class="h-5 w-[80px] mb-1 border-bottom"
-          :ui="{ background: 'dark:bg-gray-600' }"
-        />
-        <USkeleton
-          class="h-[1px] w-full mb-2"
-          :ui="{ background: 'dark:bg-gray-600' }"
-        />
-        <div class="flex items-center space-x-4 mb-1">
-          <USkeleton
-            class="h-4 w-[80px]"
-            :ui="{ background: 'dark:bg-gray-600' }"
-          />
-          <USkeleton
-            class="h-4 w-[200px]"
-            :ui="{ background: 'dark:bg-gray-600' }"
-          />
-        </div>
-        <div class="flex items-center space-x-4">
-          <USkeleton
-            class="h-4 w-[80px]"
-            :ui="{ background: 'dark:bg-gray-600' }"
-          />
-          <USkeleton
-            class="h-4 w-[300px]"
-            :ui="{ background: 'dark:bg-gray-600' }"
-          />
-        </div>
-      </div>
-    </template>
   </div>
 </template>
