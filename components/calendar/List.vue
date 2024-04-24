@@ -36,7 +36,10 @@ const filtered = () => {
 };
 
 const dayText = (d: CDate) => {
-  const diff = diffDays(d.toDate().getTime(), cdateJST().toDate().getTime());
+  const diff = diffDays(
+    d.startOf('day').toDate().getTime(),
+    cdateJST().startOf('day').toDate().getTime(),
+  );
   if (-2 <= diff && diff <= 2) {
     return ['一昨日', '昨日', '今日', '明日', '明後日'][diff + 2];
   } else {
