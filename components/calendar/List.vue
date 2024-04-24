@@ -1,39 +1,46 @@
 <script setup lang="ts">
-const { data } = await useAsyncData(() => queryContent('/topic').find());
-const { prev, next } = defineProps<{ prev: number; next: number }>();
+const current = cdateJST().startOf('day');
 
-const filtered = () => {
-  const current = cdateJST();
-  const from = current.add(-prev, 'day');
-  const to = current.add(next, 'day');
-
-  let events: { topic: string; path: string; date: CDate; title: string }[] = [
-    { topic: '', path: '', date: current, title: '' },
-  ];
-  for (const topic of data.value) {
+const { data } = await useAsyncData(async () => {
+  const data = await queryContent('/topic').find();
+  let events: { topic: string; path: string; date: Date; title: string }[] = [];
+  for (const topic of data) {
     for (const date of topic.dates) {
-      if (
-        prev !== 0 &&
-        (cdateJST(date.date) < from || cdateJST(date.date) > to)
-      ) {
-        continue;
-      }
       events.push({
         topic: topic.title || '',
         path: topic._path || '',
         title: date.title,
-        date: cdateJST(date.date),
+        date: date.date,
       });
     }
   }
-  events.sort((a, b) => {
-    if (a.date.toDate().getTime() !== b.date.toDate().getTime())
-      return a.date.toDate().getTime() < b.date.toDate().getTime() ? 1 : -1;
+  return events;
+});
+
+const { prev, next } = defineProps<{ prev: number; next: number }>();
+
+const events = computed(() => {
+  const from = current.add(-prev, 'day');
+  const to = current.add(next, 'day');
+
+  let dates =
+    data.value?.map((e) => {
+      return { ...e, date: cdateJST(e.date) };
+    }) || [];
+
+  dates = dates.filter(
+    (e) =>
+      prev === 0 ||
+      (from <= e.date.startOf('day') && e.date.startOf('day') <= to),
+  );
+  dates.push({ topic: '', path: '', date: current, title: '' });
+  dates.sort((a, b) => {
+    if (a.date !== b.date) return a.date < b.date ? 1 : -1;
     if (a.title !== b.title) return a.title > b.title ? 1 : -1;
     return a.topic > b.topic ? 1 : -1;
   });
-  return events;
-};
+  return dates;
+});
 
 const dayText = (d: CDate) => {
   const diff = diffDays(
@@ -46,51 +53,47 @@ const dayText = (d: CDate) => {
     return '';
   }
 };
-const events = computed(() => filtered());
 </script>
 <template>
-  <div class="calendar" v-if="events.length > 0">
-    <template v-for="(e, i) in events" class="calendar">
-      <h3
-        class="mt-2"
-        v-if="
-          i === 0 || e.date.get('month') !== events[i - 1].date.get('month')
-        "
-      >
-        {{ e.date.format('YYYY年 MM月') }}
-      </h3>
-      <h4
-        class="my-1"
-        v-if="
-          i === 0 ||
-          e.date.format('YYYYMMDD') !== events[i - 1].date.format('YYYYMMDD')
-        "
-      >
-        {{ e.date.get('date') }}日 ({{ e.date.locale('ja').format('ddd') }})
+  <div class="calendar" v-if="events && events.length > 0"></div>
+  <template v-for="(e, i) in events" class="calendar">
+    <h3
+      class="mt-2"
+      v-if="i === 0 || e.date.get('month') !== events[i - 1].date.get('month')"
+    >
+      {{ e.date.format('YYYY年 MM月') }}
+    </h3>
+    <h4
+      class="my-1"
+      v-if="
+        i === 0 ||
+        e.date.format('YYYYMMDD') !== events[i - 1].date.format('YYYYMMDD')
+      "
+    >
+      {{ e.date.get('date') }}日 ({{ e.date.locale('ja').format('ddd') }})
 
-        <span class="text-yellow-500">{{ dayText(e.date) }}</span>
-      </h4>
-      <div class="event" v-if="e.title != ''">
-        <span class="font-mono ml-1" v-if="e.date.get('second') !== 1">
-          {{ e.date.get('hour').toString().padStart(2, '0') }}:{{
-            e.date.get('minute').toString().padStart(2, '0')
-          }}
-        </span>
-        <span v-else class="font-mono ml-1">--:--</span>
-        &nbsp;
-        <NuxtLink
-          :to="{
-            name: 'topic-key',
-            params: { key: e.path.substring(7).replaceAll('/', '-') },
-          }"
-          >{{ e.topic }}</NuxtLink
-        >&nbsp;- {{ e.title }}
-      </div>
-    </template>
-    <p class="more" v-if="prev !== 0">
-      {{ prev }}日前〜{{ next }}日後表示中 [<NuxtLink :to="{ name: 'calendar' }"
-        >+ more</NuxtLink
-      >]
-    </p>
-  </div>
+      <span class="text-yellow-500">{{ dayText(e.date) }}</span>
+    </h4>
+    <div class="event" v-if="e.title != ''">
+      <span class="font-mono ml-1" v-if="e.date.get('second') !== 1">
+        {{ e.date.get('hour').toString().padStart(2, '0') }}:{{
+          e.date.get('minute').toString().padStart(2, '0')
+        }}
+      </span>
+      <span v-else class="font-mono ml-1">--:--</span>
+      &nbsp;
+      <NuxtLink
+        :to="{
+          name: 'topic-key',
+          params: { key: e.path.substring(7).replaceAll('/', '-') },
+        }"
+        >{{ e.topic }}</NuxtLink
+      >&nbsp;- {{ e.title }}
+    </div>
+  </template>
+  <p class="more" v-if="prev !== 0">
+    {{ prev }}日前〜{{ next }}日後表示中 [<NuxtLink :to="{ name: 'calendar' }"
+      >+ more</NuxtLink
+    >]
+  </p>
 </template>
