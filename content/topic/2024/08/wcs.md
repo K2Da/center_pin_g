@@ -25,22 +25,22 @@ urls:
 
 <!-- more -->
 
-## 参加チーム選出
+### 参加チーム選出
 WCSには、 2024 Pokémon UNITE Championship Series(PUCS)の各大会勝者が出場します。PUCSは大きく2つ、アジア以外、アジアに分けて管理されているようで、サイト、ルールも二箇所で管理されているため、分けて説明します。
 
-### PUCS
+#### PUCS
 PUCS(アジア以外)では、オセアニア、ヨーロッパ、北ラテンアメリカ、南ラテンアメリカ、北アメリカ、ブラジルの各地域で行われる、ポイント制大会シリーズの地域決勝勝者と、ポイント上位チームが計15チーム選ばれます。
 
 また、PUCSの一部として、Aeos CupがEUIC(Europe International Championships)内で、The Final StretchがNAIC(North America International Championships)内で行われます。これは、地域関係なく出場が可能なオープントーナメントで、それぞれの勝者は直接WCSに招待されます。
 
 よって、PUCSからは、地域別15チームに、EUIC/NAICの2チームを加えた17チームが参加します。
 
-### PUCS(Asia)
+#### PUCS(Asia)
 PUCS(Asia)はアジア各地域で行われる予選大会勝者10チームと、日本で行われるPJCS(Pokemon Japan Championships)から3チームの、計13チームが選ばれます。
 
 PJCSで行われる大会は、EUICやNAICで行われるものとは異なり、日本で行われた月例大会の勝者8チームのみが参加できるものです。
 
-## 現在の招待チーム
+### 現在の招待チーム
 
 以下の表は、各大会からの計30チームの選出がいつ確定されるかをまとめたものです。
 

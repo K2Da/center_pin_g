@@ -11,8 +11,8 @@ dates:
     url: https://tonamel.com/competition/5XQHI
 ---
 
-## 第2回
+### 第2回
 :xpost{id="1782371270572573084"}
 
-## 第1回
+### 第1回
 :xpost{id="1762764577539014657"}
