@@ -15,9 +15,9 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-oceania/details
   - title: Aeos Cup ヨーロッパ予選
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-europe/details
-  - title: Aeos Cup 北ラテンアメリカ予選
+  - title: Aeos Cup ラテンアメリカ北予選
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-latin-america-north/details
-  - title: Aeos Cup 南ラテンアメリカ予選
+  - title: Aeos Cup ラテンアメリカ南予選
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-latin-america-south/details
   - title: Aeos Cup 北アメリカ予選
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-aeos-cup-north-america/details
@@ -39,11 +39,11 @@ EUIC(Pokémon Europe International Championships)内で行われる、Aeos Cup(�
 
 :result{tournament="aeos_cup_europe" :rank="4" :member="true"}
 
-### 北ラテンアメリカ予選
+### ラテンアメリカ北予選
 
 :result{tournament="aeos_cup_lan" :rank="4" :member="true"}
 
-### 南ラテンアメリカ予選
+### ラテンアメリカ南予選
 
 :result{tournament="aeos_cup_las" :rank="4" :member="true"}
 

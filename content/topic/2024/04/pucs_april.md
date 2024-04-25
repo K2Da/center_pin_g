@@ -21,9 +21,9 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-oceania/details
   - title: April Cup ヨーロッパ
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-europe/details
-  - title: April Cup 北ラテンアメリカ
+  - title: April Cup ラテンアメリカ北
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-latin-america-north/details
-  - title: April Cup 南ラテンアメリカ
+  - title: April Cup ラテンアメリカ南
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-latin-america-south/details
   - title: April Cup 北アメリカ
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-north-america/details
@@ -45,13 +45,13 @@ Aeos Cupでオープン予選から本戦へ出場した :team{n="Nouns Esports 
 
 :result{tournament="pucs_2024_april_europe" :rank="4" :member="true"}
 
-### 北ラテンアメリカ
+### ラテンアメリカ北
 3月大会優勝の :team{n="E7 Janus"} が優勝、 Aeos Cup 3位の :team{n="Rework Respawn"} が2位となっています。
 
 :result{tournament="pucs_2024_april_lan" :rank="4" :member="true"}
 
-### 南ラテンアメリカ
-Aeos Cup南ラテンアメリカ予選優勝、3月大会優勝、Aeos Cup優勝の :team{n="FUSION"} が全勝で優勝しています。
+### ラテンアメリカ南
+Aeos Cupラテンアメリカ南予選優勝、3月大会優勝、Aeos Cup優勝の :team{n="FUSION"} が全勝で優勝しています。
 
 :result{tournament="pucs_2024_april_las" :rank="4" :member="true"}
 
