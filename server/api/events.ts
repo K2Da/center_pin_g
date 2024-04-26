@@ -30,5 +30,9 @@ export default defineEventHandler(async (event) => {
     }
     res += `${e.date.format('HH:mm')} ${e.title}\n`;
   }
+  if (res !== '') {
+    res += `https://center-ping.pages.dev/calendar/${current.get('year')}/${current.get('month') + 1}/${current.get('date')}`;
+  }
+
   return { text: res };
 });

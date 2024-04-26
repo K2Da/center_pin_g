@@ -1,5 +1,43 @@
 <script setup lang="ts">
+type Props = {
+  prev?: number;
+  next?: number;
+  year?: number;
+  month?: number;
+  day?: number;
+};
+const { prev, next, year, month, day } = withDefaults(defineProps<Props>(), {
+  prev: 0,
+  next: 0,
+  year: 0,
+  month: 0,
+  day: 0,
+});
+
 const current = cdateJST().startOf('day');
+let from = null;
+let to = null;
+
+if (prev !== 0) {
+  from = current.add(-prev, 'day');
+  to = current.add(next, 'day');
+} else if (year !== 0) {
+  if (month !== 0) {
+    if (day !== 0) {
+      const d = cdateJST(`${year}-${month}-${day}`);
+      from = d.startOf('day');
+      to = d.endOf('day');
+    } else {
+      const d = cdateJST(`${year}-${month}-01`);
+      from = d.startOf('month');
+      to = d.endOf('month');
+    }
+  } else {
+    const d = cdateJST(`${year}-01-01`);
+    from = d.startOf('year');
+    to = d.endOf('year');
+  }
+}
 
 const { data } = await useAsyncData(async () => {
   const data = await queryContent('/topic').find();
@@ -17,23 +55,19 @@ const { data } = await useAsyncData(async () => {
   return events;
 });
 
-const { prev, next } = defineProps<{ prev: number; next: number }>();
-
 const events = computed(() => {
-  const from = current.add(-prev, 'day');
-  const to = current.add(next, 'day');
-
   let dates =
     data.value?.map((e) => {
       return { ...e, date: cdateJST(e.date) };
     }) || [];
 
+  dates.push({ topic: '', path: '', date: current, title: '' });
   dates = dates.filter(
     (e) =>
-      prev === 0 ||
+      from === null ||
+      to === null ||
       (from <= e.date.startOf('day') && e.date.startOf('day') <= to),
   );
-  dates.push({ topic: '', path: '', date: current, title: '' });
   dates.sort((a, b) => {
     if (a.date.toDate().getTime() !== b.date.toDate().getTime())
       return a.date.toDate().getTime() < b.date.toDate().getTime() ? 1 : -1;
@@ -60,15 +94,19 @@ const dayText = (d: CDate) => {
   <template v-for="(e, i) in events" class="calendar">
     <h3
       class="mt-2"
-      v-if="i === 0 || e.date.get('month') !== events[i - 1].date.get('month')"
+      v-if="
+        month === 0 &&
+        (i === 0 || e.date.get('month') !== events[i - 1].date.get('month'))
+      "
     >
       {{ e.date.format('YYYY年 MM月') }}
     </h3>
     <h4
       class="my-1"
       v-if="
-        i === 0 ||
-        e.date.format('YYYYMMDD') !== events[i - 1].date.format('YYYYMMDD')
+        day === 0 &&
+        (i === 0 ||
+          e.date.format('YYYYMMDD') !== events[i - 1].date.format('YYYYMMDD'))
       "
       :id="e.date.format('YYYYMMDD')"
     >

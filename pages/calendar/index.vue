@@ -8,5 +8,5 @@ setPage(
 </script>
 <template>
   <h1>カレンダー</h1>
-  <CalendarList :prev="0" :next="0" />
+  <CalendarList />
 </template>
