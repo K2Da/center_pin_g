@@ -3,8 +3,7 @@ import type { cdate } from 'cdate';
 import { cdateJST } from '../../utils/helpers';
 
 export default defineEventHandler(async (event) => {
-  // const current = cdateJST().startOf('day').add(9, 'hours');
-  const current = cdateJST().startOf('day').add(1, 'days');
+  const current = cdateJST().startOf('day').add(9, 'hours');
 
   const topics = await serverQueryContent(event, '/topic').find();
   let events: { title: string; date: cdate.CDate }[] = [];
