@@ -13,6 +13,11 @@ export default defineNuxtConfig({
     '/teams': { prerender: true },
     '/about': { prerender: true },
   },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth',
+    },
+  },
   modules: [
     [
       '@pinia/nuxt',

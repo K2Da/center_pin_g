@@ -1,5 +1,5 @@
 ---
-title: PWCS アジア予選
+title: PUCS(Asia)
 updated: 2024-04-21 05:30:00 +09:00
 tags:
   - 海外公式大会

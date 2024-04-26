@@ -22,7 +22,7 @@ urls:
     url: https://unite.pokemon.com/en-us/championship/
   - title: PUCS公式
     url: https://www.start.gg/league/2024-pok-mon-unite-championship-series
-  - title: PWCSアジア公式
+  - title: PUCS(Asia)公式
     url: https://pokemonunite-wcs-asia.com/en/
 ---
 
@@ -33,10 +33,10 @@ urls:
 ### 開催地域
 PUCSは、 オセアニア、ラテンアメリカ北、ラテンアメリカ南、ブラジル、ヨーロッパ、北アメリカの各地域でそれぞれの大会が開催されます。
 
-日本、韓国、アジア太平洋(西)、アジア太平洋(東)、インドなどのアジア地域はPUCSに含まれておらず、Pokémon World Championships Asia(PWCS Asia)として予選が開催されています。
+アジア地域に関しては、PUCS(Asiz)として別で管理されており、サイトやルールブックも分離されています。
 
 ### 開催済み
 - aeos cup予選
 - aeos cup
 - March Cup
-- April Cup(開催中)
+- April Cup

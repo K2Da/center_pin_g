@@ -35,7 +35,8 @@ const events = computed(() => {
   );
   dates.push({ topic: '', path: '', date: current, title: '' });
   dates.sort((a, b) => {
-    if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+    if (a.date.toDate().getTime() !== b.date.toDate().getTime())
+      return a.date.toDate().getTime() < b.date.toDate().getTime() ? 1 : -1;
     if (a.title !== b.title) return a.title > b.title ? 1 : -1;
     return a.topic > b.topic ? 1 : -1;
   });
@@ -69,6 +70,7 @@ const dayText = (d: CDate) => {
         i === 0 ||
         e.date.format('YYYYMMDD') !== events[i - 1].date.format('YYYYMMDD')
       "
+      :id="e.date.format('YYYYMMDD')"
     >
       {{ e.date.get('date') }}日 ({{ e.date.locale('ja').format('ddd') }})
 
