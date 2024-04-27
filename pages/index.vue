@@ -4,6 +4,7 @@ setPage(
   route.path,
   'Center Pin(g)',
   'Pokémon UNITE大会結果、予定、トピック、戦績などを集めるサイト',
+  false,
   true,
 );
 </script>

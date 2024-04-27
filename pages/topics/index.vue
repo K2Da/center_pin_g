@@ -1,6 +1,12 @@
 <script setup lang="ts">
 const route = useRoute();
-setPage(route.path, 'Topic', 'Pokémon UNITE大会結果、話題収集サイト', true);
+setPage(
+  route.path,
+  'Topic',
+  'Pokémon UNITE大会結果、話題収集サイト',
+  false,
+  true,
+);
 </script>
 
 <template>

@@ -1,10 +1,6 @@
 <script setup lang="ts">
 const route = useRoute();
-setPage(
-  route.path,
-  'プレイヤー',
-  'Pokémon UNITE大会プレイヤー一覧',
-);
+setPage(route.path, 'プレイヤー一覧', 'Pokémon UNITE大会プレイヤー一覧');
 </script>
 
 <template>

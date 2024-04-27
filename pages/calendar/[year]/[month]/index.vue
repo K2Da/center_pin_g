@@ -1,14 +1,15 @@
 <script setup lang="ts">
 const route = useRoute();
-setPage(
-  route.path,
-  'カレンダー',
-  'Pokémon UNITEの大会、イベント、更新予定を集めたカレンダー',
-);
 const year = Number(route.params.year);
 const month = Number(route.params.month);
 
 const today = cdateJST(`${year}-${month}-10`);
+setPage(
+  route.path,
+  'カレンダー',
+  `${today.format('MM月')}: Pokémon UNITEの大会、イベントを集めたカレンダー`,
+  'calendar',
+);
 const prev = today.add(-1, 'month');
 const next = today.add(+1, 'month');
 const toMonthParam = (d: CDate) => ({

@@ -2,17 +2,21 @@ export const setPage = (
   path: string,
   title: string,
   description: string,
+  ogp: 'calendar' | false = false,
   website: boolean = false,
 ) => {
   useHead({
     title: `CP(g): ${title || ''}`,
     meta: [
       { name: 'description', content: description },
-      { name: 'og:title', content: title },
+      { name: 'og:title', content: description },
       { name: 'og:type', content: website ? 'website' : 'article' },
       { name: 'og:url', content: `https://center-ping.pages.dev${path}` },
       { name: 'og:site_name', content: 'Center Pin(g)' },
-      { name: 'og:image', content: 'https://center-ping.pages.dev/ogp.png' },
+      {
+        name: 'og:image',
+        content: `https://center-ping.pages.dev/ogp/${ogp || 'ogp'}.png`,
+      },
       { name: 'twitter:card', content: 'summary' },
     ],
     script: [
