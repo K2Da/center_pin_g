@@ -15,7 +15,7 @@ export const setPage = (
       { name: 'og:site_name', content: 'Center Pin(g)' },
       {
         name: 'og:image',
-        content: `https://center-ping.pages.dev/ogp/${ogp || 'ogp'}.png`,
+        content: `https://center-ping.pages.dev/images/ogp/${ogp || 'ogp'}.png`,
       },
       { name: 'twitter:card', content: 'summary' },
     ],
