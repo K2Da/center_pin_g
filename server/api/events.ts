@@ -3,7 +3,7 @@ import type { cdate } from 'cdate';
 import { cdateJST } from '../../utils/helpers';
 
 export default defineEventHandler(async (event) => {
-  const current = cdateJST().startOf('day').add(9, 'hours');
+  const current = cdateJST().startOf('day');
 
   const topics = await serverQueryContent(event, '/topic').find();
   let events: { title: string; date: cdate.CDate }[] = [];
@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
   }
 
   const filtered = events
-    .filter((e) => e.date >= current && e.date < current.add(1, 'day'))
+    .filter((e) => current <= e.date && e.date <= current.endOf('day'))
     .sort((a, b) => a.date.toDate().getTime() - b.date.toDate().getTime());
 
   let res = '';
@@ -28,7 +28,11 @@ export default defineEventHandler(async (event) => {
       res += `${date}\n`;
       preDate = date;
     }
-    res += `${e.date.format('HH:mm')} ${e.title}\n`;
+    if (e.date.get('second') === 1) {
+      res += `--:-- ${e.title}\n`;
+    } else {
+      res += `${e.date.format('HH:mm')} ${e.title}\n`;
+    }
   }
   if (res !== '') {
     res += `https://center-ping.pages.dev/calendar/${current.get('year')}/${current.get('month') + 1}/${current.get('date')}`;

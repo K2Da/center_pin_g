@@ -31,15 +31,17 @@ const toMonthParam = (d: CDate) => ({
 <template>
   <h1>カレンダー</h1>
   <h2 class="my-2">{{ year }}年 {{ month }}月 {{ day }}日</h2>
-  <div class="my-2">
+  <div class="ml-2 mt-2 mb-1">
     <NuxtLink :to="toDayParam(prev)">前の日</NuxtLink> |
     <NuxtLink :to="toMonthParam(today)">{{ month }}月</NuxtLink> |
     <NuxtLink :to="toDayParam(next)">次の日</NuxtLink>
   </div>
+  <hr class="mt-1 mb-2" />
 
   <CalendarList :year="year" :month="month" :day="day" />
 
-  <div class="my-2">
+  <hr class="my-2" />
+  <div class="m-2">
     <NuxtLink :to="toDayParam(prev)">前の日</NuxtLink> |
     <NuxtLink :to="toMonthParam(today)">{{ month }}月</NuxtLink> |
     <NuxtLink :to="toDayParam(next)">次の日</NuxtLink>
