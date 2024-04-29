@@ -21,6 +21,9 @@ dates:
     date: 2024-04-19 20:30:00 +09:00
   - title: Vol.9
     date: 2024-04-26 20:30:00 +09:00
+  - title: Vol.10
+    date: 2024-05-03 20:30:00 +09:00
+    url: https://tonamel.com/competition/59FvC
 urls:
   - title: ポケモンユナイト攻略Wiki ポケモンユナイト エボリューションカップ
     url: https://サンダーストライク.jp/unaevo/
