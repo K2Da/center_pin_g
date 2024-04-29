@@ -93,7 +93,7 @@ const data = computed(() => teamsData(detail));
         </div>
         <div class="pl-4">
           {{ achievement.title }}
-          <teamplate
+          <template
             v-if="
               i === 0 ||
               detail.achievements[i - 1].tournament_name !==
@@ -101,7 +101,7 @@ const data = computed(() => teamsData(detail));
               detail.achievements[i - 1].team_name !== achievement.team_name
             "
           >
-            - {{ achievement.team_name }}</teamplate
+            - {{ achievement.team_name }}</template
           >
         </div>
       </div>
