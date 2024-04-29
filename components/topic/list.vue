@@ -9,7 +9,6 @@ const changePageNo = (v: number) => {
 const { data } = await useAsyncData(
   `topic_page_${pageNoRef.value}`,
   () => {
-    console.log('fetch');
     return queryContent('/topic')
       .where({ updated: { $exists: true } })
       .sort({ updated: -1 })
