@@ -1,6 +1,6 @@
 ---
 title: Unity Clash [Asia]
-updated: 2024-04-17 03:00
+updated: 2024-04-29 15:50:00 +09:00
 tags:
   - コミュニティ大会
 dates:
@@ -11,13 +11,16 @@ dates:
 urls:
   - title: 公式
     url: https://www.start.gg/tournament/asia-unity-clash-spring-showdown-x-ingage/details
+  - title: 結果
+    url: /tournament/unity_clash_2024_asia
+  - title: 『ポケモンユナイト』【Unity Clash】アジアスクリムトーナメント日本公式放送 
+    url: https://www.youtube.com/watch?v=kkCDW0SfLL4
 ---
 
-4/28に日本、アジア太平洋、インド、韓国のチームで行われる大会「Unity Clash \[Asia\]」についてのメモ。
+4/28に日本、アジア太平洋、インド、韓国のチームで行われる大会「Unity Clash \[Asia\]」についてのメモ。結果を追記。
 
 <!-- more -->
 
-### 告知
-:xpost{id="1780068122147618974"}
-:xpost{id="1779907785628811440"}
-:xpost{id="1779855585061617716"}
+### 結果
+
+:result{tournament="unity_clash_2024_asia" :rank="4" :member="true"}
