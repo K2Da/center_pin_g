@@ -32,8 +32,7 @@ const { detail } = defineProps<Props>();
     <div class="pl-2 divdata">
       <ul>
         <li v-for="(link, i) of detail.data.urls" :key="i">
-          <i :class="link.icon"></i> <a :href="link.url">{{ link.title }}</a> (
-          {{ host(link.url) }} )
+          <a :href="link.url">{{ link.title }}</a> ( {{ host(link.url) }} )
         </li>
       </ul>
     </div>
