@@ -1,10 +1,25 @@
 <script setup lang="ts">
 import type { TournamentDetail } from '~/api/TournamentDetail';
+import type { Achievement } from '~/api/Tournaments';
 
 type Props = {
   detail: TournamentDetail;
 };
 const { detail } = defineProps<Props>();
+
+const achievementText = (achievement: Achievement) => {
+  switch (achievement.type) {
+    case 'rank':
+      if (achievement.rank === 0) return '出場';
+      return `${achievement.rank}位以上`;
+    case 'entry':
+      return achievement.title;
+    case 'represent':
+      if (achievement.rank === true) return '代表出場';
+      if (achievement.rank === false) return '代表出場・順位全て';
+      return `代表出場 ${achievement.rank}位以上`;
+  }
+};
 </script>
 
 <template>
@@ -16,9 +31,45 @@ const { detail } = defineProps<Props>();
   </div>
   <div class="flex" v-if="detail.data.type">
     <div class="w-16 divhead">形式</div>
+    <div class="pl-2 divdata">{{ detail.data.type }}</div>
+  </div>
+  <div class="flex" v-if="detail.data.type">
+    <div class="w-16 divhead"></div>
     <div class="pl-2 divdata">
-      {{ detail.data.type }} / {{ detail.data.official ? '公式' : '非公式' }} /
-      {{ detail.tournament.rating ? 'レート計算対象' : 'レート計算非対象' }}
+      <teamplate v-if="detail.data.official">
+        <UIcon
+          name="i-material-symbols-check-circle"
+          style="vertical-align: -1px"
+        />
+        公式
+      </teamplate>
+      <template v-else>非公式</template>
+    </div>
+  </div>
+  <div class="flex" v-if="detail.data.type">
+    <div class="w-16 divhead">実績設定</div>
+    <div class="pl-2 divdata">
+      <template v-if="detail.data.achievement">
+        <UIcon
+          name="i-material-symbols-trophy-outline"
+          style="vertical-align: -1px"
+        />
+        {{ achievementText(detail.data.achievement) }}
+      </template>
+      <template v-else>なし</template>
+    </div>
+  </div>
+  <div class="flex" v-if="detail.data.type">
+    <div class="w-16 divhead">レート</div>
+    <div class="pl-2 divdata">
+      <template v-if="detail.tournament.rating">
+        <UIcon
+          name="i-material-symbols-show-chart"
+          style="vertical-align: -1px"
+        />
+        計算対象</template
+      >
+      <template v-else>計算非対象</template>
     </div>
   </div>
   <div class="flex" v-if="detail.data.note">

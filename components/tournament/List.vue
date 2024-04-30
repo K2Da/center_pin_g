@@ -18,21 +18,28 @@ list = list.sort((a, b) => b.date - a.date);
       <UIcon
         name="i-material-symbols-check-circle"
         style="vertical-align: -1px"
+        class="ml-2"
       />
       公式
-      <span class="muted"
-        ><UIcon
-          name="i-material-symbols-show-chart"
-          style="vertical-align: -1px"
-      /></span>
+      <UIcon
+        name="i-material-symbols-trophy-outline"
+        style="vertical-align: -1px"
+        class="ml-2"
+      />
+      実績設定
+      <UIcon
+        name="i-material-symbols-show-chart"
+        style="vertical-align: -1px"
+        class="ml-2"
+      />
       ratings計算対象
-      <span class="muted"
-        ><UIcon
-          name="i-material-symbols-auto-awesome-motion-outline"
-          style="vertical-align: -1px"
-      /></span>
-      複数グループあり</span
-    >
+      <UIcon
+        name="i-material-symbols-auto-awesome-motion-outline"
+        style="vertical-align: -1px"
+        class="ml-2"
+      />
+      複数大会グループ
+    </span>
   </div>
   <div v-if="list && list.length > 0">
     <div
@@ -52,7 +59,7 @@ list = list.sort((a, b) => b.date - a.date);
         <div class="w-[8em]">
           <DateTime :date="t.date" :spacing="true" />
         </div>
-        <div class="text-center w-[2em]">
+        <div class="text-center w-[3em]">
           <span class="muted">
             <span class="muted"
               ><UIcon
@@ -75,6 +82,15 @@ list = list.sort((a, b) => b.date - a.date);
               name="i-material-symbols-check-circle"
               style="vertical-align: -1px"
             />
+          </span>
+        </div>
+        <div class="text-center w-[1em] pl-0">
+          <span v-if="t.info.achievement" class="muted">
+            <span class="muted"
+              ><UIcon
+                name="i-material-symbols-trophy-outline"
+                style="vertical-align: -1px"
+            /></span>
           </span>
         </div>
         <div class="text-center w-[1em] pl-0">
