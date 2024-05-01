@@ -114,21 +114,22 @@ const dayText = (d: CDate) => {
 
       <span class="text-yellow-500">{{ dayText(e.date) }}</span>
     </h4>
-    <div class="event" v-if="e.title != ''">
-      <span class="font-mono ml-1" v-if="e.date.get('second') !== 1">
+    <div class="event flex flex-row" v-if="e.title != ''">
+      <div class="font-mono ml-1" v-if="e.date.get('second') !== 1">
         {{ e.date.get('hour').toString().padStart(2, '0') }}:{{
           e.date.get('minute').toString().padStart(2, '0')
         }}
-      </span>
-      <span v-else class="font-mono ml-1">--:--</span>
-      &nbsp;
-      <NuxtLink
-        :to="{
-          name: 'topic-key',
-          params: { key: e.path.substring(7).replaceAll('/', '-') },
-        }"
-        >{{ e.topic }}</NuxtLink
-      >&nbsp;- {{ e.title }}
+      </div>
+      <div v-else class="font-mono ml-1">--:--</div>
+      <div class="ml-2">
+        <NuxtLink
+          :to="{
+            name: 'topic-key',
+            params: { key: e.path.substring(7).replaceAll('/', '-') },
+          }"
+          >{{ e.topic }}</NuxtLink
+        >&nbsp;- {{ e.title }}
+      </div>
     </div>
   </template>
   <p class="more" v-if="prev !== 0">
