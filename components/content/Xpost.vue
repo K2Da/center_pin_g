@@ -1,11 +1,18 @@
 <script setup lang="ts">
 import { Tweet } from '@jacksongross/vue-tweet-embed';
-const { id } = defineProps<{ id: string }>();
+const { id } = defineProps<{ id: string; user?: string; text?: string }>();
 </script>
 <template>
   <ClientOnly>
     <div class="py-0 px-3" style="color-scheme: auto">
-      <Tweet :id="id" :options="{ theme: 'dark' }">
+      <Tweet v-if="user && text" :id="id" :options="{ theme: 'dark' }">
+        <div class="mt-2 p-4 border rounded border-stone-200 w-[548px]">
+          {{ user }}
+          <hr class="my-2" />
+          <p v-html="text.replaceAll('\n', '<br />')" />
+        </div>
+      </Tweet>
+      <Tweet v-else :id="id" :options="{ theme: 'dark' }">
         <span>
           <img
             src="/xpost.png"
