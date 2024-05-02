@@ -1,21 +1,14 @@
 import { serverQueryContent } from '#content/server';
 import type { cdate } from 'cdate';
-import { cdateJST } from '../../utils/helpers';
+import { dayUrl, eventsFromTopics } from '~/utils/server/util';
+import { cdateJST } from '~~/utils/helpers';
 
 export default defineEventHandler(async (event) => {
+  let events: { title: string; date: cdate.CDate }[] = eventsFromTopics(
+    await serverQueryContent(event, '/topic').find(),
+  );
+
   const current = cdateJST().startOf('day');
-
-  const topics = await serverQueryContent(event, '/topic').find();
-  let events: { title: string; date: cdate.CDate }[] = [];
-  for (const topic of topics) {
-    for (const date of topic.dates) {
-      events.push({
-        title: `${topic.title || ''} ${date.title}`,
-        date: cdateJST(date.date),
-      });
-    }
-  }
-
   const filtered = events
     .filter((e) => current <= e.date && e.date <= current.endOf('day'))
     .sort((a, b) => a.date.toDate().getTime() - b.date.toDate().getTime());
@@ -34,9 +27,7 @@ export default defineEventHandler(async (event) => {
       res += `${e.date.format('HH:mm')} ${e.title}\n`;
     }
   }
-  if (res !== '') {
-    res += `https://center-ping.pages.dev/calendar/${current.get('year')}/${current.get('month') + 1}/${current.get('date')}`;
-  }
+  if (res !== '') res += dayUrl(current);
 
   return { text: res };
 });
