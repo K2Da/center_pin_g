@@ -6,13 +6,17 @@ dates:
   - title: 配信
     date: 2024-05-02 20:00:00 +09:00
 urls:
-  - title: obuyanTV
-    url: https://www.youtube.com/@obuyanTV
-  - title: ロバート山本ひろしのゲームチャンネル
-    url: https://www.youtube.com/channel/UCxW-QSLee1mEUSM4faoHd_A
-  - title: ぺこぱチャンネル
-    url: https://www.youtube.com/user/yuta2668
+  - title: ロバート山本配信
+    url: https://youtube.com/watch?v=_YmROjUE2j0
+  - title: ぺこぱ配信
+    url: https://youtube.com/watch?v=AOn2T8pftXQ
+  - title: 小國舞羽配信
+    url: https://youtube.com/watch?v=I5maI8jM5fg
+  - title: Obuyan配信
+    url: https://youtube.com/watch?v=jhpwYB
 ---
+
+ポケモンユナイト甲子園2024の出演者たちがWCS2023 ポケモンユナイト部門 日本代表のObuyan選手からポケモンユナイトについて学ぶ配信が行われました。
 
 ### 告知
 :xpost{
@@ -30,6 +34,3 @@ urls:
 5月2日(木) 20時00分 開始予定
 各出演者のYouTubeチャンネル"
 }
-
-### 配信チャンネル
-各出演者のYouTubeチャンネルを関連リンクに記載。

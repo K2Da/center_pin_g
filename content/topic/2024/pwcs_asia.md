@@ -21,9 +21,9 @@ dates:
   - title: インドネシア Day 2
     date: 2024-05-12 00:00:01 +09:00
   - title: マレーシア・シンガポール Day 1
-    date: 2024-05-04 00:00:01 +09:00
+    date: 2024-05-04 11:00:00 +08:00
   - title: マレーシア・シンガポール Day 2
-    date: 2024-05-05 00:00:01 +09:00
+    date: 2024-05-05 12:00:00 +08:00
   - title: インド Day 1
     date: 2024-05-11 00:00:01 +09:00
   - title: インド Day 2
@@ -47,6 +47,10 @@ urls:
     url: https://www.start.gg/league/2024-pok-mon-unite-championship-series
   - title: アジア公式
     url: https://pokemonunite-wcs-asia.com/en/
+  - title: アジア公式Facebook
+    url: https://www.facebook.com/Pokemon.UNITE.A.en
+  - title: ポケモンユナイト公式(繁体字)
+    url: https://www.facebook.com/Pokemon.UNITE.tc
 ---
 
 アジア地域で行われる2024 Pokémon World Championships(PWCS 2024)予選の日程メモ。ルールブックから、地域の詳細を記載。
