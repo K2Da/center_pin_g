@@ -68,7 +68,7 @@ const data = computed(() => teamsData(detail));
           cdateJST(achievement.date).get('year')
       "
     >
-      <div class="w-24 divhead">
+      <div class="w-24 divhead pr-4">
         {{ cdateJST(achievement.date).get('year') }}年
       </div>
       <div></div>
@@ -78,7 +78,7 @@ const data = computed(() => teamsData(detail));
         <template
           v-if="i === 0 || detail.achievements[i - 1].date !== achievement.date"
         >
-          {{ cdateJST(achievement.date).format('M/DD') }}
+          {{ cdateJST(achievement.date).format('M月D日') }}
         </template>
       </div>
       <div class="pl-2 divdata flex flex-col">
@@ -91,7 +91,7 @@ const data = computed(() => teamsData(detail));
         >
           {{ achievement.tournament_name }}
         </div>
-        <div class="pl-4">
+        <div>
           {{ achievement.title }}
           <template
             v-if="
