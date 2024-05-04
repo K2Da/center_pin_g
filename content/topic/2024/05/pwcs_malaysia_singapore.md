@@ -4,9 +4,9 @@ updated: 2024-05-05 05:00:00 +09:00
 tags:
   - 海外公式大会
 dates:
-  - title: マレーシア・シンガポール Day 1
+  - title: Day 1
     date: 2024-05-04 11:00:00 +08:00
-  - title: マレーシア・シンガポール Day 2
+  - title: Day 2
     date: 2024-05-05 12:00:00 +08:00
 urls:
   - title: PWCSアジア公式
