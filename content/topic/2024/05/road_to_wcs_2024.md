@@ -4,8 +4,10 @@ tags:
   - コミュニティ大会
 dates:
   - title: 予選
+    date: 2024-05-05 19:00:00 +09:00
+  - title: 本戦 Day 1
     date: 2024-05-11 21:00:00 +09:00
-  - title: 本戦
+  - title: 本戦 Day 2
     date: 2024-05-12 21:00:00 +09:00
 urls:
   - title: Tonamel
