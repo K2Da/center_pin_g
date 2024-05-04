@@ -56,17 +56,6 @@ export const useStatsStore = defineStore('stats', {
           this.teams = res;
         });
         this.tournaments = await fetchTournamentMaster();
-      } else {
-        // SSG/SSR時に取得して、ページに埋め込むもの
-        // const teams = (await fetchTeamMaster()) as TeamIndex[];
-        // this.teams = teams.slice(0, PER_PAGE);
-        /*
-        this.stats.count = {
-          player: players.length,
-          tournament: this.tournaments.tournaments.length,
-          team: teams.length,
-        };
-        */
       }
     },
     async fetchTournamentsOnSSR() {

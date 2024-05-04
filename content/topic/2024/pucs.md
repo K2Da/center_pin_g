@@ -3,12 +3,6 @@ title: PUCS
 tags:
   - 海外公式大会
 dates:
-  - title: Regional Championship - オープン予選
-    date: 2024-05-04 00:00:01 +09:00
-  - title: Regional Championship - 決勝 Day 1
-    date: 2024-05-11 00:00:01 +09:00
-  - title: Regional Championship - 決勝 Day 2
-    date: 2024-05-12 00:00:01 +09:00
   - title: North America Regional 決勝 Day 1
     date: 2024-06-07 00:00:01 +09:00
   - title: North America Regional 決勝 Day 2

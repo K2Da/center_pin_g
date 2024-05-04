@@ -43,7 +43,7 @@ const toggleOpen = () => {
           'w-full',
           open ? 'bg-green-700' : 'bg-sky-800',
           'rounded',
-          'pt-2',
+          'pt-1',
         ]"
         @click="toggleOpen"
       >
