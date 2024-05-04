@@ -7,5 +7,5 @@ const { win } = defineProps<Props>();
 
 <template>
   <span v-if="win" class="font-bold text-red-500">W</span>
-  <span v-else class="font-bold text-blue-500">L</span>
+  <span v-else class="font-bold text-gray-400">L</span>
 </template>

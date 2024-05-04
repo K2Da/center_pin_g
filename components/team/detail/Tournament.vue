@@ -20,13 +20,6 @@ const isOpen = computed(() => open.value || props.openAll);
 </script>
 
 <template>
-  <div class="w-[2em] mr-2">
-    <ToggleButton
-      :id="`tournaments-toggle-${i}`"
-      :value="false"
-      @toggle="toggleMatches"
-    />
-  </div>
   <div class="w-[32em] font-bold lg:font-normal">
     <TournamentName
       :name="tournament.tournament_name"
@@ -39,11 +32,20 @@ const isOpen = computed(() => open.value || props.openAll);
   <div class="text-left w-[8em]">
     <DateTime :date="tournament.tournament_date" :spacing="true" />
   </div>
-  <div class="w-[24em]">
-    <TeamName :name="tournament.name" :currentName="tournament.name" />
-  </div>
+  <div class="w-[24em]">{{ tournament.name }}</div>
   <div class="w-[36em]">
     <PlayersLine :names="tournament.player_list" />
+  </div>
+  <div class="w-[6em]">
+    <ToggleButton
+      v-if="!props.openAll"
+      :id="`tournaments-toggle-${i}`"
+      :value="open"
+      @toggle="toggleMatches"
+    />
+    <span v-if="!props.openAll" class="muted pl-2" style="vertical-align: -1px"
+      >詳細</span
+    >
   </div>
   <TeamDetailMatches
     :detail="detail"

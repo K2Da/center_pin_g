@@ -39,18 +39,25 @@ const toggleOpen = () => {
     </div>
     <div class="w-full my-4 py-0 px-8">
       <button
-        :class="['w-full', open ? 'bg-green-700' : 'bg-sky-800', 'rounded']"
+        :class="[
+          'w-full',
+          open ? 'bg-green-700' : 'bg-sky-800',
+          'rounded',
+          'pt-2',
+        ]"
         @click="toggleOpen"
       >
         <UIcon
           class="mr-1"
-          style="vertical-align: -4px"
+          style="vertical-align: -2px"
           :name="
             open
               ? 'i-material-symbols-close-fullscreen'
               : 'i-material-symbols-open-in-full'
           "
         />
+        <span v-if="open">閉じる</span>
+        <span v-else>詳細を見る</span>
       </button>
     </div>
   </article>

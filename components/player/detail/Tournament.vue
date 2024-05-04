@@ -22,13 +22,6 @@ const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
 </script>
 
 <template>
-  <div class="w-[2em] mr-2">
-    <ToggleButton
-      :id="`tournaments-toggle-${i}`"
-      :value="false"
-      @toggle="toggleMatches"
-    />
-  </div>
   <div class="w-[32em] font-bold lg:font-normal">
     <TournamentName
       :name="tournament.tournament_name"
@@ -59,6 +52,17 @@ const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
     <span class="muted"
       >({{ formatNum(tournament.rank) }}位 /
       {{ formatNum(tournament.total) }}人)</span
+    >
+  </div>
+  <div class="w-[6em]">
+    <ToggleButton
+      v-if="!props.openAll"
+      :id="`tournaments-toggle-${i}`"
+      :value="open"
+      @toggle="toggleMatches"
+    />
+    <span v-if="!props.openAll" class="muted pl-2" style="vertical-align: -1px"
+      >詳細</span
     >
   </div>
   <PlayerDetailMatches

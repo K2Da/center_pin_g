@@ -16,7 +16,7 @@ const toggleAllMatches = (value: boolean) => {
       :value="false"
       @toggle="toggleAllMatches"
     />
-    <span class="ml-2">All</span>
+    <span class="ml-2">すべてのラウンド詳細を開く</span>
   </div>
 
   <div
@@ -24,8 +24,11 @@ const toggleAllMatches = (value: boolean) => {
     :key="tournament.tournament_key"
     :class="[
       containerClass(i),
-      'tc',
+      'w-full',
+      'flex',
+      'flex-wrap',
       'py-3',
+      'px-2',
       'lg:py-2',
       'lg:pb-0',
       'border-t-2',

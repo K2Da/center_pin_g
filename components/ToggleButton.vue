@@ -14,5 +14,10 @@ const toggle = (v: boolean) => {
 </script>
 
 <template>
-  <UToggle @update:model-value="toggle" :model-value="buttonValue" size="sm" />
+  <UToggle
+    @update:model-value="toggle"
+    :model-value="buttonValue"
+    size="sm"
+    style="vertical-align: -2px"
+  />
 </template>
