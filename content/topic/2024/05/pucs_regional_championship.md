@@ -1,5 +1,5 @@
 ---
-title: PUCS地域決勝
+title: PUCS Reagional Championship
 updated: 2024-05-05 07:00:00 +09:00
 tags:
   - 海外公式大会
