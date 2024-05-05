@@ -1,5 +1,5 @@
 ---
-title: PUCS マレーシア・シンガポール予選
+title: PUCS マレーシア・シンガポール大会
 updated: 2024-05-06 05:40:00 +09:00
 tags:
   - 海外公式大会
@@ -15,6 +15,8 @@ urls:
     url: https://www.facebook.com/Pokemon.UNITE.A.en
   - title:  Pokémon UNITE WCS2024 Malaysia/Singapore Tournament
     url: https://www.start.gg/tournament/pok-mon-unite-wcs2024-malaysia-singapore-tournament-1/details
+  - title: [EN] Pokémon UNITE WCS2024 Malaysia/Singapore Qualifier 
+    url: https://www.youtube.com/watch?v=vKbRCvVLWHQ
   - title: 結果
     url: /tournament/pucs_malaysia_singapore_2024
 ---
