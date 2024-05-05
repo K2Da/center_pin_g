@@ -39,89 +39,108 @@ urls:
 48チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
 
 - Upper Bracket
-  - :team{n="Nouns Esports ⌐◨-◨"}
-  - :team{n="los caducados"}
-  - :team{n="VAMOSSS"}
-  - :team{n="Warlords"}
-  - :team{n="Yalla Bingo"}
-  - :team{n="CincoGolemo"}
-  - :team{n="Talibobo Unleashed"}
-  - :team{n="Conoisseurs"}
+  1. :team{n="Nouns Esports ⌐◨-◨"}
+  1. :team{n="los caducados"}
+  1. :team{n="VAMOSSS"}
+  1. :team{n="Warlords"}
+  1. :team{n="Yalla Bingo"}
+  1. :team{n="CincoGolemo"}
+  1. :team{n="Talibobo Unleashed"}
+  1. :team{n="Conoisseurs"}
 - Lower Bracket
-  - :team{n="Capybabas"}
-  - :team{n="Verloren?"}
-  - :team{n="Z-Mog"}
-  - :team{n="Patati Stack"}
-  - :team{n="Anlaha Esports"}
-  - :team{n="Neo Sentry Red"}
-  - :team{n="ZeroScrims"}
-  - :team{n="Tatakae"}
+  1. :team{n="Capybabas"}
+  1. :team{n="Verloren?"}
+  1. :team{n="Z-Mog"}
+  1. :team{n="Patati Stack"}
+  1. :team{n="Anlaha Esports"}
+  1. :team{n="Neo Sentry Red"}
+  1. :team{n="ZeroScrims"}
+  1. :team{n="Tatakae"}
 
 ### ラテンアメリカ南
 29チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
 
 - Upper Bracket
-  - :team{n="FUSION"}
-  - :team{n="IMPERIO E-SPORT"}
-  - :team{n="Punto cL"}
-  - :team{n="Olimpo Squad"}
-  - :team{n="Seirin"}
-  - :team{n="3 Dígitos"}
-  - :team{n="5CUY"}
+  1. :team{n="FUSION"}
+  1. :team{n="IMPERIO E-SPORT"}
+  1. :team{n="Punto cL"}
+  1. :team{n="Olimpo Squad"}
+  1. :team{n="Seirin"}
+  1. :team{n="3 Dígitos"}
+  1. :team{n="5CUY"}
+  1. :team{n="Public Enemies"}
 - Lower Bracket
-  - :team{n="Public Enemies"}
-  - :team{n="Star us"}
-  - :team{n="Los Galácticos"}
-  - :team{n="Pepe +4"}
-  - :team{n="Reborn"}
-  - :team{n="Zubatt"}
-  - :team{n="Sigma E-Sports"}
-  - :team{n="L4D"}
-  - :team{n="Los apostoles de PONPI"}
+  1. :team{n="Star us"}
+  1. :team{n="Los Galácticos"}
+  1. :team{n="Pepe +4"}
+  1. :team{n="Reborn"}
+  1. :team{n="Zubatt"}
+  1. :team{n="Sigma E-Sports"}
+  1. :team{n="L4D"}
+  1. :team{n="Los apostoles de PONPI"}
 
 ### ラテンアメリカ北
 65チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
 
 - Upper Bracket
-  - :team{n="Pedro Pedro Pedro"}
-  - :team{n="Anteiku"}
-  - :team{n="DeepDark"}
-  - :team{n="E7 Janus"}
-  - :team{n="Bad Choices"}
-  - :team{n="NoSmites Resurrection"}
-  - :team{n="MOO MOO MILK"}
-  - :team{n="Rework Respawn"}
+  1. :team{n="Pedro Pedro Pedro"}
+  1. :team{n="Anteiku"}
+  1. :team{n="DeepDark"}
+  1. :team{n="E7 Janus"}
+  1. :team{n="Bad Choices"}
+  1. :team{n="NoSmites Resurrection"}
+  1. :team{n="MOO MOO MILK"}
+  1. :team{n="Rework Respawn"}
 - Lower Bracket
-  - :team{n="La 15 es inevitable"}
-  - :team{n="ChocoPapus"}
-  - :team{n="Hermanooo"}
-  - :team{n="Marcianitos"}
-  - :team{n="Vampiros de Nieve"}
-  - :team{n="Gorditos FC"}
-  - :team{n="Troleo táctico"}
-  - :team{n="TTV LAN"}
+  1. :team{n="La 15 es inevitable"}
+  1. :team{n="ChocoPapus"}
+  1. :team{n="Hermanooo"}
+  1. :team{n="Marcianitos"}
+  1. :team{n="Vampiros de Nieve"}
+  1. :team{n="Gorditos FC"}
+  1. :team{n="Troleo táctico"}
+  1. :team{n="TTV LAN"}
 
 ### 北アメリカ
-74チームが参加、オープン予選開催中。
+74チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
+
+- Upper Bracket
+  1. :team{n="Nemesis"}
+  1. :team{n="ni hao"}
+  1. :team{n="Team YT"}
+  1. :team{n="UFEELME???"}
+  1. :team{n="Orange Team"}
+  1. :team{n="Luminosity Gaming"}
+  1. :team{n="G"}
+  1. :team{n="Hades"}
+- Lower Bracket
+  1. :team{n="Eruption"}
+  1. :team{n="exile"}
+  1. :team{n="Last Chance"}
+  1. :team{n="Ignorance"}
+  1. :team{n="Brave Birders"}
+  1. :team{n="Team Hotspot"}
+  1. :team{n="Umbra Volpium"}
+  1. :team{n="S5"}
 
 ### ブラジル
 33チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
 
 - Upper Bracket
-  - :team{n="Legacy"}
-  - :team{n="DreamMax Esports"}
-  - :team{n="Spacial Rend"}
-  - :team{n="Noxus"}
-  - :team{n="Charm"}
-  - :team{n="Saidera Unite"}
-  - :team{n="Junção do Tega"}
-  - :team{n="Drago Unite Rowak"}
+  1. :team{n="Legacy"}
+  1. :team{n="DreamMax Esports"}
+  1. :team{n="Spacial Rend"}
+  1. :team{n="Noxus"}
+  1. :team{n="Charm"}
+  1. :team{n="Saidera Unite"}
+  1. :team{n="Junção do Tega"}
+  1. :team{n="Drago Unite Rowak"}
 - Lower Bracket
-  - :team{n="E=MC²"}
-  - :team{n="Acewings"}
-  - :team{n="Kraken Gaming"}
-  - :team{n="Time X"}
-  - :team{n="Arcan West"}
-  - :team{n="time"}
-  - :team{n="PREDIAO"}
-  - :team{n="Em busca da CNH"}
+  1. :team{n="E=MC²"}
+  1. :team{n="Acewings"}
+  1. :team{n="Kraken Gaming"}
+  1. :team{n="Time X"}
+  1. :team{n="Arcan West"}
+  1. :team{n="time"}
+  1. :team{n="PREDIAO"}
+  1. :team{n="Em busca da CNH"}
