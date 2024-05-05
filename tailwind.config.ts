@@ -82,7 +82,10 @@ export default <Partial<Config>>{
         ),
       '!' +
         resolve('node_modules/@nuxt/ui/dist/runtime/ui.config/forms/radio.mjs'),
-      // '!' + resolve('node_modules/@nuxt/ui/dist/runtime/ui.config/forms/toggle.mjs'),
+      '!' +
+        resolve(
+          'node_modules/@nuxt/ui/dist/runtime/ui.config/forms/toggle.mjs',
+        ),
       '!' +
         resolve(
           'node_modules/@nuxt/ui/dist/runtime/ui.config/forms/formGroup.mjs',

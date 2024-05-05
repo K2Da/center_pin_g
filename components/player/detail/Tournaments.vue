@@ -5,19 +5,26 @@ const { detail } = defineProps<Props>();
 
 const open = ref(false);
 
-const toggleAllMatches = (value: boolean) => {
-  open.value = value;
+const toggleAllMatches = () => {
+  open.value = !open.value;
 };
 </script>
 
 <template>
   <div class="pt-0 pb-1 pl-2">
-    <ToggleButton
-      id="tournaments-all-toggle"
-      :value="false"
-      @toggle="toggleAllMatches"
-    />
-    <span class="ml-2">すべてのラウンド詳細を開く</span>
+    <button
+      :class="[
+        open ? 'bg-green-700' : 'bg-sky-800',
+        'rounded',
+        'p-1',
+        'pb-0',
+        'm-0',
+        'muted',
+      ]"
+      @click="toggleAllMatches"
+    >
+      全ての試合表示
+    </button>
   </div>
 
   <div

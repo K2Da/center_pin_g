@@ -12,8 +12,8 @@ const { detail, tournament, i } = props;
 
 const open = ref(false);
 
-const toggleMatches = (value: boolean) => {
-  open.value = value;
+const toggleMatches = () => {
+  open.value = !open.value;
 };
 
 const isOpen = computed(() => open.value || props.openAll);
@@ -54,16 +54,21 @@ const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
       {{ formatNum(tournament.total) }}人)</span
     >
   </div>
-  <div class="w-[6em]">
-    <ToggleButton
+  <div class="w-[3em]" style="margin-top: -3px">
+    <button
       v-if="!props.openAll"
-      :id="`tournaments-toggle-${i}`"
-      :value="open"
-      @toggle="toggleMatches"
-    />
-    <span v-if="!props.openAll" class="muted pl-2" style="vertical-align: -1px"
-      >詳細</span
+      :class="[
+        open ? 'bg-green-700' : 'bg-sky-800',
+        'rounded',
+        'p-1',
+        'pb-0',
+        'm-0',
+        'muted',
+      ]"
+      @click="toggleMatches"
     >
+      試合
+    </button>
   </div>
   <PlayerDetailMatches
     :detail="detail"
