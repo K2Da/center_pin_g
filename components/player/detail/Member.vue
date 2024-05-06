@@ -76,10 +76,25 @@ const members = computed(() => {
     }
   });
 });
+const toggleShowAll = () => {
+  showAll.value = !showAll.value;
+};
 </script>
 <template>
   <div class="m-2" v-if="detail.tournaments.length > MAX">
-    <span class="muted">全大会表示</span> <UToggle v-model="showAll" />
+    <button
+      :class="[
+        showAll ? 'bg-green-700' : 'bg-sky-800',
+        'rounded',
+        'p-1',
+        'pb-0',
+        'm-0',
+        'muted',
+      ]"
+      @click="toggleShowAll"
+    >
+      全大会表示
+    </button>
   </div>
   <div class="m-2 overflow-y-scroll">
     <table :style="{ width: `${14 + 3 * reversedTournaments.length + 12}em` }">
