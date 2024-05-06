@@ -1,15 +1,28 @@
 ---
-title: PUCS Reagional Championship
+title: PUCS Regional Championship
 updated: 2024-05-05 07:00:00 +09:00
 tags:
   - 海外公式大会
 dates:
   - title: オープン予選
     date: 2024-05-04 00:00:01 +09:00
-  - title: 決勝(NA以外) Day 1
-    date: 2024-05-11 00:00:01 +09:00
-  - title: 決勝(NA以外) Day 2
-    date: 2024-05-12 00:00:01 +09:00
+  - title: オセアニア決勝 Day 1(Top4まで)
+    date: 2024-05-11 04:00:00 +00:00
+  - title: 北アメリカ決勝 Day 1(Top8まで)
+    date: 2024-05-11 16:00:00 +00:00
+  - title: ブラジル決勝 Day 1
+    date: 2024-05-11 17:00:00 +00:00
+  - title: ラテンアメリカ南決勝
+    date: 2024-05-11 18:00:00 +00:00
+  - title: オセアニア決勝 Day 2
+    date: 2024-05-12 04:00:00 +00:00
+  - title: ヨーロッパ決勝
+    date: 2024-05-12 16:00:00 +00:00
+  - title: ブラジル決勝 Day 2
+    date: 2024-05-12 17:00:00 +00:00
+  - title: ラテンアメリカ北決勝
+    date: 2024-05-12 18:00:00 +00:00
+
 urls:
   - title: オセアニア
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-oceania-regional-championship/details
@@ -23,6 +36,12 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-north-america-regional-championship/details
   - title: ブラジル
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-brazil-regional-championship/details
+  - title: オセアニア、ヨーロッパ、北アメリカ配信
+    url: https://www.twitch.tv/pokemonunite
+  - title: ブラジル配信
+    url: https://www.twitch.tv/pokemonunitebrazil
+  - title: ラテンアメリカ北、ラテンアメリカ南配信
+    url: https://www.twitch.tv/pokemonunitelatam
 ---
 
 世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のRegional Championshipの途中経過まとめです。優勝したチームと、月例大会含めたポイントの多いチームがWCSへ招待されます。オープン予選の結果を記載中。
