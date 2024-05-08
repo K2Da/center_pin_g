@@ -3,7 +3,7 @@ export const setPage = (
   title: string,
   description: string,
   ogp: 'calendar' | false = false,
-  website: boolean = false,
+  website: boolean = false
 ) => {
   useHead({
     title: `CP(g): ${title || ''}`,
@@ -18,6 +18,10 @@ export const setPage = (
         content: `https://center-ping.pages.dev/images/ogp/${ogp || 'ogp'}.png`,
       },
       { name: 'twitter:card', content: 'summary' },
+      {
+        name: 'google-site-verification',
+        content: 'OW8j0n82jRds66gXENkgvLu61OvnQSWCm70tGQYklZ8',
+      },
     ],
     script: [
       {
