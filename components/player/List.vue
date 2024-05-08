@@ -1,8 +1,11 @@
 <script setup lang="ts">
 const statsStore = useStatsStore();
 const { players } = storeToRefs(statsStore);
-
 const pageNoRef = ref(1);
+const filterString = ref('');
+const isMounted = ref(false);
+let currentFilter = '';
+
 const displayPlayers = computed(() => {
   if (isMounted.value)
     localStorage.setItem('playerFilter', filterString.value.trim());
@@ -28,22 +31,32 @@ const displayPlayers = computed(() => {
     return players.value;
   }
 });
+
 const maxPage = computed(() => {
   const max = Math.ceil(displayPlayers.value.length / PER_PAGE);
   if (max < pageNoRef.value) pageNoRef.value = 1;
   return max;
 });
-const filterString = ref('');
+
 const changePageNo = (v: number) => {
   pageNoRef.value = v;
   window.scroll({ top: 0, left: 0 });
 };
 
-const isMounted = ref(false);
+const onFilterChange = (e: Event) => {
+  currentFilter = e.target?.value;
+  debouncedFilter();
+};
+
+const debouncedFilter = useDebounceFn(() => {
+  filterString.value = currentFilter;
+}, 1000);
+
 onMounted(() => {
   isMounted.value = true;
   filterString.value = localStorage.getItem('playerFilter') || '';
 });
+
 onServerPrefetch(async () => {
   await statsStore.fetchPlayerMasterOnSSR();
 });
@@ -53,8 +66,9 @@ onServerPrefetch(async () => {
   <div>
     <div class="p-2">
       <input
-        v-model="filterString"
-        placeholder="プレイヤー名 / チーム名 / SNSアカウント"
+        :value="filterString"
+        @input="onFilterChange"
+        placeholder="プレイヤー名 / チーム名"
         class="w-full p-2"
       />
     </div>
@@ -73,7 +87,7 @@ onServerPrefetch(async () => {
           class="tc py-4 border-t lg:pt-1 lg:pb-0"
           v-for="(p, i) of displayPlayers.slice(
             (pageNoRef - 1) * PER_PAGE,
-            pageNoRef * PER_PAGE,
+            pageNoRef * PER_PAGE
           )"
           :key="p.name"
           :class="containerClass(i)"

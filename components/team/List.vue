@@ -1,8 +1,11 @@
 <script setup lang="ts">
 const statsStore = useStatsStore();
 const { teams } = storeToRefs(statsStore);
-
 const pageNoRef = ref(1);
+const filterString = ref('');
+const isMounted = ref(false);
+let currentFilter = '';
+
 const displayTeams = computed(() => {
   if (isMounted.value)
     localStorage.setItem('teamFilter', filterString.value.trim());
@@ -12,7 +15,7 @@ const displayTeams = computed(() => {
         let target = [s.name, ...s.names, ...s.members];
         return (
           target.filter((f) =>
-            f.toLowerCase().includes(filterString.value.toLowerCase()),
+            f.toLowerCase().includes(filterString.value.toLowerCase())
           ).length > 0
         );
       })
@@ -25,17 +28,25 @@ const maxPage = computed(() => {
   return max;
 });
 
-const filterString = ref('');
 const changePageNo = (v: number) => {
   pageNoRef.value = v;
   window.scroll({ top: 0, left: 0 });
 };
 
-const isMounted = ref(false);
+const onFilterChange = (e: Event) => {
+  currentFilter = e.target?.value;
+  debouncedFilter();
+};
+
+const debouncedFilter = useDebounceFn(() => {
+  filterString.value = currentFilter;
+}, 1000);
+
 onMounted(() => {
   isMounted.value = true;
   filterString.value = localStorage.getItem('teamFilter') || '';
 });
+
 onServerPrefetch(async () => {
   await statsStore.fetchTeamMasterOnSSR();
 });
@@ -45,7 +56,8 @@ onServerPrefetch(async () => {
   <div>
     <div class="p-2">
       <input
-        v-model="filterString"
+        :value="filterString"
+        @input="onFilterChange"
         placeholder="チーム名 / メンバー名"
         class="w-full p-2"
       />
@@ -65,7 +77,7 @@ onServerPrefetch(async () => {
           class="tc border-t py-4 lg:pt-1 lg:pb-0"
           v-for="(t, i) of displayTeams.slice(
             (pageNoRef - 1) * PER_PAGE,
-            pageNoRef * PER_PAGE,
+            pageNoRef * PER_PAGE
           )"
           :key="t.name"
           :class="containerClass(i)"
