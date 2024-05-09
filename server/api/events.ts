@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
 
   let posts = [];
   let res = '';
-  const date = current.locale('jp').format(`M月D日(ddd)\n`);
+  const date = current.locale('ja').format(`M月D日(ddd)\n`);
   const url = dayUrl(current);
   const maxLength = 280 - plen(date) - plen(url);
 
