@@ -8,8 +8,7 @@ export default defineEventHandler(async (event) => {
     await serverQueryContent(event, '/topic').find()
   );
 
-  // const current = cdateJST().startOf('day');
-  const current = cdateJST().add(3, 'day').startOf('day');
+  const current = cdateJST().startOf('day');
   const filtered = events
     .filter((e) => current <= e.date && e.date <= current.endOf('day'))
     .sort((a, b) => a.date.toDate().getTime() - b.date.toDate().getTime());
