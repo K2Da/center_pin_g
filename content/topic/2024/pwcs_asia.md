@@ -10,24 +10,24 @@ dates:
     date: 2024-05-19 00:00:01 +09:00
   - title: 台湾・香港 Day 1
     date: 2024-05-05 00:00:01 +09:00
-  - title: 台湾・香港 Day 2
-    date: 2024-05-12 00:00:01 +09:00
-  - title: フィリピン Day 1
-    date: 2024-05-11 00:00:01 +09:00
-  - title: フィリピン Day 2
-    date: 2024-05-12 00:00:01 +09:00
+  - title: 台湾・香港 Day 2 配信
+    date: 2024-05-12 12:00:00 +08:00
+  - title: フィリピン Day 1 配信
+    date: 2024-05-11 13:00:00 +09:00
+  - title: フィリピン Day 2 配信
+    date: 2024-05-12 13:00:00 +09:00
   - title: インドネシア Day 1
     date: 2024-05-11 00:00:01 +09:00
   - title: インドネシア Day 2
     date: 2024-05-12 00:00:01 +09:00
   - title: インド Day 1
     date: 2024-05-11 00:00:01 +09:00
-  - title: インド Day 2
-    date: 2024-05-12 00:00:01 +09:00
-  - title: タイ Day 1
-    date: 2024-05-11 00:00:01 +09:00
-  - title: タイ Day 2
-    date: 2024-05-12 00:00:01 +09:00
+  - title: インド Day 2 配信
+    date: 2024-05-12 16:00:00 +09:00
+  - title: タイ Day 1 配信
+    date: 2024-05-11 15:00:00 +09:00
+  - title: タイ Day 2 配信
+    date: 2024-05-12 16:00:00 +09:00
   - title: LCQ Asia Pacific West Day 1
     date: 2024-05-18 00:00:01 +09:00
   - title: LCQ Asia Pacific West Day 2
@@ -43,10 +43,14 @@ urls:
     url: https://www.start.gg/league/2024-pok-mon-unite-championship-series
   - title: アジア公式
     url: https://pokemonunite-wcs-asia.com/en/
-  - title: アジア公式Facebook
+  - title: アジア公式Facebook(インド、フィリピン、マレーシア、シンガポール)
     url: https://www.facebook.com/Pokemon.UNITE.A.en
-  - title: ポケモンユナイト公式(繁体字)
+  - title: 繁体字公式Facebook(台湾、香港)
     url: https://www.facebook.com/Pokemon.UNITE.tc
+  - title: タイ語公式Facebook(タイ)
+    url: https://www.facebook.com/pokeuniteTH/
+  - title: タイ
+    url: https://battlefy.com/pok%C3%A9mon-unite-wcs2024-thailand-qualifier/pok%C3%A9mon-unite-wcs2024-thailand-qualifier/663cc117486ee00f032b8c0d/info?infoTab=details
 ---
 
 アジア地域で行われる2024 Pokémon World Championships(PWCS 2024)予選の日程メモ。ルールブックから、地域の詳細を記載。
