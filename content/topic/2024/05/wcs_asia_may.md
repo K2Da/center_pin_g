@@ -9,7 +9,7 @@ dates:
   - title: Day 2配信
     date: 2024-05-12 12:00:00 +09:00
 urls:
-  - title: WCS2024 アジア予選 公式サイト
+  - title: Pokémon UNITE Championship Series Asia公式サイト
     url: https://pokemonunite-wcs-asia.com/jp/
   - title: 5月大会公式サイト
     url: https://pokemonunite.j-cg.com/ja/wcs/competition/jp2024-may-day1
@@ -19,7 +19,7 @@ urls:
     url: /tournament/wcs_2024_05_day1
 ---
 
-WCS2024 アジア予選 日本地域5月大会のメモ。 5/11のDay 1結果を記載。
+Pokémon UNITE Championship Series(PJCS)、日本 5月大会のメモ。 5/11のDay 1結果を記載。
 
 <!-- more -->
 
