@@ -7,13 +7,13 @@ import type { TournamentDetail } from '~/api/TournamentDetail';
 // そうでないものは、useFetchを使う
 const FLARE_PREFIX = 'https://flare.center-ping.workers.dev';
 // const FLARE_PREFIX = 'http://localhost:8787';
-const FLARE_DATA = `${FLARE_PREFIX}/blue`;
+const FLARE_DATA = `${FLARE_PREFIX}/green`;
 
 export const flare_host = () => FLARE_DATA;
 
 export const fetchPlayerMaster = async () => {
   const players = (await $fetch(
-    `${flare_host()}/players/list`,
+    `${flare_host()}/players/list`
   )) as PlayersResult[];
   const rankedPlayers: RankedPlayer[] = [];
   let prev = { rank: 0, rating: 0 };
@@ -35,7 +35,7 @@ export const fetchTournamentMaster = async () => {
 
 export const fetchPlayer = async (playerName: string) => {
   const result = await useFetch(
-    `${FLARE_DATA}/player/${encodeURIComponent(playerName)}`,
+    `${FLARE_DATA}/player/${encodeURIComponent(playerName)}`
   );
   const data = result.data;
   for (const m of data.value.matches) {
@@ -49,7 +49,7 @@ export const fetchPlayer = async (playerName: string) => {
 
 export const fetchTeam = async (teamName: string) => {
   const { data } = await useFetch(
-    `${FLARE_DATA}/team/${encodeURIComponent(teamName)}`,
+    `${FLARE_DATA}/team/${encodeURIComponent(teamName)}`
   );
   return data.value;
 };
@@ -61,7 +61,7 @@ export const fetchTournamentDetail = async (tournamentKey: string) => {
 
 export const fetchTournamentGroup = async (groupKey: string) => {
   return (await $fetch(
-    `${FLARE_DATA}/tournaments/group/${groupKey}`,
+    `${FLARE_DATA}/tournaments/group/${groupKey}`
   )) as TournamentIndex;
 };
 
