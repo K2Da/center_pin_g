@@ -1,5 +1,5 @@
 ---
-title: WCS 日本 4月大会
+title: PUCS 日本 4月大会
 updated: 2024-04-21 19:50:00 +09:00
 tags:
   - 公式大会
