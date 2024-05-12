@@ -19,7 +19,7 @@ urls:
     url: /tournament/wcs_2024_05_day1
 ---
 
-Pokémon UNITE Championship Series(PJCS)、日本 5月大会のメモ。 5/11のDay 1結果を記載。
+Pokémon UNITE Championship Series(PJCS)、日本 5月大会のメモ。結果を記載。
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ Pokémon UNITE Championship Series(PJCS)、日本 5月大会のメモ。 5/11の
 
 今年度のWCS予選は全体的に参加者が多かったですが、今回はその中でも一番多く、2022、2023シーズンを含んだ全てのWCS日本予選の中で一番参加者の多い大会となっています。
 
-:result{tournament="wcs_2024_05_day1" :rank="8" :member="true"}
+:result{tournament="wcs_2024_05_day1" :rank="8" :member="false"}
 
 ### Day 2結果
 :team{n="めでたし"} が全勝で優勝、2位 :team{n="ネオ人参"} 、3位 :team{n="ドドヤミ全一"} と共にPJCSへ出場を決めました。
