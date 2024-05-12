@@ -1,6 +1,6 @@
 ----
 title: PUCS 日本 5月大会
-updated: 2024-05-12 06:00:00 +09:00
+updated: 2024-05-12 05:00:00 +09:00
 tags:
   - 公式大会
 dates:
@@ -17,6 +17,10 @@ urls:
     url: https://www.youtube.com/watch?v=L0osXvhUM4E
   - title: Day 1結果
     url: /tournament/wcs_2024_05_day1
+  - title: Day 2配信
+    url: https://www.youtube.com/watch?v=e97g_X8Vt4M
+  - title: Day 2結果
+    url: /tournament/wcs_2024_05_day2
 ---
 
 Pokémon UNITE Championship Series(PJCS)、日本 5月大会のメモ。結果を記載。
