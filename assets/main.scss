@@ -191,10 +191,14 @@ article {
     }
   }
   table {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    border-collapse: separate;
     width: auto;
     margin: 8px;
     th {
       padding: 5px 12px 2px 12px;
+      border-bottom: 1px solid var(--border);
     }
     td {
       padding: 5px 12px 2px 12px;

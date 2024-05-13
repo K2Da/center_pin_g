@@ -1,6 +1,6 @@
 ---
 title: PUCS Regional Championship
-updated: 2024-05-05 07:00:00 +09:00
+updated: 2024-05-14 05:30:00 +09:00
 tags:
   - 海外公式大会
 dates:
@@ -22,6 +22,10 @@ dates:
     date: 2024-05-12 17:00:00 +00:00
   - title: ラテンアメリカ北決勝
     date: 2024-05-12 18:00:00 +00:00
+  - title: 北アメリカ決勝 Day 1
+    date: 2024-06-07 00:00:01 +09:00
+  - title: 北アメリカ決勝 Day 2
+    date: 2024-06-08 00:00:01 +09:00
 
 urls:
   - title: オセアニア
@@ -44,84 +48,34 @@ urls:
     url: https://www.twitch.tv/pokemonunitelatam
 ---
 
-世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のRegional Championshipの途中経過まとめです。優勝したチームと、月例大会含めたポイントの多いチームがWCSへ招待されます。オープン予選の結果を記載中。
+世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のRegional Championshipの途中経過まとめです。優勝したチームと、月例大会含めたポイントの多いチームがWCSへ招待されます。北アメリカ以外の結果を記載。
 
 <!-- more -->
 
-### 形式
-地域により異なるようです。
-
 ### オセアニア
-13チームが参加、オープン予選が終了していますが、順位が発表されていません。オセアニアでは、オープン予選、決勝Day 1まではスイスドローで行い、決勝Day 2でダブルエリミネーショントーナメントとなるようです。
+:team{n="Ground Zero Gaming"} が優勝、4位の :team{n="Antic Esports"} はポイントでのWCS参加を決めています。
+
+:result{tournament="regional_cs_oceania" :rank="2" :member="true"}
 
 ### ヨーロッパ
-48チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
+:team{n="Nouns Esports ⌐◨-◨"} が優勝、3位の :team{n="Yalla Bingo"} と 7位の :team{n="Talibobo Unleashed"} はポイントでのWCS参加を決めています。
 
-- Upper Bracket
-  1. :team{n="Nouns Esports ⌐◨-◨"}
-  1. :team{n="los caducados"}
-  1. :team{n="VAMOSSS"}
-  1. :team{n="Warlords"}
-  1. :team{n="Yalla Bingo"}
-  1. :team{n="CincoGolemo"}
-  1. :team{n="Talibobo Unleashed"}
-  1. :team{n="Conoisseurs"}
-- Lower Bracket
-  1. :team{n="Capybabas"}
-  1. :team{n="Verloren?"}
-  1. :team{n="Z-Mog"}
-  1. :team{n="Patati Stack"}
-  1. :team{n="Anlaha Esports"}
-  1. :team{n="Neo Sentry Red"}
-  1. :team{n="ZeroScrims"}
-  1. :team{n="Tatakae"}
+:result{tournament="regional_cs_europe" :rank="2" :member="true"}
 
 ### ラテンアメリカ南
-29チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
+:team{n="FUSION"} が優勝しましたが、すでにAeos CUPの優勝で出場権を獲得していたため、2位の :team{n="3 Dígitos"} が出場権獲得、また、 3位の :team{n="IMPERIO E-SPORT"} はポイントでのWCS参加を決めています。
 
-- Upper Bracket
-  1. :team{n="FUSION"}
-  1. :team{n="IMPERIO E-SPORT"}
-  1. :team{n="Punto cL"}
-  1. :team{n="Olimpo Squad"}
-  1. :team{n="Seirin"}
-  1. :team{n="3 Dígitos"}
-  1. :team{n="5CUY"}
-  1. :team{n="Public Enemies"}
-- Lower Bracket
-  1. :team{n="Star us"}
-  1. :team{n="Los Galácticos"}
-  1. :team{n="Pepe +4"}
-  1. :team{n="Reborn"}
-  1. :team{n="Zubatt"}
-  1. :team{n="Sigma E-Sports"}
-  1. :team{n="L4D"}
-  1. :team{n="Los apostoles de PONPI"}
+:result{tournament="regional_cs_las" :rank="2" :member="true"}
 
 ### ラテンアメリカ北
-65チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
+:team{n="E7 Janus"} が優勝、5位の :team{n="Rework Respawn"} と 2位の :team{n="NoSmites Resurrection"} はポイントでのWCS参加を決めています。
 
-- Upper Bracket
-  1. :team{n="Pedro Pedro Pedro"}
-  1. :team{n="Anteiku"}
-  1. :team{n="DeepDark"}
-  1. :team{n="E7 Janus"}
-  1. :team{n="Bad Choices"}
-  1. :team{n="NoSmites Resurrection"}
-  1. :team{n="MOO MOO MILK"}
-  1. :team{n="Rework Respawn"}
-- Lower Bracket
-  1. :team{n="La 15 es inevitable"}
-  1. :team{n="ChocoPapus"}
-  1. :team{n="Hermanooo"}
-  1. :team{n="Marcianitos"}
-  1. :team{n="Vampiros de Nieve"}
-  1. :team{n="Gorditos FC"}
-  1. :team{n="Troleo táctico"}
-  1. :team{n="TTV LAN"}
+:result{tournament="regional_cs_lan" :rank="2" :member="true"}
 
 ### 北アメリカ
 74チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
+
+決勝は、6月7日〜8日に、ニューオリンズで開催されるオフライン大会、Pokémon North America International Championships(NAIC)で行われます。
 
 - Upper Bracket
   1. :team{n="Nemesis"}
@@ -143,23 +97,6 @@ urls:
   1. :team{n="S5"}
 
 ### ブラジル
-33チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
+:team{n="Legacy"}が優勝、2位の :team{n="DreamMax Esports"} はポイントでのWCS参加を決めています。
 
-- Upper Bracket
-  1. :team{n="Legacy"}
-  1. :team{n="DreamMax Esports"}
-  1. :team{n="Spacial Rend"}
-  1. :team{n="Noxus"}
-  1. :team{n="Charm"}
-  1. :team{n="Saidera Unite"}
-  1. :team{n="Junção do Tega"}
-  1. :team{n="Drago Unite Rowak"}
-- Lower Bracket
-  1. :team{n="E=MC²"}
-  1. :team{n="Acewings"}
-  1. :team{n="Kraken Gaming"}
-  1. :team{n="Time X"}
-  1. :team{n="Arcan West"}
-  1. :team{n="time"}
-  1. :team{n="PREDIAO"}
-  1. :team{n="Em busca da CNH"}
+:result{tournament="regional_cs_brazil" :rank="2" :member="true"}
