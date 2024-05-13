@@ -4,11 +4,7 @@ const topic = '/topic/' + route.params.key.replaceAll('-', '/');
 const { data } = await useAsyncData(() => {
   return queryContent(topic).findOne();
 });
-setPage(
-  route.path,
-  `トピック: ${data.value.title}`,
-  `${data.value.title}についてまとめた記事`,
-);
+setPage(route.path, `トピック: ${data.value.title}`, `${data.value.title}`);
 </script>
 <template>
   <TopicArticle :topic="data" />
