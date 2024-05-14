@@ -29,6 +29,26 @@ Pokémon UNITE大会結果を収集しているサイトです。2024年4月よ�
 
 2024シーズンから、海外の公式大会についても、データの登録を開始しています。過去のものについては、遡って登録可能であれば、登録する予定です。
 
+### 未登録公式大会
+以下の大会は、PUCS(Asiz) 2024として開催されましたが、ブラケットが発見できていません。ご存知の方は教えていただけると助かります。
+
+start.ggや、JCGで管理されていれば発見できていると思われるため、battlefyで管理されているかもしれないと思っています。
+
+日本、韓国予選は、JCGで管理されています。
+
+タイは以下のURLにあるのを発見しました。
+- https://battlefy.com/pok%C3%A9mon-unite-wcs2024-thailand-qualifier/pok%C3%A9mon-unite-wcs2024-thailand-qualifier/663cc117486ee00f032b8c0d/info?infoTab=details
+
+
+- 見つかっていない予選
+  - 台湾・香港 
+  - インド
+  - インドネシア
+  - フィリピン
+  - タイ
+  - LCQ Asia Pacific East
+  - LCQ Asia Pacific West
+
 ## プレイヤー名
 原則、大会に参加した名前が同じだったら同じプレイヤーであるとして集計しています。
 
