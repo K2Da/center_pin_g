@@ -34,10 +34,10 @@ Pokémon UNITE大会結果を収集しているサイトです。2024年4月よ�
 
 日本、韓国予選は、JCGで管理されています。
 
-タイは以下のURLにあるのを発見しました。
+タイは以下のURLにあるのを発見しましたが、登録されたチームのメンバーも、試合結果も登録されていません。
 - https://battlefy.com/pok%C3%A9mon-unite-wcs2024-thailand-qualifier/pok%C3%A9mon-unite-wcs2024-thailand-qualifier/663cc117486ee00f032b8c0d/info?infoTab=details
 
-start.ggや、JCGで管理されていれば発見できていると思われるため、タイと同じく、battlefyで管理されているかもしれないと思っています。
+それ以外の大会は、何も見つかっていません。start.ggや、JCGで管理されていれば発見できていると思われるため、タイと同じく、battlefyで管理されているかもしれないと思っています。
 
 - 見つかっていない予選
   - 台湾・香港 
