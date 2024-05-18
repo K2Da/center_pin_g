@@ -7,7 +7,7 @@ dates:
   - title: 韓国 Day 1
     date: 2024-05-18 00:00:01 +09:00
   - title: 韓国 Day 2
-    date: 2024-05-19 00:00:01 +09:00
+    date: 2024-05-19 10:45:00 +09:00
   - title: 台湾・香港 Day 1
     date: 2024-05-05 00:00:01 +09:00
   - title: 台湾・香港 Day 2 配信
@@ -30,12 +30,12 @@ dates:
     date: 2024-05-12 16:00:00 +09:00
   - title: LCQ Asia Pacific West Day 1
     date: 2024-05-18 00:00:01 +09:00
-  - title: LCQ Asia Pacific West Day 2
-    date: 2024-05-19 00:00:01 +09:00
+  - title: LCQ Asia Pacific West Day 2 配信
+    date: 2024-05-19 13:00:00 +09:00
   - title: LCQ Asia Pacific East Day 1
     date: 2024-05-18 00:00:01 +09:00
-  - title: LCQ Asia Pacific East Day 2
-    date: 2024-05-19 00:00:01 +09:00
+  - title: LCQ Asia Pacific East Day 2 配信
+    date: 2024-05-19 13:00:00 +09:00
 urls:
   - title: 2024 Pokémon UNITE Championship Series
     url: https://unite.pokemon.com/en-us/championship/
