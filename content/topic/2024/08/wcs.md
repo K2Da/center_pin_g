@@ -1,6 +1,6 @@
 ---
 title: WCS2024
-updated: 2024-05-14 04:30:00 +09:00
+updated: 2024-05-20 04:30:00 +09:00
 tags:
   - 公式大会
 dates:
@@ -21,7 +21,7 @@ urls:
     url: https://pokemonunite-wcs-asia.com/rules_jp.pdf
 ---
 
-8月にハワイ ホノルルで行われる2024 Pokémon World Championships(WCS 2024)のポケモンユナイト部門に関するメモ。出場決定チームなどを随時更新中。出場チームの確定予定日を記載。
+8月にハワイ ホノルルで行われる2024 Pokémon World Championships(WCS 2024)のポケモンユナイト部門に関するメモ。出場決定チームなどを随時更新中。5/19開催までの出場チームを記入済み。
 
 <!-- more -->
 
@@ -54,9 +54,9 @@ PUCSのポイントについては、全てのPUCSのイベント終了後に確
 | P ✅ | ラテンアメリカ北 地域決勝 優勝 | 05/12 | :team{n="E7 Janus"} |
 | P ✅ | ラテンアメリカ北 地域ポイント 1 | 05/12 | :team{n="Rework Respawn"} |
 | P | ラテンアメリカ北 地域ポイント 2 | 05/12 | :team{n="NoSmites Resurrection"} |
-| A ✅ | 韓国予選 優勝 | 05/19 | |
-| A ✅ | LCQ AP West 優勝 | 05/19 | |
-| A ✅ | LCQ AP East 優勝 | 05/19 | |
+| A ✅ | 韓国予選 優勝 | 05/19 | :team{n="XoraTigersGaming"} |
+| A ✅ | LCQ AP West 優勝 | 05/19 | :team{n="Onyx"} |
+| A ✅ | LCQ AP East 優勝 | 05/19 | :team{n="Issen Aumento"} |
 | A ✅ | PJCS(日本) 優勝 | 06/02 | |
 | A ✅ | PJCS(日本) 2位 | 06/02 | |
 | A ✅ | PJCS(日本) 3位 | 06/02 | |
