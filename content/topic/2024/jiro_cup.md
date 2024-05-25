@@ -3,6 +3,9 @@ title: じろカップ
 tags:
   - コミュニティ大会
 dates:
+  - title: '#27 トリオ最強決定戦'
+    date: 2024-05-26 20:00:00 +09:00
+    url: https://tonamel.com/competition/334bd
   - title: '#26 ぽっちゃり王決定戦'
     date: 2024-04-28 21:00:00 +09:00
     url: https://tonamel.com/competition/wvYOf
@@ -16,6 +19,24 @@ dates:
     date: 2024-04-07 21:00:00 +09:00
     url: https://tonamel.com/competition/mqphT
 ---
+### 27. トリオ最強決定戦
+:xpost{
+  id="1792839607358538116"
+  user="j1rota"
+  text="【 大会告知 】
+じろカップ#27 - トリオ最強決定戦
+
+初の3人制大会を開催します！
+
+📅
+日程：5/26(日) 20:00～ 
+🏆
+優勝
+・稀沙さん作チームイラスト✨
+・3,000円分のギフト券
+🍩
+RTした方、抽選で5名にミスド券をプレゼント‼️"
+}
 
 ### 26. ぽっちゃり王決定戦
 :xpost{id="1782341910755205432"}
