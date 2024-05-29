@@ -4,9 +4,9 @@ updated: 2024-05-13 05:00:00 +09:00
 tags:
   - 公式大会
 dates:
-  - title: Day 1
+  - title: Day 1配信
     date: 2024-06-01 08:45:00 +09:00
-  - title: Day 2
+  - title: Day 2配信
     date: 2024-06-02 08:50:00 +09:00
 ---
 
