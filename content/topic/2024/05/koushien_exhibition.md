@@ -3,11 +3,16 @@ title: ポケモンユナイト甲子園エキシビションマッチ
 tags:
   - 公式イベント
 dates:
-  - title: 応募締め切り
+  - title: 第1回 応募締め切り
     date: 2024-05-27 17:00:00 +09:00
     url: https://docs.google.com/forms/d/e/1FAIpQLSdJuh-Gsv6FTpBL5ztywpIOPiXcBctr7IJH5NEqgMZDSf53tw/viewform
-  - title: 配信
+  - title: 第1回 配信
     date: 2024-05-28 20:00:00 +09:00
+  - title: 第2回 応募締め切り
+    date: 2024-06-04 17:00:00 +09:00
+    url: https://docs.google.com/forms/d/e/1FAIpQLSdHQVGacaCwKhqdGN7HX9G6HnyefOCaa9XUoukzdh-q1VPX-g/viewform
+  - title: 第2回 配信
+    date: 2024-06-05 20:00:00 +09:00
 ---
 
 :xpost{
