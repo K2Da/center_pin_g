@@ -1,50 +1,27 @@
 ---
 title: PJCS2024 ポケモンユナイト部門
-updated: 2024-05-13 05:00:00 +09:00
+updated: 2024-06-20 18:20:00 +09:00
 tags:
   - 公式大会
 dates:
   - title: Day 1配信
     date: 2024-06-01 08:45:00 +09:00
+    url: https://www.youtube.com/watch?v=yaivkur91-A
   - title: Day 2配信
     date: 2024-06-02 08:50:00 +09:00
+    url: https://www.youtube.com/watch?v=9z6AEbAdHRU
 ---
 
-PJCS2024 ポケモンユナイト部門のメモ。 5月大会の結果を追加。
+PJCS2024 ポケモンユナイト部門のメモ。結果を追記。
 
 <!-- more -->
 
 ゲーム、カードゲーム、ポケモンGO、ポケモンユナイト、4部門で行われるオフライン大会。ポケモンユナイト部門では、3チームにホノルルで行われる、WCSへの出場権が付与されます。
 
-### トーナメント表
-:xpost{
-  id="1793899739487904091"
-  user="poke_unite_jp"
-  text="6月1日(土)～2日(日) にパシフィコ横浜で行われる
-#PJCS2024 #ポケモンユナイト 部門のトーナメント表をご紹介✨
+### 結果
+:team{n="チャンピオンロード"} が無敗で優勝。2位の :team{n="かびちゃんず"} 、3位の :team{n="JSV NoTitle"} とともに、WCS 2024の参加権を獲得しました。
 
-3-5月大会を勝ち抜いた8チームが激突❗
-WCS2024への出場権を獲得するのはどのチームか⁉
-
-激戦の様子をポケモンユナイト公式チャンネルでライブ配信予定🎥"
-}
-
-### 配信
-:xpost{
-  id="1795749423680503846"
-  user="poke_unite_jp"
-  text="PJCS2024 ポケモンユナイト部門 開催間近！
-DAY1、DAY2両日でライブ配信予定です🎥
-
-実況：水上 侑さん、篠原 光さん
-解説：ちょもすさん、たきしまさん
-
-▼配信チャンネル
-https://youtube.com/watch?v=scOuBs6oRZ8
-https://twitch.tv/pokemonunite_asiacl_jp
-
-お楽しみに！"
-}
+:result{tournament="pjcs_2024" :rank="8" :member="true"}
 
 ### 参加チーム
 
