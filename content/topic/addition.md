@@ -3,6 +3,9 @@ title: ポケモン参戦
 tags:
   - ゲーム
 dates:
+  - title: ソウブレイズ
+    date: 2024-06-13 00:00:01 +09:00
+    url: https://www.pokemonunite.jp/ja/news/229/
   - title: ミライドン
     date: 2024-02-27 00:00:01 +09:00
   - title: タイレーツ

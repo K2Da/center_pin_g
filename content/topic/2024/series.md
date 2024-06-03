@@ -3,6 +3,9 @@ title: ランクマッチシリーズ
 tags:
   - ゲーム
 dates:
+  - title: 19終了、20開始
+    date: 2024-06-06 00:00:01 +09:00
+    url: https://www.pokemonunite.jp/ja/news/230/
   - title: 18終了、19開始
     date: 2024-04-17 00:00:01 +09:00
   - title: 18開始
