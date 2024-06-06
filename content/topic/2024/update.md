@@ -24,6 +24,9 @@ dates:
   - title: Ver.1.14.1.6
     date: 2024-05-13 16:00:00 +09:00
     url: https://www.pokemonunite.jp/ja/news/219/
+  - title: Ver.1.14.2.8
+    date: 2024-06-06 16:00:00 +09:00
+    url: https://www.pokemonunite.jp/ja/news/231/
 ---
 
 ゲームのアップデート。
