@@ -1,6 +1,6 @@
 ---
 title: PUCS Regional Championship
-updated: 2024-05-14 05:30:00 +09:00
+updated: 2024-06-09 16:30:00 +09:00
 tags:
   - 海外公式大会
 dates:
@@ -48,7 +48,7 @@ urls:
     url: https://www.twitch.tv/pokemonunitelatam
 ---
 
-世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のRegional Championshipの途中経過まとめです。優勝したチームと、月例大会含めたポイントの多いチームがWCSへ招待されます。北米以外の結果を記載。
+世界各地域(除くアジア)で行われている、Pokémon UNITE Championship Series(PUCS)のRegional Championshipのまとめです。優勝したチームと、月例大会含めたポイントの多いチームがWCSへ招待されます。
 
 <!-- more -->
 
@@ -73,28 +73,9 @@ urls:
 :result{tournament="regional_cs_lan" :rank="2" :member="true"}
 
 ### 北米
-74チームが参加、オープン予選が終了し、決勝Day 1へ進出する16チームが決定。
+:team{n="Orange Team"} が優勝、 :team{n="Nemesis"} 、 :team{n="Luminosity"} がポイントでのWCS参加が決定しました。
 
-決勝は、6月7日〜8日に、ニューオリンズで開催されるオフライン大会、Pokémon North America International Championships(NAIC)で行われます。
-
-- Upper Bracket
-  1. :team{n="Nemesis"}
-  1. :team{n="ni hao"}
-  1. :team{n="Team YT"}
-  1. :team{n="UFEELME???"}
-  1. :team{n="Orange Team"}
-  1. :team{n="Luminosity Gaming"}
-  1. :team{n="G"}
-  1. :team{n="Hades"}
-- Lower Bracket
-  1. :team{n="Eruption"}
-  1. :team{n="exile"}
-  1. :team{n="Last Chance"}
-  1. :team{n="Ignorance"}
-  1. :team{n="Brave Birders"}
-  1. :team{n="Team Hotspot"}
-  1. :team{n="Umbra Volpium"}
-  1. :team{n="S5"}
+:result{tournament="regional_cs_na" :rank="2" :member="true"}
 
 ### ブラジル
 :team{n="Legacy"}が優勝、2位の :team{n="DreamMax Esports"} はポイントでのWCS参加を決めています。
