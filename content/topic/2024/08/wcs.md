@@ -1,6 +1,6 @@
 ---
 title: WCS2024
-updated: 2024-06-02 18:15:00 +09:00
+updated: 2024-06-09 11:15:00 +09:00
 tags:
   - 公式大会
 dates:
@@ -21,7 +21,7 @@ urls:
     url: https://pokemonunite-wcs-asia.com/rules_jp.pdf
 ---
 
-8月にハワイ ホノルルで行われる2024 Pokémon World Championships(WCS 2024)のポケモンユナイト部門に関するメモ。出場決定チームなどを随時更新中。6/2開催までの出場チームを記入済み。
+8月にハワイ ホノルルで行われる2024 Pokémon World Championships(WCS 2024)のポケモンユナイト部門に関するメモ。
 
 <!-- more -->
 
@@ -50,7 +50,7 @@ PUCSのポイントについては、全てのPUCSのイベント終了後に確
 | P | ブラジルポイント 1位 | 05/12 | :team{n="DreamMax Esports"} |
 | P ✅ | ヨーロッパ地域決勝 優勝 | 05/12 | :team{n="Nouns Esports ⌐◨-◨"} |
 | P ✅ | ヨーロッパポイント 1 | 05/12 | :team{n="Yalla Bingo"} |
-| P | ヨーロッパポイント 2 | 05/12 | :team{n="Talibobo Unleashed"} |
+| P | ヨーロッパポイント 2 | 05/12 | :team{n="Talibobo Unleashed"} (辞退) / :team{n="abcdefghijkl"} |
 | P ✅ | ラテンアメリカ北 地域決勝 優勝 | 05/12 | :team{n="E7 Janus"} |
 | P ✅ | ラテンアメリカ北 地域ポイント 1 | 05/12 | :team{n="Rework Respawn"} |
 | P | ラテンアメリカ北 地域ポイント 2 | 05/12 | :team{n="NoSmites Resurrection"} |
@@ -60,10 +60,10 @@ PUCSのポイントについては、全てのPUCSのイベント終了後に確
 | A ✅ | PJCS(日本) 優勝 | 06/02 | :team{n="チャンピオンロード"} |
 | A ✅ | PJCS(日本) 2位 | 06/02 | :team{n="かびちゃんず"} |
 | A | PJCS(日本) 3位 | 06/02 | :team{n="REJECT JSV"} |
-| P ✅ | 北アメリカ地域決勝 優勝 | 06/08 | |
-| P ✅ | 北アメリカ地域ポイント 1 | 06/08 | |
-| P | 北アメリカ地域ポイント 2 | 06/08 | |
-| P | The Final Stretch at NAIC優勝 | 06/08 | |
+| P ✅ | 北アメリカ地域決勝 優勝 | 06/08 | :team{n="Orange Team"} |
+| P ✅ | 北アメリカ地域ポイント 1 | 06/08 | :team{n="Nemesis"} |
+| P | 北アメリカ地域ポイント 2 | 06/08 | :team{n="Luminosity"} |
+| P | The Final Stretch at NAIC優勝 | 06/08 | :team{n="Gee"} |
 
 P: PUCS(アジア以外)、A: PUCS(Asia)、✅: 旅費支給あり
 
