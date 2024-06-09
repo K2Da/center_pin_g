@@ -19,7 +19,7 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-march-cup-latin-america-north/details
   - title: March Cup ラテンアメリカ南
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-march-cup-latin-america-south/details
-  - title: March Cup 北アメリカ
+  - title: March Cup 北米
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-march-cup-north-america/details
   - title: March Cup ブラジル
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-march-cup-brazil/details
@@ -45,7 +45,7 @@ urls:
 
 :result{tournament="pucs_2024_march_las" :rank="4" :member="true"}
 
-### 北アメリカ
+### 北米
 
 :result{tournament="pucs_2024_march_na" :rank="4" :member="true"}
 

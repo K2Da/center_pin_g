@@ -25,7 +25,7 @@ urls:
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-latin-america-north/details
   - title: April Cup ラテンアメリカ南
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-latin-america-south/details
-  - title: April Cup 北アメリカ
+  - title: April Cup 北米
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-north-america/details
   - title: April Cup ブラジル
     url: https://www.start.gg/tournament/2024-pok-mon-ucs-april-cup-brazil/details
@@ -55,7 +55,7 @@ Aeos Cupラテンアメリカ南予選優勝、3月大会優勝、Aeos Cup優勝
 
 :result{tournament="pucs_2024_april_las" :rank="4" :member="true"}
 
-### 北アメリカ
+### 北米
 解散した :team{n="Alter Ego"} の選手を中心とした、 :team{n="Orange Team"} が優勝、2位は同じく、元 :team{n="Alter Ego"} の選手を含む、 :team{n="Luminosity Unite"} となりました。
 
 :result{tournament="pucs_2024_april_na" :rank="4" :member="true"}

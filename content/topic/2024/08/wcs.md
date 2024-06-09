@@ -60,9 +60,9 @@ PUCSのポイントについては、全てのPUCSのイベント終了後に確
 | A ✅ | PJCS(日本) 優勝 | 06/02 | :team{n="チャンピオンロード"} |
 | A ✅ | PJCS(日本) 2位 | 06/02 | :team{n="かびちゃんず"} |
 | A | PJCS(日本) 3位 | 06/02 | :team{n="REJECT JSV"} |
-| P ✅ | 北アメリカ地域決勝 優勝 | 06/08 | :team{n="Orange Team"} |
-| P ✅ | 北アメリカ地域ポイント 1 | 06/08 | :team{n="Nemesis"} |
-| P | 北アメリカ地域ポイント 2 | 06/08 | :team{n="Luminosity"} |
+| P ✅ | 北米地域決勝 優勝 | 06/08 | :team{n="Orange Team"} |
+| P ✅ | 北米地域ポイント 1 | 06/08 | :team{n="Nemesis"} |
+| P | 北米地域ポイント 2 | 06/08 | :team{n="Luminosity"} |
 | P | The Final Stretch at NAIC優勝 | 06/08 | :team{n="Gee"} |
 
 P: PUCS(アジア以外)、A: PUCS(Asia)、✅: 旅費支給あり
@@ -71,7 +71,7 @@ P: PUCS(アジア以外)、A: PUCS(Asia)、✅: 旅費支給あり
 WCSには、 2024 Pokémon UNITE Championship Series(PUCS)の各大会勝者が出場します。PUCSは大きく2つ、アジア以外、アジアに分けて管理されているようで、サイト、ルールも二箇所で管理されているため、分けて説明します。
 
 #### PUCS
-PUCS(アジア以外)では、オセアニア、ヨーロッパ、ラテンアメリカ北、ラテンアメリカ南、北アメリカ、ブラジルの各地域で行われる、ポイント制大会シリーズの地域決勝勝者と、ポイント上位チームが計15チーム選ばれます。
+PUCS(アジア以外)では、オセアニア、ヨーロッパ、ラテンアメリカ北、ラテンアメリカ南、北米、ブラジルの各地域で行われる、ポイント制大会シリーズの地域決勝勝者と、ポイント上位チームが計15チーム選ばれます。
 
 また、PUCSの一部として、Aeos CupがEUIC(Europe International Championships)内で、The Final StretchがNAIC(North America International Championships)内で行われます。これは、地域関係なく出場が可能なオープントーナメントで、それぞれの勝者は直接WCSに招待されます。
 
