@@ -17,6 +17,7 @@ const toggleMatches = () => {
 };
 
 const isOpen = computed(() => open.value || props.openAll);
+const formatNum = (t: null | number) => (t == null ? '-' : t.toLocaleString());
 </script>
 
 <template>
@@ -36,6 +37,17 @@ const isOpen = computed(() => open.value || props.openAll);
   <div class="w-[36em]">
     <PlayersLine :names="tournament.player_list" />
   </div>
+  <div class="w-[5em]">
+    <template v-if="tournament.rating != null">
+      <span class="muted"
+        ><UIcon
+          name="i-material-symbols-show-chart"
+          style="vertical-align: -1px"
+      /></span>
+      {{ formatNum(tournament.rating) }}
+    </template>
+  </div>
+
   <div class="w-[6em]">
     <button
       v-if="!props.openAll"

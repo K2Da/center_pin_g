@@ -95,6 +95,9 @@ onServerPrefetch(async () => {
               >(別名{{ t.names.length }}件)</span
             >
           </div>
+          <div class="w-[4em]">
+            {{ (t.rating ?? 0).toLocaleString() }}
+          </div>
           <div class="w-[16em]">
             <span class="muted">出場: </span>
             {{ t.tournament_count }}
