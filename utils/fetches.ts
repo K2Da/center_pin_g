@@ -5,8 +5,8 @@ import type { TournamentIndex } from '~/api/Tournaments';
 import type { TournamentDetail } from '~/api/TournamentDetail';
 // piniaから使うものはpayloadを残す必要がないので$fetchを使う
 // そうでないものは、useFetchを使う
-//const FLARE_PREFIX = 'https://flare.center-ping.workers.dev';
-const FLARE_PREFIX = 'http://localhost:8787';
+const FLARE_PREFIX = 'https://flare.center-ping.workers.dev';
+//const FLARE_PREFIX = 'http://localhost:8787';
 const FLARE_DATA = `${FLARE_PREFIX}/blue`;
 
 export const flare_host = () => FLARE_DATA;
