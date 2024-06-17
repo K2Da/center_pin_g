@@ -1,6 +1,6 @@
 ---
 title: WCS2024
-updated: 2024-06-09 11:15:00 +09:00
+updated: 2024-06-17 17:00:00 +09:00
 tags:
   - 公式大会
 dates:
@@ -21,7 +21,7 @@ urls:
     url: https://pokemonunite-wcs-asia.com/rules_jp.pdf
 ---
 
-8月にハワイ ホノルルで行われる2024 Pokémon World Championships(WCS 2024)のポケモンユナイト部門に関するメモ。
+8月にハワイ ホノルルで行われる2024 Pokémon World Championships(WCS 2024)のポケモンユナイト部門に関するメモ。ヨーロッパ、ラテンアメリカ北のポイント2位チーム辞退を反映。
 
 <!-- more -->
 
@@ -45,15 +45,15 @@ PUCSのポイントについては、全てのPUCSのイベント終了後に確
 | A ✅ | インド予選 優勝 | 05/12 | :team{n="S8UL"} |
 | A ✅ | インドネシア予選 優勝 | 05/12 | :team{n="ONIC RISE"} |
 | P ✅ | オセアニア地域決勝 優勝 | 05/12 | :team{n="Ground Zero Gaming"} |
-| P | オセアニア地域ポイント 1 | 05/12 | :team{n="Antic Esports"} |
+| P | オセアニア ポイント 1 | 05/12 | :team{n="Antic Esports"} |
 | P ✅ | ブラジル地域決勝 優勝 | 05/12 | :team{n="Legacy"} |
 | P | ブラジルポイント 1位 | 05/12 | :team{n="DreamMax Esports"} |
 | P ✅ | ヨーロッパ地域決勝 優勝 | 05/12 | :team{n="Nouns Esports ⌐◨-◨"} |
 | P ✅ | ヨーロッパポイント 1 | 05/12 | :team{n="Yalla Bingo"} |
-| P | ヨーロッパポイント 2 | 05/12 | :team{n="Talibobo Unleashed"} (辞退) / :team{n="abcdefghijkl"} |
+| P | ヨーロッパポイント 2 | 05/12 | :team{n="Talibobo Unleashed"} (辞退) / :team{n="VAMOSSS"} |
 | P ✅ | ラテンアメリカ北 地域決勝 優勝 | 05/12 | :team{n="E7 Janus"} |
-| P ✅ | ラテンアメリカ北 地域ポイント 1 | 05/12 | :team{n="Rework Respawn"} |
-| P | ラテンアメリカ北 地域ポイント 2 | 05/12 | :team{n="NoSmites Resurrection"} |
+| P ✅ | ラテンアメリカ北 ポイント 1 | 05/12 | :team{n="Rework Respawn"} |
+| P | ラテンアメリカ北ポイント 2 | 05/12 | :team{n="NoSmites Resurrection"} (辞退) / :team{n="Anteiku"} |
 | A ✅ | 韓国予選 優勝 | 05/19 | :team{n="XoraTigersGaming"} |
 | A ✅ | LCQ AP West 優勝 | 05/19 | :team{n="Onyx"} |
 | A ✅ | LCQ AP East 優勝 | 05/19 | :team{n="Issen Aumento"} |
@@ -61,8 +61,8 @@ PUCSのポイントについては、全てのPUCSのイベント終了後に確
 | A ✅ | PJCS(日本) 2位 | 06/02 | :team{n="かびちゃんず"} |
 | A | PJCS(日本) 3位 | 06/02 | :team{n="REJECT JSV"} |
 | P ✅ | 北米地域決勝 優勝 | 06/08 | :team{n="Orange Team"} |
-| P ✅ | 北米地域ポイント 1 | 06/08 | :team{n="Nemesis"} |
-| P | 北米地域ポイント 2 | 06/08 | :team{n="Luminosity"} |
+| P ✅ | 北米 ポイント 1 | 06/08 | :team{n="Nemesis"} |
+| P | 北米 ポイント 2 | 06/08 | :team{n="Luminosity"} |
 | P | The Final Stretch at NAIC優勝 | 06/08 | :team{n="Gee"} |
 
 P: PUCS(アジア以外)、A: PUCS(Asia)、✅: 旅費支給あり
