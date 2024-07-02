@@ -15,11 +15,12 @@ dates:
   - title: 第12回 オフライン大会 in 福岡
     date: 2024-06-29 12:00:00 +09:00
     url: https://tonamel.com/competition/MJ3d5
-  - title: 神戸
-    date: 2024-07-20 00:00:01 +09:00
+  - title: 第13回 オフライン大会・交流会 兵庫
+    date: 2024-07-20 11:00:00 +09:00
+    url: https://tonamel.com/competition/NOSzD
 ---
 
-### 神戸開催
+### 兵庫開催
 :xpost{
   id="1788370239497056358"
   user="ryunan_riva"

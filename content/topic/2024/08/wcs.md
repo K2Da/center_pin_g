@@ -4,6 +4,9 @@ updated: 2024-06-17 17:00:00 +09:00
 tags:
   - 公式大会
 dates:
+  - title: グループ抽選
+    date: 2024-07-06 16:00:00 +00:00
+    url: https://www.youtube.com/watch?v=Q8pPYOSs7RU
   - title: 1日目
     date: 2024-08-16 00:00:01 +09:00
   - title: 2日目
